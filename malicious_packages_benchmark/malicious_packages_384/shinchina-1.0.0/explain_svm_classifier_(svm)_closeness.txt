@@ -1,0 +1,81 @@
+LIME Explanation for package shinchina-1.0.0:
+
+
+install.run: 1.0,
+API NAME:  install.run,
+Malicious Purposes:
+['Execute arbitrary code during the installation process.']
+
+
+getpass.getuser: 1.0,
+API NAME:  getpass.getuser,
+Malicious Purposes:
+['Obtain the username of the current user running the Python script.']
+
+
+socket.gethostname: 1.0,
+API NAME:  socket.gethostname,
+Malicious Purposes:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+requests.get: 1.0,
+API NAME:  requests.get,
+Malicious Purposes:
+['Performing unauthorized data extraction from a remote server', 'Conducting SQL injection attacks', "Gather sensitive information from the server's response data"]
+
+
+os.getcwd: 1.0,
+API NAME:  os.getcwd,
+Malicious Purposes:
+['Gain information about the directory structure of the target system.']
+
+
+setup: 1.0,
+API NAME:  setup,
+Malicious Purposes:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+
+In file setup.py line 10, the package holder use the sensitive api:
+[install.run],
+in function/global run,
+which may be used for:
+['Execute arbitrary code during the installation process.']
+
+
+In file setup.py line 11, the package holder use the sensitive api:
+[socket.gethostname],
+in function/global run,
+which may be used for:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+In file setup.py line 12, the package holder use the sensitive api:
+[os.getcwd],
+in function/global run,
+which may be used for:
+['Gain information about the directory structure of the target system.']
+
+
+In file setup.py line 13, the package holder use the sensitive api:
+[getpass.getuser],
+in function/global run,
+which may be used for:
+['Obtain the username of the current user running the Python script.']
+
+
+In file setup.py line 15, the package holder use the sensitive api:
+[requests.get],
+in function/global run,
+which may be used for:
+['Performing unauthorized data extraction from a remote server', 'Conducting SQL injection attacks', "Gather sensitive information from the server's response data"]
+
+
+In file setup.py line 18, the package holder use the sensitive api:
+[setup],
+in function/global <global>,
+which may be used for:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+

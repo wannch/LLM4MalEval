@@ -1,0 +1,2 @@
+malicious_packages_5T_extract/testjsonn1-0.1/testjsonn1-0.1/setup.py;16-17
+malicious_packages_5T_extract/testjsonn1-0.1/testjsonn1-0.1/testjsonn1/__init__.py;1-96

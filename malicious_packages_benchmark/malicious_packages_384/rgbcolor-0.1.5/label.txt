@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/rgbcolor-0.1.5/rgbcolor-0.1.5/rgbcolor/__init__.py;1-3,17-28

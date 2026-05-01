@@ -1,0 +1,32 @@
+{
+    "3": "y",
+    "43": "y",
+    "59": "y",
+    "64": "y",
+    "100": [
+        "VALID_RESPONSE"
+    ],
+    "153": [
+        "LLM_REASON_CONSISTENT_WITH_CODE"
+    ],
+    "173": "y",
+    "224": "y",
+    "225": [
+        "LLM_REASON_CONSISTENT_WITH_CODE"
+    ],
+    "233": "y",
+    "246": "y",
+    "255": "y",
+    "259": [
+        "LLM_REASON_CONSISTENT_WITH_CODE"
+    ],
+    "288": "y",
+    "316": "y",
+    "334": "y",
+    "348": [
+        "LLM_REASON_CONSISTENT_WITH_CODE"
+    ],
+    "354": "y",
+    "366": "y",
+    "372": "y"
+}

@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/manojmacpy-1.1.1/manojmacpy-1.1.1/setup.py;2-17

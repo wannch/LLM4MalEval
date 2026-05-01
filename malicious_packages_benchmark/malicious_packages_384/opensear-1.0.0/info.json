@@ -1,0 +1,7 @@
+{
+    "package_name": "opensear",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/opensear",
+    "package_file": "malicious_packages_5T/opensear/1.0.0/opensear-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/opensear-1.0.0"
+}

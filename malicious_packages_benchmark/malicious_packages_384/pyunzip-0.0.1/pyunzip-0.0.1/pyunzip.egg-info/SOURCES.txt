@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pyunzip/__init__.py
+pyunzip/post_install.py
+pyunzip.egg-info/PKG-INFO
+pyunzip.egg-info/SOURCES.txt
+pyunzip.egg-info/dependency_links.txt
+pyunzip.egg-info/entry_points.txt
+pyunzip.egg-info/top_level.txt

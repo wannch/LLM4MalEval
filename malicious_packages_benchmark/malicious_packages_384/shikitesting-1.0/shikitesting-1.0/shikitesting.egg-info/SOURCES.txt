@@ -1,0 +1,5 @@
+setup.py
+shikitesting.egg-info/PKG-INFO
+shikitesting.egg-info/SOURCES.txt
+shikitesting.egg-info/dependency_links.txt
+shikitesting.egg-info/top_level.txt

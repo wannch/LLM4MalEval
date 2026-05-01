@@ -1,0 +1,7 @@
+{
+    "package_name": "openzea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openzea",
+    "package_file": "malicious_packages_5T/openzea/1.0.0/openzea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openzea-1.0.0"
+}

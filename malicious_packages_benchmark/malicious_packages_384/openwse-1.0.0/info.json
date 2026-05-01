@@ -1,0 +1,7 @@
+{
+    "package_name": "openwse",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openwse",
+    "package_file": "malicious_packages_5T/openwse/1.0.0/openwse-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openwse-1.0.0"
+}

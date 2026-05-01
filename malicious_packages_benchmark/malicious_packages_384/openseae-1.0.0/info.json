@@ -1,0 +1,7 @@
+{
+    "package_name": "openseae",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openseae",
+    "package_file": "malicious_packages_5T/openseae/1.0.0/openseae-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openseae-1.0.0"
+}

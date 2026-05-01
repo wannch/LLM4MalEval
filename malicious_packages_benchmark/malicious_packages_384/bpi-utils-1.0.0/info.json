@@ -1,0 +1,7 @@
+{
+    "package_name": "bpi-utils",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_20240112-20240408/bpi-utils",
+    "package_file": "malicious_packages_20240112-20240408/bpi-utils/1.0.0/bpi-utils-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_20240112-20240408_extract/bpi-utils-1.0.0"
+}

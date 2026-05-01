@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/glovo-data-platform-declarative-airflow-999.9.11/glovo-data-platform-declarative-airflow-999.9.11/glovo_data_platform/declarative_airflow/__init__.py;1-40

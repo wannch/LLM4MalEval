@@ -1,0 +1,7 @@
+{
+    "package_name": "openrea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openrea",
+    "package_file": "malicious_packages_5T/openrea/1.0.0/openrea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openrea-1.0.0"
+}

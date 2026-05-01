@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/pyhttpproxifier-0.9.2/pyhttpproxifier-0.9.2/setup.py;2-7,13-15,27-36

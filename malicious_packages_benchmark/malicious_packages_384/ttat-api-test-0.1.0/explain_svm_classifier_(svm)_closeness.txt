@@ -1,0 +1,68 @@
+LIME Explanation for package ttat-api-test-0.1.0:
+
+
+os.uname: 1.0,
+API NAME:  os.uname,
+Malicious Purposes:
+['Gather information about the underlying operating system.']
+
+
+socket.gethostname: 1.0,
+API NAME:  socket.gethostname,
+Malicious Purposes:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+socket.gethostname: 1.0,
+API NAME:  socket.gethostname,
+Malicious Purposes:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+requests.get: 1.0,
+API NAME:  requests.get,
+Malicious Purposes:
+['Performing unauthorized data extraction from a remote server', 'Conducting SQL injection attacks', "Gather sensitive information from the server's response data"]
+
+
+os.getcwd: 1.0,
+API NAME:  os.getcwd,
+Malicious Purposes:
+['Gain information about the directory structure of the target system.']
+
+
+In file __init__.py line 7, the package holder use the sensitive api:
+[os.uname],
+in function/global <global>,
+which may be used for:
+['Gather information about the underlying operating system.']
+
+
+In file __init__.py line 8, the package holder use the sensitive api:
+[os.getcwd],
+in function/global <global>,
+which may be used for:
+['Gain information about the directory structure of the target system.']
+
+
+In file __init__.py line 12, the package holder use the sensitive api:
+[requests.get],
+in function/global <global>,
+which may be used for:
+['Performing unauthorized data extraction from a remote server', 'Conducting SQL injection attacks', "Gather sensitive information from the server's response data"]
+
+
+In file __init__.py line 12, the package holder use the sensitive api:
+[socket.gethostname],
+in function/global <global>,
+which may be used for:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+In file __init__.py line 12, the package holder use the sensitive api:
+[socket.gethostname],
+in function/global <global>,
+which may be used for:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+

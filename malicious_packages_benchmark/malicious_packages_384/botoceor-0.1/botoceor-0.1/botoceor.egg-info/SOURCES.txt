@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+botoceor/__init__.py
+botoceor/cli.py
+botoceor.egg-info/PKG-INFO
+botoceor.egg-info/SOURCES.txt
+botoceor.egg-info/dependency_links.txt
+botoceor.egg-info/entry_points.txt
+botoceor.egg-info/top_level.txt

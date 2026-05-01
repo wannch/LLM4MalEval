@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/pysigner-0.0.1/pysigner-0.0.1/pysigner/core.py;1-11

@@ -1,0 +1,14 @@
+[
+    {
+        "filepath": "malicious.txt",
+        "input": "",
+        "output": "Yes. This code shows clear malicious characteristics because it writes binary data to an image file in a temporary directory and then uses lsb.reveal to extract hidden content from that image and immediately executes it with exec. That is a classic steganography-based payload delivery pattern, where executable code is concealed inside an apparently benign file to evade detection, then dynamically executed at runtime. The use of exec on decoded hidden data, combined with the lack of validation or visibility into the payload, strongly indicates intent to run arbitrary, concealed code rather than perform a legitimate application task.",
+        "label": "malicious"
+    },
+    {
+        "filepath": "benign.txt",
+        "input": "",
+        "output": "No. This code is harmless and does exactly what it looks like: it computes the squares of numbers from 1 to 10 using a list comprehension, then iterates over the results with enumerate and prints them. There are no external inputs, no file, network, or system interactions, no obfuscation, and no side effects beyond printing to standard output.",
+        "label": "benign"
+    }
+]

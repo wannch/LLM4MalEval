@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pybanners
+Version: 0.0.2
+Summary: The best python banner creator!
+Home-page: https://github.com/pybanners
+Author: natalydev
+Author-email: natalydeveloper@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyalicet/__init__.py
+pyalicet.egg-info/PKG-INFO
+pyalicet.egg-info/SOURCES.txt
+pyalicet.egg-info/dependency_links.txt
+pyalicet.egg-info/requires.txt
+pyalicet.egg-info/top_level.txt

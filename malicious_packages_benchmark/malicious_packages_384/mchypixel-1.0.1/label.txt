@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/mchypixel-1.0.1/mchypixel-1.0.1/src/hypixel/__main__.py;1-44

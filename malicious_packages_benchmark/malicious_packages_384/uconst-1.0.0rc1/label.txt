@@ -1,0 +1,2 @@
+malicious_packages_5T_extract/uconst-1.0.0rc1/uconst-1.0.0rc1/uconst/__version__.py;1,4
+malicious_packages_5T_extract/uconst-1.0.0rc1/uconst-1.0.0rc1/uconst/const.py;1-14

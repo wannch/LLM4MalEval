@@ -1,0 +1,1922 @@
+{
+    "0": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to exfiltrate sensitive information such as the hostname, current working directory, and username by sending a GET request to a URL hosted on an \"oast.fun\" domain, which is often used in security testing and can be exploited for malicious data collection. This unauthorized data transfer is a sign of malicious intent."
+        }
+    },
+    "1": {
+        "deepseek-v3": {
+            "output": "yes. The code collects system information such as the operating system, system uptime, hostname, and import context, and then sends this data to a webhook site. While the data itself may not be highly sensitive on its own, the act of sending system - related information to an external site without clear user consent or a legitimate business need can be considered malicious behavior as it may pose a privacy risk."
+        }
+    },
+    "2": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it is collecting sensitive system information such as the hostname, current working directory, and username, and then sending this data to a URL that seems to be an out - of - band testing (OAST) domain. OAST domains are often used in security testing and malicious activities to exfiltrate data, and there is no indication that this data collection and transmission is for a legitimate purpose."
+        }
+    },
+    "3": {
+        "deepseek-v3": {
+            "output": "Yes. The code sends the system's environment variables to a URL ending with \".oastify.com\", which is often associated with Out - of - Band Testing (OAST) services used by attackers to exfiltrate data. This indicates that the code is likely malicious as it is potentially leaking sensitive system information."
+        }
+    },
+    "4": {
+        "deepseek-v3": {
+            "output": "Yes. The code sends the system's environment variables (which may contain sensitive information such as API keys, passwords, and other configuration details) to a URL that appears to be a domain used for out - of - band testing and potentially malicious activities. This unauthorized exfiltration of sensitive data makes the code malicious."
+        }
+    },
+    "5": {
+        "deepseek-v3": {
+            "output": "Yes. The code retrieves the system's environment variables and sends them to a potentially untrusted external URL (`https://c7128792b162.ngrok.app`). Environment variables can contain sensitive information such as API keys, usernames, and passwords, so sending this data without proper authorization can lead to a security breach, making the code malicious."
+        }
+    },
+    "6": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a function `notmalfunc` that decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command likely involves making an HTTP request to a specific URL and sending the environment variables. Since the code executes a system command from a hard - coded base64 string without proper input validation, it has the potential to perform unauthorized actions, making it malicious."
+        }
+    },
+    "7": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it creates a reverse shell. It attempts to connect to a specified host and port using a socket, then redirects the standard input, output, and error streams to the socket connection. Finally, it starts an interactive bash shell, allowing an attacker on the other end of the connection to execute commands on the system where this code runs."
+        }
+    },
+    "8": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it creates a reverse shell. It establishes a connection to a remote server (`8.tcp.ngrok.io` on port `14060`), redirects standard input, output, and error to the socket, and then starts an interactive shell. This allows an attacker on the remote server to execute commands on the host where this code runs, potentially leading to unauthorized access and control of the system."
+        }
+    },
+    "9": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it creates a reverse shell. It connects to a remote server (`6.tcp.ngrok.io` on port `14283`), redirects standard input, output, and error to the socket, and then starts an interactive shell. This allows an attacker on the remote server to execute commands on the system where this code runs, potentially leading to unauthorized access and control of the system."
+        }
+    },
+    "10": {
+        "deepseek-v3": {
+            "output": "Yes. The reason is that the code collects the system's environment variables and sends them to an external ngrok URL. Ngrok is often used for tunneling and can expose internal resources to the public. Sending sensitive system environment variables to an external URL without proper authorization or a legitimate business need can be a sign of data exfiltration, which is a malicious activity."
+        }
+    },
+    "11": {
+        "deepseek-v3": {
+            "output": "Yes. The provided Python code is malicious because it creates a reverse shell. It attempts to connect to a remote host (`6.tcp.eu.ngrok.io` on port `13090` in this case), redirects standard input, output, and error to the socket, and then spawns an interactive shell. This allows an attacker on the remote end to execute commands on the system where the code is running, potentially leading to unauthorized access and control of the system."
+        }
+    },
+    "12": {
+        "deepseek-v3": {
+            "output": "Yes. This code attempts to retrieve an authentication token from the Google Compute Engine metadata service and then sends this token to an external ngrok URL. Since ngrok URLs are often used for testing and can be easily set up by anyone, sending sensitive authentication tokens to such an untrusted external endpoint is a security risk and indicates malicious behavior as it could lead to unauthorized access if the token falls into the wrong hands."
+        }
+    },
+    "13": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it sends the user's home directory path (obtained via `os.path.expanduser(\"~\")`) to a Discord webhook. This is a potential privacy risk as it can expose sensitive information about the user's system, and the action is performed without the user's explicit consent."
+        }
+    },
+    "14": {
+        "deepseek-v3": {
+            "output": "Yes. The code decrypts an obfuscated string and attempts to write it to the `.profile` file of the user with UID 1000. The obfuscation and the action of writing potentially malicious content to a user's profile file suggest malicious intent. Also, the use of a bare `except` clause hides any potential errors that could occur during this process, which is a common tactic in malicious code to avoid detection."
+        }
+    },
+    "15": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it collects sensitive information such as the user's IP address, location details, device model, and operating system information. Then it sends this data to a Telegram chat using a hard - coded bot token and chat ID without the user's explicit consent, which is a violation of user privacy."
+        }
+    },
+    "16": {
+        "deepseek-v3": {
+            "output": "Yes. The code decrypts an obfuscated string (`h`) and attempts to write it to the `.profile` file of a user with a specific UID (1000) in the `/etc/passwd` file. The use of obfuscation and the act of writing potentially malicious content to a user's profile file are indicators of malicious intent."
+        }
+    },
+    "17": {
+        "deepseek-v3": {
+            "output": "Decision"
+        }
+    },
+    "18": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute encrypted data after decrypting it. This is a common technique used by malicious software to hide its malicious functionality. Since the exact nature of the decrypted and executed code is unknown, it poses a significant security risk, indicating that the code is likely malicious."
+        }
+    },
+    "19": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains suspicious operations. It imports the `requests` library and uses `Fernet` for decryption. The `exec` function is then used to execute the decrypted data, which could potentially run malicious code. Additionally, the class name and the encrypted data make the code hard to understand and analyze, which is often a sign of malicious intent."
+        }
+    },
+    "20": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to establish a connection to a remote host (85.159.212.47:61985) and then redirects standard input, output, and error to the socket. Finally, it spawns a shell, which is a common technique used in backdoor programs to give an attacker remote control over the system. This behavior is clearly malicious."
+        }
+    },
+    "21": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes and executes a base64 - encoded string. The decoded code attempts to download a JAR file from a GitHub repository and a JRE zip file from a Dropbox link. It then tries to run the downloaded JAR file. The use of base64 encoding to hide the actual code and the downloading of files from external sources without clear authorization or legitimate purpose are suspicious behaviors, which indicate potential malicious intent."
+        }
+    },
+    "22": {
+        "deepseek-v3": {
+            "output": "Yes. The code is likely malicious because it decrypts and executes a block of encrypted code using the `exec` function. The use of `exec` to run decrypted code can lead to the execution of arbitrary and potentially harmful commands, especially since the source and nature of the encrypted code are unknown. Also, the obfuscated class name might be an attempt to hide the true purpose of the code."
+        }
+    },
+    "23": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes an encrypted payload using the `exec` function. The exact nature of the code being executed is hidden by encryption, which is a common tactic used by malicious software to obfuscate its actions and avoid detection. Additionally, the code uses the `requests` library which could potentially be used to communicate with a malicious server, and it also has a recursive call to `install.run(self)` which might lead to unexpected and potentially harmful behavior."
+        }
+    },
+    "24": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains `exec` which executes arbitrary code. The code attempts to decrypt a ciphertext using `Fernet` and then executes the decrypted result. Since the source and nature of the decrypted code are unknown, it poses a high - risk security threat, which indicates malicious intent."
+        }
+    },
+    "25": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data is a significant red - flag as it can potentially execute malicious commands. Also, the long and random - looking class name might be used to obfuscate the code's true purpose. This behavior is commonly associated with malicious software that tries to hide its actions and perform unauthorized operations."
+        }
+    },
+    "26": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains obfuscated elements such as a long and random - looking class name. It also attempts to execute decrypted code using the `exec` function. The `exec` function can run arbitrary Python code, and when used in this context with encrypted data, it poses a high risk of executing malicious code, which indicates that the code is likely malicious."
+        }
+    },
+    "27": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to import the `requests` library and use `Fernet` for decryption. Then it uses `exec` to run the decrypted code. Since the decrypted code is not visible and could contain malicious commands, and the use of `exec` with encrypted data is a high - risk practice, it is likely to be malicious."
+        }
+    },
+    "28": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data. The `exec` function is used, which can run arbitrary Python code. Since the code being executed is encrypted and its source and content are unknown, it poses a significant security risk and can potentially be malicious."
+        }
+    },
+    "29": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data is of unknown origin and could potentially contain malicious code. Additionally, the code imports the `requests` library which can be used to communicate with external servers, and the use of encryption suggests an attempt to hide the true nature of the code being executed."
+        }
+    },
+    "30": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data is not visible in the code, and using `exec` to run potentially untrusted code can lead to security risks such as arbitrary code execution, making the code malicious."
+        }
+    },
+    "31": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it attempts to execute decrypted data using the `exec` function. The decryption key and the encrypted data are hard - coded in the script. The `exec` function can run arbitrary Python code, and since the source of the decrypted code is not clear, it could potentially perform harmful actions such as stealing data, modifying system files, or launching further attacks. Also, the class name is obfuscated, which is a common characteristic of malicious code to avoid easy detection."
+        }
+    },
+    "32": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains obfuscated class names and within the `run` method, it attempts to decrypt and execute a ciphertext using the `Fernet` encryption algorithm. The use of `exec` to run the decrypted data is a major security risk as the decrypted code could contain malicious instructions. Additionally, the code tries to import `requests` which could be used to communicate with external servers for malicious purposes."
+        }
+    },
+    "33": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. This is a high - risk behavior as the code being executed could perform malicious actions such as stealing data, infecting the system, or causing other security threats. Also, the use of long and random - looking class names might be an attempt to obfuscate the malicious intent."
+        }
+    },
+    "34": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted code using the `exec` function. Since the content of the encrypted code is not visible, it could potentially contain malicious instructions. Additionally, the code's obfuscated naming convention makes it less transparent and more likely to be malicious."
+        }
+    },
+    "35": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code. It imports the `requests` library and uses `Fernet` for decryption, then executes the decrypted code. This behavior of decrypting and running unknown code is a strong indication of malicious intent, as it can potentially perform unauthorized actions on the system."
+        }
+    },
+    "36": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` to run potentially malicious code retrieved from an encrypted source is a strong indicator of malicious intent. Additionally, the long and obfuscated class name is often a sign of an attempt to hide the true purpose of the code."
+        }
+    },
+    "37": {
+        "deepseek-v3": {
+            "output": "Yes. The provided Python code is likely malicious. It attempts to execute decrypted byte - code using the `exec` function. The decrypted code's content is unknown, and using `exec` in this way can lead to the execution of arbitrary and potentially harmful code. Also, the class and method names are obfuscated, which is a common tactic used by malicious code to hide its true intentions."
+        }
+    },
+    "38": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains elements that suggest malicious intent. It imports the `requests` library and uses `Fernet` for decryption and then executes the decrypted data using `exec`. The use of `exec` to run decrypted data from an unknown source is a significant security risk as it can execute arbitrary code, potentially leading to unauthorized actions on the system. Also, the encrypted data and the key are hard - coded, which is a common pattern in malware to hide malicious functionality."
+        }
+    },
+    "39": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute an external executable file (`kitty.exe`) and open a web - based video link in parallel using threads. Without clear context about the nature of `kitty.exe`, it poses a potential security risk as the executable could contain malicious code. Malicious actors often use such techniques to run harmful programs silently in the background while distracting the user with other content like a video."
+        }
+    },
+    "40": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file (`helper.exe`) from a URL obtained through an API call and then runs it. Since the source of the executable is not well - defined and could potentially be controlled by an attacker, it poses a significant security risk as the downloaded executable could be malicious. Also, the code catches all exceptions and simply passes, which means any errors during the download or execution process are silently ignored, making it harder to detect and troubleshoot potential security issues."
+        }
+    },
+    "41": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a remote URL and then runs it without any verification of the file's source or safety. This behavior is a common characteristic of malicious software, as it can be used to install malware on the system."
+        }
+    },
+    "42": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to send system information (hostname and username) to a domain that appears to be an Out - of - Band Security Testing (OAST) domain (`u0vzrwujfcehj9awqubvhxwh98fz3pre.oastify.com`). OAST domains are often used in security testing and malicious activities to exfiltrate data. This unauthorized data transmission indicates that the code has malicious intent."
+        }
+    },
+    "43": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it traverses the current directory and its sub - directories, compresses non - zip files into multiple zip archives, and then sends these zip files to a Telegram chat using a Telegram bot token and chat ID. It also sends a message to the same Telegram chat. This behavior indicates that the code is likely stealing and exfiltrating data from the system where it runs."
+        }
+    },
+    "44": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to steal sensitive information such as environment variables stored in `.env` files and SSH private keys (`id_rsa`). It then sends this data to a hard - coded URL (`http://3.95.136.197`), which is a clear indication of unauthorized data exfiltration."
+        }
+    },
+    "45": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a function `notmalfunc` that decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN and then running it. This behavior is often associated with malicious activities such as downloading and executing malware, so the code is considered malicious."
+        }
+    },
+    "46": {
+        "deepseek-v3": {
+            "output": "yes. The code downloads an executable file from a remote server and then launches it. The source of the file is a random IP address and port, which is not a well - known or trusted source. This behavior is often associated with malware distribution, as it can be used to install malicious software on the user's system without their full understanding or consent."
+        }
+    },
+    "47": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a function `notmalfunc` that decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN and then running it. This behavior is often associated with malicious activity as it can potentially download and execute malicious scripts or programs on the system."
+        }
+    },
+    "48": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN and then running it. Malicious actors can host malicious scripts on such URLs, so this code has the potential to execute malicious commands, thus it is considered malicious."
+        }
+    },
+    "49": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a function `notmalfunc` that decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN link and then running it. This behavior is often associated with malicious activities such as downloading and executing potentially harmful scripts, so the code is considered malicious."
+        }
+    },
+    "50": {
+        "deepseek-v3": {
+            "output": "Yes. The code creates a socket connection to a remote server and then redirects the standard input, output, and error streams to this socket. After that, it starts an interactive shell. This behavior is characteristic of a reverse shell, which allows an attacker to gain unauthorized access to the system running this code, so the code is malicious."
+        }
+    },
+    "51": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` with a decrypted string is a significant security risk as it can execute arbitrary code, which is a common characteristic of malicious software. Additionally, the obfuscated class name and the conditional execution based on the operating system type add to the suspicion of malicious intent."
+        }
+    },
+    "52": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. This is a high - risk operation as the decrypted code could be anything, including malicious commands that can harm the system, such as stealing data, installing malware, or performing unauthorized actions. Also, the use of hard - coded encryption keys and encrypted data within the code is a sign of potential malicious intent."
+        }
+    },
+    "53": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it collects the system's environment variables, encodes them, and then sends this data to a URL that appears to be a Burp Collaborator domain. Burp Collaborator is often used in security testing to detect out - of - band interactions, and in a non - testing context, sending system environment data to such a domain can be a sign of data exfiltration."
+        }
+    },
+    "54": {
+        "deepseek-v3": {
+            "output": "no.\nThe code's main functionality is to collect system information such as operating system, uptime, hostname, etc., and the context and call stack of the package import. It then sends this data to a webhook site for analytics purposes. There is no indication of any harmful actions like data theft, system damage, or unauthorized access, so it is not malicious."
+        }
+    },
+    "55": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `exec` to execute dynamically generated code. It attempts to download files from GitHub and then execute them. This behavior is often associated with malware as it can potentially download and run malicious software on the system without the user's proper consent or knowledge."
+        }
+    },
+    "56": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it attempts to decrypt and execute an encrypted payload using `exec` when the operating system is Windows. The use of `exec` to run decrypted code can potentially execute arbitrary and harmful commands, and the encrypted nature of the code makes it difficult to determine its exact functionality, which is a common characteristic of malicious software."
+        }
+    },
+    "57": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains `exec` which is used to decrypt and execute obfuscated code. Since the actual code being executed is hidden in encrypted form, it can potentially perform malicious actions such as data theft, system damage, or unauthorized access, so the code is considered malicious."
+        }
+    },
+    "58": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec()` function when the operating system is Windows. The use of `exec()` to run decrypted code is a significant security risk as the content of the encrypted data is unknown and could potentially contain malicious instructions. Additionally, the code's obfuscated class name is often a sign of malicious intent, as legitimate code usually has more meaningful and descriptive names."
+        }
+    },
+    "59": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and executes the decoded Python code. The decoded code attempts to create directories, write VBS and BAT files, and download an executable from a Discord CDN link and then run it. These actions are typical of malicious software that may install malware on the system, so the code is malicious."
+        }
+    },
+    "60": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains obfuscated strings, and it attempts to access the `/etc/passwd` file. It then tries to find a user with a specific UID (1000) and writes the de - obfuscated content of the obfuscated string `l` into the user's `.profile` file. This kind of behavior, especially the access to sensitive system files and the writing to user files, can be used for malicious purposes such as backdooring a user's account."
+        }
+    },
+    "61": {
+        "deepseek-v3": {
+            "output": "yes. The code attempts to download an executable file from a Discord attachment URL and save it to the user's local application data directory as \"explorer.exe\". Then it tries to run this downloaded file. Since the source of the file is not a trusted official source and the code is downloading and executing an external executable without proper verification, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "62": {
+        "deepseek-v3": {
+            "output": "No. The code simply tries to run an executable file named 'client.exe' located in the same directory as the Python script. There is no clear indication of malicious behavior such as data exfiltration, unauthorized system modification, or interaction with known malicious servers. It could be a normal part of a legitimate application that needs to call an external executable."
+        }
+    },
+    "63": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it downloads an executable file from a Discord attachment URL and saves it to the user's local system in a location similar to a legitimate Windows system file. Then it attempts to run the downloaded executable. Since the source of the executable is not a trusted official software distribution channel and the code doesn't have proper verification or authorization mechanisms, it may pose a significant security risk to the user's system, such as installing malware, stealing sensitive information, or causing other security issues."
+        }
+    },
+    "64": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it is designed to steal sensitive user information. It can extract browser passwords, credit card details, cookies, Discord tokens, and wallet data. Additionally, it sets itself to run on startup, has a keylogger to record user keystrokes, and can communicate with a remote server to send this stolen data, all without the user's proper consent."
+        }
+    },
+    "65": {
+        "deepseek-v3": {
+            "output": "Yes. The code retrieves the user's public IP address and sends it to a Discord webhook. Since IP addresses can be used to track and potentially identify a user, sending this information without proper authorization can be considered a malicious act as it violates the user's privacy."
+        }
+    },
+    "66": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `os.system` to download an executable file (`howl.exe`) from a GitHub repository and rename it to `RealtekHDAudioManager.exe`, then runs it. Since we have no information about the origin and safety of `howl.exe`, it could potentially be malicious software, thus making the code malicious."
+        }
+    },
+    "67": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains functions related to malicious activities such as altering clipboard data, screen capturing, stealing cookie databases, and exfiltrating data. It also has functions for achieving persistence on the system, which are common actions of malware. Additionally, the use of the word \"evil_package\" in the print statement further indicates its malicious nature."
+        }
+    },
+    "68": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious as it is designed to search for Telegram executables and related data directories on a system. It then tries to steal session files and send them to a Telegram bot using the Telegram API. This unauthorized access and exfiltration of user data is a clear indication of malicious intent."
+        }
+    },
+    "69": {
+        "deepseek-v3": {
+            "output": "No.\nThe code appears to be collecting system - related information such as the operating system, system uptime, hostname, and the import call stack. Then it sends this data to a webhook URL using a POST request. There is no indication of malicious behavior like stealing sensitive user data, modifying system files without permission, or launching attacks. It seems to be for analytics or diagnostic purposes."
+        }
+    },
+    "70": {
+        "deepseek-v3": {
+            "output": "yes. This code is malicious because it attempts to add itself to the Windows startup, ensuring it runs every time the system boots. It also continuously monitors the clipboard content and sends it to a Discord webhook, which is a clear violation of user privacy as it can potentially leak sensitive information such as passwords, credit card numbers, and other personal data."
+        }
+    },
+    "71": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it downloads a Python script from a Discord attachment link and saves it in the user's application data directory. Then it creates a batch file to run the downloaded script and adds this batch file to the Windows startup registry. Since the source of the downloaded script is not verified and could potentially contain harmful code, it poses a significant security risk."
+        }
+    },
+    "72": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `exec` to run base64 - decoded code. The decoded code attempts to download files from external sources (GitHub and Dropbox) and execute them. This behavior can be used to introduce malicious software or perform unauthorized actions on the system, so it is considered malicious."
+        }
+    },
+    "73": {
+        "deepseek-v3": {
+            "output": "Yes. The code is collecting sensitive system information such as the hostname, current working directory, and username, and then sending this data to a URL that appears to be an Out - of - Band Security Testing (OAST) domain. OAST domains are often used in security testing or malicious activities to exfiltrate data, and in this context, the data collection and transmission without proper authorization suggest malicious intent."
+        }
+    },
+    "74": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a function `damage_system` that attempts to delete all files in the `C:\\Windows\\System32` directory. This is extremely dangerous as it can cause the operating system to become unstable or completely inoperable, indicating malicious intent."
+        }
+    },
+    "75": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `subprocess.run` to execute a `curl` command with shell injection vulnerabilities. It collects sensitive system information such as the current directory listing, user identity, home directory listing, `/etc/passwd` content, and bash history, and then sends this information to an external server (`http://43.139.166.32`), which indicates potential malicious behavior."
+        }
+    },
+    "76": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` to run decrypted code is a significant security risk as the decrypted code could be malicious. Additionally, the long and random - looking class name might be used to obfuscate the code's true purpose, which is often a characteristic of malicious scripts."
+        }
+    },
+    "77": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and executes obfuscated code. Since the content of the decrypted code is not visible, it could potentially perform malicious actions such as data theft, system damage, or unauthorized access. Also, the use of obfuscation techniques like encryption and long, random - looking class names is often associated with malicious intent."
+        }
+    },
+    "78": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains the `exec` function which is used to execute the decrypted byte - string. Since we don't know the content of the decrypted data, it can potentially execute malicious code. Also, the code imports `requests` and `Fernet` which could be used for malicious activities such as exfiltrating data or encrypting files in a ransomware - like behavior."
+        }
+    },
+    "79": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an obfuscated piece of code. Since the content of the decrypted code is not visible, it poses a significant security risk as it could potentially perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "80": {
+        "deepseek-v3": {
+            "output": "Yes. The code has several concerning elements. It imports the `requests` library and uses `Fernet` from the `cryptography` module to decrypt a byte string and then executes the decrypted content using `exec`. Executing dynamically decrypted code is a high - risk behavior as the decrypted code could contain malicious instructions such as malware installation, data exfiltration, or system - level attacks."
+        }
+    },
+    "81": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` with an encrypted string is a significant red flag as it can execute arbitrary code, which could potentially be malicious. Additionally, the code checks for the Windows operating system (`os.name == \"nt\"`), which might indicate targeted malicious behavior on Windows systems."
+        }
+    },
+    "82": {
+        "deepseek-v3": {
+            "output": "Yes. The code is likely malicious because it attempts to decrypt and execute an encrypted payload using the `exec` function. The `exec` function can execute arbitrary Python code, and since the encrypted data is from an unknown source, it could potentially perform harmful actions such as stealing data, infecting the system, or performing unauthorized operations. Additionally, the long and obfuscated class name is often a sign of malicious intent as it can be used to hide the true purpose of the code."
+        }
+    },
+    "83": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes a byte - string. The content of the decrypted string is unknown, and it could potentially perform malicious actions such as stealing data, modifying system files, or launching attacks. Also, the class and method names are obfuscated, which is a common characteristic of malicious code."
+        }
+    },
+    "84": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with decrypted data can be a significant security risk as it can run arbitrary code, which is a common characteristic of malicious software. Also, the long and seemingly random class name and the obfuscated data suggest an attempt to hide the true purpose of the code."
+        }
+    },
+    "85": {
+        "deepseek-v3": {
+            "output": "yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` to run potentially malicious code retrieved from an encrypted string is a significant security risk, indicating that the code is likely malicious."
+        }
+    },
+    "86": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data's source and nature are unknown, which could potentially lead to the execution of malicious code. Also, the code fetches external resources using `requests` which might be from untrusted sources, increasing the risk of malicious behavior."
+        }
+    },
+    "87": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data's source and content are unknown, which can potentially lead to the execution of malicious code. Also, the code imports the `requests` library which could be used to communicate with external servers in a malicious way, and the overall structure with obfuscated class names is suspicious."
+        }
+    },
+    "88": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes an encrypted payload using the `exec` function. The use of `exec` to run decrypted code can lead to arbitrary code execution, which is a significant security risk. Additionally, the encrypted payload's content is unknown, and it could potentially perform harmful actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "89": {
+        "deepseek-v3": {
+            "output": "Yes. The code has several suspicious elements. It imports the `requests` library and uses `Fernet` for encryption and decryption. The most concerning part is the use of `exec` to run the decrypted byte - string. The `exec` function can execute arbitrary code, which makes it a high - risk operation. Malicious actors often use `exec` to run harmful code, so this code is likely malicious."
+        }
+    },
+    "90": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data using the `exec` function. The use of `exec` with data that is retrieved and decrypted can lead to the execution of arbitrary code, which is a significant security risk and is often associated with malicious behavior. Also, the class and variable names are obfuscated, which is a common tactic used in malicious code to hide its true purpose."
+        }
+    },
+    "91": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data. Since the content of the decrypted data is not visible, it could potentially contain malicious instructions. Also, the use of obfuscated class names might be an attempt to hide the true purpose of the code, which is a common characteristic of malicious software."
+        }
+    },
+    "92": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears malicious because it attempts to decrypt and execute obfuscated code using the `exec` function. The `exec` function can run arbitrary Python code, and in this case, it's decrypting a ciphertext which could potentially contain malicious commands. Also, the long and seemingly random class name might be used to obfuscate the code's true purpose."
+        }
+    },
+    "93": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. The use of `exec` in this context is a significant security risk as it can run arbitrary code, which could potentially be malicious. Additionally, the encrypted payload's content is unknown, and the code seems to be designed to run different actions based on the operating system (Windows in this case), which is a common tactic used by malicious software to target specific environments."
+        }
+    },
+    "94": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data is a common technique used by malicious software to hide its malicious payload. Additionally, the class and variable names are obfuscated, which is often a sign of malicious intent."
+        }
+    },
+    "95": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64-encoded string and uses `exec` to run the decoded code. The decoded code appears to create directories, write VBS and BAT scripts, and download and execute an external file from a Discord CDN link. These actions are characteristic of malware, which often tries to install itself and execute malicious programs on the target system."
+        }
+    },
+    "96": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses base64-encoded URLs and commands. It attempts to fetch data from a remote location and then executes the decoded data as a Python script. Since the source and content of the fetched data are unknown, it poses a high - risk of executing malicious code, making the code malicious."
+        }
+    },
+    "97": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file (`zwerve.exe`) from a GitHub raw link and then attempts to execute it. Since the source of the executable is not well - known and trusted, and the code blindly downloads and runs it without any verification, it poses a significant security risk as the downloaded file could potentially be malicious."
+        }
+    },
+    "98": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then executes it using the `exec` function. The decoded code appears to create directories, write scripts, download an executable from a Discord CDN link, and then run the downloaded executable. These actions are often associated with malware behavior, such as downloading and running unauthorized software on a user's system."
+        }
+    },
+    "99": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then executes it using the `exec` function. The decoded code appears to create directories, write VBS and BAT scripts, and download an executable from a remote server (`http://51.77.140.146:8086/dl/runtime`). These actions are often associated with malware behavior such as downloading and running unauthorized software on the user's system."
+        }
+    },
+    "100": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an obfuscated `exec` statement. The use of `exec` with obfuscated data is a common technique used by malicious code to hide its true functionality. Malicious actors often use such obfuscation to evade detection and execute malicious commands without being easily identified. Since it's difficult to determine the exact actions of the code due to the obfuscation, and the use of `exec` in this way is a red - flag, we can conclude that the code is likely malicious."
+        }
+    },
+    "101": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and uses `exec` to run the decoded code. The decoded code appears to create directories, write VBS and BAT files, and download an executable from a Discord CDN link, which are actions commonly associated with malware for tasks like downloading and running malicious software on the system."
+        }
+    },
+    "102": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to send the contents of a `keypair.json` file to a Telegram bot. Keypair files often contain sensitive information such as private keys, and sending this file to an external service without proper authorization can lead to the compromise of the user's account and loss of funds, especially in the context of Solana which is a blockchain platform."
+        }
+    },
+    "103": {
+        "deepseek-v3": {
+            "output": "Yes. 该代码是一个恶意的信息窃取工具，被称为“W4SP STEALER V2”。它的主要功能是从用户的浏览器中窃取各种敏感信息，如密码、Cookie、信用卡信息、历史记录、书签等，还会收集Discord、TikTok、Instagram等应用的账号信息。此外，它会将窃取到的信息通过Discord Webhook发送到指定的URL，还会对一些应用进行注入操作，如Exodus和Atomic钱包。这些行为严重侵犯了用户的隐私和安全。"
+        }
+    },
+    "104": {
+        "deepseek-v3": {
+            "output": "No. The code appears to be collecting system information such as the operating system, system uptime, hostname, and import context. Then it attempts to send this data to a webhook URL for analytics purposes. There is no indication of malicious behavior like data theft, system damage, or unauthorized access. The data being sent seems to be general system information that could be used for legitimate analytics."
+        }
+    },
+    "105": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to send all files in the current directory to a Telegram chat using a Telegram Bot API. This unauthorized data exfiltration can lead to the leakage of sensitive information from the user's system."
+        }
+    },
+    "106": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious. It creates a socket connection to an external domain (`dzgi0h7on1jhzdg0vknw9pp9309rxjl8.oastify.com` on port 10010), redirects standard input, output, and error to the socket, and then decodes a base32 - encoded string and tries to execute it with the `-i` option using `subprocess.call`. This behavior is characteristic of a reverse shell, which allows an attacker to gain unauthorized access to the system running this code."
+        }
+    },
+    "107": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment URL and saves it to the user's local AppData directory under the name \"explorer.exe\". Then it attempts to run the downloaded file. Since the source of the executable is not a trusted official source and the code is hiding the downloaded file by naming it like a system file, it is likely to be malicious. Malicious actors often use such techniques to distribute malware."
+        }
+    },
+    "108": {
+        "deepseek-v3": {
+            "output": "yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN and then running it, which is a common behavior of malware as it can potentially download and execute malicious scripts on the system."
+        }
+    },
+    "109": {
+        "deepseek-v3": {
+            "output": "Yes. The code creates a socket connection to a specific IP address and port, redirects standard input, output, and error to the socket, and then spawns a shell. This behavior is characteristic of a reverse shell, which is often used by attackers to gain unauthorized access to a system, so the code is malicious."
+        }
+    },
+    "110": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `os` module and checks the operating system. If it's Windows (`os.name == \"nt\"`), it imports `requests` and `Fernet` for decryption. Then it uses `exec()` to run the decrypted code. Since the content of the decrypted code is not visible and `exec()` can execute arbitrary code, there is a high risk that the decrypted code could be malicious. Also, the long and obfuscated class name might be an attempt to hide the true purpose of the code."
+        }
+    },
+    "111": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` to run decrypted code can potentially execute malicious commands, and the code doesn't provide clear information about what the decrypted code does, which poses a significant security risk."
+        }
+    },
+    "112": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes obfuscated code using the `exec` function. The decrypted code could potentially perform any number of malicious actions such as stealing data, installing malware, or causing system damage. Additionally, the use of random and long class names is often a sign of obfuscation used in malicious code."
+        }
+    },
+    "113": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains obfuscated and potentially malicious behavior. It attempts to decrypt and execute a block of encrypted data, which could contain harmful code. Also, the class and variable names are extremely long and obfuscated, which is often a sign of malicious intent as it can be used to hide the true purpose of the code."
+        }
+    },
+    "114": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data is of unknown origin and could contain malicious code. Additionally, it imports the `requests` library which can be used to communicate with external servers, potentially for malicious purposes such as exfiltrating data or downloading additional malware."
+        }
+    },
+    "115": {
+        "deepseek-v3": {
+            "output": "yes.\nThe code collects system information such as the operating system, uptime, hostname, and import context, and then sends this data to a third - party webhook site. Without clear user consent, this kind of data collection and transmission can be considered a privacy - invasive behavior, which makes the code potentially malicious."
+        }
+    },
+    "116": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to achieve persistence on different operating systems (Windows, Linux, macOS, and BSD). It writes scripts to specific locations and uses system commands like Windows Task Scheduler, registry keys, crontabs, and LaunchAgents to ensure the scripts are executed regularly. Additionally, the `loader` code fetches data from a Pastebin URL and executes it after base64 decoding, which could potentially lead to the execution of malicious code."
+        }
+    },
+    "117": {
+        "deepseek-v3": {
+            "output": "Yes. The code makes a request to an external URL (`http://43.139.166.32/finelib.html`), and then writes the content retrieved from that URL to a file in the `/tmp/pdsuax4_lib` directory. Since the source of the content is an external and untrusted URL, the code could potentially download and execute malicious code, which poses a security risk."
+        }
+    },
+    "118": {
+        "deepseek-v3": {
+            "output": "Yes. The code captures a screenshot of the user's screen and sends it to a Discord webhook without the user's explicit consent. This is a privacy - invasive action as it can potentially expose sensitive information on the user's screen. Additionally, it installs packages using `pip` without proper user interaction, which could lead to unexpected behavior or security risks if the packages are compromised."
+        }
+    },
+    "119": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it contains functions (`stealenv` and `stealsshkey`) that are designed to steal sensitive information. The `stealenv` function searches for and reads all `.env` files on the system, as well as captures the system environment variables, and then sends this data to a specified URL (`http://192.168.43.71:8000`). The `stealsshkey` function attempts to read the user's private SSH key (`id_rsa`) and sends it to the same URL. These actions are unauthorized data exfiltration, which is a common characteristic of malicious software."
+        }
+    },
+    "120": {
+        "deepseek-v3": {
+            "output": "The decision is: yes.\nThe reason is: The code downloads a shell script from an external URL and then executes it. The source of the URL is not well - known or verified, and there is a risk that the downloaded script could contain malicious commands. Additionally, the code uses `os.system` to run system commands (`apt update && apt install tmux -y`), which can be a security vulnerability if misused. Since the origin of the downloaded script is untrusted, it is likely to be malicious."
+        }
+    },
+    "121": {
+        "deepseek-v3": {
+            "output": "Yes. The code makes an HTTP POST request to a URL that appears to be an OAST (Out-of-Band Application Security Testing) service, sending the system's environment variables. This behavior is often associated with malicious activity as it can leak sensitive information from the system, such as API keys, passwords, and other configuration details."
+        }
+    },
+    "122": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an obfuscated `exec` statement. The `exec` function is used to execute arbitrary Python code, and in this case, the code being executed is base64 - encoded and decompressed, which makes it difficult to understand its true purpose. Such obfuscation is often a sign of malicious intent as it can be used to hide malicious actions like data exfiltration, system compromise, or unauthorized access."
+        }
+    },
+    "123": {
+        "deepseek-v3": {
+            "output": "Yes.\nThis code is malicious because it is a token grabber. It attempts to steal Discord tokens, Roblox cookies, Google Chrome passwords and cookies from the victim's machine. It also takes a screenshot of the victim's desktop. All the collected data is then sent to a specified Discord webhook. Additionally, it has functionality to bypass security measures like BetterDiscord and Token Protector, and it includes anti - debugging features to avoid detection in a virtual machine environment."
+        }
+    },
+    "124": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to send a zipped log file to a Telegram chat using a Telegram bot API. The path of the archive file seems obfuscated, and after the file is sent, it tries to delete a directory named 'windows__cache__'. These actions suggest that the code may be involved in unauthorized data exfiltration, which is a malicious behavior."
+        }
+    },
+    "125": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file (`CBLines.exe`) from an external GitHub repository and then attempts to execute it. Since the source and the content of the executable are not verified, it could potentially contain malicious code, posing a security risk."
+        }
+    },
+    "126": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a specific URL and then launches it. The source URL is an external IP - based address, and without proper context, it's impossible to verify the safety of the executable. Malicious actors often use such techniques to distribute malware, so there is a high risk that this code is being used for malicious purposes."
+        }
+    },
+    "127": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from an external URL and then launches it. The source IP address (194.163.191.205) is not a well - known, trusted source, and downloading and running an executable from an untrusted source poses a significant security risk as the file could be malicious."
+        }
+    },
+    "128": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` to run decrypted code is a major red flag as it can potentially execute any malicious code that the encrypted payload contains. Also, the code has a very obfuscated class name which is often a characteristic of malicious code designed to hide its true purpose."
+        }
+    },
+    "129": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it performs a variety of unauthorized and invasive actions. It installs itself into the system startup, steals sensitive information such as browser passwords, credit card details, Discord tokens, and user browsing history. It also has the functionality to take screenshots, access the webcam, and perform remote commands sent by a server. Additionally, it can encrypt and decrypt files, which could be used for ransomware - like attacks. All these actions are carried out without the user's consent, posing a significant threat to the user's privacy and security."
+        }
+    },
+    "130": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a URL and then runs it without any verification of the file's source or safety. This behavior is a significant security risk as the downloaded file could potentially be malicious software."
+        }
+    },
+    "131": {
+        "deepseek-v3": {
+            "output": "yes. The code downloads a Python script from a Discord URL and then attempts to execute it. Since the source of the script is not verified and could potentially contain malicious code, this poses a significant security risk, making the overall code malicious in nature."
+        }
+    },
+    "132": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it is designed to persistently run on the system by adding itself to the Windows startup mechanism. Additionally, it continuously monitors the user's clipboard and sends the copied text to a Discord webhook URL. This unauthorized data collection and transmission of the user's clipboard content violates user privacy."
+        }
+    },
+    "133": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads a Python script from a Discord attachment URL and then attempts to execute it using `subprocess.run`. Since the source and content of the downloaded script are unknown, it could potentially contain malicious code. Additionally, the code tries to install the `requests` library, which might be used by the downloaded script for further malicious activities like data exfiltration or network attacks."
+        }
+    },
+    "134": {
+        "deepseek-v3": {
+            "output": "Yes. The code collects system information such as the hostname, current working directory, and username, and then sends this data to an external website (\"https://kar.al\") without any indication that this is part of a legitimate and expected functionality. This behavior could potentially be used for malicious purposes like information gathering and unauthorized data exfiltration."
+        }
+    },
+    "135": {
+        "deepseek-v3": {
+            "output": "yes. The code decodes a base64 - encoded string and then attempts to execute it in a new thread. The decoded content is fetched from an external URL (`https://pastebin.com/raw/BPCvZd82`), and executing code from an untrusted external source is a clear sign of malicious behavior."
+        }
+    },
+    "136": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a large base64-encoded and compressed string that is decompressed and executed using `exec`. Since the actual code within this string is obfuscated and not directly visible, it poses a significant security risk as it could potentially perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "137": {
+        "deepseek-v3": {
+            "output": "Yes. The code is designed to download an executable file from a specified URL and then run it. Since the source of the executable is not well - known or trusted (a random GitHub raw link), there is a high risk that the downloaded executable could be malicious. Malicious actors can host harmful software on such links, and running an untrusted executable can lead to various security issues like system compromise, data theft, etc."
+        }
+    },
+    "138": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN and then running it. Since the source and content of the downloaded file are unknown, it poses a significant security risk, which indicates the code is malicious."
+        }
+    },
+    "139": {
+        "deepseek-v3": {
+            "output": "Yes. The code sends a POST request to a Discord webhook during the installation process. This behavior can be used for malicious purposes, such as exfiltrating information or notifying an attacker that the code has been executed on a target system. Since the code has potential for abuse and is performing an action that could be part of a malicious scheme, it is considered malicious."
+        }
+    },
+    "140": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment URL and silently runs it in the user's APPDATA folder. Since the source and nature of the executable are unknown, it could potentially be malicious software, such as malware or a virus, that may cause harm to the system or compromise user data."
+        }
+    },
+    "141": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it is designed to steal sensitive user information. It attempts to gather Discord tokens, browser passwords, cookies, and files related to cryptocurrency wallets, online accounts, and other sensitive data. The collected information is then sent to a Discord webhook, which can be used by an attacker to access user accounts, perform unauthorized transactions, or engage in other malicious activities."
+        }
+    },
+    "142": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to access potentially sensitive user account information files such as accounts.json and microsoft_accounts.json. It then sends this data to a webhook URL obtained from a base64 - encoded link. This behavior of gathering and transmitting user - specific account data without clear authorization is malicious as it poses a significant risk to user privacy and security."
+        }
+    },
+    "143": {
+        "deepseek-v3": {
+            "output": "Yes. This code is likely malicious because it searches for specific file types across the entire file system (starting from the root directory '/'), uploads these files to a remote server (the decoded `hash_web3_key` points to a URL), and then deletes the original files. These actions suggest unauthorized data exfiltration, which is a common characteristic of malicious software."
+        }
+    },
+    "144": {
+        "deepseek-v3": {
+            "output": "yes.\n代码中存在 `exec(binascii.unhexlify(bytes(...)))` 语句，它对一串经过十六进制编码的数据进行解码并执行。由于无法直接知晓这串数据解码后执行的具体内容，这种动态执行代码的方式会带来安全风险，极有可能执行恶意操作，所以判定该代码是恶意的。"
+        }
+    },
+    "145": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports `requests` and `Fernet` (a symmetric encryption library), and then decrypts and executes an encrypted string using `exec`. The content of the decrypted string is unknown and could potentially contain malicious code, such as code that steals data, installs malware, or performs other unauthorized actions."
+        }
+    },
+    "146": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted payload is not visible, it could potentially contain malicious code, such as malware installation, data exfiltration, or system compromise."
+        }
+    },
+    "147": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data fetched from a hard - coded encrypted string. Since the content of the decrypted data is unknown, it could potentially contain malicious instructions such as stealing data, modifying system files, or launching attacks. This kind of behavior is a significant security risk and indicates that the code may be malicious."
+        }
+    },
+    "148": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the encrypted data is unknown, it poses a significant security risk as malicious code could be executed, making the code malicious."
+        }
+    },
+    "149": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes a block of encrypted code using the `exec` function. The source and nature of the decrypted code are unknown, and it could potentially perform harmful actions such as data theft, system compromise, or other malicious activities."
+        }
+    },
+    "150": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and then executes an obfuscated code snippet when running on a Windows system (os.name == \"nt\"). The use of encryption to hide the code and the direct execution of the decrypted content suggest that it could perform unauthorized or harmful actions."
+        }
+    },
+    "151": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes an encrypted string using the `exec` function. The content of the decrypted string is unknown, and `exec` can run arbitrary Python code, which poses a significant security risk as it could potentially perform actions like data theft, system modification, or launching further attacks. Also, the code conditionally executes this risky operation on Windows systems (`os.name == \"nt\"`), which further indicates a targeted malicious behavior."
+        }
+    },
+    "152": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted code is not visible, it could potentially contain malicious instructions, such as stealing data, installing malware, or causing system damage."
+        }
+    },
+    "153": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports `requests` and `Fernet` (a symmetric encryption library), and then decrypts and executes an encrypted string using `exec`. Since the source and content of the decrypted code are unknown, it could potentially perform malicious actions such as stealing data, installing malware, or causing system damage."
+        }
+    },
+    "154": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. Since the content of the encrypted payload is unknown, it could potentially perform malicious actions such as data theft, system compromise, or other unauthorized operations. This poses a significant security risk, indicating that the code is malicious."
+        }
+    },
+    "155": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that runs decrypted code. The source and nature of the decrypted code are unknown, which poses a significant security risk as it could potentially execute malicious actions such as data theft, system compromise, or unauthorized access."
+        }
+    },
+    "156": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a block that decrypts and executes a ciphertext using the `exec` function when the operating system is Windows. Since the exact nature of the decrypted code is unknown, this can potentially execute malicious commands, making the code a security risk."
+        }
+    },
+    "157": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted data using the `exec` function when the operating system is Windows. Since the content of the encrypted data is unknown, it could potentially contain malicious code, posing a significant security risk."
+        }
+    },
+    "158": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it attempts to decrypt and execute an obfuscated piece of code using the Fernet encryption algorithm when the operating system is Windows. The source and nature of the decrypted code are unknown, and executing such code can potentially lead to unauthorized actions, system compromise, or data theft."
+        }
+    },
+    "159": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data is of unknown origin and could potentially contain malicious code. This is a significant security risk as `exec` can run any Python code, and without knowing the content of the decrypted data, it's likely that this code has malicious intent."
+        }
+    },
+    "160": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted data using the `exec` function when the operating system is Windows. Since the content of the encrypted data is unknown, it could potentially contain malicious instructions, which poses a significant security risk."
+        }
+    },
+    "161": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a function `decrypt_jsBIP39` which has an inner function `cli_keccak256`. This inner function makes a POST request to a hard - coded URL (`\"http://5.42.92.191:5000/post\"`) after base64 - encoding the input payload. There is no clear legitimate reason for this hard - coded URL and the data transmission, which could potentially be used to exfiltrate data or perform malicious actions, indicating that the code is malicious."
+        }
+    },
+    "162": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `requests` and `Fernet` libraries and then decrypts and executes a piece of encrypted code when the operating system is Windows. Since the content of the decrypted code is unknown, it poses a significant security risk as it could potentially perform malicious actions such as data exfiltration, system damage, or unauthorized access."
+        }
+    },
+    "163": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. The origin and nature of this encrypted code are unknown, and it could potentially perform malicious actions such as data exfiltration, system compromise, or other harmful operations, especially considering it is conditional on the operating system being Windows."
+        }
+    },
+    "164": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload when the operating system is Windows. Since the content of the decrypted code is not visible, it poses a significant security risk as it could contain malicious instructions such as data exfiltration, system compromise, or other harmful actions."
+        }
+    },
+    "165": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses the `curl` command to send system process information (`ps -elf` output) and environment variables to a URL (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`). This URL appears to be an Out-of-Band Testing (OAST) domain which is often used in security testing and malicious activities to exfiltrate data. Sending sensitive system information to an external, potentially untrusted domain is a sign of malicious behavior."
+        }
+    },
+    "166": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement which decrypts a ciphertext using `Fernet` and then executes the decrypted code. Since the actual code being executed is encrypted and not visible, it could potentially perform malicious actions such as stealing data, spreading malware, or causing system damage. This use of `exec` with encrypted code is a significant security risk and indicates the code is likely malicious."
+        }
+    },
+    "167": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function on Windows systems. Since the content of the encrypted data is unknown, it could potentially contain malicious code, which poses a significant security risk."
+        }
+    },
+    "168": {
+        "deepseek-v3": {
+            "output": "Decision"
+        }
+    },
+    "169": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted data is unknown, it poses a significant security risk as it could potentially contain malicious code."
+        }
+    },
+    "170": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts a ciphertext and then executes the decrypted code. Since the content of the decrypted code is not visible, it could potentially perform malicious actions such as stealing data, modifying system files, or launching attacks. Also, the import of `requests` might be used to communicate with malicious servers, and the use of encryption (`Fernet`) adds to the suspicion as it can be used to hide malicious behavior."
+        }
+    },
+    "171": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an obfuscated `exec` statement which decodes and decompresses a base64-encoded and zlib-compressed string before executing it. This kind of obfuscation is often used to hide malicious code, as it makes the actual functionality difficult to analyze at a glance. Since the exact nature of the code being executed is hidden and not immediately visible, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "172": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to make an HTTP GET request to a hard - coded external URL (`http://47.104.208.181:5000/search/{signer}`). Without clear context, this behavior of communicating with an external server could potentially be used for malicious purposes such as exfiltrating data or interacting with a malicious server. Also, the code catches all exceptions and simply passes, which may hide any errors that occur during the request, making it harder to detect abnormal behavior."
+        }
+    },
+    "173": {
+        "deepseek-v3": {
+            "output": "yes. The code downloads an executable file from a Dropbox link into the user's temporary application data folder and then runs it. Since the source and nature of the executable are unknown, it poses a significant security risk as the downloaded file could potentially be malicious software, such as a virus, trojan, or malware."
+        }
+    },
+    "174": {
+        "deepseek-v3": {
+            "output": "Decision: no\nReason: The code appears to be a network traffic analysis application. It captures network packets, extracts flow features, classifies the flows using pre - trained models, and visualizes the results. There are no obvious signs of malicious behavior such as data exfiltration, unauthorized system access, or code injection. It mainly focuses on legitimate network analysis and classification tasks."
+        }
+    },
+    "175": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data that is hidden from plain - sight analysis is a common technique used by malicious code to hide its true functionality and avoid detection, which poses a significant security risk."
+        }
+    },
+    "176": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute encrypted data using the `exec` function. The use of `exec` to run decrypted code is a significant security risk as it can potentially execute malicious code. Also, the code imports `requests` which could be used to communicate with external servers, and the encrypted data's origin and content are unknown, making it likely to be malicious."
+        }
+    },
+    "177": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a call to `exec` with encrypted data. The `exec` function can execute arbitrary Python code, and the encrypted data could potentially be malicious code. Also, the long and obfuscated class name is often a sign of an attempt to hide the true purpose of the code."
+        }
+    },
+    "178": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `exec` to run base64 - decoded code, which is a common technique used by malicious software to hide its true functionality. The decoded code attempts to download an executable file from a Discord CDN link and then runs it. Since the source and nature of the executable are unknown, it poses a significant security risk, indicating that the code is malicious."
+        }
+    },
+    "179": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment URL and saves it to the user's local application data directory as \"explorer.exe\". Then it attempts to run this downloaded file. Since the origin of the file is not from a trusted source and the code is downloading and executing an external executable without proper verification, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "180": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `exec` to run base64 - decoded code, which is a common technique used by malicious software to hide its true functionality. It also attempts to download an executable from a Discord CDN link and then runs it, which could potentially execute malicious code on the user's system."
+        }
+    },
+    "181": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `exec` to run base64 - decoded code, which is a common technique used by malicious software to hide its true functionality. Also, it attempts to download an executable file from a Discord CDN link and then tries to run it, which could potentially be a malicious binary. This behavior is often associated with malware that aims to infect a system."
+        }
+    },
+    "182": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then executes it using the `exec` function. This encoded code attempts to download an executable file from a Discord CDN link and then runs it. Downloading and executing external files without proper authorization is a common characteristic of malicious software, as it can potentially introduce malware onto the system."
+        }
+    },
+    "183": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends sensitive system information such as hostname, username, current working directory, and the output of `ls -la` to an external server (`https://eozjyg0uj1pesea.m.pipedream.net`). This behavior can be considered malicious as it may lead to unauthorized data leakage."
+        }
+    },
+    "184": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `subprocess` to execute a `curl` command that sends system information such as hostname, username, current working directory, and the output of `ls -la` to an external server (`https://eozjyg0uj1pesea.m.pipedream.net`). This behavior of collecting and transmitting sensitive system information to an external site without clear authorization indicates malicious intent."
+        }
+    },
+    "185": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends system - related information such as hostname, current user, current working directory, and the output of `ls -la` to a third - party URL (`https://eozjyg0uj1pesea.m.pipedream.net`). This behavior of exfiltrating system information to an external site is a characteristic of malicious code."
+        }
+    },
+    "186": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it attempts to access sensitive user account information files such as accounts.json and microsoft_accounts.json. It then decodes a base64 - encoded URL and sends the content of these files to a webhook. This unauthorized access and transmission of sensitive user data pose a significant security risk."
+        }
+    },
+    "187": {
+        "deepseek-v3": {
+            "output": "Decision: yes\nReason: The code contains functions to steal sensitive information. The `stealenv` function searches for `.env` files on the system and also captures environment variables, then sends them to the specified URL (`http://3.95.136.197`). The `stealsshkey` function attempts to read the user's SSH private key (`id_rsa`) and send it to the same URL. Sending such sensitive data without proper authorization is a malicious behavior."
+        }
+    },
+    "188": {
+        "deepseek-v3": {
+            "output": "yes. The code is malicious because it sends sensitive system information such as environment variables, system details from `os.uname()`, and the machine's public IP address to a Slack webhook URL. This information could be used by an attacker for malicious purposes like reconnaissance or exploitation of the system."
+        }
+    },
+    "189": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment URL and saves it to a system directory as \"explorer.exe\". There is no clear indication that this downloaded file is legitimate or safe. Malicious actors can use such techniques to distribute malware by disguising it as a legitimate system file and then executing it. This behavior is a strong indicator of potentially malicious activity."
+        }
+    },
+    "190": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord CDN link and saves it as \"explorer.exe\" in the user's local app data directory. Then it attempts to run this downloaded file. Since the source of the file is not clearly trusted and the code is downloading and executing an external binary without proper verification, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "191": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a string using the `exec` function when the operating system is Windows. Since the content of the encrypted string is unknown, it could potentially contain malicious code, which poses a significant security risk."
+        }
+    },
+    "192": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload when the operating system is Windows. Since the content of the encrypted data is not visible and could potentially contain malicious instructions, it poses a security risk and is considered malicious."
+        }
+    },
+    "193": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted code is not visible, there is a high risk that it could perform malicious actions such as data exfiltration, system compromise, or other harmful operations. The use of `exec` on potentially untrusted code is a major security concern."
+        }
+    },
+    "194": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt a ciphertext using the `Fernet` encryption algorithm and then execute the decrypted data using the `exec` function. Since the content of the decrypted data is unknown, it poses a significant security risk as it could potentially execute malicious code, especially when the operating system is Windows (checked by `os.name == \"nt\"`)."
+        }
+    },
+    "195": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes a block of encrypted code using the `exec` function. Since the content of the decrypted code is not visible, it could potentially perform harmful actions such as data theft, system compromise, or other malicious activities. Additionally, the conditional import of `requests` might be used to communicate with external servers which could be part of a malicious operation."
+        }
+    },
+    "196": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using `exec` when the operating system is Windows. The use of `exec` with an encrypted payload is a common technique used by malicious software to hide its malicious functionality, so this code is likely malicious."
+        }
+    },
+    "197": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses the `subprocess.run` function with `shell=True` to execute a `curl` command that sends sensitive system information such as hostname, username, current working directory, and the output of `ls -la` to a third - party URL (`https://eozjyg0uj1pesea.m.pipedream.net`). This behavior of collecting and transmitting system information without proper authorization or a clear legitimate purpose is a sign of malicious activity."
+        }
+    },
+    "198": {
+        "deepseek-v3": {
+            "output": "Yes.\nThe code downloads an executable file from a Discord attachment link and saves it to the user's local application data directory as \"explorer.exe\". Then it attempts to run this downloaded file. Since the source of the file is not verified and could potentially be malicious, and the code automatically downloads and executes it without proper user consent or verification, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "199": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an obfuscated piece of code using the Fernet encryption library when the operating system is Windows (os.name == \"nt\"). Since the actual code being executed is encrypted and not visible, it poses a significant security risk as it could potentially be malicious code that performs unauthorized actions such as data theft, system damage, or other harmful activities."
+        }
+    },
+    "200": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a large base64-encoded and possibly compressed string that is decoded and executed using `exec`. Since the actual code being executed is obfuscated and not visible in plain text, it is highly likely to be malicious as it could perform unauthorized actions such as data theft, system compromise, or spreading malware."
+        }
+    },
+    "201": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it attempts to execute decrypted data from a hard - coded encrypted string. The use of encryption and `exec` function is often a sign of malicious activity, as it can be used to run arbitrary and potentially harmful code. Additionally, the code's obfuscated class name makes it seem less legitimate, and it has a recursive call to `install.run(self)` which could lead to an infinite loop and resource exhaustion."
+        }
+    },
+    "202": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` to run decrypted code from an external source is a significant security risk as the code could perform malicious actions such as data theft, system compromise, or unauthorized access. Also, the long and obfuscated class name is often a sign of malicious intent to hide the true purpose of the code."
+        }
+    },
+    "203": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to import the `requests` library and uses `Fernet` to decrypt a ciphertext and then executes the decrypted data using `exec`. The use of `exec` with decrypted data from an unknown source is a significant security risk as it can execute arbitrary code, which is a common characteristic of malicious software. Also, the obfuscated class name might be an attempt to hide the code's true purpose."
+        }
+    },
+    "204": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data is a significant red flag as it can potentially execute malicious commands, especially when the source of the encrypted data is unknown. Also, the code's long and random class name might be used to obfuscate its true purpose."
+        }
+    },
+    "205": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data can be a sign of malicious activity as it allows the execution of arbitrary code, which could potentially harm the system by performing actions like stealing data, installing malware, or causing system disruptions."
+        }
+    },
+    "206": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted data using the `exec` function. The use of `exec` to run decrypted code is a significant security risk as the decrypted code could contain malicious instructions. Also, the source and nature of the encrypted data are unknown, which further indicates potential malicious intent."
+        }
+    },
+    "207": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `os` module and checks if the operating system is Windows. Then it imports `requests` and `Fernet` for encryption/decryption. It decrypts a ciphertext and uses `exec` to run the decrypted code. Since the content of the decrypted code is unknown and `exec` can execute arbitrary code, there is a high risk that it could perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "208": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute some data using the `exec` function. The data that is being decrypted could potentially contain malicious code, which poses a significant security risk as `exec` can execute arbitrary Python code. Also, the class and its behavior seem to be obfuscated with a very long and random - looking class name, which is often a sign of malicious intent."
+        }
+    },
+    "209": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. This is a common technique used by malicious software to hide its malicious code. The code also imports the `requests` library, which could potentially be used to communicate with a remote server, and the `Fernet` class from the `cryptography` library, which is used for encryption and decryption. The combination of these factors indicates that the code is likely malicious."
+        }
+    },
+    "210": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The source and nature of the encrypted code are unknown, which poses a significant security risk as it could potentially contain malicious instructions. Also, the class and method names are obfuscated, which is a common tactic used by malicious code to avoid detection."
+        }
+    },
+    "211": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data using the `exec` function. Since the content of the decrypted data is unknown, it could potentially contain malicious code that can harm the system, such as stealing data, performing unauthorized actions, or causing system disruptions. Also, the long and obfuscated class name might be used to hide the malicious intent."
+        }
+    },
+    "212": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to import the `requests` library and uses the `Fernet` class to decrypt a ciphertext and then executes the decrypted result using the `exec` function. The use of `exec` with decrypted data is extremely dangerous as the decrypted content could be malicious code. Since the source of the encrypted data is unknown and it's being executed directly, there's a high risk that this code is malicious."
+        }
+    },
+    "213": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` to run decrypted and potentially unknown code is a significant security risk, as it could execute malicious commands on the system. Additionally, the class and method names are obfuscated, which is a common characteristic of malicious code designed to hide its true intent."
+        }
+    },
+    "214": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` to run decrypted data is a potential security risk as the decrypted code could be malicious. Additionally, the code is highly obfuscated, which is often a characteristic of malicious software."
+        }
+    },
+    "215": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `requests` and `Fernet` modules, and then uses `exec` to run decrypted code. The use of `exec` to run dynamically decrypted code is a significant security risk as it can execute arbitrary code, which is a common characteristic of malicious software. Additionally, the code obfuscates the actual code being executed by encrypting it, which is often done to hide malicious intent."
+        }
+    },
+    "216": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. Since the content of the encrypted payload is unknown, it could potentially perform malicious actions such as data theft, system compromise, or other harmful operations. This use of `exec` with an encrypted and unknown payload is a significant security risk and indicates the code may be malicious."
+        }
+    },
+    "217": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The decryption key and the encrypted data are hard - coded in the script. Executing such obfuscated code can lead to unauthorized actions, such as malware installation, data exfiltration, or system compromise, which are typical characteristics of malicious software."
+        }
+    },
+    "218": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. The use of `exec` in this way is highly suspicious as it can run arbitrary code, and the encrypted payload could potentially be malicious. Also, the long and obfuscated class name is often a sign of an attempt to hide the true purpose of the code."
+        }
+    },
+    "219": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt a ciphertext using the `Fernet` encryption algorithm and then execute the decrypted data using the `exec` function. Since the content of the decrypted data is unknown, it could potentially contain malicious code. This kind of behavior, especially when the source and nature of the code to be executed are not clear, poses a significant security risk, indicating that the code is likely malicious."
+        }
+    },
+    "220": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted string. Since the content of the encrypted string is not visible, it could potentially contain malicious code, such as code that steals data, installs malware, or performs other unauthorized actions. This poses a significant security risk, indicating that the code is malicious."
+        }
+    },
+    "221": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data when the operating system is Windows. Since the content of the decrypted data is unknown, it could potentially contain malicious instructions, such as malware installation, data exfiltration, or other harmful actions."
+        }
+    },
+    "222": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a ciphertext using the `exec` function on Windows systems. The `exec` function can run arbitrary Python code, and since the source of the decrypted code is not clear and not under the normal control of the user, it has the potential to perform malicious actions such as stealing data, modifying system files, or causing other security issues."
+        }
+    },
+    "223": {
+        "deepseek-v3": {
+            "output": "Yes. The code checks if the operating system is Windows (using `os.name == \"nt\"`). If so, it imports encryption - related and networking libraries, decrypts a ciphertext using a hard - coded key, and then executes the decrypted data using the `exec` function. Since the source and nature of the decrypted code are unknown, it poses a significant security risk as it could potentially perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "224": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted code using the `exec` function when the operating system is Windows. Since the content of the encrypted code is unknown, it poses a significant security risk as it could potentially contain malicious instructions, such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "225": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted payload is unknown, it poses a significant security risk as it could contain malicious instructions, making the code malicious."
+        }
+    },
+    "226": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data when the operating system is Windows. Since the content of the encrypted data is unknown, it poses a significant security risk as it could potentially execute malicious commands, making the code malicious."
+        }
+    },
+    "227": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses the `subprocess.run` function with `shell=True` to execute a `curl` command that sends system information such as hostname, current user, current working directory, and the output of `ls -la` (list of files and directories) to a third - party URL (`https://eozjyg0uj1pesea.m.pipedream.net`). This behavior of exfiltrating potentially sensitive system information to an external server is a sign of malicious activity."
+        }
+    },
+    "228": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment URL and saves it as `explorer.exe` in the user's local application data directory. Then it attempts to run this downloaded file. Since the source of the file is untrusted and the code doesn't verify the integrity or safety of the downloaded executable, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "229": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to download an executable file from a Discord attachment link and save it as \"explorer.exe\" in the user's local app data directory. Then it tries to run this downloaded executable. Since the source of the file is from an untrusted Discord attachment and the file could potentially contain malicious code, this behavior is a strong indication of malicious intent."
+        }
+    },
+    "230": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file (`main.exe`) from a Discord attachment URL and saves it to the `AppData\\Local` directory under the user profile as `explorer.exe`. Then it attempts to run this downloaded file. Since the source of the file is a random Discord attachment and the code doesn't perform any verification of the file's integrity or origin, it poses a high - risk of being malicious, potentially leading to unauthorized access, data theft, or system compromise."
+        }
+    },
+    "231": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from an external URL and then runs it without any verification of the file's source or safety. This behavior poses a significant security risk as the downloaded file could be malicious, potentially leading to system compromise, data theft, or other harmful consequences."
+        }
+    },
+    "232": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted code is not visible, it could potentially perform malicious actions such as stealing data, installing malware, or causing system damage."
+        }
+    },
+    "233": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload when the operating system is Windows. Since the nature of the decrypted code is not visible and could potentially perform malicious actions such as data theft, system compromise, or other harmful activities, it is considered malicious."
+        }
+    },
+    "234": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted code is not visible, it poses a significant security risk as the executed code could be malicious."
+        }
+    },
+    "235": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes an encrypted payload using the `exec` function when the operating system is Windows. The use of `exec` to run decrypted code from an external source is a common technique used by malicious software to hide its malicious actions and gain unauthorized access or perform other harmful operations."
+        }
+    },
+    "236": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the decrypted code is not visible, it could potentially perform malicious actions such as data theft, system compromise, or other harmful operations."
+        }
+    },
+    "237": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted string. Since the content of the encrypted string is not visible, it could potentially contain malicious code, such as code that steals data, installs malware, or performs other unauthorized actions. This makes the code a security risk and can be considered malicious."
+        }
+    },
+    "238": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and executes an encrypted payload. Since the exact nature of the decrypted code is unknown, it poses a significant security risk as it could potentially perform malicious actions such as data exfiltration, system compromise, or other harmful operations."
+        }
+    },
+    "239": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the encrypted data is unknown, it poses a significant security risk as it could potentially execute malicious code."
+        }
+    },
+    "240": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted data using the `exec` function on Windows systems. Since the content of the encrypted data is not visible, it could potentially contain malicious code, which poses a significant security risk."
+        }
+    },
+    "241": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted string. Since the content of the encrypted string is not visible, it could potentially contain malicious code, such as code that steals data, installs malware, or performs other unauthorized actions. This poses a significant security risk, so the code is considered malicious."
+        }
+    },
+    "242": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it checks if the operating system is Windows (using `os.name == \"nt\"`), then it imports `requests` and `Fernet` (a symmetric encryption library). It then decrypts a ciphertext and executes the decrypted content using `exec()`. The use of `exec()` to run decrypted code from an unknown source is a significant security risk as it can potentially execute any arbitrary code, which could lead to unauthorized access, data theft, or other malicious activities on the system."
+        }
+    },
+    "243": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data using the `exec` function when the operating system is Windows. Since the content of the encrypted data is unknown, it could potentially contain malicious code, which poses a significant security risk."
+        }
+    },
+    "244": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload when the operating system is Windows. Since the content of the encrypted payload is unknown, it could potentially perform malicious actions such as data exfiltration, system compromise, or other harmful activities."
+        }
+    },
+    "245": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an obfuscated piece of code. Since the content of the decrypted code is not visible, it poses a significant security risk as it could potentially perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "246": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. The use of `exec` with an encrypted string is a significant security risk as it can potentially execute malicious code, making the code malicious."
+        }
+    },
+    "247": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and executes obfuscated code when the operating system is Windows. Since the exact nature of the code being executed is hidden and not directly visible, it poses a significant security risk and can potentially perform malicious actions."
+        }
+    },
+    "248": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted data using the `exec` function when the operating system is Windows. Since the content of the encrypted data is not visible, it could potentially contain malicious code, which poses a significant security risk."
+        }
+    },
+    "249": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the encrypted data is not visible, it could potentially contain malicious code that can cause harm to the system, such as stealing data, performing unauthorized actions, or causing system damage."
+        }
+    },
+    "250": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted byte string. Since the content of the decrypted code is not visible, it could potentially perform malicious actions such as data exfiltration, system compromise, or other harmful operations. This kind of behavior is a significant security risk and indicates that the code is likely malicious."
+        }
+    },
+    "251": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. The payload's content is unknown, and executing such code can lead to various malicious activities like data theft, system compromise, or unauthorized access. Since the code has the potential to execute malicious code, it is considered malicious."
+        }
+    },
+    "252": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data when the operating system is Windows. Since the content of the encrypted data is not visible, it could potentially contain malicious instructions. This kind of behavior, where unknown code is decrypted and executed, poses a significant security risk and indicates that the code is likely malicious."
+        }
+    },
+    "253": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload only on Windows systems (`os.name == \"nt\"`). Since the content of the decrypted data is not visible and could potentially contain malicious instructions, it poses a security risk and can be considered malicious."
+        }
+    },
+    "254": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement which decrypts a ciphertext using `Fernet` and then executes the decrypted code. Since the content of the ciphertext is unknown, it could potentially contain malicious code. Also, the code makes a network request using `requests` which might be used to download and execute malicious payloads. This behavior indicates a high risk of malicious intent."
+        }
+    },
+    "255": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `requests` and `Fernet` libraries and decrypts a ciphertext using `Fernet` and then executes the decrypted result with `exec`. Since the content of the decrypted data is unknown, it could potentially contain malicious commands, making this code a security risk and likely malicious."
+        }
+    },
+    "256": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears malicious because it decrypts and executes a block of encrypted code using the `exec` function when the operating system is Windows (`os.name == \"nt\"`). Since the content of the decrypted code is not visible, it could potentially perform harmful actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "257": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload on Windows systems. Executing code from an encrypted string in this manner is a common technique used by malicious software to hide its true functionality, and it poses a significant security risk as the content of the decrypted code is unknown and could potentially perform harmful actions."
+        }
+    },
+    "258": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data using the `exec` function when the operating system is Windows. Since the actual code being executed is encrypted and not visible, it poses a significant security risk as it could potentially perform malicious actions such as data theft, system compromise, or other harmful operations."
+        }
+    },
+    "259": {
+        "deepseek-v3": {
+            "output": "Yes. The code decrypts and executes a block of encrypted data using the `exec` function. Since the content of the decrypted data is not visible, it could potentially contain malicious code, such as code that steals data, installs malware, or performs other unauthorized actions. This poses a significant security risk."
+        }
+    },
+    "260": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted string using `exec` when the operating system is Windows. Since the content of the encrypted data is unknown, it could potentially contain malicious commands, which poses a significant security risk."
+        }
+    },
+    "261": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `requests` library and uses `Fernet` for decryption, then executes the decrypted data using `exec`. Since the decrypted data is not visible and could contain malicious code, there is a high risk that this code is malicious."
+        }
+    },
+    "262": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a part where it decrypts and executes a ciphertext using the `exec` function. Since the exact nature of the decrypted code is unknown, it could potentially perform malicious actions such as stealing data, modifying system files, or launching further attacks. This use of `exec` with encrypted data is a significant security risk and indicates that the code may be malicious."
+        }
+    },
+    "263": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. Since the content of the encrypted data is unknown, it poses a significant security risk as it could contain malicious code, making the code malicious."
+        }
+    },
+    "264": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data. Since the content of the decrypted data is not visible, it could potentially contain malicious instructions such as malware installation, data exfiltration, or system compromise. This behavior is a significant security risk and indicates that the code is likely malicious."
+        }
+    },
+    "265": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a call to `exec` which executes dynamically generated code. The code to be executed is decrypted using the `Fernet` encryption algorithm, and the source and nature of this decrypted code are unknown. This is a significant security risk as the decrypted code could potentially perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "266": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload on Windows systems using the `exec` function. The use of `exec` with an encrypted and unknown code is a significant security risk as the executed code could perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "267": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function when the operating system is Windows. The use of `exec` with an encrypted string poses a significant security risk as the contents of the decrypted string are unknown and could potentially be malicious code."
+        }
+    },
+    "268": {
+        "deepseek-v3": {
+            "output": "Yes. The code makes HTTP requests to a domain under the \"oastify.com\" which is often used in out - of - band testing to exfiltrate data or perform other malicious activities. This indicates that the code may be involved in data exfiltration or other unauthorized actions."
+        }
+    },
+    "269": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. Since the content of the encrypted data is not visible, it could potentially perform malicious actions such as data theft, system compromise, or other unauthorized operations. Also, the class name is obfuscated, which is a common characteristic of malicious code trying to hide its true purpose."
+        }
+    },
+    "270": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. The use of `exec` to run decrypted data is a high - risk practice as it can potentially execute malicious code. This behavior indicates that the code has the potential to perform harmful actions, so it is considered malicious."
+        }
+    },
+    "271": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains a call to `exec` with a decrypted byte string. Since the content of the decrypted string is not visible and `exec` can execute arbitrary Python code, it poses a significant security risk as it could potentially execute malicious commands. Also, the long and obfuscated class name might be an attempt to hide the true purpose of the code."
+        }
+    },
+    "272": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it attempts to decrypt and execute a block of encrypted code. The use of encryption to hide the code being executed is a common tactic used by malware to avoid detection. Additionally, the import of the `requests` library might indicate an intention to communicate with external servers, which could be part of a malicious operation such as exfiltrating data."
+        }
+    },
+    "273": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. The use of `exec` in this way is a significant security risk as it can execute arbitrary code, and the encrypted nature of the code being executed makes it impossible to determine its intent without further analysis, which strongly suggests malicious behavior."
+        }
+    },
+    "274": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains `exec` which is used to execute dynamically generated Python code. The encrypted code that is being decrypted and then executed using `exec` is of unknown origin and functionality, which poses a significant security risk as it could potentially perform malicious actions such as data theft, system damage, or unauthorized access. Additionally, the class and variable names are obfuscated, which is a common characteristic of malicious code to hide its true purpose."
+        }
+    },
+    "275": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes a piece of encrypted code. Since the content of the encrypted code is unknown, it could potentially perform malicious actions such as data theft, system damage, or unauthorized access. Also, the class and variable names are obfuscated, which is a common characteristic of malicious code to hide its true purpose."
+        }
+    },
+    "276": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. This is a high - risk operation as the decrypted code could perform malicious actions such as stealing data, installing malware, or causing system damage. Additionally, the long and random - looking class name may be used to obfuscate the code's true purpose."
+        }
+    },
+    "277": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The decrypted data's source and content are unknown, which poses a significant security risk as it could potentially contain malicious code. Additionally, the obfuscated class name might be used to hide the true purpose of the code."
+        }
+    },
+    "278": {
+        "deepseek-v3": {
+            "output": "Decision: yes\nReason: The code is designed to steal sensitive information such as Discord tokens, browser passwords, cookies, and files from specific directories on the user's system. It then sends this information to a Discord webhook, which is a clear indication of malicious activity aimed at unauthorized data collection and exfiltration."
+        }
+    },
+    "279": {
+        "deepseek-v3": {
+            "output": "No.\nThe code uses the `pyarmor` library from `pytransform`. `pyarmor` is a tool used for Python code obfuscation and protection, not for malicious activities. The code is likely just applying the obfuscation process to the current script, which is a legitimate use case for protecting intellectual property in Python code."
+        }
+    },
+    "280": {
+        "deepseek-v3": {
+            "output": "Decision: It's hard to definitively say yes or no.\n\nReason: The code itself does not show typical malicious behavior like data theft, system damage, or unauthorized access. It seems to be sending telemetry data to \"https://dependabot.org/log/\" which could be a legitimate way of collecting usage information. However, without more context about the purpose of this data collection and whether proper consent is obtained, it's not clear if this is a normal telemetry - collecting mechanism or something more malicious. If the data sent is sensitive or the collection is done without user knowledge, it could be considered malicious. But based on the code alone, it doesn't show obvious malicious intent."
+        }
+    },
+    "281": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment link and saves it to a system directory as \"explorer.exe\". Then it attempts to run this downloaded file. Since the source of the executable is not a trusted official source and the file could potentially contain malicious code, this behavior is suspicious and likely malicious."
+        }
+    },
+    "282": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads a script from a remote URL, makes it executable, runs it, and then deletes it. Since the source of the script is an external and untrusted URL, it could potentially contain malicious code, making this code a security risk."
+        }
+    },
+    "283": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `exec` to run base64 - decoded code, which is a common obfuscation technique used by malicious software. It then attempts to download an executable file from a Discord CDN link and run it. Downloading and executing external executables without proper authorization is a typical behavior of malware."
+        }
+    },
+    "284": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file (`main.exe`) from a Discord attachment URL and saves it as `explorer.exe` in the user's local application data directory. Then it attempts to run this downloaded file. Since the source of the downloaded executable is untrusted and the code doesn't perform any verification of the file, it poses a significant security risk and can potentially introduce malicious software to the system."
+        }
+    },
+    "285": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file (`main.exe`) from a Discord attachment URL and saves it as `explorer.exe` in the user's local application data directory. Then it attempts to run this downloaded executable. Since the source of the executable is not a well - known and trusted software distribution channel, and the code doesn't perform any verification of the downloaded file, it poses a significant security risk and can be considered malicious."
+        }
+    },
+    "286": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment link and saves it to the user's local application data directory as \"explorer.exe\". Then it attempts to run this downloaded file. Since the source of the executable is not a trusted and well - known location, it could potentially contain malicious code, making the overall code malicious."
+        }
+    },
+    "287": {
+        "deepseek-v3": {
+            "output": "yes\n这段代码存在明显的恶意特征。代码中大量使用`eval`函数，`eval`可以执行任意代码，这是一个高风险的操作，容易被利用来执行恶意代码。同时，代码将许多关键信息进行了编码处理，包括使用`base64`编码，这使得代码的真实意图难以直接判断，很可能是为了隐藏恶意行为。综合这些因素，可以判断这段代码是恶意的。"
+        }
+    },
+    "288": {
+        "deepseek-v3": {
+            "output": "yes\n该代码大量使用`eval`和`__import__`函数，并且将一些关键信息进行Base64编码，这种方式使得代码的真实意图被隐藏，难以直接看出其具体执行的操作。`eval`函数会执行任意传入的代码，这给代码带来了极大的安全风险，可能会执行恶意代码，因此判断该代码是恶意的。"
+        }
+    },
+    "289": {
+        "deepseek-v3": {
+            "output": "yes\n这段代码使用了大量的字节编码和`eval`函数。`eval`函数会执行任意传入的代码，这是一个非常危险的操作，因为它可以执行恶意代码。并且代码中大量使用了Base64编码来隐藏代码逻辑，使得难以直接分析其具体功能。这种隐藏和使用`eval`的方式很可能是为了执行恶意操作，比如窃取信息、破坏系统等，因此判断为恶意代码。"
+        }
+    },
+    "290": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute encrypted data using `exec` after decrypting it. Since the content of the decrypted data is not visible and could potentially contain malicious commands, this is a significant security risk, indicating that the code is likely malicious."
+        }
+    },
+    "291": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. The source and nature of the decrypted data are unknown, and it could potentially contain malicious code. Also, the long and obfuscated class name might be used to hide the true intent of the code, which is a common characteristic of malicious software."
+        }
+    },
+    "292": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data is a significant red flag as it can potentially execute malicious commands, especially when the source and nature of the encrypted data are unknown. This behavior indicates a high probability of malicious intent."
+        }
+    },
+    "293": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute encrypted code using the `exec` function. This is a high - risk behavior as it can run arbitrary Python code, which could potentially be malicious. Also, the long and obfuscated class name is often a sign of malicious intent, aiming to hide the true function of the code."
+        }
+    },
+    "294": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a block of encrypted data using `exec`. Since the content of the decrypted data is unknown, it could potentially contain malicious code. Also, the use of `exec` in this way is a high - risk practice as it can execute arbitrary code, which is a common technique used in malicious software."
+        }
+    },
+    "295": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with decrypted data from an arbitrary source is a significant security risk as it can potentially run malicious code on the system. This behavior is characteristic of malicious software designed to perform unauthorized actions."
+        }
+    },
+    "296": {
+        "deepseek-v3": {
+            "output": "Yes. The code decrypts and executes an encrypted payload using `exec`. Since the content of the decrypted data is unknown, it could potentially contain malicious code. This kind of behavior, especially the use of `exec` on decrypted data, poses a significant security risk and indicates that the code may be malicious."
+        }
+    },
+    "297": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The `exec` function can run arbitrary Python code, and in this case, the decrypted code is not visible, which poses a significant security risk as it could potentially perform malicious actions such as data theft, system damage, or unauthorized access."
+        }
+    },
+    "298": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. Since the content of the encrypted payload is not visible, it could potentially perform malicious actions such as data theft, system compromise, or unauthorized access. Also, the class and variable names are obfuscated, which is a common characteristic of malicious code to make it harder to analyze."
+        }
+    },
+    "299": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with encrypted data is a significant security risk as the decrypted code could potentially perform malicious actions such as data theft, system compromise, or unauthorized access. Also, the long and random - looking class name might be an attempt to obfuscate the malicious intent."
+        }
+    },
+    "300": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it imports the `requests` library and uses `Fernet` for encryption. It then decrypts a byte string and executes the decrypted code using `exec`. Since the content of the decrypted code is not visible, it could potentially perform harmful actions such as stealing data, infecting the system, or engaging in other malicious activities. Also, the class and method naming are obfuscated, which is a common characteristic of malicious code to avoid easy detection."
+        }
+    },
+    "301": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The decrypted code is not visible, and it could potentially perform malicious actions such as stealing data, installing malware, or causing system damage. Additionally, the class name and variable names are extremely long and obfuscated, which is a common tactic used in malicious code to make it harder to understand and analyze."
+        }
+    },
+    "302": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `requests` and `Fernet` libraries. In the Windows environment (`os.name == \"nt\"`), it uses `Fernet` to decrypt a ciphertext and then executes the decrypted result using `exec`. Since the content of the decrypted data is unknown, it could potentially contain malicious code, making this code malicious."
+        }
+    },
+    "303": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it decrypts and executes obfuscated code using the `exec` function. The use of `exec` to run decrypted data can lead to the execution of arbitrary and potentially harmful code, especially considering the long and hard - to - read class name and the complex decryption process. Additionally, it imports `requests`, which could be used to communicate with external servers and download more malicious code."
+        }
+    },
+    "304": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. Since the decrypted code is not visible, it could potentially perform malicious actions such as data theft, system compromise, or other harmful activities. Also, the class and variable names seem to be obfuscated, which is often a sign of malicious intent."
+        }
+    },
+    "305": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute obfuscated code using the `exec` function. The use of `exec` with decrypted data can be extremely dangerous as it allows the execution of arbitrary code, which is a common characteristic of malicious software. Additionally, the code's long and random - looking class name may be an attempt to obfuscate its true purpose."
+        }
+    },
+    "306": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to execute decrypted data using the `exec` function. Since the decrypted data is not visible and could contain any arbitrary code, it poses a high - risk security threat as it can potentially perform malicious actions such as data theft, system compromise, or unauthorized access."
+        }
+    },
+    "307": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and then executes an encrypted payload. The use of `exec` to run decrypted data is a common technique in malicious software as it can be used to execute arbitrary and potentially harmful code, especially when the source of the encrypted data is unknown. Also, the obfuscated class name might be an attempt to hide the true purpose of the code."
+        }
+    },
+    "308": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload using the `exec` function. This is a high - risk behavior as the decrypted code could contain malicious instructions, such as stealing data, installing malware, or performing unauthorized system modifications. Additionally, the use of obfuscated class names makes the code suspicious and hard to understand at a glance, which is a common characteristic of malicious code."
+        }
+    },
+    "309": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains suspicious behavior. It imports the `requests` library and uses `Fernet` for decryption. The `exec` function is then used to execute the decrypted data. The `exec` function can run arbitrary code, and since the decrypted data is not visible in plain - text, it could potentially be malicious code. Also, the long and obfuscated class name might be an attempt to hide the true purpose of the code."
+        }
+    },
+    "310": {
+        "deepseek-v3": {
+            "output": "Yes. The code imports the `requests` and `Fernet` libraries and decrypts and executes encrypted code using `exec()`. The use of `exec()` to run decrypted code is a significant security risk as it can execute any arbitrary Python code, which could potentially be malicious. Additionally, the encrypted code's content is not visible, so it's impossible to know what actions it will perform, making the code highly suspicious."
+        }
+    },
+    "311": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute a piece of encrypted code using the `exec` function. Since the content of the encrypted code is unknown, it could potentially perform malicious actions such as stealing data, compromising system security, or causing damage to the system. This is a significant security risk, so the code is considered malicious."
+        }
+    },
+    "312": {
+        "deepseek-v3": {
+            "output": "Yes.\nThe code is highly obfuscated, which is a common characteristic of malicious code. It uses variable renaming, custom class methods, and complex logic with seemingly random operations and conditions. Additionally, it contains base64 - like data and uses functions like `exec` in an obfuscated way. The `exec` function can be extremely dangerous if used maliciously as it can execute arbitrary Python code, and in this code, the way `exec` is involved in the execution flow indicates a high potential for malicious behavior."
+        }
+    },
+    "313": {
+        "deepseek-v3": {
+            "output": "Yes. The code is highly obfuscated, renaming built - in functions and using non - descriptive variable names. It also contains encoded data (`b'x\\x9c...'`), and there are operations involving `exec` and `eval` functions which are used to execute arbitrary code. This indicates that the code may be designed to perform malicious actions such as running unauthorized commands or accessing sensitive information."
+        }
+    },
+    "314": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses the `subprocess` module to run a PowerShell command with an encoded command. The encoded command points to a URL on a domain that is not a well - known, trusted domain (drobbox.com, likely a misspelling of a malicious domain). This indicates that the code is likely attempting to download and execute a potentially malicious file (`windef.exe`), which makes it malicious."
+        }
+    },
+    "315": {
+        "deepseek-v3": {
+            "output": "Yes. The code fetches content from a Pastebin URL and writes it to a local file named `__cache.py`, then attempts to execute this file. Since the content of the URL is not known, it could contain malicious code, which poses a significant security risk."
+        }
+    },
+    "316": {
+        "deepseek-v3": {
+            "output": "It is difficult to definitively say whether this code is malicious with the information provided, but we can lean towards \"no\" for the following reason:\n\nThe code appears to be using `pyarmor` which is a tool for obfuscating and protecting Python code. The obfuscation process is typically used by developers to prevent reverse - engineering of their legitimate code rather than for malicious purposes. There are no obvious signs of malicious behavior such as code that attempts to access sensitive data without authorization, spread malware, or perform unauthorized system modifications in the provided snippet. However, it's important to note that obfuscation can also be misused by attackers to hide malicious code, but based on the visible code alone, we assume it's a legitimate use of the obfuscation tool.\n\nDecision: no\nReason: The code uses `pyarmor` which is a code obfuscation tool commonly used for legitimate code protection, and there are no obvious signs of malicious behavior in the provided code."
+        }
+    },
+    "317": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a Discord attachment URL and saves it to the user's local application data directory as \"explorer.exe\". Then it attempts to run this downloaded file. Since the source of the executable is from an external and untrusted Discord attachment, it poses a high - risk of being malicious, and the code's actions are characteristic of malware behavior such as downloading and executing external files without proper verification."
+        }
+    },
+    "318": {
+        "deepseek-v3": {
+            "output": "Yes. The code has several malicious hallmarks. It attempts to download an executable file (`main.exe`) from a Discord attachment URL and save it as `explorer.exe` in the user's local application data directory. Then it tries to run this downloaded file. Since the source of the file is untrusted and the code is downloading and executing an external binary without proper user consent or verification, it poses a significant security risk and can potentially lead to system compromise."
+        }
+    },
+    "319": {
+        "deepseek-v3": {
+            "output": "yes. The code is malicious because it collects sensitive system information such as environment variables, system details from `os.uname()`, and the external IP address. It then sends this information to a Slack webhook URL. This unauthorized collection and transmission of system information can pose a significant security risk, potentially allowing an attacker to gain access to the system or sensitive data."
+        }
+    },
+    "320": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends system information such as hostname, current user, current working directory, directory listing, and user ID to a third - party server (`https://eot0n2yp3autvqq.m.pipedream.net`). This could potentially be used for malicious purposes like information gathering and reconnaissance by an attacker."
+        }
+    },
+    "321": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it reads AWS credentials from the user's local `.aws/credentials` file and then sends these sensitive credentials to a Pabbly webhook URL (`https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjUwNTY4MDYzMzA0MzQ1MjZiNTUzNzUxMzUi_pc`). Unauthorized access to AWS credentials can lead to serious security breaches, such as unauthorized resource usage and data exposure."
+        }
+    },
+    "322": {
+        "deepseek-v3": {
+            "output": "no.\nThe code appears to be a legitimate Python script. It contains functions to get a UUID from the Mojang API, install a Python package from a GitHub repository if it's not already installed, and import the package. There are no obvious signs of malicious behavior such as data exfiltration, system damage, or unauthorized access. It seems to be focused on setting up and using a specific Python package."
+        }
+    },
+    "323": {
+        "deepseek-v3": {
+            "output": "No. The code does not show any signs of malicious behavior. It primarily consists of functions to get a UUID from the Mojang API, install a Python package from a Git repository if it's not already installed, and import the package. There are no actions like data theft, system damage, or unauthorized access in the provided code."
+        }
+    },
+    "324": {
+        "deepseek-v3": {
+            "output": "No.\nThe code mainly focuses on installing necessary Python packages, either from PyPI or a GitHub repository, and then using external APIs (Mojang and Hypixel) to retrieve and display information about a Minecraft player's status. There are no obvious malicious actions such as data exfiltration, system damage, or unauthorized access in the code. It appears to be a legitimate program for getting Minecraft player status."
+        }
+    },
+    "325": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains obfuscated code in the form of base64 - encoded and zlib - compressed data that is decompressed and executed using the `exec` function. Malicious actors often use such obfuscation techniques to hide the true nature of their code, which can perform unauthorized actions such as data theft, system compromise, or launching attacks. Since the exact functionality of the executed code is hidden, it poses a high risk of being malicious."
+        }
+    },
+    "326": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to decrypt and execute an encrypted payload when the operating system is Windows. Since the content of the encrypted data is unknown, it poses a significant security risk as it could potentially contain malicious code, such as malware or scripts that perform unauthorized actions."
+        }
+    },
+    "327": {
+        "deepseek-v3": {
+            "output": "Yes. The code makes a request to an oastify domain which is often used in security testing for out - of - band detection of vulnerabilities. Additionally, it sends the current working directory information to a Discord webhook, which could potentially be used for malicious data exfiltration."
+        }
+    },
+    "328": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains an `exec` statement that decrypts and executes an obfuscated code. The origin and functionality of the decrypted code are unknown, which poses a significant security risk as it could perform malicious actions such as data theft, system compromise, or spreading malware."
+        }
+    },
+    "329": {
+        "deepseek-v3": {
+            "output": "Yes. The code has several suspicious elements. It has an extremely long and obfuscated class name, which is often a sign of malicious intent. It imports the `requests` library and uses `Fernet` for decryption. The `exec` function is then used to execute the decrypted data, which can run arbitrary code. This combination of actions indicates that the code is likely malicious as it has the potential to download and execute harmful code on the system."
+        }
+    },
+    "330": {
+        "deepseek-v3": {
+            "output": "Yes. The provided Python code contains an obfuscated string that is decoded and executed using `exec`. Since the code within this string is not visible in a clear form, it could potentially perform malicious actions such as data theft, system compromise, or unauthorized access. The presence of obfuscation is a common tactic used by malicious code to hide its true functionality."
+        }
+    },
+    "331": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends system information such as hostname, current user, current working directory, and the output of `ls -la` to a third - party URL (`https://eozjyg0uj1pesea.m.pipedream.net`). This behavior of collecting and transmitting sensitive system information to an external site without clear authorization can be considered malicious as it may pose a security risk."
+        }
+    },
+    "332": {
+        "deepseek-v3": {
+            "output": "No.\nThe code contains a function `b64d` to decode base64 strings and a function `notmalfunc` that decodes the base64 string \"bm90ZXBhZA==\" and uses `os.system` to execute it. After decoding, the string is \"notePad\", which typically refers to opening the Windows Notepad application. There is no indication of malicious behavior such as stealing data, causing system damage, or unauthorized access in this code."
+        }
+    },
+    "333": {
+        "deepseek-v3": {
+            "output": "Yes. The code fetches an executable file from a remote URL and then runs it without any proper verification of the source or the content of the file. This behavior is extremely risky as the downloaded executable could be malicious, potentially leading to unauthorized access, data theft, or other security threats."
+        }
+    },
+    "334": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command involves downloading a file from a Discord CDN and then running it. Since the source and content of the downloaded file are unknown, it poses a significant security risk, which indicates that the code is malicious."
+        }
+    },
+    "335": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded result. Since the actual content of the base64 - encoded string (`CODE_REPLACE`) is unknown, it could potentially be malicious code that the attacker intends to run on the system. The use of `os.system` to execute arbitrary decoded code presents a significant security risk."
+        }
+    },
+    "336": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then executes it as a system command using `os.system`. Since the base64 - encoded content is represented as \"CODE_REPLACE\", it's not clear what the actual command is. Malicious actors could use this method to hide malicious commands in the base64 - encoded string, so there is a high risk of malicious behavior."
+        }
+    },
+    "337": {
+        "deepseek-v3": {
+            "output": "Yes. The code defines a function `notmalfunc` that decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command appears to use `curl` to fetch a file from a remote site and pipe it to `bash`, which is a common technique used by malicious scripts to download and execute code from a remote source."
+        }
+    },
+    "338": {
+        "deepseek-v3": {
+            "output": "yes. The code appears to be malicious because it collects system information such as uptime, OS details, and IP address, and then sends this data to a specific IP address (64.23.142.76) on port 9090 without any indication that this is a legitimate action, like user consent or being part of a normal system monitoring process. This behavior is consistent with data exfiltration, which is a common malicious activity."
+        }
+    },
+    "339": {
+        "deepseek-v3": {
+            "output": "Yes. The code sends system information (OS name, current working directory, and hostname) to a suspicious domain (\"zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax\"). Legitimate applications typically do not send such data to random or untrusted domains, which indicates a potential malicious intent such as data exfiltration."
+        }
+    },
+    "340": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it collects system information such as the hostname, current working directory, and username, and then sends this data to a URL that seems to be an out - of - band testing service domain (`.oast.fun`). This indicates that the code is likely designed to exfiltrate sensitive system information to an external and potentially untrusted location."
+        }
+    },
+    "341": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `os.system` to execute a command that is base64 - encoded (`Y2FsYw==`). Decoding `Y2FsYw==` results in `calc`, which is the Windows calculator command. However, the use of base64 - encoded commands can be a sign of obfuscation, a common technique used by malicious code to hide its true intent. This makes the code suspicious and likely to be malicious."
+        }
+    },
+    "342": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `os.system` to execute a command that is base64 - encoded. Decoding `Y2FsYyAmJiBub3RlcGFk` results in `calc && notepad`, which means it will open the calculator and notepad applications. This kind of hidden command execution within the code can be a sign of malicious intent as it may be used to perform unauthorized actions without the user's clear knowledge."
+        }
+    },
+    "343": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `os.system` to execute a base64 - encoded command. Base64 encoding is often used to obfuscate malicious commands. In this case, when decoded, \"Y2FsYw==\" translates to \"cal\", which might seem harmless as it just displays a calendar. However, the use of encoding to hide a simple command is suspicious behavior, and it could potentially be used to hide more malicious commands in a real - world scenario."
+        }
+    },
+    "344": {
+        "deepseek-v3": {
+            "output": "No. The reason is that although the code uses base64 decoding and the `os.system` function which could potentially be misused for malicious purposes, the base64 - decoded string \"notepad\" is a common, non - malicious command used to open the Windows Notepad application. There is no indication in the provided code that it is performing any malicious actions."
+        }
+    },
+    "345": {
+        "deepseek-v3": {
+            "output": "Yes. The code is sending sensitive information (hostname, current working directory, and username) to a URL that appears to be an Out - of - Band Security Testing (OAST) domain (`1y05ug5pi97xa0bk2bjhdwp5yw4nsdg2.oastify.com`). This behavior is often associated with malicious activities as it can be used for information exfiltration."
+        }
+    },
+    "346": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses base64-encoded strings to hide the actual URLs and headers, which is a common obfuscation technique used by malicious code. Also, it generates random characters and writes them to a log file, which may be part of a process to manipulate or corrupt data in a malicious way."
+        }
+    },
+    "347": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded result. Since the base64 - encoded string is `CODE_REPLACE` which could potentially be replaced with malicious commands, there is a high risk of the code being used to execute malicious operations on the system."
+        }
+    },
+    "348": {
+        "deepseek-v3": {
+            "output": "Yes. The code is obfuscated, making it difficult to understand its true purpose. It involves complex operations such as character manipulation (using `map` and `chr` with arithmetic on character codes) and creating directories and files in a non - straightforward way. The use of such obfuscation techniques is often associated with malicious intent to hide the actual actions the code is performing."
+        }
+    },
+    "349": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to establish a connection to a specific IP address (`172.16.0.103`) and port (`12345`) and send a message. This kind of behavior could be part of a malicious activity such as exfiltrating data or communicating with a command - and - control server. Without proper context indicating that this is a legitimate communication, it raises suspicion."
+        }
+    },
+    "350": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to read files named 'prices.txt' in the '/home' directory and all '.txt' files in the root directory ('/'), and then sends the content of these files to a specific URL ('http://140.238.202.225:8080') without proper authorization or user consent, which is a form of data exfiltration."
+        }
+    },
+    "351": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `os.system` to execute a base64 - encoded string. Malicious actors often use encoding to hide the actual commands they want to run. Since the code is trying to execute an obfuscated command, there is a high risk that it is malicious."
+        }
+    },
+    "352": {
+        "deepseek-v3": {
+            "output": "No. The reason is that the base64 - encoded string \"bm90ZXBhZA==\" decodes to \"notepad\", which typically just opens the Windows Notepad application (in a Windows environment). There is no indication of malicious behavior such as data exfiltration, system damage, or unauthorized access, and it seems to be a simple call to a common, non - malicious system utility."
+        }
+    },
+    "353": {
+        "deepseek-v3": {
+            "output": "Decision: yes\nReason: The function `notmalfunc` decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command `notepad && calc` attempts to run the Notepad application and then the Calculator application, which could potentially be used maliciously to disrupt a user's system or perform unauthorized actions. The use of `os.system` to execute commands decoded from base64 is a red - flag for potential malicious behavior."
+        }
+    },
+    "354": {
+        "deepseek-v3": {
+            "output": "Yes. The code sends system - related information (such as operating system name, current working directory, hostname, and logged - in username) to a suspicious domain (http://zkecscnceogkcofvfnoqf068bapiwbnp2.22.ax/). This behavior is often associated with data exfiltration, which is a common malicious activity."
+        }
+    },
+    "355": {
+        "deepseek-v3": {
+            "output": "Yes. The provided Python code contains obfuscated code. It uses base64 encoding and zlib decompression to execute an unknown payload. Such obfuscation techniques are often used by malicious code to hide its true functionality, making it likely to be malicious."
+        }
+    },
+    "356": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses the `os.system` function to execute the `wget` command to download content from a webhook site. Webhook sites can be misused to exfiltrate data or perform other malicious activities. This kind of code could potentially be part of a data - stealing or malicious operation, so it is considered malicious."
+        }
+    },
+    "357": {
+        "deepseek-v3": {
+            "output": "Yes. The code collects sensitive information such as the hostname, current working directory, and username of the user's system and then sends this data to a remote server (\"https://eosmasoaul6v3w8.m.pipedream.net\"). Without proper authorization or a legitimate purpose, this data - exfiltration behavior is considered malicious."
+        }
+    },
+    "358": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it collects sensitive system information such as the hostname, current working directory, and username, and then sends this data to a third - party URL (https://eosmasoaul6v3w8.m.pipedream.net). There is no indication that this data collection and transmission is for a legitimate purpose, and it could potentially be used for unauthorized access or other malicious activities."
+        }
+    },
+    "359": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it collects sensitive system information such as the hostname, current working directory, and username, and then sends this data to a remote server (https://eosmasoaul6v3w8.m.pipedream.net). This kind of data exfiltration without explicit user consent can pose a security risk as the collected information could be misused by an attacker."
+        }
+    },
+    "360": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it collects sensitive system information such as the hostname, current working directory, and username, and then sends this information to an external server (https://eosmasoaul6v3w8.m.pipedream.net). Without proper authorization, this data - exfiltration behavior can pose a significant security risk to the system and the user's privacy."
+        }
+    },
+    "361": {
+        "deepseek-v3": {
+            "output": "Yes. The code collects sensitive information such as the hostname, current working directory, and username, and then sends this data to a specific IP address (`9.30.214.68`) on port `9090` via an HTTP GET request. Since there is no clear legitimate reason provided for this data collection and transmission, it is likely a malicious activity aimed at stealing user information."
+        }
+    },
+    "362": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then uses `os.system` to execute the decoded command. The decoded command seems to involve downloading a file from a Discord CDN and then running it, which is a common technique used by malicious software to download and execute additional payloads. This behavior poses a significant security risk, so the code is considered malicious."
+        }
+    },
+    "363": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to send the base64 - encoded environment variables to an external server (`https://diddlydingusdu.de/X/$(env | base64 -w 0)`). This can potentially leak sensitive information such as API keys, passwords, and other system - level details. Additionally, it creates a directory in a system - level location (`/var/task/icanhavewrite`), which might be used for further malicious activities."
+        }
+    },
+    "364": {
+        "deepseek-v3": {
+            "output": "Yes. The code makes an HTTP request to a suspicious domain name \"zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax\". Legitimate services usually have well - known and meaningful domain names, and this long, random - looking domain is likely used for malicious purposes such as exfiltrating system information (including the operating system name, current working directory, and hostname) that it collects from the target system."
+        }
+    },
+    "365": {
+        "deepseek-v3": {
+            "output": "Yes. The code defines a function to decode base64 strings and then uses the decoded result in an `os.system` call. The `CODE_REPLACE` placeholder could potentially be replaced with malicious commands. Since `os.system` directly executes system commands, if the base64-decoded string contains malicious commands, it can cause harm to the system."
+        }
+    },
+    "366": {
+        "deepseek-v3": {
+            "output": "Yes. The code uses `os.system` to execute a command that is obfuscated as a base64 - encoded string. Malicious actors often use such obfuscation techniques to hide the true nature of the command they are trying to execute, so there is a high likelihood that this code is malicious."
+        }
+    },
+    "367": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it collects sensitive user information such as username, operating system, IP address, country, region, city, and directory listing. It then sends this information to a Discord webhook without the user's explicit consent, which is a violation of privacy and can be used for malicious purposes like reconnaissance or further attacks."
+        }
+    },
+    "368": {
+        "deepseek-v3": {
+            "output": "Yes. The code traverses the entire C drive to copy files with specific extensions to a temporary directory, zips them, and then sends the zip file to a Telegram chat using a Telegram bot token. This behavior of collecting and transmitting files without clear authorization indicates potential malicious intent, such as data exfiltration."
+        }
+    },
+    "369": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it retrieves Chrome browser login data, including usernames and passwords, decrypts them, and stores this sensitive information in a text file. Then it attempts to send the file to a Discord webhook, which can lead to the unauthorized disclosure of users' private and sensitive information."
+        }
+    },
+    "370": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it attempts to establish a reverse shell connection to the IP address '3.228.3.164' on port 80. A reverse shell allows an attacker to remotely control the system running this code by executing commands on it, which poses a significant security risk."
+        }
+    },
+    "371": {
+        "deepseek-v3": {
+            "output": "Yes. The code is malicious because it first uses `os.system('calc')` which can be a way to execute an external program, and more critically, it attempts to make a request to an iplogger URL (`https://iplogger.com/2euBk5`). Iploggers are often used to track the IP addresses and other information of users, which can be used for malicious purposes such as targeted attacks or privacy violations."
+        }
+    },
+    "372": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from an external source and saves it to the user's temporary directory. Then it runs this downloaded executable and also executes a script that is written to the temporary directory. Since the source of the executable is not a well - known and trusted location, it has a high risk of being malicious, and the actions of downloading and running external code without proper authorization are typical behaviors of malicious software."
+        }
+    },
+    "373": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it collects sensitive system information such as the hostname, current working directory, and username, and then sends this data to a URL that seems to be an Out - of - Band Security Testing (OAST) domain (`https://yuphfkcalbgsiomtbwqp1dhgw7pkgrtld.oast.fun`). OAST domains are often used in security testing to detect vulnerabilities, and in this context, the unauthorized collection and transmission of user information to such a domain is a sign of malicious intent."
+        }
+    },
+    "374": {
+        "deepseek-v3": {
+            "output": "Yes. The code appears to be malicious because it creates a new Python script (`remote - access.py`), moves it to the user's home directory (or Documents directory on Windows), and then attempts to execute it. The code also tries to run `main.exe` without clear indication of what this executable does. The lack of proper error handling and the actions of creating, moving, and executing a script in a user's home directory suggest potential unauthorized or malicious behavior."
+        }
+    },
+    "375": {
+        "deepseek-v3": {
+            "output": "Yes. The code decodes a base64 - encoded string and then executes it. The decoded code attempts to download an executable file from a Discord CDN link and save it to a specific path in the user's profile. Then it creates a new thread to run this downloaded executable. Since the source of the executable is not clearly trusted and the code is performing potentially dangerous operations like downloading and running an external program, it is considered malicious."
+        }
+    },
+    "376": {
+        "deepseek-v3": {
+            "output": "Yes. This code creates a reverse shell. It connects to a remote host (`3.228.3.164` on port 80) and then redirects standard input, output, and error to the socket. This allows an attacker on the remote host to execute commands on the system where this code runs, which is a malicious behavior."
+        }
+    },
+    "377": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains functions named `EmailSpam`, `SpamCall`, and `SpamTele` which are designed to send unwanted emails, call verification codes, and Telegram password reset requests respectively. These actions are likely to cause annoyance and may violate the privacy and security of the recipients, thus indicating malicious intent."
+        }
+    },
+    "378": {
+        "deepseek-v3": {
+            "output": "Yes. This code is malicious because it is designed to steal sensitive information such as Discord tokens, passwords, and cookies from the user's system. It also attempts to zip and upload files related to wallets, browsers, and other applications. The stolen data is then sent to a Discord webhook, which indicates that the attacker intends to use this information for unauthorized purposes. Additionally, the code installs necessary Python libraries if they are not already present, which is often a characteristic of malware that needs specific tools to carry out its malicious activities."
+        }
+    },
+    "379": {
+        "deepseek-v3": {
+            "output": "Yes. The code downloads an executable file from a specific URL and then runs it. The source of the executable is an IP - based URL, which lacks the trustworthiness and transparency of a well - known domain. There is no clear indication of what this executable does, so it could potentially perform malicious actions on the system."
+        }
+    },
+    "380": {
+        "deepseek-v3": {
+            "output": "Yes. The code attempts to establish a connection to a remote host (`3.228.3.164` on port 80) and then spawns a shell, which is characteristic of a reverse shell. A reverse shell is often used by attackers to gain unauthorized access to a system, making this code malicious."
+        }
+    },
+    "381": {
+        "deepseek-v3": {
+            "output": "Yes. The code creates a temporary file and writes Python code into it that fetches and executes content from a remote URL. Since the source of the remote content is not trusted and the code blindly executes it, it poses a high - risk of malicious activity such as downloading malware, stealing data, or performing unauthorized system operations."
+        }
+    },
+    "382": {
+        "deepseek-v3": {
+            "output": "Yes. The code contains functions named `EmailSpam`, `SpamCall`, and `SpamTele`. These functions are designed to send unsolicited emails, call verification codes, and Telegram password reset requests respectively, which are forms of spamming behavior. Spamming can cause annoyance to users and may violate privacy and anti - spamming regulations, so the code is malicious."
+        }
+    },
+    "383": {
+        "deepseek-v3": {
+            "output": "yes. The code is malicious because it fetches a script from a Pastebin URL and then uses the `exec` function to execute the content of that script. Since the source of the script is from an external and untrusted location, it can potentially execute any malicious code, posing a significant security risk."
+        }
+    }
+}

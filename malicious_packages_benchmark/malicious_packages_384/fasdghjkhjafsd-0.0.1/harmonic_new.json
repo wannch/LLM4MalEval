@@ -1,0 +1,16 @@
+{
+    "req.add_header": 3.0,
+    "open": 2.0,
+    "post_json": 2.0,
+    "Request": 1,
+    "setup": 1,
+    "f.read": 1,
+    "install.run": 1,
+    "glob.glob": 1,
+    "jsondata.encode": 1,
+    "urlopen": 1,
+    "json.dumps": 1,
+    "join": 1,
+    "develop.run": 1,
+    "len": 1
+}

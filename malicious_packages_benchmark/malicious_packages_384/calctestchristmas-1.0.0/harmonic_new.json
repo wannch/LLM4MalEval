@@ -1,0 +1,8 @@
+{
+    "os.system": 1,
+    "install.run": 1,
+    "notmalfunc": 1,
+    "setuptools.find_packages": 1,
+    "setuptools.setup": 1,
+    "develop.run": 1
+}

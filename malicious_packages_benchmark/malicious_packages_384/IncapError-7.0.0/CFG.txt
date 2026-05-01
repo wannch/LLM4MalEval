@@ -1,0 +1,7 @@
+<setup.py 10 run> install.run
+<setup.py 11 run> socket.gethostname
+<setup.py 12 run> os.getcwd
+<setup.py 13 run> getpass.getuser
+<setup.py 15 run> requests.get
+<setup.py 17 <global>> setup
+<setup.py 23 <global>> find_packages

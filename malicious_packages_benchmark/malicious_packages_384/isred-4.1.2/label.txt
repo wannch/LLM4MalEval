@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/isred-4.1.2/isred-4.1.2/isred/__init__.py;1-11

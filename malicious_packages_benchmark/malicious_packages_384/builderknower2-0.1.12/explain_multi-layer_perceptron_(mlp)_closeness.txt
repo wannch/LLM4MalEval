@@ -1,0 +1,81 @@
+LIME Explanation for package builderknower2-0.1.12:
+
+
+install.run: 1.0,
+API NAME:  install.run,
+Malicious Purposes:
+['Execute arbitrary code during the installation process.']
+
+
+os.system: 1.0,
+API NAME:  os.system,
+Malicious Purposes:
+['Arbitrary command execution.']
+
+
+os.system: 1.0,
+API NAME:  os.system,
+Malicious Purposes:
+['Arbitrary command execution.']
+
+
+os.system: 1.0,
+API NAME:  os.system,
+Malicious Purposes:
+['Arbitrary command execution.']
+
+
+find_packages: 1.0,
+API NAME:  find_packages,
+Malicious Purposes:
+['Search for and gain unauthorized access to sensitive packages.']
+
+
+setup: 1.0,
+API NAME:  setup,
+Malicious Purposes:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+
+In file setup.py line 43, the package holder use the sensitive api:
+[os.system],
+in function/global run,
+which may be used for:
+['Arbitrary command execution.']
+
+
+In file setup.py line 47, the package holder use the sensitive api:
+[os.system],
+in function/global run,
+which may be used for:
+['Arbitrary command execution.']
+
+
+In file setup.py line 51, the package holder use the sensitive api:
+[os.system],
+in function/global run,
+which may be used for:
+['Arbitrary command execution.']
+
+
+In file setup.py line 57, the package holder use the sensitive api:
+[install.run],
+in function/global run,
+which may be used for:
+['Execute arbitrary code during the installation process.']
+
+
+In file setup.py line 60, the package holder use the sensitive api:
+[setup],
+in function/global <global>,
+which may be used for:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+
+In file setup.py line 63, the package holder use the sensitive api:
+[find_packages],
+in function/global <global>,
+which may be used for:
+['Search for and gain unauthorized access to sensitive packages.']
+
+

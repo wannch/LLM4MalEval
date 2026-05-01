@@ -1,0 +1,8 @@
+{
+    "setuptools.setup": 1.4082482904638631,
+    "os.system": 1.4082482904638631,
+    "develop.run": 1.4082482904638631,
+    "install.run": 1.4082482904638631,
+    "notmalfunc": 1.4082482904638631,
+    "setuptools.find_packages": 1.4082482904638631
+}

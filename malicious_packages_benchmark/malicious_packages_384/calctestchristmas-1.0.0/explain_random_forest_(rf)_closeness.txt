@@ -1,0 +1,68 @@
+LIME Explanation for package calctestchristmas-1.0.0:
+
+
+install.run: 1.0,
+API NAME:  install.run,
+Malicious Purposes:
+['Execute arbitrary code during the installation process.']
+
+
+develop.run: 1.0,
+API NAME:  develop.run,
+Malicious Purposes:
+['Executing arbitrary code that could compromise the system']
+
+
+os.system: 1.0,
+API NAME:  os.system,
+Malicious Purposes:
+['Arbitrary command execution.']
+
+
+setuptools.setup: 1.0,
+API NAME:  setuptools.setup,
+Malicious Purposes:
+['Involve injecting malicious code or dependencies.']
+
+
+setuptools.find_packages: 1.0,
+API NAME:  setuptools.find_packages,
+Malicious Purposes:
+['Search for and manipulate sensitive files.']
+
+
+In file setup.py line 7, the package holder use the sensitive api:
+[os.system],
+in function/global notmalfunc,
+which may be used for:
+['Arbitrary command execution.']
+
+
+In file setup.py line 11, the package holder use the sensitive api:
+[develop.run],
+in function/global run,
+which may be used for:
+['Executing arbitrary code that could compromise the system']
+
+
+In file setup.py line 15, the package holder use the sensitive api:
+[install.run],
+in function/global run,
+which may be used for:
+['Execute arbitrary code during the installation process.']
+
+
+In file setup.py line 18, the package holder use the sensitive api:
+[setuptools.setup],
+in function/global <global>,
+which may be used for:
+['Involve injecting malicious code or dependencies.']
+
+
+In file setup.py line 36, the package holder use the sensitive api:
+[setuptools.find_packages],
+in function/global <global>,
+which may be used for:
+['Search for and manipulate sensitive files.']
+
+

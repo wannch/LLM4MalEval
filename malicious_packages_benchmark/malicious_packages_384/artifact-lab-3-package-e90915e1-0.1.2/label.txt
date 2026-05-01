@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/artifact-lab-3-package-e90915e1-0.1.2/artifact-lab-3-package-e90915e1-0.1.2/setup.py;5-6,8-12,14-15

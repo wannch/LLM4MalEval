@@ -1,0 +1,7 @@
+{
+    "package_name": "importlib-metadate",
+    "package_version": "99.99",
+    "package_path": "malicious_packages_5T/importlib-metadate",
+    "package_file": "malicious_packages_5T/importlib-metadate/99.99/importlib_metadate-99.99.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/importlib_metadate-99.99"
+}

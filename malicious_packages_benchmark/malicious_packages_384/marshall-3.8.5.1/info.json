@@ -1,0 +1,7 @@
+{
+    "package_name": "marshall",
+    "package_version": "3.8.5.1",
+    "package_path": "malicious_packages_5T/marshall",
+    "package_file": "malicious_packages_5T/marshall/3.8.5.1/marshall-3.8.5.1.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/marshall-3.8.5.1"
+}

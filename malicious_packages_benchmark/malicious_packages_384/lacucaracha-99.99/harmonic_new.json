@@ -1,0 +1,22 @@
+{
+    "str": 3.0,
+    "clientSocket.connect": 1,
+    "clientSocket.send": 1,
+    "createfile": 1,
+    "int": 1,
+    "socket.gethostname": 1,
+    "socket.gethostbyname": 1,
+    "split": 1,
+    "strip": 1,
+    "platform.platform": 1,
+    "f.read": 1,
+    "install.run": 1,
+    "platform.system": 1,
+    "socket.socket": 1,
+    "setup": 1,
+    "encode": 1,
+    "float": 1,
+    "platform.version": 1,
+    "platform.release": 1,
+    "open": 1
+}

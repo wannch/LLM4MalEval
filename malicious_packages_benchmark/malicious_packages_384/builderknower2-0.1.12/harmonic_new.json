@@ -1,0 +1,7 @@
+{
+    "print": 4.0,
+    "os.system": 1,
+    "setup": 1,
+    "install.run": 1,
+    "find_packages": 1
+}

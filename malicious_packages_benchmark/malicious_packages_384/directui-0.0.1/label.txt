@@ -1,0 +1,3 @@
+malicious_packages_20240112-20240408_extract/directui-0.0.1/directui-0.0.1/directui/__init__.py;20-44
+malicious_packages_20240112-20240408_extract/directui-0.0.1/directui-0.0.1/genui/__init__.py;20-44
+malicious_packages_20240112-20240408_extract/directui-0.0.1/directui-0.0.1/nextui/__init__.py;20-44

@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/discordrolex-0.0.1/discordrolex-0.0.1/src/discordrolex/discordrol.py;1-18

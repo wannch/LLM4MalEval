@@ -1,0 +1,29 @@
+LIME Explanation for package attrsmarkup-0.1.0:
+
+
+b64decode: 1.0,
+API NAME:  b64decode,
+Malicious Purposes:
+['Decode potentially malicious Base64-encoded data.']
+
+
+encode: 1.0,
+API NAME:  encode,
+Malicious Purposes:
+['Possible exploitation for obfuscation of malicious code or data for evading detection.']
+
+
+In file am.py line 1, the package holder use the sensitive api:
+[b64decode],
+in function/global <global>,
+which may be used for:
+['Decode potentially malicious Base64-encoded data.']
+
+
+In file am.py line 1, the package holder use the sensitive api:
+[encode],
+in function/global <global>,
+which may be used for:
+['Possible exploitation for obfuscation of malicious code or data for evading detection.']
+
+

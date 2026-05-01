@@ -1,0 +1,2 @@
+[console_scripts]
+botoceor = botoceor.cli:cli

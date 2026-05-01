@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/class_py-1.0.0/class_py-1.0.0/setup.py;8-18

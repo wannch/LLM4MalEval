@@ -1,0 +1,7 @@
+{
+    "package_name": "invokehttp",
+    "package_version": "2.5.5",
+    "package_path": "malicious_packages_5T/invokehttp",
+    "package_file": "malicious_packages_5T/invokehttp/2.5.5/invokehttp-2.5.5.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/invokehttp-2.5.5"
+}

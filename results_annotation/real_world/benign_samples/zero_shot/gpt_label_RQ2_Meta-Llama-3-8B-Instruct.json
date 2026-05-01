@@ -1,0 +1,2102 @@
+{
+    "0": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "1": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "2": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "3": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "4": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "5": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "6": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "7": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "8": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "9": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "10": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "11": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "12": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "n",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "13": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "14": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "15": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "16": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "17": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "18": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "19": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "20": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "21": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "22": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "23": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "24": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "25": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "26": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "27": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "28": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "29": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "30": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "31": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "32": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "33": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "34": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "35": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "36": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "37": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "38": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "39": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "40": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "41": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "42": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "43": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "44": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "45": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "46": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "47": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "48": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "49": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "50": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "51": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "52": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "n",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "53": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "54": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "55": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "56": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "57": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "58": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "59": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "60": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "61": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "62": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "63": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "64": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "65": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "66": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "67": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "68": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "69": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "70": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "71": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "72": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "73": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "74": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "75": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "76": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "77": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "78": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "79": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "80": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "81": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "82": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "83": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "84": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "85": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "86": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "87": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "88": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "89": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "90": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "n",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "91": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "92": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "93": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "94": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "95": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "96": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "97": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "98": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "99": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "100": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "101": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "102": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "103": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "104": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "105": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "106": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "107": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "108": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "109": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "110": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "111": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "112": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "113": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "114": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "115": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "116": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "117": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "118": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "119": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "120": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "121": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "122": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "123": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "124": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "125": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "126": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "127": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "128": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "129": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "130": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "131": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "132": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "133": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "134": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "135": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "136": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "137": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "138": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "139": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "140": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "141": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "142": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "143": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "144": {
+        "LLM_REASON_CONSISTENT": "n",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "n",
+        "EXPLICIT_RESPONSE": "n",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "145": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "146": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "147": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "148": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "149": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "150": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "151": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "152": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "153": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "154": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "155": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "156": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "157": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "158": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "159": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "160": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "161": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "162": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "163": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "164": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "165": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "166": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "167": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "168": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "169": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "170": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "171": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "172": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "173": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "174": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "175": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "176": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "177": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "178": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "179": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "180": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "181": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "182": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "183": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "184": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "185": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "186": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "187": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "188": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "189": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "190": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "191": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "192": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "193": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "194": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "195": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "196": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "197": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "198": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "199": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "200": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "201": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "202": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "203": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "204": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "205": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "206": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "207": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "208": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "n",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "209": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "210": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "211": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "212": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "213": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "214": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "215": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "216": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "217": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "218": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "219": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "220": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "221": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "222": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "223": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "224": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "225": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "226": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "227": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "228": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "n",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "229": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "230": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "231": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "232": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "233": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "234": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "235": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "236": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "237": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "238": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "239": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "240": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "241": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "242": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "243": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "244": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "245": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "246": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "247": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "248": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "249": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "250": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "251": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "252": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "253": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "254": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "255": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "256": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "257": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "258": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "259": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "260": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "261": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "262": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "263": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "264": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "265": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "266": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "267": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "268": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "269": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "270": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "271": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "272": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "273": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "274": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "275": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "276": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "277": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "278": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "n",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "279": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "280": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "281": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "282": {
+        "LLM_REASON_CONSISTENT": "n",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "y"
+    },
+    "283": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "284": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "285": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "286": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "287": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "288": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "289": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "290": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "291": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "292": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "293": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "294": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "295": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "296": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "297": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "298": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    },
+    "299": {
+        "LLM_REASON_CONSISTENT": "y",
+        "LLM_REASON_CONSISTENT_WITH_CODE": "y",
+        "VALID_RESPONSE": "y",
+        "EXPLICIT_RESPONSE": "y",
+        "LLM_MALICIOUS_RESULT": "n"
+    }
+}

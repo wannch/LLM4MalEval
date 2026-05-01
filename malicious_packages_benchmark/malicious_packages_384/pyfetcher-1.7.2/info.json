@@ -1,0 +1,7 @@
+{
+    "package_name": "pyfetcher",
+    "package_version": "1.7.2",
+    "package_path": "malicious_packages_5T/pyfetcher",
+    "package_file": "malicious_packages_5T/pyfetcher/1.7.2/pyfetcher-1.7.2.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/pyfetcher-1.7.2"
+}

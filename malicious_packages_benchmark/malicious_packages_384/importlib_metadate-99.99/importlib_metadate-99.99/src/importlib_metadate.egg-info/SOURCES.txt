@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/importlib_metadate.egg-info/PKG-INFO
+src/importlib_metadate.egg-info/SOURCES.txt
+src/importlib_metadate.egg-info/dependency_links.txt
+src/importlib_metadate.egg-info/requires.txt
+src/importlib_metadate.egg-info/top_level.txt
+src/xxxxx/__init__.py
+src/xxxxx/add.py

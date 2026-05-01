@@ -1,0 +1,7 @@
+setup.py
+discord_client.egg-info/PKG-INFO
+discord_client.egg-info/SOURCES.txt
+discord_client.egg-info/dependency_links.txt
+discord_client.egg-info/top_level.txt
+hyperion/__init__.py
+hyperion/hyperion.py

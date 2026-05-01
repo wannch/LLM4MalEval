@@ -1,0 +1,1922 @@
+{
+    "0": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends sensitive system information (hostname, current working directory, and username) to an external server (`oast.fun`) during installation. This behavior is malicious as it exfiltrates data without user consent, likely for reconnaissance or tracking purposes. The use of an OAST domain (commonly used in security testing to detect data leaks) further indicates intentional data leakage."
+        }
+    },
+    "1": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects sensitive system information (OS, uptime, hostname, import context, etc.) and sends it to a remote server via a POST request. While the URL appears to be a test endpoint (webhook.site), the act of exfiltrating system data without user consent or clear legitimate purpose is indicative of malicious behavior, such as telemetry or data harvesting."
+        }
+    },
+    "2": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects system information (hostname, current working directory, username) and sends it to a remote server (`aeknnnsitysuxpmwevwu5r45npjouqe5i.oast.fun`) via an HTTP GET request. This behavior is characteristic of data exfiltration, which is commonly used in malicious activities to gather sensitive information or confirm successful compromise. The use of an OAST domain further suggests potential exploitation or reconnaissance."
+        }
+    },
+    "3": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects all environment variables (potentially containing sensitive data like credentials) and sends them to an external server (`oastify.com`) using a POST request. This is a classic data exfiltration pattern commonly found in malicious scripts to steal sensitive information from compromised systems."
+        }
+    },
+    "4": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects and sends all environment variables (which may include sensitive information like API keys, credentials, or system details) to an external server (`oastify.com`). This is a clear data exfiltration mechanism, commonly used in malicious payloads to steal sensitive data from compromised systems."
+        }
+    },
+    "5": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects all environment variables (which may include sensitive data like API keys, credentials, etc.) and sends them to an external server (`https://c7128792b162.ngrok.app`) without user consent. This is a clear data exfiltration attempt, which is malicious."
+        }
+    },
+    "6": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a `curl` command that sends the system's environment variables to an external server (`ngrok-free.app`). This is a classic data exfiltration technique, as environment variables often contain sensitive information (e.g., API keys, credentials). The use of obfuscation and remote data transmission indicates malicious intent."
+        }
+    },
+    "7": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell connection to a remote server (\"0.tcp.eu.ngrok.io:18315\"), allowing an attacker to execute commands on the compromised system. It uses `os.dup2` to hijack standard input/output/error streams and spawns an interactive bash shell via `subprocess.call`, enabling remote control. This is a classic malicious pattern for command-and-control (C2) communication."
+        }
+    },
+    "8": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell to an external server (8.tcp.ngrok.io:14060), allowing remote command execution. It uses `os.dup2` to hijack standard I/O and spawns an interactive shell (`/bin/sh -i`) over the network connection. This is a classic malicious pattern for remote code execution and unauthorized access."
+        }
+    },
+    "9": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell by connecting to an external server (6.tcp.ngrok.io:14283), redirects standard I/O to the socket, and spawns an interactive shell (/bin/sh). This allows remote code execution on the compromised system, which is a classic malicious behavior."
+        }
+    },
+    "10": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects and sends all environment variables (which may include sensitive data like API keys, passwords, etc.) to a remote server using a ngrok-free.app URL. This behavior constitutes data exfiltration without user consent, which is malicious."
+        }
+    },
+    "11": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code implements a reverse shell, connecting to a remote host (6.tcp.eu.ngrok.io:13090) and granting an interactive shell to the attacker. This allows remote command execution on the compromised system, which is a classic malicious behavior used for unauthorized access and control."
+        }
+    },
+    "12": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code retrieves a service account token from a Google Cloud metadata service and sends it to an external server (via ngrok). This is a classic exfiltration technique used to steal credentials from cloud environments, enabling unauthorized access to sensitive resources."
+        }
+    },
+    "13": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code defines a post-install command that sends a Discord webhook notification containing the user's home directory path and timestamp. This exfiltrates sensitive system information to a hardcoded URL without user consent, which is a malicious behavior typically used for reconnaissance or signaling successful compromise."
+        }
+    },
+    "14": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a hidden payload (`h`) and appends it to the `.profile` of the first user with UID 1000 (typically the main user). This creates a persistent backdoor that executes the decoded malicious code every time the user logs in, indicating malicious intent."
+        }
+    },
+    "15": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive device information (IP address, location, device model, OS details) and sends it to a Telegram bot using a hardcoded token and chat ID. It uses Android-specific commands (`getprop`) to gather device data, indicating it's designed for Android devices. The script operates covertly via threading and includes a deceptive message about being \"outdated,\" suggesting an intent to mislead users into downloading newer versions. This behavior constitutes malicious data exfiltration."
+        }
+    },
+    "16": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decrypts a string `h` using a Caesar cipher-like transformation and appends it to the `.profile` file of the user with UID 1000. This modifies the user's login script to execute the decrypted payload (`h`) on every login, establishing persistence. The use of `/etc/passwd` to identify the target user and the stealthy exception handling further indicate malicious intent."
+        }
+    },
+    "17": {
+        "qwen3-32b": {
+            "output": "Exception: BadRequestError - Error code: 400 - {'error': {'code': 'invalid_parameter_error', 'message': '<400> InternalError.Algo.InvalidParameter: Range of input length should be [1, 98304]', 'param': None, 'type': 'invalid_request_error'}, 'request_id': '0dc3fb64-528d-4bb2-8353-3847e0306a2c'}"
+        }
+    },
+    "18": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscated class names and executes decrypted code via `Fernet`, which is a red flag. It checks for Windows (`os.name == \"nt\"`), imports `requests` and `Fernet`, and decrypts/`exec`s a payload. This pattern is typical of malware that hides malicious logic in encrypted strings. The hardcoded key and encrypted data strongly suggest a hidden payload."
+        }
+    },
+    "19": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to execute decrypted data from a hardcoded Fernet key and encrypted payload, which is a common obfuscation technique in malware. The decryption and execution of unknown payloads, especially conditional on the operating system (Windows here), strongly indicate malicious behavior. The use of `fernet` and `requests` further suggests potential data exfiltration or remote code execution."
+        }
+    },
+    "20": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell connection to a remote server (85.159.212.47:61985) by redirecting standard input/output to a network socket and spawning a shell. This is a classic backdoor/malware pattern for remote code execution."
+        }
+    },
+    "21": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64-encoded payload that downloads and executes external files (a JAR and a ZIP) from untrusted sources (GitHub and Dropbox). It uses `subprocess` to run Java with the downloaded JAR, which could execute arbitrary code. The use of threading to run this in the background, combined with system path manipulation and obfuscation, strongly indicates malicious behavior (e.g., potential backdoor or malware distribution)."
+        }
+    },
+    "22": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the use of `exec()` on decrypted data strongly indicates malicious intent."
+        }
+    },
+    "23": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content, which is a common tactic in malware to evade detection. The `exec` function dynamically runs decrypted code, and the OS check (`os.name == \"nt\"`) targets Windows systems. This pattern is typical of malicious payloads hidden through encryption."
+        }
+    },
+    "24": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `Fernet` to decrypt and execute obfuscated data via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the decrypted code is likely to perform harmful actions (e.g., downloading or executing malware) on Windows systems (`os.name == \"nt\"`). The use of `exec()` with decrypted content strongly indicates malicious intent."
+        }
+    },
+    "25": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The encrypted data is executed dynamically, making analysis difficult and raising suspicion of malicious intent."
+        }
+    },
+    "26": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscated class and method names, checks for a Windows environment, and employs Fernet decryption with a hardcoded key to execute decrypted bytecode. This pattern is typical of malware that obfuscates its payload to evade detection. The `exec` function dynamically runs the decrypted code, which is a strong indicator of malicious behavior, likely delivering a hidden payload (e.g., data exfiltration, system compromise) during installation."
+        }
+    },
+    "27": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses a suspiciously long obfuscated class name and imports `Fernet` from the `cryptography` library to decrypt and execute arbitrary code via `exec()`. The decrypted payload is obfuscated with a hardcoded key, which is a common technique in malware to evade static analysis. Additionally, the code checks for a Windows environment (`os.name == \"nt\"`) before execution, indicating platform-specific malicious behavior. The use of `exec()` on decrypted data strongly suggests malicious intent."
+        }
+    },
+    "28": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content conditionally on Windows systems. The `exec()` function runs dynamically decrypted code, which is a common technique for hiding malicious payloads. The class name and structure suggest it's designed to bypass static analysis, and the use of cryptography libraries combined with execution indicates potential for malicious behavior."
+        }
+    },
+    "29": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated payload via `exec()`, a common technique in malware to hide malicious logic. The hardcoded key and encrypted data suggest a concealed payload, and the use of `exec()` on decrypted content indicates dynamic execution of arbitrary code, which is highly suspicious and typical of malicious behavior."
+        }
+    },
+    "30": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec()`, which is a common technique to hide malicious payloads. The class name is obfuscated, and the code checks for a Windows environment (`os.name == \"nt\"`), suggesting platform-specific malicious behavior. The decrypted and executed payload is not visible, making it impossible to verify its intent, which is a strong indicator of malware."
+        }
+    },
+    "31": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec()`, which is a common technique in malware to hide malicious payloads. The decrypted content is executed without verification, making it likely malicious."
+        }
+    },
+    "32": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for executing hidden malicious payloads. The encrypted data is likely malware, and the check for Windows (`os.name == \"nt\"`) targets Windows systems. The use of `exec()` with decrypted content is highly suspicious and indicative of malicious intent."
+        }
+    },
+    "33": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques, executes decrypted content via `exec`, and includes Fernet decryption with a hardcoded key, which is a common method for hiding malicious payloads. The `exec` call combined with OS-specific checks (`nt`) and the use of `requests` suggests it could download and execute arbitrary code, typical in malware."
+        }
+    },
+    "34": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on obfuscated data and executes the result with `exec()`, a common technique in malware to hide malicious payloads. The hardcoded key and encrypted payload suggest an intent to execute hidden code, which is highly suspicious. Additionally, the class name is obfuscated, and the code runs only on Windows (`os.name == \"nt\"`), further indicating potential malicious behavior."
+        }
+    },
+    "35": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The hardcoded key and encrypted data suggest a concealed payload, and the Windows-specific check (`os.name == \"nt\"`) targets Windows systems. The use of `exec()` on decrypted content without visibility into its contents is a strong indicator of malicious intent."
+        }
+    },
+    "36": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec()`, which is a common technique in malware to hide malicious payloads. The check for Windows (`os.name == \"nt\"`) and the use of external libraries like `requests` further suggest potential malicious behavior, such as downloading or executing hidden code."
+        }
+    },
+    "37": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content, a common tactic in malware to hide malicious payloads. The `exec` function dynamically runs decrypted code, which is not visible in the source, making it difficult to analyze. Combined with platform checks (`os.name == \"nt\"`) targeting Windows, this strongly indicates malicious intent."
+        }
+    },
+    "38": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (long random class name), conditionally imports modules, and executes decrypted code via `exec`, which is a common method in malware to hide malicious payloads. The use of `Fernet` decryption suggests the payload is concealed, and executing it dynamically without inspection is inherently risky."
+        }
+    },
+    "39": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes an external executable file (`kitty.exe`) from the package's assets using `subprocess.run()` without user consent, which is a suspicious behavior. Additionally, it opens a YouTube link in the background via threading, potentially misleading users or distributing unwanted content. The combination of silent executable execution and unexplained external resource access strongly indicates malicious intent."
+        }
+    },
+    "40": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes an external executable (`helper.exe`) from a URL obtained via an API call. This behavior is characteristic of malware, as it allows arbitrary remote code execution without user consent. The use of `subprocess.run` to execute the downloaded file and the obfuscation via API requests further indicate malicious intent."
+        }
+    },
+    "41": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote URL, saves it to the system's temporary directory with a randomly generated name, and executes it without verification. This behavior is characteristic of malware distribution, as it involves unauthorized execution of untrusted code from an external source."
+        }
+    },
+    "42": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects the hostname and logged-in username of the system, then sends this information to an external server (http://u0vzrwujfcehj9awqubvhxwh98fz3pre.oastify.com) using a URL-encoded request. This behavior is characteristic of data exfiltration, a common tactic in malicious software to steal sensitive system details. The use of an OAST domain (often associated with security testing or attacks) and silent error handling further indicates malicious intent."
+        }
+    },
+    "43": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it collects all non-ZIP files from the current directory, compresses them, and sends the archives to a specified Telegram bot (using `unknownTok` and `unknownID`). This behavior matches data exfiltration techniques often used in malware to steal sensitive information. Additionally, it uses obfuscated function names (`unknown2`, `unknown5`) and sends a cryptic message (\"esey fuck\") to the bot, further indicating malicious intent."
+        }
+    },
+    "44": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it is designed to steal sensitive information. It searches for `.env` files and SSH private keys, reads their contents, encodes them in Base64, and sends them to a remote server (`http://3.95.136.197`). Additionally, it exfiltrates environment variables. The `AfterInstall` class ensures this behavior triggers during package installation, making it a data-exfiltration trojan."
+        }
+    },
+    "45": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file from a remote URL using `curl` and `cmd`. This behavior is malicious as it performs unauthorized remote code execution during package installation, likely distributing payloads or malware."
+        }
+    },
+    "46": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes an executable file from a remote server without user consent, which is a common technique used in malware distribution. The use of `os.startfile()` to launch the downloaded binary indicates an attempt to run potentially malicious code."
+        }
+    },
+    "47": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file (`test.bat`) from a Discord CDN URL during package installation. This behavior is malicious because it stealthily executes an external script without user consent, which could perform harmful actions (e.g., malware installation, data exfiltration). The use of obfuscation (base64 encoding) and automatic execution during installation are strong indicators of malicious intent."
+        }
+    },
+    "48": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file (`strings.bat`) from a Discord CDN URL using `curl` and `cmd`. The use of obfuscation (base64 encoding), automatic execution during installation via custom `AfterInstall` class, and downloading/running remote code without explicit user consent are strong indicators of malicious intent. The actual behavior of the downloaded script is unknown, but the pattern is consistent with malware distribution techniques."
+        }
+    },
+    "49": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file (`strings.bat`) from a Discord CDN URL using `curl` and `cmd`. This behavior is highly suspicious and aligns with common malware patterns, such as remotely fetching and executing untrusted scripts without user consent. The use of obfuscation (base64 encoding) and automatic execution during installation (via `AfterInstall`) further confirms malicious intent."
+        }
+    },
+    "50": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell by connecting to a remote server, duplicates the socket to standard I/O file descriptors, and spawns an interactive shell (`/bin/sh`). This allows remote command execution, which is a clear malicious behavior. The use of `os.dup2` and `subprocess.call` for this purpose is a well-known technique in post-exploitation attacks."
+        }
+    },
+    "51": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec()`, which is a common technique in malware to hide malicious payloads. The conditional check for Windows (`os.name == \"nt\"`) and the inheritance from an ambiguous `install` class further suggest it's designed to deliver platform-specific malicious functionality. Obfuscated execution and lack of transparency in the decrypted payload strongly indicate malicious intent."
+        }
+    },
+    "52": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to run decrypted bytecode via Fernet, which is a common obfuscation technique for hiding malicious payloads. The hardcoded key and encrypted data suggest a concealed payload, and the Windows-specific check (`os.name == \"nt\"`) indicates targeted behavior. This pattern is typical of malware that avoids direct inspection."
+        }
+    },
+    "53": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects all environment variables (including potentially sensitive data like credentials) and sends them to an external server (http://y875mheo3wvo729eqk13iogr9if83x.burpcollaborator.net) via base64-encoded URL parameters. This is a clear data exfiltration attempt, commonly used in malicious payloads to steal secrets or system information."
+        }
+    },
+    "54": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (OS, uptime, hostname, import context, and call stack) and sends it to an external webhook URL without user consent. This behavior constitutes unauthorized data exfiltration, which is malicious. While the URL appears to be a test endpoint, the intent to gather and transmit system telemetry without explicit permission violates privacy and security principles."
+        }
+    },
+    "55": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string containing obfuscated malicious logic. It downloads and executes a binary file (e.g., `marshalls.exe` on Windows) from a remote URL using `subprocess.Popen`, bypassing user consent. This behavior is characteristic of malware distribution, as it dynamically fetches and runs untrusted payloads based on the operating system."
+        }
+    },
+    "56": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the code conditionally executes decrypted data on Windows systems using `exec()`, indicating potential for arbitrary code execution."
+        }
+    },
+    "57": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec()`, a common technique in malware to hide payloads. It also checks for Windows (`os.name == \"nt\"`) before executing, suggesting platform-specific malicious behavior. The obfuscation and dynamic execution strongly indicate malicious intent."
+        }
+    },
+    "58": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for executing malicious payloads. The hardcoded key and encrypted data suggest the code is designed to dynamically execute hidden, potentially harmful instructions. Additionally, the conditional check for Windows (`os.name == \"nt\"`) indicates platform-specific malicious behavior."
+        }
+    },
+    "59": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` with base64-decoded content to obfuscate malicious behavior. It creates directories, writes VBScript and batch files to download and execute an external executable (`Runtime.exe`) from a remote URL via `bitsadmin`. This is a common technique for stealthily deploying malware, bypassing security checks through obfuscation and remote payload delivery."
+        }
+    },
+    "60": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a hidden string (likely a malicious command) and appends it to the `.profile` of the user with UID 1000. This ensures the command executes on login, potentially establishing persistence or downloading malware. Manipulating system files like `/etc/passwd` and user profiles for unauthorized execution is a clear malicious intent."
+        }
+    },
+    "61": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable from a Discord attachment URL and attempts to execute it from a隐蔽 location (USERPROFILE\\AppData\\Local\\explorer.exe). This pattern is characteristic of malware distribution, as it involves:  \n1. Downloading unknown binaries from external sources  \n2. Using deceptive file paths/names (mimicking system processes)  \n3. Executing the file via subprocess with shell=True  \n4. Running the execution in a separate thread to obscure activity  \nThe combination of these behaviors strongly indicates malicious intent."
+        }
+    },
+    "62": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code attempts to execute an external executable file (`client.exe`) located in the same directory as the script. The use of `subprocess.run` to launch an unspecified external program, combined with error suppression (`pass` on exceptions), is highly suspicious. Since the behavior of `client.exe` is not defined in the code and could perform malicious actions (e.g., data exfiltration, system compromise), the script is likely malicious."
+        }
+    },
+    "63": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote URL, saves it to a system directory (`AppData\\Local\\`), and executes it. This is a classic pattern for downloading and running malicious payloads, such as trojans or remote access tools. The use of `subprocess.run` with `shell=True` further increases risk by allowing command execution."
+        }
+    },
+    "64": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it performs multiple malicious activities including stealing browser credentials, Discord tokens, taking screenshots, webcam captures, keylogging, encrypting files (potential ransomware), and exfiltrating data to a remote server via socket.io. It also adds persistence to the Windows startup and includes functionality for remote command execution, indicating it's a Remote Access Trojan (RAT)."
+        }
+    },
+    "65": {
+        "qwen3-32b": {
+            "output": "Yes  \nThe code retrieves the user's public IP address and sends it to a specified Discord webhook URL without user consent. While it does not perform direct harmful actions, it leaks sensitive information (IP address) to a third-party service, which can be used for tracking or targeted attacks. The hardcoded webhook URL indicates it's designed to exfiltrate data to an unauthorized recipient."
+        }
+    },
+    "66": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file (`howl.exe`) from an external GitHub URL and immediately executes it under the guise of a legitimate-sounding name (`RealtekHDAudioManager.exe`). This behavior is highly suspicious and aligns with common tactics used in malware distribution, such as automating the download and execution of untrusted binaries without user verification. The URL and file naming also lack clear legitimacy or official association with Realtek."
+        }
+    },
+    "67": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code imports and executes modules with clearly malicious functionalities such as `evasion`, `exfiltration`, `clipboard_data_alternation`, `screen_capture`, `steel_cookie_db` (likely cookie theft), and persistence mechanisms (`drop_config_autostart`, etc.). It also includes explicit print statements referencing \"evil_package\" and systematically performs data exfiltration to Discord/text storage. These behaviors align with malware characteristics like data theft, persistence, and evasion."
+        }
+    },
+    "68": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it stealthily collects and exfiltrates Telegram desktop session data. It:  \n1. Uses base64 obfuscation to hide its true purpose  \n2. Searches Windows registry for Telegram installation paths  \n3. Copies sensitive session files from temporary directories  \n4. Zips and sends stolen data to a Telegram bot (with hardcoded credentials)  \n5. Cleans up evidence by deleting temporary files  \nThis represents clear data exfiltration behavior targeting user sessions, enabling account takeover."
+        }
+    },
+    "69": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (OS, uptime, hostname, import stack) and sends it to a remote server via HTTP POST without user consent. While not directly destructive, this behavior constitutes unauthorized data exfiltration, which is a hallmark of malicious software. The use of a webhook URL (https://webhook.site/...) suggests potential misuse for surveillance or espionage, especially if deployed without transparency."
+        }
+    },
+    "70": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious. It installs dependencies, monitors the clipboard, and sends copied data to a remote Discord webhook (decoded from base64). It also establishes persistence by adding itself to Windows startup via a registry entry and a batch file. These behaviors indicate data exfiltration and unauthorized persistence, which are hallmarks of malware."
+        }
+    },
+    "71": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads a script from a remote URL and configures it to execute at Windows startup via a registry entry. This behavior is characteristic of malware, as it establishes persistence and executes unverified code without user consent. The use of `pythonw` to hide execution further suggests malicious intent."
+        }
+    },
+    "72": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64 string that downloads and runs a JAR file from an external source (GitHub) and potentially a JRE from Dropbox. It automates the process of downloading, extracting, and executing binaries without user consent, which is a common tactic in malware distribution. The obfuscation and lack of transparency about the downloaded components strongly indicate malicious intent."
+        }
+    },
+    "73": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends sensitive system information (hostname, current working directory, and username) to a remote server via a GET request. The use of an OAST (Out-of-Band Application Security Testing) domain (`oast.fun`) strongly indicates malicious intent, as such domains are typically used to exfiltrate data during attacks. This behavior constitutes reconnaissance, which is a common precursor to further exploitation."
+        }
+    },
+    "74": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains multiple malicious functionalities:  \n1. **System Damage**: The `damage_system()` function attempts to delete all files in the Windows System32 directory (`del C:\\\\Windows\\\\System32\\\\*.*`), which would cripple a Windows system.  \n2. **Unauthorized Execution**: The `exe_exe()` function executes an external `.exe` file (`kitty.exe`) bundled in the package, potentially running arbitrary malicious code.  \n3. **Persistence/Phishing**: The `open_url()` function opens a suspicious YouTube link, possibly for phishing or social engineering.  \n4. **Silent Operation**: The `--silent` flag allows executing the `.exe` without user interaction, hiding malicious activity.  \nWhile the author claims educational intent, the code explicitly includes destructive and stealthy behaviors, making it malicious."
+        }
+    },
+    "75": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess.run` with `shell=True` to execute a `curl` command that collects and transmits sensitive system information (e.g., `/etc/passwd`, `~/.bash_history`, user directories, security groups) to a remote server (`43.139.166.32`). This is a clear data exfiltration attempt, making it malicious."
+        }
+    },
+    "76": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation and executes decrypted content via `exec`, which is a common technique in malware to hide malicious payloads. The Fernet decryption with a hardcoded key and encrypted data suggests an attempt to conceal the actual code, which could perform harmful actions upon execution. The Windows-specific check (`os.name == \"nt\"`) further indicates a targeted attack vector."
+        }
+    },
+    "77": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscated class and variable names, dynamically decrypts and executes potentially harmful code using Fernet encryption. This pattern is commonly associated with malware to evade detection and conceal malicious payloads. The use of `exec` with decrypted data suggests it may execute arbitrary, hidden code, which is a strong indicator of malicious intent."
+        }
+    },
+    "78": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the decrypted code's contents are not visible, making it difficult to assess intent. Dynamic execution of unverified decrypted data is inherently risky and strongly indicates malicious behavior."
+        }
+    },
+    "79": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for hiding malicious payloads. The encrypted data is likely executable code that performs harmful actions (e.g., data exfiltration, encryption, or system compromise) after decryption. The conditional check for Windows (`os.name == \"nt\"`) further indicates platform-specific malicious behavior."
+        }
+    },
+    "80": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscated class names and executes decrypted data with `exec`, which is a common technique in malware to hide malicious payloads. The use of `Fernet` decryption followed by immediate execution strongly suggests the code is designed to run hidden, potentially harmful code, especially since the decrypted content is not visible in the source."
+        }
+    },
+    "81": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on obfuscated data and executes it via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the code checks for Windows (`os.name == \"nt\"`) before executing the decrypted payload, indicating targeted behavior. The use of encryption and dynamic code execution strongly suggests malicious intent."
+        }
+    },
+    "82": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (long random class name), conditionally imports `requests` and `Fernet`, and executes decrypted code via `exec()` after checking for a Windows OS. This pattern is typical of malware that hides malicious payloads in encrypted form, which are decrypted and executed at runtime to avoid detection."
+        }
+    },
+    "83": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec()`, which is a common technique in malware to hide malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of `install.run(self)` suggest it may be part of a multi-stage attack or backdoor. Obfuscation and dynamic execution are strong indicators of malicious intent."
+        }
+    },
+    "84": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common technique in malware to obfuscate and execute hidden payloads. The encrypted data (`b'gAAAAAB...`) is likely malicious code, and the Windows-specific check (`os.name == \"nt\"`) targets Windows systems. The combination of encryption, dynamic execution, and obfuscated class names strongly indicates malicious intent."
+        }
+    },
+    "85": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code (`exec(...)`) conditionally on Windows (`os.name == \"nt\"`). This obfuscation and dynamic execution are strong indicators of malicious intent, as they hide the actual payload from static analysis. Additionally, the class extends `install`, suggesting it might be part of a malicious installation process."
+        }
+    },
+    "86": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation by encrypting and executing decrypted data with Fernet, which is a strong indicator of malicious intent. The `exec` statement combined with platform-specific checks (`os.name == \"nt\"`) suggests it may execute hidden payloads, a common tactic in malware."
+        }
+    },
+    "87": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the use of `exec()` on decrypted data strongly suggests it is designed to run hidden, potentially harmful code."
+        }
+    },
+    "88": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The `exec` function dynamically runs decrypted code, likely containing harmful operations. The class name and structure are also intentionally obfuscated, further indicating malicious intent."
+        }
+    },
+    "89": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content via `exec()`, which is a common technique in malware to hide malicious payloads. The conditional check for Windows (`os.name == \"nt\"`) and the use of external libraries like `requests` further suggest it's designed to run hidden operations, likely malicious."
+        }
+    },
+    "90": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to run decrypted content via Fernet, which is a common technique for obfuscating malicious payloads. Decrypting and executing arbitrary code without inspection is highly suspicious and indicative of malware behavior, such as downloading or executing hidden payloads."
+        }
+    },
+    "91": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec()`, a common technique in malware to hide malicious payloads. The decrypted and executed code is not visible, making it impossible to assess its true behavior without analysis, which strongly indicates malicious intent."
+        }
+    },
+    "92": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for executing hidden payloads. The encrypted data (`b'gAAAAAB...`) likely contains malicious code that is decrypted and executed at runtime, bypassing static analysis. Additionally, the class inherits from `install`, suggesting it may be part of a package installation process that injects malicious behavior. The use of `os.name == \"nt\"` targets Windows systems, further indicating potential malicious intent."
+        }
+    },
+    "93": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`), suggesting platform-specific malicious behavior. The use of `exec()` with decrypted data strongly indicates malicious intent."
+        }
+    },
+    "94": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for malicious payloads. The encrypted data and key are hardcoded, suggesting the decrypted code is intended to execute arbitrary, hidden functionality (e.g., downloading malware, exfiltrating data). The `os.name == \"nt\"` check targets Windows systems, further indicating malicious intent."
+        }
+    },
+    "95": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64-encoded payload that creates hidden directories, writes VBScripts to download and execute an external executable (\"Runtime.exe\") from a Discord CDN URL using `bitsadmin`, and runs it via `subprocess`. This behavior is characteristic of malware distribution, including potential backdoors or unwanted software installation."
+        }
+    },
+    "96": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes a base64-encoded payload from a remote URL (github gist) during a package installation process. It uses subprocess.Popen to run arbitrary code fetched from an external source, which is a common technique in malware to execute hidden payloads. The use of obfuscation (double base64 encoding) and conditional execution on Windows systems further indicates malicious intent."
+        }
+    },
+    "97": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable (`zwerve.exe`) from a GitHub URL and executes it without verification. This behavior is highly suspicious and aligns with common malicious patterns, such as unauthorized remote code execution or distribution of potentially harmful payloads. The lack of integrity checks (e.g., hashes) or user consent further confirms the risk."
+        }
+    },
+    "98": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string to create a VBScript and batch file that download an executable from a remote URL (Discord CDN) using `bitsadmin`, then places it in the Windows Startup folder to execute at login. This is a classic malicious behavior: persistence via startup, remote code execution, and obfuscation through base64 encoding."
+        }
+    },
+    "99": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64-encoded payload that creates directories, writes malicious VBS and batch files to download and execute an executable from a remote server (`http://51.77.140.144:8086`). It uses obfuscation, unauthorized file creation, and subprocess execution to stealthily deploy potentially malicious software, indicating malware behavior."
+        }
+    },
+    "100": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (reversing and base64 encoding) to hide a payload, then executes it with `exec`. This is a common tactic in malware to evade detection. The decoded payload (likely malicious code) is compressed with zlib, suggesting it could be a hidden script or binary. The presence of `subprocess`, `shutil`, and `zipfile` further indicates potential for system manipulation or data exfiltration."
+        }
+    },
+    "101": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string that creates hidden directories, writes malicious scripts (`.vbs` and `.bat` files), and uses `bitsadmin` to download and execute an unknown executable from a remote URL. It also places the executable in the Windows Startup folder to ensure persistence. The use of obfuscation (`exec` + base64), unauthorized file creation, and remote code download are strong indicators of malware behavior."
+        }
+    },
+    "102": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code in the `get_balance` method attempts to exfiltrate a Solana keypair file (`keypair.json`) to a Telegram bot (using a hardcoded bot token and chat ID). This is a malicious action as it steals sensitive cryptographic keys, which can be used to drain funds from a Solana wallet."
+        }
+    },
+    "103": {
+        "qwen3-32b": {
+            "output": "yes  \nThe provided Python code is malicious. It is a multifunctional information-stealing script designed to extract sensitive data such as Discord tokens, browser passwords, cookies, credit card details, cryptocurrency wallet information, and more. Key malicious behaviors include:  \n\n1. **Data Exfiltration**:  \n   - Steals Discord tokens, decrypts and uploads browser credentials (passwords, cookies), and extracts credit card details from browsers.  \n   - Targets cryptocurrency wallets (e.g., Exodus, Atomic Wallet) and injects malicious code to exfiltrate private keys.  \n\n2. **Remote Communication**:  \n   - Uses a Discord webhook (`hook`) to send stolen data, including victim IP, system info, and extracted secrets.  \n   - Uploads stolen files (e.g., browser data, documents) to services like GoFile.io.  \n\n3. **Persistence & Evasion**:  \n   - Disables error logging (`stderr` redirection) and uses threading to avoid detection.  \n   - Dynamically installs required libraries (e.g., `pycryptodome`) for decryption.  \n\n4. **Malicious Injections**:  \n   - Modifies wallet applications (Exodus, Atomic) to embed a webhook for real-time data theft.  \n\nThis script is a classic example of a **stealer** malware, designed to compromise user privacy and financial assets."
+        }
+    },
+    "104": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (OS, uptime, hostname, import context, and call stack) and sends it to a remote server (`webhook.site`) without user consent. While the URL appears benign (likely a placeholder for testing), the behavior of exfiltrating system telemetry without explicit opt-in is malicious by nature, as it violates privacy and could be repurposed for surveillance or targeted attacks."
+        }
+    },
+    "105": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it collects all files in the current directory and uploads them to a Telegram bot (using `sendDocument`), which indicates data exfiltration. Additionally, it writes filenames to \"SIN.txt\", potentially logging sensitive information. The use of Telegram bot credentials (`token2`, `ID2`) and unauthorized file transmission are clear indicators of malicious intent."
+        }
+    },
+    "106": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell by connecting to a remote server, redirecting standard input/output to the socket, and executing an interactive Python shell via `subprocess.call`. This allows remote command execution, which is a clear indication of malicious intent."
+        }
+    },
+    "107": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a Discord CDN URL and executes it without user consent. This behavior is highly suspicious and aligns with common malware patterns (remote code execution, stealthy file placement in AppData). The use of `subprocess.run()` to launch the downloaded binary confirms malicious intent."
+        }
+    },
+    "108": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file (`strings.bat`) from a Discord CDN URL using `curl` and `cmd`. This behavior is highly suspicious as it automatically downloads and runs an external script without user consent or verification, which is a common technique in malware distribution. The true purpose of the downloaded file cannot be determined from the provided code, but the act of executing untrusted remote content qualifies as malicious."
+        }
+    },
+    "109": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell to a remote server (85.159.212.47:61985) by redirecting stdin/stdout/stderr to a socket connection and spawning a shell. This is a classic malicious behavior for remote code execution and system compromise."
+        }
+    },
+    "110": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses obfuscated class names, conditionally imports `requests` and `Fernet` on Windows (`os.name == \"nt\"`), and executes decrypted bytecode via `exec()`. The decrypted payload is obfuscated with a hardcoded Fernet key, a common technique in malware to hide malicious logic. This pattern strongly indicates an attempt to execute hidden, potentially harmful code."
+        }
+    },
+    "111": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data from a hardcoded Fernet key and encrypted payload, which is a common obfuscation technique for malicious payloads. The class appears to override an installation process (`install.run`), suggesting it may execute hidden malicious code during installation. The use of encryption and dynamic execution strongly indicates malicious intent."
+        }
+    },
+    "112": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for hiding malicious payloads. The class name is obfuscated, and the decrypted code is executed conditionally on Windows (`os.name == \"nt\"`), suggesting an intent to execute hidden, potentially harmful operations. The use of `exec()` with encrypted data strongly indicates malicious behavior, as it allows runtime execution of concealed code, often used in malware for evasion."
+        }
+    },
+    "113": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet to decrypt and execute obfuscated content conditionally on Windows (`os.name == \"nt\"`). The encrypted payload is executed via `exec()`, which is a common technique for hiding malicious logic (e.g., malware, backdoors). The use of obfuscation and dynamic execution strongly suggests malicious intent."
+        }
+    },
+    "114": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content conditionally on Windows (`os.name == \"nt\"`). This obfuscation and dynamic execution are common techniques in malware to evade detection. The encrypted payload's content is not visible in the source, making it impossible to assess its intent without executing it, which is a strong indicator of malicious behavior."
+        }
+    },
+    "115": {
+        "qwen3-32b": {
+            "output": "**Decision:** no  \n**Reason:** The code collects system information (OS, uptime, hostname) and sends it to a specified URL, which could be considered a privacy concern. However, it does not perform harmful actions like data theft, file modification, or system compromise. The behavior resembles analytics/telemetry features in legitimate software, though the lack of user consent is problematic. There is no evidence of malicious intent or capabilities beyond data transmission."
+        }
+    },
+    "116": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads and executes a base64-encoded payload from a remote URL (https://pastebin.com/raw/VvkKsmxr), establishes persistence across reboots via OS-specific mechanisms (cron jobs, Windows tasks, macOS launch agents), and uses mutexes to ensure single-instance execution. These behaviors are characteristic of malware, including remote code execution, persistence, and obfuscation."
+        }
+    },
+    "117": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads content from a remote IP address (43.139.166.32) and writes it to a Python module (`/tmp/pdsuax4_lib/__init__.py`). This behavior is highly suspicious as it dynamically injects external code into a temporary directory, which could execute arbitrary malicious logic when imported. The use of an obfuscated directory name and remote code execution patterns are strong indicators of malware."
+        }
+    },
+    "118": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code captures a screenshot of the user's screen and sends it to a Discord webhook without user consent, which is a clear malicious behavior. It also installs dependencies (Pillow, requests) and executes a custom install command, suggesting it's part of a payload designed to exfiltrate data covertly."
+        }
+    },
+    "119": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it defines functions to exfiltrate sensitive data (`.env` files, environment variables, and SSH private keys) to a remote server. It uses platform-specific commands to search for and steal configuration files, encodes them in base64, and sends them via HTTP requests. Additionally, it integrates into Python package installation processes (`develop`/`install` hooks) to execute automatically during installation, making it a stealthy data-stealing payload."
+        }
+    },
+    "120": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes a script from an external URL (`https://fhost.devxops.eu.org/...`) without verification, which is a common technique in malware distribution. It uses `urllib.request.urlretrieve` to fetch the script, sets it as executable, and runs it with `subprocess.run`. The script's origin and purpose are not validated, making it a security risk."
+        }
+    },
+    "121": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects and sends all environment variables (including potentially sensitive data like API keys, passwords, etc.) to an external server (`oastify.com`) via an unverified HTTPS request (`verify=False`). This is a classic data exfiltration pattern used by malware to steal secrets. The use of an OAST domain (common in security testing for detecting vulnerabilities) further indicates intentional external communication."
+        }
+    },
+    "122": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (reversing, base64 decoding, zlib decompression) to execute hidden payload via `exec()`. This is a common pattern in malware to evade detection. The decoded content likely contains malicious logic (e.g., persistence, data exfiltration) given the use of dangerous modules like `subprocess`, `shutil`, and `urllib`."
+        }
+    },
+    "123": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it functions as a token grabber and info stealer. It steals Discord tokens, browser credentials, cookies, screenshots, and system information, then exfiltrates the data to a webhook. It employs anti-debugging/anti-VM techniques, modifies Discord's core files to inject malicious JavaScript, and attempts to bypass security tools like Discord Token Protector. These behaviors clearly indicate a malicious intent to compromise user accounts and systems."
+        }
+    },
+    "124": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code is designed to exfiltrate a ZIP file (likely containing sensitive data) to a Telegram bot using stolen credentials (TOKEN, CHAT_ID). It constructs a deceptive file path mimicking system directories, uses a default username (\"mamont\") if environment variables fail, and deletes the cache afterward to cover its tracks. These behaviors are consistent with malware, particularly data-exfiltration modules."
+        }
+    },
+    "125": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes an external executable (CBLines.exe) from a GitHub URL during installation without user consent or verification. This behavior is characteristic of malicious software distribution, as it automates the execution of untrusted code from an external source."
+        }
+    },
+    "126": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from an untrusted IP address (194.163.191.205:6963) and immediately launches it without user consent or verification. This behavior is characteristic of malware distribution, as it bypasses security checks and executes unknown binaries on the system."
+        }
+    },
+    "127": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes an executable file from a remote server (`http://194.163.191.205:6963`) without user consent. This behavior is highly suspicious, as it automatically retrieves and runs an external binary (`Netflix_Checker.exe`), which could be malware. The hardcoded URL and lack of verification of the downloaded file's integrity further indicate malicious intent."
+        }
+    },
+    "128": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decrypts and executes obfuscated Python code using Fernet, which is a strong indicator of malicious behavior. The use of `exec()` on decrypted data, combined with an obfuscated class name and hardcoded encryption key, suggests an attempt to hide the true purpose of the payload, likely for stealthy execution of malicious operations."
+        }
+    },
+    "129": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is a multifunctional malware with capabilities to steal browser credentials, Discord tokens, cryptocurrency wallet data, take screenshots/webcam photos, log keystrokes, execute arbitrary commands, and act as a backdoor via a socket.io server. It includes persistence mechanisms (startup entry), data exfiltration, and ransomware-like encryption features, all indicative of malicious intent."
+        }
+    },
+    "130": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote URL and executes it in the system's temporary directory without user consent. This behavior is highly suspicious and aligns with common malicious patterns such as remote code execution, stealthy payload deployment (using UUIDs to obfuscate filenames), and background execution (via `CREATE_NO_WINDOW`). The lack of integrity checks or user interaction further confirms its malicious intent."
+        }
+    },
+    "131": {
+        "qwen3-32b": {
+            "output": "Yes  \nThe code downloads and executes a Python script from a Discord-hosted URL without user interaction or verification. This behavior is highly suspicious and aligns with common malware patterns (remote code execution, untrusted source). The use of `pythonw` to hide execution further raises red flags."
+        }
+    },
+    "132": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious. It decodes a Discord webhook URL from base64, continuously monitors the clipboard, and sends copied data to the webhook. It also creates persistence by adding itself to Windows startup via a batch file and registry modification, ensuring it runs automatically on system boot. These behaviors indicate data exfiltration and persistence mechanisms typical of malware."
+        }
+    },
+    "133": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes a Python script from a remote URL (hosted on Discord) without user verification. This behavior is highly suspicious and aligns with common malicious patterns, such as remote code execution, potential payload delivery, and lack of transparency about the downloaded content. The use of `pythonw` to hide the console further suggests an attempt to operate covertly."
+        }
+    },
+    "134": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (hostname, current working directory, username) and sends it to an external server (`https://kar.al`) during installation. This behavior is suspicious and resembles data exfiltration or reconnaissance, which is commonly associated with malicious software. The lack of user consent and the use of a shortened/obfuscated domain further raise concerns."
+        }
+    },
+    "135": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string containing Python code that downloads and executes a payload from Pastebin.com using `urllib3`. It avoids execution on cloud/virtual environments (common sandboxing techniques) and uses threading to stealthily run the malicious payload. Fetching and executing remote code without user consent is a clear indicator of malicious behavior."
+        }
+    },
+    "136": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains obfuscated and dynamically executed content using `exec`, which is a strong indicator of malicious intent. The obfuscated payload is decoded with `base64.b64decode` and `zlib.decompress`, then executed. This pattern is commonly used in malware to hide its true purpose. Additionally, the script imports modules like `subprocess`, `shutil`, and `urllib.request`, which could be used for system manipulation, file operations, or downloading malicious payloads. The combination of obfuscation, dynamic execution, and suspicious module usage strongly suggests the code is malicious."
+        }
+    },
+    "137": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes an executable file from a remote URL without verification. This is a common technique used in malware distribution, as it allows arbitrary code execution from an untrusted source. The lack of integrity checks or user consent makes this behavior malicious."
+        }
+    },
+    "138": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file (`strings.bat`) from a Discord CDN URL using `curl` and `cmd`. This behavior is highly suspicious because:  \n1. It executes unverified remote code without integrity checks.  \n2. The batch file's contents are unknown, and the URL could point to malicious payloads.  \n3. Obfuscation via base64 and use of `os.system` for command execution are common in malware to hide malicious intent.  \nThe combination of remote code download and execution without user consent or verification makes this code malicious."
+        }
+    },
+    "139": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends a notification to a Discord webhook (https://discord.com/api/webhooks/...) when the package is installed, which is a common technique used by malware authors to signal successful execution or exfiltrate information. This behavior indicates malicious intent."
+        }
+    },
+    "140": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable file from a Discord URL to the user's APPDATA directory and executes it silently using `subprocess.Popen` with `CREATE_NO_WINDOW` and `shell=True`. This behavior is highly suspicious and aligns with common malware patterns (e.g., stealth execution, unverified remote payloads). The lack of integrity checks or user consent further confirms malicious intent."
+        }
+    },
+    "141": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious. It is a Discord token and browser credential stealer. It extracts sensitive information like Discord tokens, browser passwords, cookies, and personal files, then sends them to a specified Discord webhook. It uses cryptographic functions to decrypt stored data, employs anti-analysis techniques (e.g., checking for sandbox environments), and exfiltrates data via HTTP requests, which are hallmarks of malware."
+        }
+    },
+    "142": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it stealthily exfiltrates sensitive Minecraft/LunarClient account files (like `accounts.json` and `launcher_accounts.json`) by reading them from user directories and sending them via a Discord webhook. The webhook URL is obfuscated using base64 and fetched from a shortened link (`bit.ly`), which is a common tactic to hide malicious destinations. This behavior constitutes unauthorized data theft."
+        }
+    },
+    "143": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious because it scans the entire filesystem for files matching specific obfuscated extensions (decoded from base64), packages them into ZIP archives, and uploads them to a remote server (`http://danielavandover.pythonywhere.com/upload`) using `aiohttp`. It also suppresses warnings to hide its activities and deletes the local copies after upload, indicating data exfiltration and potential stealthy operation."
+        }
+    },
+    "144": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains an obfuscated payload executed via `exec(binascii.unhexlify(...))`, which decodes and runs hidden code. While the majority of the code resembles a legitimate `os` module implementation, the presence of this obfuscated execution is highly suspicious and indicative of malicious intent. The decoded payload could perform arbitrary actions, potentially compromising the system."
+        }
+    },
+    "145": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data via Fernet, which is a strong indicator of obfuscated malicious payload execution. Decrypting and running arbitrary code, especially conditionally on Windows (`os.name == \"nt\"`), is a common tactic in malware to evade detection and execute hidden functionality. The encrypted payload's contents are not visible here, but the pattern of decryption followed by execution is highly suspicious and aligns with malicious behavior."
+        }
+    },
+    "146": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data obtained via Fernet decryption, which is a strong indicator of obfuscated malicious payload execution. The presence of hardcoded encryption keys and encrypted data suggests an attempt to hide the true behavior of the code, commonly seen in malware."
+        }
+    },
+    "147": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content only on Windows (os.name == \"nt\"). This pattern is commonly used in malware to hide malicious payloads. The `exec()` function dynamically runs the decrypted code, which could perform arbitrary actions like downloading malware, stealing data, or modifying system settings. The lack of transparency in the decrypted payload further confirms its suspicious nature."
+        }
+    },
+    "148": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to evade detection. The decrypted code's purpose is hidden, and execution during installation (`install.run`) on Windows systems poses significant security risks, indicating malicious intent."
+        }
+    },
+    "149": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted content via Fernet, a symmetric encryption library. This obfuscation technique is commonly used in malware to hide malicious payloads. The hardcoded key and encrypted data strongly suggest the presence of hidden, potentially harmful code that executes only on Windows systems during installation."
+        }
+    },
+    "150": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The conditional execution on Windows (`os.name == \"nt\"`) and use of external libraries like `requests` further indicate potential malicious behavior. Obfuscated execution without transparency is a strong red flag."
+        }
+    },
+    "151": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet to decrypt and execute a payload conditionally on Windows systems. This obfuscation technique is commonly used to hide malicious behavior, such as executing arbitrary code during installation. The decrypted content could perform harmful actions (e.g., backdoors, data exfiltration), and the use of `exec` with encrypted data is a strong indicator of malicious intent."
+        }
+    },
+    "152": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content from a Fernet key and encrypted byte string, which is a common obfuscation technique in malware. This dynamic execution hides malicious payloads until runtime, making it highly suspicious and potentially harmful."
+        }
+    },
+    "153": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted data from a hardcoded Fernet key and encrypted payload. This is a common obfuscation technique in malware to hide malicious behavior (e.g., downloading payloads, executing shellcode). The decryption and execution during installation strongly suggests malicious intent."
+        }
+    },
+    "154": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call during an installation process. This obfuscates the actual payload, which is executed at runtime. Such patterns are commonly used in malware to hide malicious behavior (e.g., downloading payloads, executing arbitrary code). The combination of `exec()`, encrypted data, and OS-specific execution (`os.name == \"nt\"`) strongly indicates malicious intent."
+        }
+    },
+    "155": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content from a hardcoded Fernet key and encrypted byte string, which is a common obfuscation technique in malicious software. The decryption and execution of unknown payloads, especially conditionally on Windows (`os.name == \"nt\"`), strongly indicates malicious intent."
+        }
+    },
+    "156": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content via Fernet, which is a strong indicator of obfuscated malicious payload. The decryption key and encrypted data are hardcoded, suggesting hidden functionality (likely malware) that executes only on Windows (`os.name == \"nt\"`). This pattern is commonly used to evade static analysis."
+        }
+    },
+    "157": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet to decrypt and execute obfuscated content via `exec()`, which is a common technique in malware to hide malicious payloads. The decrypted data's origin and purpose are not transparent, making it highly suspicious. Additionally, the conditional execution on Windows (`os.name == \"nt\"`) suggests targeted behavior, further indicating potential malicious intent."
+        }
+    },
+    "158": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The decrypted code's purpose is obscured, making it likely malicious."
+        }
+    },
+    "159": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content conditionally on Windows. This pattern is commonly used in malware to hide malicious payloads (e.g., downloading/backdoors). The hardcoded key and encrypted data strongly suggest an intentional concealment of harmful behavior."
+        }
+    },
+    "160": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on a hardcoded key and encrypted payload, then executes the decrypted result with `exec()`. This pattern is commonly used to obfuscate and execute malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of external libraries like `requests` further suggest potential malicious behavior, as the decrypted code's true purpose is hidden from casual inspection."
+        }
+    },
+    "161": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains a function `decrypt_jsBIP39` that base64-encodes a payload and sends it via HTTP POST to a hardcoded IP address (`5.42.92.191:5000/post`). This behavior indicates data exfiltration, likely stealing sensitive information (e.g., cryptographic keys/seeds) associated with BIP39, which is used in cryptocurrency wallets. The lack of user consent or transparency about this network activity makes it malicious."
+        }
+    },
+    "162": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content via Fernet, which is a strong indicator of malicious behavior. Decrypting and executing obfuscated code is a common technique in malware to hide payloads. Even though the exact decrypted code isn't visible here, the structure suggests an attempt to run arbitrary, potentially harmful code, especially on Windows systems."
+        }
+    },
+    "163": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec` call, which is a common obfuscation technique for hiding malicious payloads. The encrypted data is executed only on Windows (`os.name == \"nt\"`), suggesting platform-specific behavior. The use of hardcoded encryption keys and obfuscated execution strongly indicates an attempt to conceal malicious activity, such as downloading or executing hidden code."
+        }
+    },
+    "164": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data obtained via Fernet decryption. This obfuscation technique is commonly used in malware to hide malicious payloads. The decrypted content is never shown, making it impossible to verify its intent, and executing untrusted code from an encrypted string is a strong indicator of malicious behavior."
+        }
+    },
+    "165": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects system process information (`ps -elf`) and environment variables, then sends this sensitive data to an external server (`http://catvghtugbisywnzzpwvtuhf7ifdcnw1u.oast.fun`) using `curl`. This behavior is consistent with data exfiltration, a common malicious activity."
+        }
+    },
+    "166": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key and encrypted payload, then executes the decrypted result via `exec()`. This obfuscation technique is commonly used to hide malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of external libraries like `requests` further suggest potential malicious behavior such as downloading or executing hidden code."
+        }
+    },
+    "167": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on a base64-encoded string and executes the result via `exec()`. This obfuscation technique is commonly used to hide malicious payloads. The conditional check for Windows (`os.name == \"nt\"`) suggests platform-specific execution, and the use of external libraries like `requests` increases suspicion of remote code execution or data exfiltration."
+        }
+    },
+    "168": {
+        "qwen3-32b": {
+            "output": "Exception: BadRequestError - Error code: 400 - {'error': {'code': 'invalid_parameter_error', 'message': '<400> InternalError.Algo.InvalidParameter: Range of input length should be [1, 98304]', 'param': None, 'type': 'invalid_request_error'}, 'request_id': '325a0a12-ca92-4ad8-b037-6707ee6d0cad'}"
+        }
+    },
+    "169": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code checks if the OS is Windows (os.name == \"nt\"), imports `requests` and `Fernet`, then decrypts and executes obfuscated bytecode using `exec()`. This pattern is highly suspicious, as it hides the actual payload (likely malicious) through encryption/obfuscation. The use of `exec()` on decrypted data without transparency is a strong indicator of malicious intent."
+        }
+    },
+    "170": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with `exec()` to execute obfuscated code on Windows systems. This pattern is commonly associated with malware to hide malicious payloads. The combination of runtime decryption and execution is a strong indicator of malicious intent."
+        }
+    },
+    "171": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains obfuscated and decoded-executed payload. It uses `exec` on a base64/zlib-decompressed string, which is a common technique in malware to hide malicious logic. The decoded content is not visible in the source, making it impossible to verify safety without analysis, which strongly indicates malicious intent."
+        }
+    },
+    "172": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends user-provided input to an external server (http://47.104.208.181:5000) without input validation or sanitization, potentially enabling data exfiltration or command injection attacks. The silent error handling (`except: pass`) further obscures malicious activity, making this behavior suspicious and likely malicious."
+        }
+    },
+    "173": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable (`windef.exe`) from a Dropbox URL and executes it without verification. This behavior is highly suspicious and aligns with common malware distribution tactics, such as fetching and running untrusted binaries from external sources. The lack of integrity checks and the use of obfuscated paths (e.g., `%APPDATA%\\TMP`) further indicate malicious intent."
+        }
+    },
+    "174": {
+        "qwen3-32b": {
+            "output": "no\n\nThe code is a legitimate network traffic analysis tool using machine learning for flow classification. It employs Scapy for packet sniffing, Flask/SocketIO for a web interface, and ML models for threat detection. While it captures network traffic, this is consistent with network monitoring/security analysis tools rather than malicious behavior. The code does not exfiltrate data, execute arbitrary commands, or contain obvious malicious payloads. Its purpose appears to be network flow analysis and anomaly detection, which is a common practice in cybersecurity."
+        }
+    },
+    "175": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on a base64-encoded payload and executes it via `exec()`, which is a common technique in malware to obfuscate and inject malicious code. The obfuscated class name, conditional Windows check, and execution of decrypted data strongly indicate malicious intent."
+        }
+    },
+    "176": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call to execute obfuscated payload, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`), suggesting platform-specific malicious behavior. The use of `exec()` with decrypted data strongly indicates malicious intent."
+        }
+    },
+    "177": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for hiding malicious payloads. The encrypted data is likely executable code that is decrypted and executed at runtime, bypassing static analysis. Additionally, the class name is obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`), suggesting platform-specific malicious behavior. The use of `exec()` with decrypted content is a strong indicator of malicious intent."
+        }
+    },
+    "178": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a script that downloads an executable file (`Build.exe`) from a remote URL hosted on Discord's CDN and runs it from the user's AppData directory. This behavior is highly suspicious and aligns with common tactics used in malware distribution, such as stealthily executing unknown binaries without user consent."
+        }
+    },
+    "179": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote URL (a Discord attachment link) and saves it as \"explorer.exe\" in the user's AppData directory. It then executes this file using `subprocess.run`. The behavior matches a classic malware pattern: downloading and running a potentially malicious payload without user consent. The use of threading and a deceptive filename (`explorer.exe`, mimicking a legitimate Windows process) further suggests malicious intent."
+        }
+    },
+    "180": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64 string that downloads an executable file (`Build.exe`) from a remote URL (cdn.discordapp.com) and runs it using `subprocess.run()` with `shell=True`. This behavior is highly suspicious as it:  \n1. Uses obfuscation (base64 encoding) to hide its payload.  \n2. Downloads and executes an unverified binary from an external source.  \n3. Leverages `shell=True`, which can lead to arbitrary command execution.  \nThese characteristics strongly indicate malicious intent, such as distributing malware or remote code execution payloads."
+        }
+    },
+    "181": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64 string that downloads a file (`Build.exe`) from a Discord CDN URL and runs it using `subprocess.run`. This is a classic pattern for malware distribution, where the executable's source is obfuscated and fetched remotely, indicating malicious intent."
+        }
+    },
+    "182": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote server (cdn.discordapp.com) to the user's AppData directory and executes it using subprocess. This behavior is characteristic of malware distribution, as it involves unauthorized downloading and execution of code without user consent. The use of base64 obfuscation and threading further suggests an intent to evade detection."
+        }
+    },
+    "183": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends sensitive system information (hostname, current user, directory, and file listings) to an external URL. This behavior is highly suspicious and indicative of data exfiltration, likely for reconnaissance or malicious purposes. The use of `$(hostname)`, `$(whoami)`, and `$(pwd)` dynamically injects system-specific data, which is then sent to a third-party endpoint (`https://eozjyg0uj1pesea.m.pipedream.net`). Such actions without explicit user consent or clear justification are typically malicious."
+        }
+    },
+    "184": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends sensitive system information (hostname, username, current directory, and file listing) to an external server (`eozjyg0uj1pesea.m.pipedream.net`). This behavior is consistent with data exfiltration, a common tactic in malicious scripts to gather and transmit system details to an attacker-controlled endpoint."
+        }
+    },
+    "185": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess.run` to execute a `curl` command that sends sensitive system information (hostname, username, current directory, and directory listing) to an external server (`eozjyg0uj1pesea.m.pipedream.net`). This behavior is consistent with data exfiltration, a common tactic in malicious scripts to gather and transmit system details for unauthorized access or reconnaissance."
+        }
+    },
+    "186": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it stealthily exfiltrates sensitive user data (Minecraft/LunarClient account configurations) to a remote Discord webhook. It decodes a base64-obfuscated URL to determine the webhook destination, reads local configuration files containing potential credentials, and sends them with a \"@everyone\" notification to alert attackers. This constitutes clear data theft behavior."
+        }
+    },
+    "187": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it searches for and exfiltrates sensitive information (`.env` files, environment variables, and SSH private keys) to a remote server (`http://3.95.136.197`). It uses platform-specific commands to locate files, encodes stolen data with base64, and sends it via HTTP requests, which constitutes data theft behavior."
+        }
+    },
+    "188": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code exfiltrates sensitive system information (environment variables, OS details, public IP) to a Slack webhook URL, which is a clear malicious activity. It also terminates the process abruptly with `exit(1)`, suggesting intent to hide or disrupt operations."
+        }
+    },
+    "189": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable from a Discord CDN link and saves it to the user's AppData directory under a deceptive name (`explorer.exe`). It then executes the downloaded file using `subprocess.run` with `shell=True`, which is a common technique for stealthy malware execution. The use of threading to run the process in the background and the obfuscation of the file path further suggest malicious intent. The behavior aligns with classic malware patterns: remote code download, persistence in user directories, and unauthorized execution."
+        }
+    },
+    "190": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable from a Discord CDN URL, saves it to a suspicious path (`AppData\\Local\\explorer.exe`), and executes it. This mimics system processes and executes unverified code, which is a common tactic in malware to evade detection and perform unauthorized actions. The lack of integrity checks or user consent further confirms malicious intent."
+        }
+    },
+    "191": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content via Fernet, which is a common obfuscation technique for malicious payloads. The hardcoded key and encrypted data suggest hidden functionality, likely malicious, especially since it's conditional on Windows (`os.name == \"nt\"`). The use of `exec` in an installation context raises significant security concerns."
+        }
+    },
+    "192": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted content with a hardcoded Fernet key, which is a common obfuscation technique for malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of `requests` and `Fernet` suggest it may download or execute hidden malicious code."
+        }
+    },
+    "193": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains an `exec` call that decrypts and executes obfuscated data using Fernet, which is a strong indicator of malicious behavior. The decryption occurs during the package installation phase, a common vector for malicious payloads. Obfuscating code through encryption and executing it dynamically is a classic technique used to hide malicious logic, such as downloading or executing harmful content."
+        }
+    },
+    "194": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for executing hidden payloads. The decrypted and executed code is not visible in the snippet, making it impossible to verify its intent without analysis. This pattern is often used in malware to evade detection."
+        }
+    },
+    "195": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec`, which is a common technique in malware to hide malicious payloads. The check for `os.name == \"nt\"` targets Windows systems, and the use of `exec` on decrypted data strongly indicates malicious intent."
+        }
+    },
+    "196": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to execute decrypted content from a Fernet key and encrypted byte string. This obfuscation technique is commonly used in malware to hide malicious payloads. The hardcoded encryption key and use of `requests` suggest it may download or execute hidden code, making it a security risk."
+        }
+    },
+    "197": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess` to execute a `curl` command that sends sensitive system information (hostname, username, current directory, file listings) to a remote server (`pipedream.net`). This behavior is consistent with data exfiltration, which is a malicious activity. The use of `shell=True` further increases security risks by enabling potential command injection."
+        }
+    },
+    "198": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious because it downloads an executable file from a remote URL and executes it without user consent. Specifically, it:  \n1. Uses `requests.get()` to fetch a binary from a Discord CDN link (likely malicious).  \n2. Saves the downloaded content to a disguised path (`explorer.exe` in the user's AppData directory, a common malware hiding spot).  \n3. Executes the downloaded file using `subprocess.run()` with `shell=True`, which can bypass security checks.  \nThis pattern is typical of malware distribution (e.g., trojans, remote access tools) and violates security principles by executing untrusted code."
+        }
+    },
+    "199": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content from a hardcoded key and encrypted data, which is a common technique in malware to obfuscate malicious payloads. This behavior is highly suspicious and indicates potential malicious intent, such as executing arbitrary code during installation."
+        }
+    },
+    "200": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains obfuscated and executed payload using zlib and base64 decoding, which is a common technique in malware to hide malicious logic. The use of `exec` on dynamically decoded data strongly indicates malicious intent."
+        }
+    },
+    "201": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decrypts and executes potentially malicious payload using Fernet decryption. This is a common obfuscation technique in malware to hide malicious logic. The use of `exec()` with decrypted data indicates runtime execution of hidden code, which is highly suspicious."
+        }
+    },
+    "202": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation and executes decrypted code via `exec()`, which is a common technique in malware to evade detection. The Fernet decryption key and encrypted payload suggest the code is designed to run arbitrary, hidden commands, particularly on Windows systems (`os.name == \"nt\"`). This behavior is highly suspicious and indicative of malicious intent."
+        }
+    },
+    "203": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`), suggesting platform-specific malicious behavior. The use of `exec()` on decrypted data strongly indicates an attempt to execute hidden, potentially harmful code."
+        }
+    },
+    "204": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious because it uses obfuscation, decrypts and executes arbitrary code via `exec()` after checking the OS is Windows (`os.name == \"nt\"`). The use of `Fernet` to decrypt a hidden payload and immediately execute it is a common tactic in malware to evade detection and deliver payloads."
+        }
+    },
+    "205": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The Windows-specific check (`os.name == \"nt\"`) and dynamic execution suggest intent to run hidden, potentially harmful code."
+        }
+    },
+    "206": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on a base64-encoded string and executes the result with `exec()`, which is a common obfuscation technique in malware. The hardcoded key and encrypted payload suggest the code is designed to dynamically execute hidden, potentially malicious instructions. The obfuscated class name and conditional import of `requests`/`Fernet` further indicate suspicious behavior."
+        }
+    },
+    "207": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation and decryption to execute potentially malicious payloads. It checks for a Windows environment, imports `requests` and `Fernet`, then decrypts and executes an encrypted byte string using `exec()`. This pattern is commonly used in malware to hide malicious logic and evade static analysis."
+        }
+    },
+    "208": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques, imports `Fernet` for decryption, and executes decrypted payload with `exec()`. This is a common pattern in malware to hide malicious logic. The encrypted data likely contains harmful code, and the Windows-specific check (`os.name == \"nt\"`) suggests platform-targeted execution."
+        }
+    },
+    "209": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted content via Fernet, which is a common obfuscation technique for malicious payloads. The hardcoded key and encrypted data suggest it executes arbitrary code after decryption, likely for nefarious purposes. The obfuscated class name and suspicious imports (requests, Fernet) further indicate malicious intent."
+        }
+    },
+    "210": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to evade detection. The conditional check for Windows (`os.name == \"nt\"`) suggests platform-specific malicious behavior. The use of `exec()` on decrypted data indicates runtime execution of hidden code, a strong indicator of malicious intent."
+        }
+    },
+    "211": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The OS check for Windows (`os.name == \"nt\"`) and the use of `exec()` on decrypted data strongly suggest it's designed to run hidden, potentially harmful code. The class name's obfuscation and lack of clear purpose further indicate malicious intent."
+        }
+    },
+    "212": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation and encrypted payloads (via Fernet) to execute hidden code on Windows systems. This is a common technique in malware to evade detection. The `exec` statement combined with decryption suggests the code is designed to run concealed malicious logic, such as downloading or executing a payload."
+        }
+    },
+    "213": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call to execute obfuscated code, which is a common technique in malware to hide malicious payloads. The hardcoded key and encrypted data suggest the code is designed to dynamically decrypt and execute hidden functionality, likely malicious. Additionally, the class name and structure indicate an attempt to evade static analysis."
+        }
+    },
+    "214": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, a common technique in malware to hide malicious logic. It also checks for Windows (`os.name == \"nt\"`) before executing, indicating platform-specific malicious behavior. The obfuscated class name and structure further suggest intentional concealment."
+        }
+    },
+    "215": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious. It uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec()`, which is a common technique in malware to evade detection. The conditional check for Windows (`os.name == \"nt\"`) and the use of `install.run()` suggest it's part of a payload delivery mechanism, likely for executing hidden malicious functionality after decryption."
+        }
+    },
+    "216": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the decrypted content (not shown) would likely contain harmful operations. The Windows-specific check (`os.name == \"nt\"`) and combination with `exec()` strongly indicate malicious intent."
+        }
+    },
+    "217": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common technique to obfuscate and execute hidden payloads. The hardcoded encryption key and encrypted data suggest a malicious payload is being dynamically decrypted and executed, likely bypassing static analysis. The class name is also obfuscated, further indicating malicious intent."
+        }
+    },
+    "218": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation with a long, random class name and executes decrypted content via `exec()`, which is highly suspicious. It checks for a Windows OS (`os.name == \"nt\"`) and decrypts a payload using a hardcoded Fernet key, likely executing malicious code. The use of `exec()` on decrypted data without transparency is a strong indicator of malware."
+        }
+    },
+    "219": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content from a Fernet-encrypted string, which is a common obfuscation technique in malware. The payload is hidden, and the use of `requests` and OS-specific checks (`os.name == \"nt\"`) suggests it may download and execute malicious code on Windows systems. The lack of transparency in the decrypted payload's content further indicates potential malicious intent."
+        }
+    },
+    "220": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet decryption on a hardcoded encrypted payload and executes the result via `exec()`, which is a common obfuscation technique for malicious payloads. The decrypted code is not visible, but its execution during installation (especially on Windows) strongly suggests hidden malicious behavior, such as downloading or executing unauthorized actions."
+        }
+    },
+    "221": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content from an encrypted string using Fernet. This is a common obfuscation technique to hide malicious payloads. The encrypted data, when decrypted, likely contains harmful code (e.g., downloading or executing malware), especially since it is conditionally executed on Windows (`os.name == \"nt\"`). The lack of transparency and the use of `exec` with external dependencies (like `requests`) strongly indicate malicious intent."
+        }
+    },
+    "222": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains an `exec` statement that decrypts and executes obfuscated code using Fernet, a symmetric encryption library. This is a strong indicator of malicious behavior, as it hides the true purpose of the code. The decryption key and encrypted payload are hardcoded, suggesting the payload is designed to run only on Windows (`os.name == \"nt\"`). Such obfuscation and execution of unknown code during installation is commonly used in malware to evade detection and perform unauthorized actions."
+        }
+    },
+    "223": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data with Fernet, which is a strong indicator of obfuscated malicious payload. Decrypting and executing hidden code at runtime is a common technique in malware to evade detection. The Windows-specific check (`os.name == \"nt\"`) further suggests targeted malicious behavior."
+        }
+    },
+    "224": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes decrypted bytecode using `exec()` during installation on Windows (`os.name == \"nt\"`). The use of `Fernet` to decrypt and immediately execute obfuscated data is a strong indicator of malicious behavior, as it hides the true payload. This pattern is commonly used in malware to evade detection and execute hidden code during package installation."
+        }
+    },
+    "225": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains a suspicious use of Fernet decryption with a hardcoded key and encrypted payload, followed by `exec()` to execute the decrypted code. This obfuscation technique is commonly used in malware to hide malicious behavior. The platform check for Windows (`os.name == \"nt\"`) and the context of an installation class further suggest potential malicious intent, such as executing hidden payloads during installation."
+        }
+    },
+    "226": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted content via Fernet, which is a strong indicator of obfuscated malicious payloads. The OS check for Windows (`os.name == \"nt\"`) and hardcoded encryption key suggest an intent to execute hidden code during installation, commonly used in malware distribution."
+        }
+    },
+    "227": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes a `curl` command via `subprocess` to send sensitive system information (hostname, current user, directory, and file listings) to an external server (`pipedream.net`). This behavior constitutes unauthorized data exfiltration, which is malicious. The use of command substitution in headers and the lack of user consent make this a clear security risk."
+        }
+    },
+    "228": {
+        "qwen3-32b": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable file from a Discord CDN link and saves it to the user's AppData directory under a deceptive name (`explorer.exe`). It then executes the downloaded file using `subprocess.run`. This behavior is characteristic of malware distribution, as it involves downloading and running an unknown binary without user consent, potentially compromising the system."
+        }
+    },
+    "229": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious because it downloads an executable from a remote URL (a Discord attachment link) and saves it to the user's AppData directory under a disguised name (`explorer.exe`). It then executes the downloaded file using `subprocess.run()`. This behavior is characteristic of malware droppers, which silently install and run unauthorized software. The use of threading to hide execution and the obfuscated file path further indicate malicious intent."
+        }
+    },
+    "230": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a Discord CDN link and executes it from the user's AppData directory. This behavior is highly suspicious as it:  \n1. Uses obfuscated paths and external URLs to fetch unknown binaries  \n2. Executes the downloaded file immediately using subprocess  \n3. Names the file \"explorer.exe\" (a legitimate Windows process) to potentially evade detection  \n4. Uses threading to hide execution in the background  \nThese characteristics are typical of malware distribution techniques."
+        }
+    },
+    "231": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file (`Dragon-Setup.exe`) from a remote URL and immediately executes it using `subprocess.call` without user interaction or verification. This behavior is characteristic of malware distribution, as it automates the download and execution of untrusted code from an external source."
+        }
+    },
+    "232": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code conditionally executes decrypted content using Fernet, which is a symmetric encryption library. This obfuscation technique is commonly used in malware to hide malicious payloads. The `exec()` function dynamically runs the decrypted code, which could perform harmful actions (e.g., data exfiltration, system modification) without inspection. The presence of encrypted data combined with platform-specific execution (`os.name == \"nt\"`) strongly indicates malicious intent."
+        }
+    },
+    "233": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated payload on Windows systems. The combination of encrypted data execution (via `exec()`) and conditional OS check is a common obfuscation technique in malware to evade static analysis. The decrypted content's purpose is hidden, making this behavior suspicious and indicative of potential malicious intent."
+        }
+    },
+    "234": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data obtained via Fernet decryption with a hardcoded key. This obfuscation technique is commonly used to hide malicious payloads. The decrypted content's purpose is not visible in the snippet, but the use of `exec` on dynamically decrypted code is a strong indicator of malicious intent."
+        }
+    },
+    "235": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code contains obfuscated logic using Fernet decryption within an `exec()` call, which is a common technique in malware to hide malicious payloads. The encrypted data is likely a script that executes harmful actions (e.g., backdoors, data exfiltration) specifically on Windows systems (`os.name == \"nt\"`). The use of hardcoded keys and encrypted payloads without transparency strongly suggests malicious intent."
+        }
+    },
+    "236": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated code via `exec()`, which is a common technique in malware to hide malicious payloads. The conditional check for Windows (`os.name == \"nt\"`) and dynamic execution of decrypted data strongly indicate an attempt to run hidden, potentially harmful operations during installation."
+        }
+    },
+    "237": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec`, which is a common technique in malware to hide malicious payloads. The platform check (`os.name == \"nt\"`) targets Windows systems, and the use of `exec` on decrypted data strongly suggests hidden, potentially harmful behavior."
+        }
+    },
+    "238": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decrypts and executes arbitrary Python code using Fernet, which is a strong indicator of malicious behavior. The use of `exec` with decrypted data (likely obfuscated payload) suggests it's designed to run hidden or harmful operations, especially targeted at Windows systems (`os.name == \"nt\"`). This pattern is commonly used in malware to evade detection."
+        }
+    },
+    "239": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption followed by `exec()` to execute obfuscated code during installation on Windows systems. This pattern is commonly associated with malware or malicious payloads, as it hides the true functionality of the code until runtime."
+        }
+    },
+    "240": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data obtained via Fernet, which is a strong indicator of obfuscated malicious payload delivery. The decryption key and encrypted byte string suggest hidden functionality, commonly used in malware to evade detection."
+        }
+    },
+    "241": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decrypts and executes obfuscated content using `exec`, which is a strong indicator of malicious behavior. The use of `Fernet` to decrypt and run arbitrary code suggests an attempt to hide payloads, commonly seen in malware."
+        }
+    },
+    "242": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload (`exec(...)`) only on Windows systems. This obfuscation technique is commonly used to hide malicious code, and the use of `exec()` on decrypted data indicates potential for arbitrary code execution, which is a strong indicator of malicious intent."
+        }
+    },
+    "243": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec()` on Windows systems. This pattern is commonly used in malware to hide malicious payloads, as the decrypted content is not visible in the source code and could perform arbitrary actions (e.g., downloading/backdoor)."
+        }
+    },
+    "244": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content via Fernet, which is a red flag for obfuscated malicious payloads. The decryption key and encrypted data suggest hidden functionality, likely malicious, especially since it's conditionally executed on Windows (`os.name == \"nt\"`). The use of `exec` with decrypted code is a common technique in malware to evade detection."
+        }
+    },
+    "245": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decrypts and executes obfuscated content using Fernet, which is highly suspicious. The use of `exec()` on decrypted data from a hardcoded key indicates a potential malicious payload delivery mechanism, especially under Windows (`os.name == \"nt\"`). This pattern is commonly used in malware to evade detection."
+        }
+    },
+    "246": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes decrypted content using `exec()` after checking for a Windows environment (`os.name == \"nt\"`). It uses Fernet decryption with a hardcoded key to obfuscate the payload, a common tactic in malware to evade detection. The decrypted payload's origin and purpose are not transparent, and executing arbitrary decrypted code is a strong indicator of malicious behavior."
+        }
+    },
+    "247": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data via Fernet, which is a strong indicator of malicious behavior. Decrypting and executing obfuscated code at runtime is a common tactic in malware to evade detection. The hardcoded encryption key and encrypted payload suggest an attempt to hide malicious functionality, such as downloading or executing unauthorized operations."
+        }
+    },
+    "248": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted data from a Fernet key, which is a strong indicator of obfuscated malicious payload execution. The encrypted content (likely containing harmful code) is executed on Windows systems (`os.name == \"nt\"`), making this behavior highly suspicious and typical of malware distribution techniques."
+        }
+    },
+    "249": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content conditionally on Windows (os.name == \"nt\"). The `exec()` call with decrypted data from a hardcoded key and encrypted payload is a strong indicator of malicious behavior, as it dynamically executes potentially harmful code during installation."
+        }
+    },
+    "250": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data from a hardcoded Fernet key and ciphertext, which is a common obfuscation technique for malicious payloads. This suggests the code is designed to stealthily execute arbitrary code on Windows systems, indicating malicious intent."
+        }
+    },
+    "251": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes decrypted content using `exec()` after checking if the OS is Windows (`os.name == \"nt\"`). This obfuscation technique is commonly used in malware to hide malicious payloads. The use of `Fernet` decryption with a hardcoded key and encrypted data strongly indicates an attempt to run hidden, potentially harmful code during installation."
+        }
+    },
+    "252": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content with Fernet, which is a strong indicator of obfuscated malicious payload. The decrypted code's purpose is hidden, making it impossible to verify safety without analysis, a common tactic in malware."
+        }
+    },
+    "253": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes decrypted bytecode using Fernet decryption during installation, which is a common obfuscation technique for hiding malicious payloads. The use of `exec()` with hardcoded encrypted data strongly suggests it's attempting to run hidden, potentially harmful code, especially since it's conditionally triggered only on Windows systems (`os.name == \"nt\"`)."
+        }
+    },
+    "254": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content conditionally on Windows. This is a common technique in malware to hide malicious payloads. The `exec` function combined with hardcoded encrypted data strongly suggests the presence of a concealed payload, which could perform harmful actions when decrypted and executed."
+        }
+    },
+    "255": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec`, which is a common technique in malware to hide malicious payloads. The encrypted data is likely to contain arbitrary Python code that could perform harmful actions (e.g., downloading additional malware, modifying system settings, or exfiltrating data). The use of `exec` combined with encrypted payloads is a strong indicator of malicious intent."
+        }
+    },
+    "256": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes obfuscated/encrypted payload using Fernet decryption during installation on Windows. This is a common technique in malware to hide malicious code. The use of `exec` with decrypted content indicates potentially harmful behavior that bypasses normal security checks."
+        }
+    },
+    "257": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec()`, a common tactic in malware to hide malicious payloads. The OS check (`os.name == \"nt\"`) targets Windows, and the decrypted code's purpose is obscured, making it a high-risk behavior."
+        }
+    },
+    "258": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to decrypt and execute a hidden payload with a Fernet key, which is a strong indicator of malicious behavior. Hardcoding encryption keys and obfuscating code execution is commonly used in malware to evade detection. The Windows-specific check (`os.name == \"nt\"`) further suggests targeted malicious activity."
+        }
+    },
+    "259": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted bytecode via Fernet, a symmetric encryption library. This obfuscation technique is commonly used in malware to hide malicious payloads. The decrypted code's purpose is not visible without decryption, but the combination of encryption, `exec`, and platform-specific execution (`os.name == 'nt'`) strongly indicates malicious intent."
+        }
+    },
+    "260": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content on Windows systems (`os.name == \"nt\"`). This pattern is commonly associated with malware distribution, as it hides malicious payloads and executes them at runtime. The use of `exec()` on decrypted data strongly indicates an intent to perform unauthorized actions."
+        }
+    },
+    "261": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted data via Fernet, which is a common obfuscation technique for hiding malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of `requests`/`Fernet` in an installation context strongly suggest it is designed to run hidden, potentially malicious code."
+        }
+    },
+    "262": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for hiding malicious payloads. The encrypted data is likely a script that executes harmful actions (e.g., backdoor, data exfiltration) when decrypted and run. The conditional execution on Windows (`os.name == \"nt\"`) further suggests platform-specific malicious behavior."
+        }
+    },
+    "263": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to execute decrypted content from a Fernet key and encrypted data, which is a common obfuscation technique for malicious payloads. The conditional check for Windows (`os.name == \"nt\"`) suggests platform-specific execution, and decrypting then executing arbitrary code without transparency is highly indicative of malware behavior."
+        }
+    },
+    "264": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet to decrypt and execute obfuscated data via `exec()`, which is a common technique in malware to hide malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of external libraries like `requests` further suggest potentially harmful behavior."
+        }
+    },
+    "265": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to execute decrypted content via Fernet, which is a strong indicator of obfuscated malicious payload delivery. The decryption key and ciphertext are hardcoded, suggesting an attempt to hide the true purpose of the code, likely to evade detection. Execution of arbitrary decrypted code is a common technique in malware."
+        }
+    },
+    "266": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content on Windows systems. This pattern is commonly associated with malicious behavior, as it hides the true payload (e.g., malware, backdoors) within encrypted data. The use of `exec()` on decrypted content further indicates intent to execute arbitrary, potentially harmful code."
+        }
+    },
+    "267": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute Python code decrypted with a hardcoded Fernet key, which is a common obfuscation technique for malicious payloads. The decryption and execution of unknown byte data during installation (especially conditional on Windows) strongly indicates hidden malicious behavior, such as downloading or executing malware."
+        }
+    },
+    "268": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends HTTP GET requests to a suspicious domain (oastify.com), which is commonly associated with out-of-band (OOB) attack testing. This behavior suggests potential data exfiltration or command execution, as the script communicates with an external server without clear user intent or legitimate purpose. The use of `sleep` further implies timing-based attacks or delayed payload execution."
+        }
+    },
+    "269": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation (Fernet decryption) to execute hidden code via `exec()` on Windows systems. This is a common technique in malware to evade detection. The decrypted payload's contents are not visible, but the use of `exec()` with obfuscated data strongly indicates malicious intent."
+        }
+    },
+    "270": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to evade detection. The Windows-specific execution check (`os.name == \"nt\"`) and the obfuscated class name further indicate malicious intent."
+        }
+    },
+    "271": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption followed by `exec()` to execute obfuscated content conditionally on Windows systems. This pattern is commonly used in malware to hide malicious payloads. The obfuscated class name and the use of `exec()` on decrypted data strongly indicate an attempt to evade detection and execute hidden code."
+        }
+    },
+    "272": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to run decrypted data via Fernet, a common obfuscation technique in malware. It checks for a Windows environment (`os.name == \"nt\"`) and imports `requests`, suggesting it may download or execute malicious payloads. The encrypted payload is highly suspicious, as it avoids direct inspection. The class appears to override an installer's `run` method, further indicating malicious intent during installation."
+        }
+    },
+    "273": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation, decrypts and executes a payload via `exec(Fernet(...).decrypt(...))`, which is a common technique in malware to hide malicious logic. The use of Fernet decryption suggests encrypted shellcode or commands, and the Windows-specific check (`os.name == \"nt\"`) targets a specific OS. This pattern is highly indicative of malicious behavior."
+        }
+    },
+    "274": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The encrypted data likely contains harmful code, and the class name/structure suggests intentional obfuscation to evade detection."
+        }
+    },
+    "275": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to evade detection. The class name is obfuscated, and the code conditionally imports modules (requests, Fernet) only on Windows systems, suggesting platform-specific malicious behavior. Dynamic execution of decrypted content without transparency indicates high risk."
+        }
+    },
+    "276": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated code via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the decrypted content is not visible, making it impossible to assess its true purpose without execution. This is highly indicative of malicious intent."
+        }
+    },
+    "277": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation and executes decrypted content with `exec()`, which is a common technique in malware to hide malicious payloads. The Fernet decryption with a hardcoded key likely reveals a malicious script (e.g., a backdoor, ransomware, or exploit) that is executed on Windows systems. The obfuscated class name and suspicious imports further indicate malicious intent."
+        }
+    },
+    "278": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious. It is a multifunctional data-stealing tool designed to extract sensitive information such as Discord tokens, browser passwords, cookies, cryptocurrency wallet data, and other files containing keywords like \"password\" or \"account\". It uses cryptographic functions to decrypt protected data, sends stolen information to a Discord webhook, and uploads files via anonymous transfer services. The presence of process termination (e.g., `taskkill`) to bypass security, combined with data exfiltration mechanisms, confirms its malicious intent."
+        }
+    },
+    "279": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses PyArmor, a Python obfuscation tool, which is often used to hide malicious payloads. The presence of an encrypted byte string (likely a license key or obfuscated code) suggests the script's true functionality is concealed. Obfuscation combined with unknown byte data is a common technique in malware to evade detection."
+        }
+    },
+    "280": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends telemetry data to an external server (dependabot.org) during package installation/development events, which could be used for unauthorized tracking or data exfiltration. While telemetry itself isn't inherently malicious, the lack of user consent and the suspicious URL structure (especially with \"log/\") suggest potential malicious intent."
+        }
+    },
+    "281": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a Discord CDN link (a suspicious source) into the user's AppData directory, then executes it using `subprocess.run`. This pattern is characteristic of malware distribution, as it secretly downloads and runs an external program without user consent. The use of threading further hides the execution, making it more stealthy."
+        }
+    },
+    "282": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes a remote script from a GitHub URL without verification. The use of `curl` to fetch a script, make it executable, and run it immediately poses a security risk, as the contents of the script are not inspected beforehand. The obfuscated path in the URL and the deletion of the script afterward (`rm -f script.sh`) further suggest potential malicious intent. Executing untrusted remote code is a common vector for malware distribution."
+        }
+    },
+    "283": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes and executes a base64 string that downloads an executable (`main.exe`) from a Discord CDN URL and runs it. This behavior is highly suspicious and aligns with common malware patterns (e.g., remote payload execution, obfuscation, unauthorized execution). The purpose of the downloaded file cannot be determined without analysis, but the act of downloading and executing arbitrary code from an external source is inherently malicious."
+        }
+    },
+    "284": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable from a remote URL (a Discord attachment link), saves it to the user's AppData directory under a deceptive name (`explorer.exe`), and executes it using `subprocess.run`. This behavior is characteristic of malware distribution: downloading and running an untrusted binary without user consent, potentially disguising it as a legitimate system process. The use of threading further obscures the execution."
+        }
+    },
+    "285": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a Discord CDN link and executes it without user consent. It uses obfuscated paths (e.g., `AppData\\Local\\explorer.exe`) to hide its true purpose, which is likely to install malware. The combination of remote code download, local execution, and suspicious file placement in user directories is a strong indicator of malicious intent."
+        }
+    },
+    "286": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable from a Discord attachment URL, saves it to the user's AppData directory under a deceptive name (`explorer.exe`), and executes it using `subprocess.run`. This behavior is characteristic of malware distribution: fetching and running untrusted code from an external source without user consent. The use of threading and obfuscation (e.g., spacing in `os .environ`) further suggests an intent to evade detection."
+        }
+    },
+    "287": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses multiple layers of base64 decoding combined with `eval()` to execute obfuscated payloads. This is a common technique in malware to hide malicious logic. The decoded strings (e.g., `X19pZ25vcnNlX18=`, `XzFmaWxlX18=`) suggest operations like file manipulation or silent execution. The final `try-except` block attempts to run decoded commands, likely performing harmful actions while suppressing errors. The use of `eval()` on dynamically decoded data without clear benign context strongly indicates malicious intent."
+        }
+    },
+    "288": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses heavy obfuscation with base64-encoded strings and `eval()` to execute dynamically decoded payloads. It decodes and executes arbitrary code through nested `getattr` and `__import__` calls, which is a common pattern in malicious Python scripts. The use of `eval` with obfuscated inputs suggests an attempt to hide potentially harmful operations, such as executing shell commands, downloading payloads, or other malicious activities."
+        }
+    },
+    "289": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses heavily obfuscated base64-encoded strings combined with `eval()` and dynamic decoding through `getattr(__import__, 'base64decode')` to execute hidden payloads. This pattern is characteristic of malicious code that aims to evade static analysis by hiding its true purpose in encoded/encrypted data. The nested decoding layers and exception handling further confirm its intent to execute concealed operations, likely including arbitrary code execution or payload deployment."
+        }
+    },
+    "290": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (long random class name, Fernet-encrypted payload) and executes decrypted code via `exec()`, which is a common tactic in malware to hide malicious behavior. The conditional check for Windows (`os.name == \"nt\"`) suggests platform-specific malicious activity."
+        }
+    },
+    "291": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content conditionally on Windows systems, a common tactic in malware to hide malicious payloads. The encrypted data is executed via `exec()`, which is highly suspicious as it prevents direct inspection of the payload. This obfuscation technique is typical of malicious software aiming to evade detection."
+        }
+    },
+    "292": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation and encryption (Fernet) to execute decrypted bytecode on Windows systems. The use of `exec()` with a dynamically decrypted payload is a common technique in malware to hide malicious logic. The class name and structure are also suspiciously obfuscated, indicating an attempt to evade detection."
+        }
+    },
+    "293": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the code only runs on Windows (`os.name == \"nt\"`), suggesting targeted behavior. The use of `exec()` on decrypted data without transparency indicates potential malicious activity."
+        }
+    },
+    "294": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on an obfuscated payload and executes it via `exec()`, which is a common technique for hiding malicious payloads. The class name is obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`). Decrypting and executing unknown bytecode is highly suspicious and often indicates malware behavior."
+        }
+    },
+    "295": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `Fernet` to decrypt and execute obfuscated data via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`), suggesting targeted behavior. Decryption and execution of unknown bytecode without transparency indicates potential malicious intent."
+        }
+    },
+    "296": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on an encrypted payload and executes it via `exec()`, which is a common obfuscation technique in malware. The conditional check for Windows (`os.name == \"nt\"`) and the use of `requests` and `Fernet` suggest it may download or execute malicious code specific to Windows systems. The obfuscated class name and encrypted payload further indicate intent to hide malicious behavior."
+        }
+    },
+    "297": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the decrypted code is likely to perform harmful actions on Windows systems (`os.name == \"nt\"`). The use of `exec()` with decrypted data strongly indicates malicious intent."
+        }
+    },
+    "298": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The `exec()` function dynamically runs decrypted code, likely performing unauthorized actions (e.g., data exfiltration, persistence, or system compromise). The Windows-specific check (`os.name == \"nt\"`) further indicates targeted behavior."
+        }
+    },
+    "299": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The use of `exec` on decrypted data, combined with the obfuscated class name and conditional import of `requests`/`fernet`, strongly suggests an attempt to execute hidden, potentially harmful code."
+        }
+    },
+    "300": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated payload via `exec()`, which is a common technique in malware to hide malicious logic. The class name is obfuscated, and the code checks for Windows OS (`nt`) before executing the decrypted content, indicating platform-specific malicious behavior. The use of `exec()` on decrypted data strongly suggests the presence of a hidden payload, likely malicious."
+        }
+    },
+    "301": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated code via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is highly obfuscated, and the code conditionally runs on Windows (`os.name == \"nt\"`). Decrypting and executing unknown bytecode without transparency is a strong indicator of malicious intent."
+        }
+    },
+    "302": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated code via `exec()`, which is a common technique in malware to hide malicious payloads. The Windows-specific check (`os.name == \"nt\"`) and the use of `install.run()` suggest it's part of a backdoor or payload delivery mechanism. Obfuscated execution and hardcoded encryption keys are strong indicators of malicious intent."
+        }
+    },
+    "303": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques, checks for a Windows OS, and employs `exec()` to run decrypted data using Fernet. This pattern is commonly associated with malware to hide malicious payloads. The use of `exec()` on decrypted content strongly indicates an intent to execute arbitrary, potentially harmful code."
+        }
+    },
+    "304": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption within an `exec()` call, which is a common obfuscation technique for hiding malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and the use of encrypted bytecode suggest an attempt to execute hidden, potentially harmful code. The obfuscated class name and dynamic decryption further indicate malicious intent."
+        }
+    },
+    "305": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content, a common technique in malware to hide malicious payloads. The class name is obfuscated, and the `exec` call on decrypted data strongly indicates an attempt to execute hidden, potentially harmful code. The inheritance from a non-standard `install` class further suggests malicious installation behavior."
+        }
+    },
+    "306": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content via `exec()`, which is a common technique in malware to hide malicious payloads. The class name is obfuscated, and the code checks for a Windows OS before attempting to run the decrypted payload. This behavior is highly suspicious and indicative of malicious intent."
+        }
+    },
+    "307": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec` to execute decrypted content from a Fernet-encrypted string, which is a common obfuscation technique for hiding malicious payloads. The class name is obfuscated, and the code checks for a Windows environment before executing, suggesting it may perform OS-specific malicious actions. The use of `install.run(self)` implies it could be part of a malicious installation process."
+        }
+    },
+    "308": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation (long random class name), executes decrypted code via `exec`, and employs Fernet decryption with a hardcoded key. This pattern is typical of malware that hides its payload. The `exec` call runs unverified decrypted data, which could perform malicious actions like downloading or executing payloads."
+        }
+    },
+    "309": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses the `Fernet` decryption method to execute obfuscated code, which is a common technique in malware to hide malicious payloads. The `exec` function dynamically runs the decrypted content, which is not visible in the source, making it highly suspicious. Additionally, the class name is obfuscated, and the code checks for a Windows environment (`os.name == \"nt\"`), suggesting platform-specific malicious behavior."
+        }
+    },
+    "310": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on obfuscated data and executes it with `exec()`, which is a common technique in malware to hide payloads. The class name is obfuscated, it conditionally imports modules, and executes decrypted code, indicating malicious behavior."
+        }
+    },
+    "311": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption to execute obfuscated content, which is a common technique in malware to hide malicious payloads. The `exec` function dynamically runs the decrypted code, making it difficult to analyze statically. Additionally, the class name and structure suggest an attempt to evade detection by obfuscating the code's purpose."
+        }
+    },
+    "312": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is highly obfuscated and employs multiple layers of obfuscation techniques, including variable name scrambling, dynamic code execution via `exec/eval`, and encoded payloads. Key indicators include:  \n1. **Obfuscation Framework**: The `__obfuscator__ = 'Hyperion'` explicitly references a known malware obfuscation tool.  \n2. **Dynamic Code Execution**: The `execute` method uses `exec` to run dynamically generated code, which is a common vector for malicious payloads.  \n3. **Encoded Payloads**: The long base64-like byte strings (e.g., `b'x\\x9c\\xdd...'`) suggest compressed/encrypted payloads waiting to be decoded and executed.  \n4. **Anti-Analysis Techniques**: The code includes redundant conditionals (`if 136406 >7540385:`) and nested lambdas to hinder static analysis.  \n5. **Hidden Functionality**: Despite the benign `print(\"Hello world!\")` in `__code__`, the structure is designed to execute arbitrary decoded content, making it a delivery mechanism for malware.  \n\nThe combination of these elements strongly indicates malicious intent."
+        }
+    },
+    "313": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious due to heavy obfuscation, dynamic code execution via `exec` and `eval`, decompression of encoded payloads (e.g., zlib decompression), and manipulation of built-in functions. It uses obfuscated variable names, complex control flows, and conditional checks to evade analysis, while attempting to execute arbitrary code from compressed/encoded byte strings. These are classic indicators of malicious behavior designed to hide payload execution."
+        }
+    },
+    "314": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses a base64-encoded PowerShell command to download and execute an executable (`windef.exe`) from a Dropbox URL. This is a common tactic in malware distribution, as the encoded command obscures the true action, and downloading executables from external URLs without verification is highly suspicious. The use of `CREATE_NO_WINDOW` and `shell=True` further attempts to hide execution, indicating malicious intent."
+        }
+    },
+    "315": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes a Python script from an external Pastebin URL without user consent or verification. This is a malicious pattern as it allows remote code execution, potentially leading to arbitrary code running on the system."
+        }
+    },
+    "316": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses PyArmor, a Python obfuscation tool, with an encrypted byte string. Obfuscation is often used in malicious software to hide malicious logic. The presence of PyArmor and encrypted data strongly suggests the code is attempting to conceal its true behavior, which is a common tactic in malware."
+        }
+    },
+    "317": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a Discord CDN link and executes it without user consent. The executable is saved to a hidden location (`AppData\\Local`) and runs in a separate thread, which is a common tactic for malware distribution. The use of `subprocess.run` with `shell=True` and unverified remote code execution further confirms malicious intent."
+        }
+    },
+    "318": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote URL, saves it to the user's AppData directory under a disguised name (`explorer.exe`), and executes it using `subprocess.run`. This behavior matches common malware patterns: downloading and running unverified binaries from external sources without user consent. The use of threading and a system-like filename further suggests an attempt to evade detection and mimic legitimate processes."
+        }
+    },
+    "319": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (environment variables, OS details, IP address) and sends it to a Slack webhook (https://hooks.slack.com/...), indicating data exfiltration. The use of `exit(1)` and suppressed exceptions (`try-except` in `save_some_stuff`) suggests stealthy, unauthorized behavior."
+        }
+    },
+    "320": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess.run` with `shell=True` to execute a `curl` command that sends sensitive system information (hostname, username, directory listing, user groups) to an external server (`eot0n2yp3autvqq.m.pipedream.net`). This behavior is consistent with data exfiltration, a common malicious activity."
+        }
+    },
+    "321": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code reads AWS credentials from the user's `.aws/credentials` file and sends them to a remote webhook (`https://connect.pabbly.com/...`). This behavior constitutes credential exfiltration, which is malicious as it compromises sensitive authentication data without user consent."
+        }
+    },
+    "322": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code automatically installs a Python package from a remote GitHub repository (`https://github.com/Maxheruko/hypixelmcapigithub.git`) without user consent or validation of its contents. While the script itself does not directly perform malicious actions, it executes an untrusted third-party package, which could contain arbitrary code (e.g., data exfiltration, system compromise). Installing unverified packages from external sources is a high-risk behavior often exploited in malware."
+        }
+    },
+    "323": {
+        "qwen3-32b": {
+            "output": "**Answer:** no  \n**Reason:** The code is designed to fetch a Minecraft user UUID, install a Python package from a specified GitHub repository, and import it. While it uses potentially risky operations like `subprocess.run` and installing from a third-party repo, the code itself does not contain malicious logic such as data exfiltration, system modification, or unauthorized actions. The risk lies in the external package's content, which is not part of the provided code. The code's intent appears to be legitimate (e.g., installing a utility package) rather than inherently malicious."
+        }
+    },
+    "324": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code automatically downloads and installs a Python package from a remote GitHub repository (`https://codeload.github.com/Maxheruko/hypixelmcapigithub`) using `pip install .` without verifying the source or content. This allows arbitrary code execution if the repository is malicious, posing a security risk. While the subsequent API interactions appear benign, the unverified remote installation is inherently dangerous."
+        }
+    },
+    "325": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques to execute a base64-encoded, zlib-compressed payload via `exec()`. This is a common method for hiding malicious code. The payload's true purpose is obscured, but the structure strongly resembles malware distribution patterns (e.g., decoding/decrypting hidden content). Additionally, the use of `subprocess`, `shutil`, and `zipfile` suggests potential for system manipulation or data exfiltration."
+        }
+    },
+    "326": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption with a hardcoded key to execute obfuscated content via `exec`, which is a common technique in malware to hide malicious payloads. The conditional execution on Windows (`os.name == \"nt\"`) and use of external libraries like `requests` further suggest potentially harmful behavior. Obfuscation through encryption combined with dynamic execution strongly indicates malicious intent."
+        }
+    },
+    "327": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends the current working directory (OS information) to a Discord webhook and makes an HTTP request to an OAST (Out-of-Band Application Security Testing) domain (`pwpd3g42ebsq3wznexhjlsxi2980wqkf.oastify.com`). This pattern is commonly associated with malicious activities, such as post-exploitation data exfiltration or confirming successful code execution during a security test/attack. The OAST request is a strong indicator of intent to monitor or interact with the compromised system."
+        }
+    },
+    "328": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `exec()` to execute decrypted data obtained via Fernet decryption, which is a common obfuscation technique for hiding malicious payloads. The hardcoded key and encrypted bytes suggest the presence of a hidden payload that could perform harmful actions when executed, especially under Windows (`os.name == \"nt\"`). This pattern is typical in malware to evade detection."
+        }
+    },
+    "329": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses Fernet decryption on an obfuscated payload and executes the result with `exec`, which is a common technique in malware to hide malicious logic. The encrypted data is likely a payload that, when decrypted, performs harmful actions. The use of obfuscation and dynamic execution strongly indicates malicious intent."
+        }
+    },
+    "330": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (base64 encoding + zlib compression) to hide a payload executed via `exec()`. The reversed string, dynamic imports (`__import__`), and use of `exec()` on decoded content are strong indicators of malicious behavior. This pattern is commonly used to evade detection while executing hidden code, such as downloading or running payloads."
+        }
+    },
+    "331": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `subprocess.run` to execute a `curl` command that sends sensitive system information (hostname, username, current directory, file listings) to an external server (`eozjyg0uj1pesea.m.pipedream.net`). This behavior is consistent with data exfiltration, which is a malicious activity. The use of `shell=True` further increases risk by enabling potential command injection, though the primary threat here is unauthorized data transmission."
+        }
+    },
+    "332": {
+        "qwen3-32b": {
+            "output": "no  \nThe code decodes a base64 string (\"bm90ZXBhZA==\") to \"notepad\" and attempts to execute it via `os.system`. While obfuscation is used, the decoded command is benign (launching the Notepad application on Windows). There is no evidence of malicious intent or harmful behavior in the provided code."
+        }
+    },
+    "333": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable from an unverified HTTPS URL (with SSL verification disabled), writes it to a temporary file, and executes it using `subprocess.run()` with `shell=True`. This pattern is commonly used to stealthily deploy malware, as it bypasses security checks (e.g., SSL validation) and executes arbitrary code without user interaction. The URL and behavior strongly indicate malicious intent."
+        }
+    },
+    "334": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a batch file (`strings.bat`) from a Discord CDN URL using `curl` and `cmd`. This behavior is highly suspicious as it dynamically fetches and runs external code without user consent, which is a common tactic in malware distribution. The use of `%temp%` to store the downloaded file further indicates an attempt to hide malicious activity."
+        }
+    },
+    "335": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string and executes it using `os.system()`, which is a common obfuscation technique for hiding malicious payloads. The use of `CODE_REPLACE` as a placeholder suggests the actual command is intentionally obscured, making this a classic indicator of malicious behavior (e.g., executing arbitrary, hidden commands)."
+        }
+    },
+    "336": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `os.system` to execute a command that is decoded from a base64 string. The base64-decoded command is obfuscated (marked as \"CODE_REPLACE\"), making it difficult to determine its intent from the given snippet. However, executing arbitrary shell commands via decoded input is a common technique in malicious software to hide payloads. This pattern is highly suspicious and indicative of malicious behavior."
+        }
+    },
+    "337": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string into a command that downloads and executes a script from a remote server (`curl https://... | bash`). This is a common malicious pattern for stealthily executing arbitrary code from an external source, which could compromise the system."
+        }
+    },
+    "338": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (OS details, uptime, IP address) and sends it to a remote server (64.23.142.76:9090) without user consent. This behavior is characteristic of data exfiltration, a common malicious activity. While no direct destructive actions are performed, the stealthy transmission of system data to an external IP raises significant security concerns."
+        }
+    },
+    "339": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (OS name/version, current working directory, hostname) and sends it to a suspicious domain (`zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax`). The domain appears obfuscated and unrelated to legitimate services, suggesting potential data exfiltration or reconnaissance for malicious purposes."
+        }
+    },
+    "340": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends sensitive system information (hostname, username, working directory) to a remote server via a GET request. The URL uses a domain associated with out-of-band attack testing (oast.fun), which is commonly used in penetration testing and malicious activities. This behavior constitutes data exfiltration, a malicious act."
+        }
+    },
+    "341": {
+        "qwen3-32b": {
+            "output": "no  \nThe code uses `os.system(\"Y2FsYw==\")`, which decodes from base64 to the benign command `cal` (displays a calendar). While `os.system` can execute arbitrary commands, the hardcoded input here is harmless and non-malicious."
+        }
+    },
+    "342": {
+        "qwen3-32b": {
+            "output": "no  \nThe code uses base64 encoding to obfuscate the command \"calc && notepad\", which simply launches the Calculator and Notepad applications on Windows. While obfuscation is suspicious, the actual behavior is benign and non-malicious. There is no harmful payload or unauthorized activity in the code."
+        }
+    },
+    "343": {
+        "qwen3-32b": {
+            "output": "no  \nThe code uses `os.system` with the base64 string \"Y2FsYw==\", which decodes to \"calc\" (Windows calculator). However, the code does **not** decode the string before execution; it directly attempts to run the raw base64 string as a command, which is invalid and harmless. Thus, it does not perform any malicious action."
+        }
+    },
+    "344": {
+        "qwen3-32b": {
+            "output": "no  \nThe code decodes a base64 string \"bm90ZXBhZA==\" to \"notepad\" and executes it using `os.system`, which opens the Notepad application on Windows. While the use of `os.system` with decoded input raises caution, the hardcoded command is benign and non-malicious. The obfuscation via base64 does not conceal harmful behavior in this case."
+        }
+    },
+    "345": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (hostname, current working directory, and username) and sends it to an external server (`oastify.com`) via a GET request during installation. The use of an obfuscated domain associated with out-of-band testing (OAST) services suggests exfiltration of data for malicious purposes, such as reconnaissance or tracking."
+        }
+    },
+    "346": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code fetches a Google Cloud Platform (GCE) access token from the instance metadata service using obfuscated base64 URLs. While it does not directly exfiltrate data, it retrieves sensitive credentials (access tokens) and generates random strings of the same length as the token. This behavior suggests potential misuse of cloud infrastructure credentials, possibly for lateral movement or unauthorized access. The obfuscation and logging mechanisms further indicate suspicious intent."
+        }
+    },
+    "347": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string and executes it via `os.system`, which is a common obfuscation technique for malicious payloads. While the placeholder \"CODE_REPLACE\" appears inert, the structure enables arbitrary command execution once replaced with an actual encoded payload. This pattern is typical in malware to evade detection and dynamically execute hidden commands."
+        }
+    },
+    "348": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques (e.g., integer division of ASCII values to decode strings) to construct file paths and writes data from the `b` variable in the imported `am` module. This suggests it may be hiding malicious payload delivery or data exfiltration. The use of `Path.mkdir` with dynamic path generation and unknown binary content (`b`) indicates potential malicious behavior like file system manipulation or payload execution."
+        }
+    },
+    "349": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a connection to a hardcoded IP address (172.16.0.103) and port (12345) during installation, sending a message to a remote server. This behavior is suspicious as it could indicate communication with a command-and-control server, which is commonly associated with malware. While the snippet itself does not perform destructive actions, the intent to establish an outbound connection during installation raises significant security concerns."
+        }
+    },
+    "350": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code defines a post-installation command that searches for and sends the contents of text files (including sensitive files like `prices.txt`) to a remote server at `http://140.238.202.225:8080`. This behavior resembles data exfiltration, which is commonly associated with malicious activity, especially when combined with broad file searches, error suppression, and lack of user consent."
+        }
+    },
+    "351": {
+        "qwen3-32b": {
+            "output": "no  \nThe code uses base64 encoding to obfuscate the command `\"notepad\"` (decoded from `\"bm90ZXBhZA==\"`), which simply opens the Notepad application on Windows. While the obfuscation might raise suspicion, the actual behavior is harmless and non-malicious."
+        }
+    },
+    "352": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `os.system` to execute a command decoded from base64. The decoded string \"bm90ZXBhZA==\" results in an invalid or non-standard command (`notf\\xA5md`), but the pattern of obfuscating execution via base64 is commonly associated with malicious behavior. This technique can hide harmful payloads, making the code suspicious and potentially malicious."
+        }
+    },
+    "353": {
+        "qwen3-32b": {
+            "output": "no  \nThe code defines a function `notmalfunc()` that decodes a base64 string (\"bm90ZXBhZCAmJiBjYWxj\") to execute \"notepad && calc\" via `os.system()`. While the use of `os.system()` can be risky, the decoded command is benign (launching Notepad and Calculator on Windows). Additionally, the function is never called in the provided code, so no action is taken. The obfuscation via base64 does not inherently make the code malicious."
+        }
+    },
+    "354": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (OS details, current directory, hostname, and username) and sends it to a remote server via an HTTP GET request without user consent. This behavior is characteristic of data exfiltration, a common tactic in malware to gather and transmit system details to an attacker-controlled endpoint."
+        }
+    },
+    "355": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses obfuscation techniques involving base64 encoding, zlib decompression, and reversed byte strings, followed by execution via `exec()`. This pattern is commonly used to hide malicious payloads. The combination of layered encoding, dynamic imports (`__import__`), and execution of decoded/decompressed data strongly indicates an attempt to execute hidden, potentially harmful code."
+        }
+    },
+    "356": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code uses `os.system` to execute a `wget` command, downloading a file from an external URL (`webhook.site`). While the URL itself is a public webhook testing service, the act of downloading from an untrusted source without verification is inherently risky. This could be used to fetch and execute malicious payloads, making the code potentially malicious."
+        }
+    },
+    "357": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects system information (hostname, current working directory, username) and sends it to a remote server via a GET request during installation. This behavior is typical of malicious software for reconnaissance or tracking purposes, even if no direct harm is done. The use of a third-party URL to exfiltrate data without user consent raises significant security concerns."
+        }
+    },
+    "358": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (hostname, username, current working directory) and sends it to a remote server without user consent. This behavior is characteristic of data exfiltration, which is a malicious activity. The use of `requests.get()` to transmit this data to an external endpoint (`https://eosmasoaul6v3w8.m.pipedream.net`) indicates potential surveillance or tracking intent."
+        }
+    },
+    "359": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (hostname, current directory, username) and sends it to an external server via a GET request during installation. This behavior is typically associated with data exfiltration or reconnaissance, which is malicious unless explicitly authorized and transparent to the user."
+        }
+    },
+    "360": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends sensitive system information (hostname, current working directory, and username) to a remote server (`https://eosmasoaul6v3w8.m.pipedream.net`) during installation. This behavior is malicious as it exfiltrates data without user consent, potentially enabling tracking or reconnaissance by an attacker."
+        }
+    },
+    "361": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (hostname, username, current working directory) and sends it via an unencrypted HTTP GET request to a remote server (9.30.214.68:9090) during an installation process. This behavior constitutes unauthorized data exfiltration, which is a malicious activity. The use of non-HTTPS and lack of user consent further confirm its malicious intent."
+        }
+    },
+    "362": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string that resolves to a command downloading and executing a batch file (`strings.bat`) from a Discord CDN URL. This behavior—automatically downloading and running external scripts—is highly suspicious and commonly used in malware distribution. The use of `%temp%` and obfuscation via base64 encoding further indicates malicious intent."
+        }
+    },
+    "363": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes potentially malicious actions during installation:  \n1. **Exfiltrates environment variables** to a suspicious domain (`diddlydingusdu.de`) via `curl`, which could leak sensitive data like API keys.  \n2. **Writes environment variables to a file** (`LICENSE`), possibly to harvest secrets.  \n3. **Creates a directory** (`/var/task/icanhavewrite`), which might be used for persistence or further exploitation.  \nThe use of `os.system` with untrusted commands and data exfiltration to an unknown domain strongly indicates malicious intent."
+        }
+    },
+    "364": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code sends sensitive system information (OS name, current working directory, hostname) to a suspicious domain (`zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax`). The domain appears obfuscated and likely malicious, and the behavior aligns with data exfiltration, a common tactic in malware. Even if the code contains a typo (missing parentheses in `socket.gethostname()`), its intent is clearly malicious."
+        }
+    },
+    "365": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string and executes it using `os.system()`. This pattern is commonly used to obfuscate malicious payloads, as the actual command is hidden in the encoded string. While the specific content of \"CODE_REPLACE\" is not visible, the structure suggests potential for malicious execution (e.g., running arbitrary system commands)."
+        }
+    },
+    "366": {
+        "qwen3-32b": {
+            "output": "no  \nThe code uses Base64 to decode \"notepad\" and execute it via `os.system`, which is a legitimate Windows application. While obfuscation is suspicious, the decoded command is harmless, making the code non-malicious."
+        }
+    },
+    "367": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects sensitive system information (user, OS, IP, geolocation, home directory contents) and sends it to a Discord webhook, which is a clear exfiltration of private data. The use of `NoOp`/`ModuleProxy` suggests obfuscation or evasion attempts, but the core behavior—unauthorized data transmission—is malicious."
+        }
+    },
+    "368": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects files with specific extensions (e.g., .opk, .loli) from the C:\\ drive, compresses them into a ZIP archive, and sends the archive to a Telegram bot using hardcoded credentials (bot_token/chat_id). This constitutes unauthorized data exfiltration, a clear malicious behavior."
+        }
+    },
+    "369": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it extracts and decrypts Google Chrome saved passwords, stores them in a file, and exfiltrates the data via a Discord webhook. It uses techniques like accessing Chrome's encryption key, decrypting stored credentials, and uploading sensitive information without user consent, which are hallmark behaviors of credential-stealing malware."
+        }
+    },
+    "370": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell connection to a remote server (3.228.3.164:80) by redirecting standard input/output/error to the socket, spawning an interactive bash shell, and suppressing command history. This is a classic technique for remote code execution and system compromise, indicating malicious intent."
+        }
+    },
+    "371": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code executes a system command (`calc`) and sends a request to an external URL (iplogger.com) to log the user's IP address without consent. This constitutes unauthorized data exfiltration and user interaction, which are malicious behaviors."
+        }
+    },
+    "372": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes an external executable (`mvchost.exe`) from a remote URL without user consent, writes it to the system's temporary directory, and runs it silently using `subprocess`. This behavior is highly indicative of malware distribution or malicious payload execution."
+        }
+    },
+    "373": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code collects system information (hostname, current directory, username) and sends it to a suspicious domain (`yuphfkcalbgsiomtbwqp1dhgw7pkgrtld.oast.fun`), which is associated with out-of-band attack testing. This behavior indicates data exfiltration, a malicious intent."
+        }
+    },
+    "374": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it writes and executes a script (`remote-access.py`) that runs an external executable (`main.exe`) with the `CREATE_NO_WINDOW` flag to hide its execution. This behavior, combined with the script's name suggesting remote access and the lack of user consent, indicates a potential backdoor or stealthy payload delivery."
+        }
+    },
+    "375": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code decodes a base64 string containing malicious logic that downloads an executable from a Discord CDN link (`Build.exe`) to the user's AppData directory and executes it using `subprocess.run`. This behavior is characteristic of malware distribution, as it stealthily downloads and runs an external binary without user consent, leveraging obfuscation and threading to evade detection."
+        }
+    },
+    "376": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell to a remote server (3.228.3.164:80), redirecting stdin/stdout/stderr to the socket. It uses `pty.spawn` to create an interactive shell, effectively granting remote code execution. This is a classic malicious payload for post-exploitation control."
+        }
+    },
+    "377": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code defines functions (`EmailSpam`, `SpamCall`, `SpamTele`) that send unsolicited requests to third-party APIs (KidzApp, Truecaller, Telegram) to spam emails and phone numbers with verification codes or login attempts. It uses fabricated headers, random device IDs, and mimics legitimate app behavior to bypass security measures. The inclusion of hardcoded identifiers like `@maho_s9` and the purpose of overwhelming services with automated requests classify this as malicious spamware."
+        }
+    },
+    "378": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it is designed to steal sensitive information such as Discord tokens, browser passwords, cookies, and other files from a victim's machine. Key malicious behaviors include:  \n\n1. **Data Exfiltration**: Uses Discord webhooks to send stolen data (tokens, IPs, credentials) to a remote server.  \n2. **Credential Theft**: Extracts encrypted browser data (e.g., Chrome/Edge), decrypts it using AES, and steals login credentials.  \n3. **Process Manipulation**: Kills browser processes (e.g., `taskkill`) to avoid detection during data extraction.  \n4. **File Search & Upload**: Scans user directories (Downloads, Desktop) for files containing keywords like \"password\" or \"wallet,\" uploads them via `transfer.sh`.  \n5. **Persistence & Stealth**: Uses threading to concurrently target multiple browsers (Chrome, Firefox, Opera) and Discord clients, zipping and exfiltrating sensitive files.  \n\nThe presence of a hardcoded Discord webhook URL and functions for decrypting and uploading stolen data confirms its malicious intent."
+        }
+    },
+    "379": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads an executable file from a remote server (http://45.88.180.54) to the user's AppData directory and executes it without user consent. This pattern is commonly associated with malware distribution, as it secretly installs and runs an external program. The URL's suspicious nature (IP-based hosting, misleading \"Updater\" name) and lack of verification mechanisms further indicate malicious intent."
+        }
+    },
+    "380": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code establishes a reverse shell to a remote server (3.228.3.164:80) using `pty.spawn('/bin/bash')` after redirecting stdin/stdout/stderr to the socket connection. It also collects process information (cmdline, status, etc.) which could be used for reconnaissance. These behaviors are characteristic of malware establishing command-and-control communication."
+        }
+    },
+    "381": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes arbitrary code from a remote server (https://pub-51199d31...r2.dev/DCNXmTgPyh0nEz) using obfuscated variable names and a temporary file. This behavior is characteristic of malware distribution, as it bypasses direct inspection and executes untrusted payloads dynamically."
+        }
+    },
+    "382": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code is malicious as it automates spamming emails and phone numbers via third-party APIs (KidzApp, Truecaller, Telegram). It sends unsolicited verification codes/emails to users, violating service terms and enabling harassment/spam. The presence of hardcoded attribution (\"@maho_s9\") suggests intentional misuse."
+        }
+    },
+    "383": {
+        "qwen3-32b": {
+            "output": "yes  \nThe code downloads and executes arbitrary Python code from a remote Pastebin URL (`https://pastebin.com/raw/AXZpfD2h`), which is a clear red flag. This behavior is commonly used in malware to obfuscate malicious payloads. The presence of libraries like `win32crypt`, `sqlite3`, and `discord` further suggests potential data exfiltration or remote control capabilities."
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "subprocess.run": 1,
+    "response.raise_for_status": 1,
+    "urllib3.disable_warnings": 1,
+    "setuptools.setup": 1,
+    "temp_exe_file.write": 1,
+    "tempfile.NamedTemporaryFile": 1,
+    "setuptools.find_packages": 1,
+    "requests.get": 1
+}

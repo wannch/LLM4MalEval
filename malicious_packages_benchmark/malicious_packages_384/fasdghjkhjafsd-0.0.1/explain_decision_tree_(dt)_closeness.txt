@@ -1,0 +1,146 @@
+LIME Explanation for package fasdghjkhjafsd-0.0.1:
+
+
+install.run: 1.0,
+API NAME:  install.run,
+Malicious Purposes:
+['Execute arbitrary code during the installation process.']
+
+
+Request: 1.0,
+API NAME:  Request,
+Malicious Purposes:
+['Overwhelm a server with a large number of requests.']
+
+
+open: 1.0769230769230769,
+API NAME:  open,
+Malicious Purposes:
+['Potential for arbitrary file access']
+
+
+open: 1.0769230769230769,
+API NAME:  open,
+Malicious Purposes:
+['Potential for arbitrary file access']
+
+
+open: 1.0769230769230769,
+API NAME:  open,
+Malicious Purposes:
+['Potential for arbitrary file access']
+
+
+setup: 1.0,
+API NAME:  setup,
+Malicious Purposes:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+
+f.read: 1.0,
+API NAME:  f.read,
+Malicious Purposes:
+['Read sensitive files.']
+
+
+f.read: 1.0,
+API NAME:  f.read,
+Malicious Purposes:
+['Read sensitive files.']
+
+
+f.read: 1.0,
+API NAME:  f.read,
+Malicious Purposes:
+['Read sensitive files.']
+
+
+urlopen: 1.0,
+API NAME:  urlopen,
+Malicious Purposes:
+['Send malicious requests to exploit vulnerable web servers or services.']
+
+
+develop.run: 1.0,
+API NAME:  develop.run,
+Malicious Purposes:
+['Executing arbitrary code that could compromise the system']
+
+
+In file setup.py line 15, the package holder use the sensitive api:
+[Request],
+in function/global post_json,
+which may be used for:
+['Overwhelm a server with a large number of requests.']
+
+
+In file setup.py line 20, the package holder use the sensitive api:
+[urlopen],
+in function/global post_json,
+which may be used for:
+['Send malicious requests to exploit vulnerable web servers or services.']
+
+
+In file setup.py line 26, the package holder use the sensitive api:
+[develop.run],
+in function/global run,
+which may be used for:
+['Executing arbitrary code that could compromise the system']
+
+
+In file setup.py line 32, the package holder use the sensitive api:
+[install.run],
+in function/global run,
+which may be used for:
+['Execute arbitrary code during the installation process.']
+
+
+In file setup.py line 39, the package holder use the sensitive api:
+[open],
+in function/global run,
+which may be used for:
+['Potential for arbitrary file access']
+
+
+In file setup.py line 41, the package holder use the sensitive api:
+[f.read],
+in function/global run,
+which may be used for:
+['Read sensitive files.']
+
+
+In file setup.py line 49, the package holder use the sensitive api:
+[open],
+in function/global run,
+which may be used for:
+['Potential for arbitrary file access']
+
+
+In file setup.py line 51, the package holder use the sensitive api:
+[f.read],
+in function/global run,
+which may be used for:
+['Read sensitive files.']
+
+
+In file setup.py line 59, the package holder use the sensitive api:
+[open],
+in function/global run,
+which may be used for:
+['Potential for arbitrary file access']
+
+
+In file setup.py line 61, the package holder use the sensitive api:
+[f.read],
+in function/global run,
+which may be used for:
+['Read sensitive files.']
+
+
+In file setup.py line 66, the package holder use the sensitive api:
+[setup],
+in function/global <global>,
+which may be used for:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+

@@ -1,0 +1,7 @@
+{
+    "package_name": "newpackagetest2028",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/newpackagetest2028",
+    "package_file": "malicious_packages_5T/newpackagetest2028/1.0.0/newpackagetest2028-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/newpackagetest2028-1.0.0"
+}

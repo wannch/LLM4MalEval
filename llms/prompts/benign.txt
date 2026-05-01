@@ -1,0 +1,3 @@
+squares = [x**2 for x in range(1, 11)]
+for number, square in enumerate(squares, start=1):
+    print(f"{number}'s square {square}")

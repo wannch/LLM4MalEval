@@ -1,0 +1,42 @@
+LIME Explanation for package numpypremium-1.0.0:
+
+
+b64decode: 1.0,
+API NAME:  b64decode,
+Malicious Purposes:
+['Decode potentially malicious Base64-encoded data.']
+
+
+exec: 1.0,
+API NAME:  exec,
+Malicious Purposes:
+['Arbitrary code execution', 'Injection attacks']
+
+
+decompress: 1.0,
+API NAME:  decompress,
+Malicious Purposes:
+['Decompress malicious code or payloads', 'Arbitrary code execution', 'Remote code execution', 'File system manipulation.']
+
+
+In file setup.py line 1, the package holder use the sensitive api:
+[b64decode],
+in function/global <global>,
+which may be used for:
+['Decode potentially malicious Base64-encoded data.']
+
+
+In file setup.py line 1, the package holder use the sensitive api:
+[decompress],
+in function/global <global>,
+which may be used for:
+['Decompress malicious code or payloads', 'Arbitrary code execution', 'Remote code execution', 'File system manipulation.']
+
+
+In file setup.py line 1, the package holder use the sensitive api:
+[exec],
+in function/global <global>,
+which may be used for:
+['Arbitrary code execution', 'Injection attacks']
+
+

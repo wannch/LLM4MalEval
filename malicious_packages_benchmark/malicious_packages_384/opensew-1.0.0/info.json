@@ -1,0 +1,7 @@
+{
+    "package_name": "opensew",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/opensew",
+    "package_file": "malicious_packages_5T/opensew/1.0.0/opensew-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/opensew-1.0.0"
+}

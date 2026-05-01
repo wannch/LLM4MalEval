@@ -1,0 +1,6 @@
+malicious_packages_5T_extract#gentorqkkh1-0.1#gentorqkkh1-0.1#gentorqkkh1#__init__.py
+malicious_packages_5T_extract#gentorqkkh-0.1#gentorqkkh-0.1#gentorqkkh#__init__.py
+not_in_pypi_packages_20240112-20240408_extract#filecachetools-2.1.0#filecachetools-2.1.0#filecachetools#__init__.py
+malicious_packages_5T_extract#pdsuax4-0.0.1#pdsuax4-0.0.1#setup.py
+malicious_packages_5T_extract#pycoloramade-1.4.2#pycoloramade-1.4.2#modules#others#sender.py
+not_in_pypi_packages_20240112-20240408_extract#revabd01q1-0.0.2#revabd01q1-0.0.2#setup.py

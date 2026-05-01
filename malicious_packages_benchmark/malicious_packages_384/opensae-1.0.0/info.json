@@ -1,0 +1,7 @@
+{
+    "package_name": "opensae",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/opensae",
+    "package_file": "malicious_packages_5T/opensae/1.0.0/opensae-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/opensae-1.0.0"
+}

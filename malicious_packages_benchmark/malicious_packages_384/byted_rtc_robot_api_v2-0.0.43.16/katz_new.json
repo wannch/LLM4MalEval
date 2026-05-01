@@ -1,0 +1,6 @@
+{
+    "os.uname": 1.5,
+    "os.getcwd": 1.5,
+    "requests.get": 1.5,
+    "socket.gethostname": 1.5
+}

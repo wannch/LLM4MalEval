@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/openeasea-1.0.0/openeasea-1.0.0/setup.py;10-18

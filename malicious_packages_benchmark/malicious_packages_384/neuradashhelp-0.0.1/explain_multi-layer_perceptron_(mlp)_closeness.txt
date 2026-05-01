@@ -1,0 +1,55 @@
+LIME Explanation for package neuradashhelp-0.0.1:
+
+
+subprocess.run: 1.0,
+API NAME:  subprocess.run,
+Malicious Purposes:
+['Executing malicious code.']
+
+
+requests.get: 1.0,
+API NAME:  requests.get,
+Malicious Purposes:
+['Performing unauthorized data extraction from a remote server', 'Conducting SQL injection attacks', "Gather sensitive information from the server's response data"]
+
+
+setuptools.find_packages: 1.0,
+API NAME:  setuptools.find_packages,
+Malicious Purposes:
+['Search for and manipulate sensitive files.']
+
+
+setuptools.setup: 1.0,
+API NAME:  setuptools.setup,
+Malicious Purposes:
+['Involve injecting malicious code or dependencies.']
+
+
+In file setup.py line 7, the package holder use the sensitive api:
+[setuptools.setup],
+in function/global <global>,
+which may be used for:
+['Involve injecting malicious code or dependencies.']
+
+
+In file setup.py line 9, the package holder use the sensitive api:
+[setuptools.find_packages],
+in function/global <global>,
+which may be used for:
+['Search for and manipulate sensitive files.']
+
+
+In file setup.py line 27, the package holder use the sensitive api:
+[requests.get],
+in function/global <global>,
+which may be used for:
+['Performing unauthorized data extraction from a remote server', 'Conducting SQL injection attacks', "Gather sensitive information from the server's response data"]
+
+
+In file setup.py line 36, the package holder use the sensitive api:
+[subprocess.run],
+in function/global <global>,
+which may be used for:
+['Executing malicious code.']
+
+

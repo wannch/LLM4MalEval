@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+bo3to/__init__.py
+bo3to/cli.py
+bo3to.egg-info/PKG-INFO
+bo3to.egg-info/SOURCES.txt
+bo3to.egg-info/dependency_links.txt
+bo3to.egg-info/entry_points.txt
+bo3to.egg-info/top_level.txt

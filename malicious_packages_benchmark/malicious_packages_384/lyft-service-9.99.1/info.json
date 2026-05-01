@@ -1,0 +1,7 @@
+{
+    "package_name": "lyft-service",
+    "package_version": "9.99.1",
+    "package_path": "malicious_packages_20240112-20240408/lyft-service",
+    "package_file": "malicious_packages_20240112-20240408/lyft-service/9.99.1/lyft-service-9.99.1.tar.gz",
+    "extract_dir": "malicious_packages_20240112-20240408_extract/lyft-service-9.99.1"
+}

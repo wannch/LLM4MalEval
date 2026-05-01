@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/jupitercalc-0.0.4/jupitercalc-0.0.4/setup.py;1-10

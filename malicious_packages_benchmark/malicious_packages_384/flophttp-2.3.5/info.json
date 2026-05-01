@@ -1,0 +1,7 @@
+{
+    "package_name": "flophttp",
+    "package_version": "2.3.5",
+    "package_path": "malicious_packages_5T/flophttp",
+    "package_file": "malicious_packages_5T/flophttp/2.3.5/flophttp-2.3.5.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/flophttp-2.3.5"
+}

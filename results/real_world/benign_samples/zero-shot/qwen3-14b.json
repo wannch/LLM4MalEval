@@ -1,0 +1,1502 @@
+{
+    "0": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory and does not contain any malicious functionality such as data exfiltration, command execution, or payload delivery. The use of `SimpleHTTPRequestHandler` is typical for file-serving purposes, and there is no evidence of hidden or harmful behavior."
+        }
+    },
+    "1": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a data class `Params` for holding parameters (e.g., `wstoken`, `wsfunction`) likely intended for API requests. While `wstoken` might be associated with authentication tokens (e.g., Moodle Web Services), the code itself does not contain malicious behavior such as data exfiltration, execution of harmful commands, or unauthorized network activity. It is a neutral data structure without inherent malicious intent."
+        }
+    },
+    "2": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in libraries. It serves files from the current directory over localhost on a specified port (default 3000) and does not contain any malicious functionality, such as data exfiltration, execution of arbitrary code, or network-based attacks."
+        }
+    },
+    "3": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It appears to be a configuration and utility module for interacting with a service called Xethub via the `pyxet` library. It handles tasks like setting authentication credentials, managing cache paths, and creating repositories, but does not contain any harmful operations such as data exfiltration, system tampering, or execution of arbitrary code. The code's functionality is focused on setup and configuration."
+        }
+    },
+    "4": {
+        "qwen3-14b": {
+            "output": "no  \nThe code performs benign operations: creating a directory, generating files with random data (assuming `main.scrng` is a non-malicious random string generator), and using a progress bar. There is no direct evidence of malicious intent, such as data exfiltration, execution of arbitrary commands, or harmful payload delivery. The potential risk lies in the external `main` module, but the provided code itself does not contain malicious logic."
+        }
+    },
+    "5": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It simply defines metadata for a Python package (name, version, description, URLs, author information), which is standard practice for package development. There are no suspicious operations, hidden functions, or security risks present."
+        }
+    },
+    "6": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP, which is a common utility for local development. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access."
+        }
+    },
+    "7": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a simple HTTP server using Python's built-in modules. It serves files from the current directory on localhost, with no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access. The use of threading is benign and typical for handling concurrent requests."
+        }
+    },
+    "8": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines multiple classes that send messages via the Telegram API using bot tokens and chat IDs. While the presence of multiple bot tokens might raise suspicion, the code itself does not perform any inherently malicious actions (e.g., data exfiltration, execution of payloads, or unauthorized system access). It is a utility for sending messages through Telegram, which could be used for legitimate purposes (e.g., notifications) or potentially abused depending on context, but the code alone is not malicious."
+        }
+    },
+    "9": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a threaded HTTP server using Python's built-in modules. It serves files from the current directory over localhost and does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The use of `SimpleHTTPRequestHandler` is legitimate for local file serving."
+        }
+    },
+    "10": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost without any malicious behavior such as data exfiltration, command execution, or hidden network activity. The use of threading and default configurations does not indicate malicious intent."
+        }
+    },
+    "11": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple class for managing settings via a dictionary. It does not contain any malicious functionality, such as code execution, data exfiltration, or security vulnerabilities. It merely provides methods to access and retrieve stored settings."
+        }
+    },
+    "12": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. The function `add` is designed to return the sum of two numbers but incorrectly returns a fixed value (`np.sum([2,3]) = 5`) regardless of the inputs. While this is a logical error (the parameters `a` and `b` are unused), it does not involve any harmful actions, data exfiltration, or security vulnerabilities. The code is benign but flawed."
+        }
+    },
+    "13": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in `http.server` module to serve static files from the current directory. It uses threading to handle multiple requests concurrently but does not exhibit any malicious behavior such as executing arbitrary code, exfiltrating data, or performing unauthorized actions. The server is bound to localhost, limiting its exposure to the local machine."
+        }
+    },
+    "14": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate part of a text editor application framework. It defines classes for managing editor components, handling file openings with extension-based factory registration, and integrating with a UI framework. There is no evidence of malicious behavior such as code execution, data exfiltration, or exploitation patterns. The code follows standard practices for component-based application development."
+        }
+    },
+    "15": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It is designed to send messages via a Telegram bot using a hardcoded token and chat ID. While the use of hardcoded credentials is a security risk, the code itself does not perform any harmful actions like data exfiltration, execution of arbitrary code, or network attacks. Its purpose is to interact with the Telegram API for message sending."
+        }
+    },
+    "16": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory without any malicious functionality, hidden payloads, or unauthorized network activity. The use of threading and default settings does not indicate malicious intent."
+        }
+    },
+    "17": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It uses threading to handle multiple requests concurrently but does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The server is bound to localhost, limiting its exposure."
+        }
+    },
+    "18": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines data models and validation logic for handling MongoDB ObjectIds and storage objects, using standard libraries like `bson`, `pydantic`, and `dataclasses`. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads. The code appears to be part of a legitimate application for managing file storage metadata."
+        }
+    },
+    "19": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate data loader class definition with schema validation, part of a framework for handling dataset loading. It does not contain any malicious functionality, harmful operations, or security vulnerabilities. The `load_data` method is a placeholder raising `NotImplementedError`, and the rest of the code defines configuration structures for data loading without any suspicious behavior."
+        }
+    },
+    "20": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server to serve files from the current directory using Python's built-in modules. It does not contain any malicious functionality such as executing arbitrary code, downloading payloads, or interacting with external systems. The server is configured to run on localhost, limiting its accessibility to the local machine by default."
+        }
+    },
+    "21": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a Pydantic BaseModel for configuration purposes, which is a standard practice for data validation. There is no evidence of malicious behavior such as data exfiltration, execution of harmful commands, or hidden functionality. The use of default list values is typical for configuration models, though it may have a minor Python best-practice issue (mutable default arguments), which does not constitute malicious intent."
+        }
+    },
+    "22": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard local HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost and does not contain any malicious functionality, such as data exfiltration, remote code execution, or unauthorized access. Its purpose is benign (e.g., serving static files locally)."
+        }
+    },
+    "23": {
+        "qwen3-14b": {
+            "output": "no  \nThe code appears to be benign. It imports a function from a local module, reads an Excel file, and processes it using the imported function. There is no evidence of malicious behavior such as unauthorized data access, network communication, or execution of harmful payloads. The code's purpose seems to be data manipulation for embedding tasks."
+        }
+    },
+    "24": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard test case for a refactoring tool, checking if the `find_redundant_code` function correctly identifies specific lines as redundant. There is no malicious behavior, such as code execution, data exfiltration, or system manipulation. The code is benign and focused on testing functionality."
+        }
+    },
+    "25": {
+        "qwen3-14b": {
+            "output": "no  \nThe code generates a random UUID version 4 and formats it by replacing hyphens with underscores. It performs no harmful actions, uses standard libraries, and lacks any malicious patterns such as data exfiltration, execution of arbitrary code, or system manipulation."
+        }
+    },
+    "26": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines constants and substitution tables (sBox, invSBox) commonly used in cryptographic algorithms like AES. It includes parameters for key expansion and round constants, but contains no executable logic, network operations, or malicious payloads. The structure is consistent with legitimate cryptographic implementations."
+        }
+    },
+    "27": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is incomplete and contains syntax errors (e.g., empty values for `inputs_cardinality` and `outputs_cardinality`). It defines a class structure but lacks any executable logic or malicious functionality. No harmful operations are present."
+        }
+    },
+    "28": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate exception logging utility that connects to a MySQL database to store error messages and stack traces. It uses parameterized queries to prevent SQL injection, loads credentials securely via environment variables, and includes proper error handling. There is no evidence of malicious intent, data exfiltration, or harmful functionality."
+        }
+    },
+    "29": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost, which is typical for development purposes. There is no evidence of malicious behavior, such as data exfiltration, payload execution, or unauthorized access. The server is confined to localhost and does not include any hidden or suspicious functionality."
+        }
+    },
+    "30": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is part of a machine learning framework's metric calculation module. It performs standard data validation and preprocessing tasks (e.g., checking label lengths, converting probability matrices to predicted labels) without any malicious behavior, hidden payloads, or security risks."
+        }
+    },
+    "31": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard test script using pytest, with no malicious functions, network requests, or payloads. It contains placeholder comments and is designed for testing a package, not for harmful activities."
+        }
+    },
+    "32": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple function that returns a greeting concatenated with input text. It does not perform any malicious actions, data exfiltration, or unauthorized operations. The `CustomConnection` is unused in a way that could harm security, and there are no hidden or suspicious patterns."
+        }
+    },
+    "33": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It performs a legitimate check for updates by comparing the current version of a package (\"allproxy\") with the latest version available on PyPI. It uses standard libraries (`requests`, `packaging.version`) and does not execute arbitrary code, download malicious payloads, or engage in suspicious behavior. The only action is informing the user to upgrade via pip if a newer version is available."
+        }
+    },
+    "34": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a `WorkItem` class for handling date calculations related to work items (e.g., cycle time, age). It performs standard date parsing and arithmetic, with error handling for invalid dates. There is no evidence of malicious behavior such as code execution, data exfiltration, or security vulnerabilities. The purpose is purely data processing."
+        }
+    },
+    "35": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate script for generating documentation from a GitLab CI configuration file. It uses standard libraries (argparse, pathlib) and appears to be a wrapper for the `docsgen` module, which is likely designed for this purpose. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or unauthorized operations."
+        }
+    },
+    "36": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is part of a legitimate data processing pipeline for image classification tasks. It modifies dataset column types to \"Categorical\" for specified output columns, which is a standard preprocessing step. There are no signs of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads. The code uses standard libraries and follows typical machine learning data preparation patterns."
+        }
+    },
+    "37": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as payload delivery, command execution, or unauthorized data exfiltration. The server is a standard implementation for local file serving."
+        }
+    },
+    "38": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple function `hello()` that prints \"Hello, World!\" to the console. It contains no malicious behavior, such as unauthorized system access, data exfiltration, or execution of hidden commands. The function is benign and aligns with standard introductory programming examples."
+        }
+    },
+    "39": {
+        "qwen3-14b": {
+            "output": "no  \nThe code implements a custom symmetric encryption/decryption scheme using a hash-based Vigenère cipher. It does not contain any malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads. The functionality is limited to encoding/decoding strings with a key, using standard cryptographic operations (hashing) and character substitution."
+        }
+    },
+    "40": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard database interaction module that connects to an Oracle database using environment variables for credentials. It performs legitimate operations like querying, updating, and merging data in a controlled manner using parameterized SQL statements. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or execution of harmful commands. The use of `dotenv` and environment variables is a common practice for managing sensitive information securely."
+        }
+    },
+    "41": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate pytest plugin designed to report test warnings as code quality issues to GitLab. It processes warnings, generates structured violation records, and integrates with GitLab's code quality tools. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access."
+        }
+    },
+    "42": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost on a specified port (default 3000) and does not contain any malicious functionality, payloads, or hidden behaviors. It is a benign tool for serving static content."
+        }
+    },
+    "43": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines multiple classes that use the Telegram Bot API to send messages to specific chat IDs. While the presence of multiple bot tokens and chat IDs may raise suspicion, the code itself does not contain any malicious functionality such as data exfiltration, execution of harmful commands, or unauthorized access. It simply sends messages through the Telegram API, which is a legitimate use case. The determination of malicious intent would require additional context (e.g., where the `message` parameter originates)."
+        }
+    },
+    "44": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate script for generating ASCII art from images or text using command-line arguments. It performs standard operations like file existence checks, image processing with OpenCV, and parameter parsing without any malicious behavior such as data exfiltration, code execution, or hidden functionality."
+        }
+    },
+    "45": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a quiz parser that reads JSON data and constructs quiz objects. It does not perform any harmful actions, execute arbitrary code, or interact with the system in a way that could be considered malicious. Potential issues like file path validation are context-dependent (e.g., if `quizpath` is user-controlled), but the code itself lacks malicious intent or functionality."
+        }
+    },
+    "46": {
+        "qwen3-14b": {
+            "output": "no  \nThe code appears to be using a legitimate Python library (`nanonis_spm_specs`) to interact with a scientific instrument (Nanonis SPM) via a network connection. It establishes a connection to a specific IP address and port, then opens a data logging session. There is no evidence of malicious behavior such as data exfiltration, command injection, or unauthorized access in the provided snippet."
+        }
+    },
+    "47": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code sets up a simple HTTP server using Python's built-in `http.server` module to serve files from the current directory. It uses threading to handle multiple requests concurrently but does not contain any malicious logic, such as executing arbitrary code, downloading payloads, or exfiltrating data. The server is bound to `localhost`, limiting its accessibility to the local machine. The code is a standard file-serving script with no hidden or harmful functionality."
+        }
+    },
+    "48": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate component for querying PubMed via NCBI's Entrez API. It performs standard operations like searching for publications, fetching records, and parsing results into structured data. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or exploitation of vulnerabilities. The code includes proper error handling and uses well-known libraries (Biopython, pydantic) for scientific data processing."
+        }
+    },
+    "49": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate utility for retrieving and displaying media file metadata using ffprobe. It uses `subprocess.run` with a list of arguments (not a shell string), which prevents command injection vulnerabilities. The `os.system` call is used only for clearing the terminal, which is harmless. There is no evidence of malicious behavior or hidden functionality."
+        }
+    },
+    "50": {
+        "qwen3-14b": {
+            "output": "no  \nThe code fetches a webpage and checks if the parsed HTML equals a specific string, which is unlikely to be true. While it uses `sys.exit()` based on this condition, there's no evidence of malicious behavior like data exfiltration, execution of arbitrary code, or harmful actions. The logic is flawed but not inherently malicious."
+        }
+    },
+    "51": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is syntactically invalid due to missing values for \"inputs_cardinality\" and \"outputs_cardinality\" in the metadata dictionary (e.g., `\"inputs_cardinality\": ,`). This prevents the code from executing, making it non-malicious. Additionally, the code appears to be a template or incomplete implementation without any harmful functionality."
+        }
+    },
+    "52": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a media scraper for a specific website (vadapav.mov), which is a legitimate use case for retrieving metadata and file information. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or exploitation of vulnerabilities. The code interacts with an API, processes JSON responses, and constructs objects for movies/series, which aligns with typical scraper functionality."
+        }
+    },
+    "53": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory via HTTP, which is a common use case for development or local file sharing. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access. The potential risk (exposing files) depends on deployment context, not the code itself."
+        }
+    },
+    "54": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate tool for decrypting Exodus wallet files. It uses standard cryptographic libraries (e.g., `scrypt`, `AES`) and focuses on parsing/decrypting wallet data. The only non-standard component is `Cipherbcryptor.algorithmb`, which is not defined in the provided code, but its usage does not indicate malicious intent (e.g., no network requests, data exfiltration, or system modifications). The code's purpose aligns with cryptocurrency wallet analysis, not malicious activity."
+        }
+    },
+    "55": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines basic arithmetic operations (addition, subtraction, multiplication, division) with no hidden functionality, network interactions, or security risks. It performs standard mathematical computations without any malicious intent or vulnerabilities."
+        }
+    },
+    "56": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign implementation of geometric calculations (area of a circle and triangle). The nested loops checking for right-angled triangles are flawed and unrelated to the input parameters, but there is no malicious intent, hidden functionality, or security risks present."
+        }
+    },
+    "57": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard local HTTP server implementation using Python's built-in modules. It serves static files from the current directory and does not contain any malicious functionality such as payload execution, data exfiltration, or unauthorized network interactions. The use of threading and HTTP/1.1 is typical for a simple web server."
+        }
+    },
+    "58": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a Euclidean distance function between two matrices using NumPy. It performs mathematical operations for distance computation without any hidden malicious behavior, such as data exfiltration, code execution, or security vulnerabilities."
+        }
+    },
+    "59": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is part of a legitimate bot framework implementation, handling web request processing and message routing between a bot and client. It uses standard libraries (aiohttp, botbuilder) and follows typical patterns for web adapter implementations. There is no evidence of malicious behavior such as data exfiltration, arbitrary code execution, or hidden payloads. The code raises NotImplemented errors for unimplemented features but does not contain any security vulnerabilities or malicious intent."
+        }
+    },
+    "60": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a utility for generating GUIDs from Steam IDs using hashing algorithms (SHA-256 and MD5). It performs no network activity, data exfiltration, or execution of malicious payloads. The functions are focused on data transformation and do not contain any suspicious or harmful operations."
+        }
+    },
+    "61": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple class `Strategy` that initializes two integers and provides a method to add them. There is no evidence of malicious behavior, such as unauthorized data access, execution of arbitrary code, or hidden vulnerabilities. The functionality is straightforward and benign."
+        }
+    },
+    "62": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a `WorkItem` class for managing work item data, including date parsing and calculation of metrics like cycle time and work item age. It performs standard operations such as date formatting, arithmetic, and dictionary conversion. There is no evidence of malicious behavior, such as data exfiltration, unauthorized network activity, or execution of arbitrary code. The code appears to be a legitimate utility for processing work item data."
+        }
+    },
+    "63": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a local HTTP server using Python's built-in modules to serve files from the current directory. It uses standard libraries and does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The server is bound to localhost, limiting its exposure."
+        }
+    },
+    "64": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a Django model for storing authentication-related data (e.g., `uid`, `auth_token`). It does not contain any malicious logic, harmful functions, or security vulnerabilities. The model is standard and focuses on data storage, with no indication of exploitation or unauthorized behavior."
+        }
+    },
+    "65": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory on localhost without any malicious functionality, such as data exfiltration, execution of arbitrary code, or network attacks. The server is benign and intended for local file sharing."
+        }
+    },
+    "66": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard test suite for a logging library (`glog`) using `pytest`. It includes test cases for logging to console, file, and ntfy service, with proper use of mocking and fixtures. There is no evidence of malicious behavior, such as code execution, data exfiltration, or hidden payloads. The purpose is purely testing functionality."
+        }
+    },
+    "67": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard implementation of a threaded HTTP server using Python's built-in `http.server` module. It serves files from the current directory over localhost on a specified port (default 3000). There is no evidence of malicious behavior such as data exfiltration, remote code execution, or unauthorized access. The server is confined to localhost and does not include any security vulnerabilities or hidden functionality."
+        }
+    },
+    "68": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a type alias `TelemetrySpan` using `Annotated` for type hinting with OpenTelemetry's `trace.Span`. It contains no executable logic, payloads, or suspicious patterns. The imports are from legitimate libraries (FastStream, OpenTelemetry) and are used for context management and distributed tracing, which are standard practices in software development. No malicious behavior is present."
+        }
+    },
+    "69": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate script for interacting with GitHub's API to retrieve and display information about pull requests and their reviewers. It uses standard libraries (requests, click, tabulate) and does not exhibit any malicious behavior such as data exfiltration, unauthorized access, or harmful operations. The script requires a GitHub token for authentication but uses it solely for querying GitHub's API in a benign manner."
+        }
+    },
+    "70": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It imports the `requests` library (commonly used for HTTP requests) but does not use it. The `hi()` function simply prints \"hi\" and contains no harmful or suspicious operations. There is no evidence of data exfiltration, execution of arbitrary code, or other malicious behavior."
+        }
+    },
+    "71": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a utility class with functions for logging, proxy handling, and IP checking. It does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized system modifications. The methods are focused on configuration management and network operations, which are common in legitimate applications."
+        }
+    },
+    "72": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple class with methods that only perform harmless print operations. There is no evidence of malicious behavior such as data exfiltration, system manipulation, or execution of arbitrary code."
+        }
+    },
+    "73": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple data class `Event` for representing Chaturbate events, with methods for initialization and deserialization from a dictionary. There is no evidence of malicious behavior such as code execution, data exfiltration, or security vulnerabilities in the provided snippet."
+        }
+    },
+    "74": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines data classes for structuring API endpoint configurations and does not contain any malicious operations, payloads, or suspicious behavior. It uses standard libraries and appears to be part of a legitimate API client setup."
+        }
+    },
+    "75": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines an enumeration (`ProviderType`) with two constants (`AZURE` and `OPENAI`). It is a standard, harmless use of Python's `enum` module for categorizing provider types. There is no malicious behavior, such as data exfiltration, command execution, or hidden functionality."
+        }
+    },
+    "76": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It simply prints a warning message about a non-existent package and exits with an error code. There is no hidden functionality, data exfiltration, or destructive behavior present. The exit(1) prevents further execution but does not indicate malicious intent."
+        }
+    },
+    "77": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory on localhost, which is a common development practice. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or exploitation of vulnerabilities. The server is restricted to localhost by default, limiting its exposure."
+        }
+    },
+    "78": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a context manager for managing a Selenium WebDriver instance with type hints and headless mode support. It does not contain any malicious functionality, hidden operations, or security risks. The code is focused on browser automation and follows standard practices for resource management."
+        }
+    },
+    "79": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It simply imports the `Typer` class from the `typer` library (a legitimate Python CLI tool framework) and creates an instance of it. There is no harmful functionality, data exfiltration, or execution of malicious actions present in the provided code."
+        }
+    },
+    "80": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate Instagram login script that attempts to authenticate a user by sending credentials via a POST request. It does not contain any malicious payloads, data exfiltration, or unauthorized system modifications. The use of `os.system` to install dependencies is standard for package management, and the script's purpose is to perform a login operation, which is a valid use case when used with proper authorization. No inherent malicious intent is present in the provided code."
+        }
+    },
+    "81": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a configuration script for a JupyterLab server used in integration tests. While the comment warns against using it in production (due to potential security risks like exposing JavaScript objects via the global `window` variable), the code itself does not contain malicious functionality. It simply sets up a server configuration and includes a cautionary note about its intended use. The security risks mentioned are contextual (production use) rather than inherent to the code's logic."
+        }
+    },
+    "82": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve static files from the current directory. It does not contain any malicious functionality such as data exfiltration, code execution, or unauthorized network activity. The server is bound to localhost, limiting its accessibility, and uses standard libraries without hidden or dangerous operations."
+        }
+    },
+    "83": {
+        "qwen3-14b": {
+            "output": "yes  \nThe code is designed to perform automated login attempts using credentials stored in a file (\"password.txt\"), leveraging asynchronous requests to target a specific API endpoint. This behavior aligns with credential stuffing or brute-force attacks, which are malicious activities aimed at unauthorized access. The infinite loop and concurrent execution further amplify the risk of system compromise."
+        }
+    },
+    "84": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve static files from the current directory. It does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or unauthorized access. The server is intended for local file serving, similar to Python's default HTTP server."
+        }
+    },
+    "85": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It defines a context manager that plays an audible bell sound (`\\a`) after executing a block of code, which is a harmless and benign operation. There is no evidence of data exfiltration, system compromise, or other malicious behavior."
+        }
+    },
+    "86": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as data exfiltration, code execution, or network attacks. Its purpose is straightforward: to host static files locally, which is a common legitimate use case."
+        }
+    },
+    "87": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a multithreaded HTTP server using Python's built-in modules. It serves static files from the current directory and does not contain any malicious functionality such as payload delivery, command execution, or data exfiltration. Its purpose appears to be legitimate (e.g., local file sharing/testing)."
+        }
+    },
+    "88": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test written using Python's `unittest` framework. It tests the `add_one` function from the `sample.simple` module by verifying that it correctly returns 6 when given the input 5. There is no evidence of malicious behavior, such as unauthorized system interactions, data exfiltration, or execution of harmful payloads. The code serves a legitimate testing purpose."
+        }
+    },
+    "89": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a creative modification of the tqdm library to display progress bars with a rainbow color gradient. It uses ANSI escape codes for terminal coloring and mathematical functions to generate smooth color transitions. While the implementation contains some oddities (e.g., a broken factorial function), there is no evidence of malicious behavior such as data exfiltration, system compromise, or hidden payloads. The code's purpose is purely aesthetic."
+        }
+    },
+    "90": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a unit test suite for a DLMS/COSEM-related library, performing operations like creating objects, modifying data, and testing templates. It does not exhibit any malicious behavior such as unauthorized data access, network communication, or execution of harmful payloads. All operations are confined to testing and manipulation of in-memory data structures."
+        }
+    },
+    "91": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard local HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP on localhost, with no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access. The use of threading is benign and intended for concurrent request handling."
+        }
+    },
+    "92": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate web scraping implementation for extracting product data from Jetstereo's API. It includes proper error handling, uses standard libraries (requests, BeautifulSoup), and focuses on retrieving structured product information. There are no signs of malicious behavior such as data exfiltration, execution of payloads, or system modification. The code is designed for scraping purposes under a free software license."
+        }
+    },
+    "93": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a set of unit tests for a machine learning library (DBGSOM) using pytest. It tests the `exponential_decay` function and the `DBGSOM` class's behavior with different distance metrics. There is no evidence of malicious activity, such as data exfiltration, code execution, or hidden payloads. The code follows standard testing practices and does not contain security vulnerabilities."
+        }
+    },
+    "94": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard local HTTP server implementation using Python's `http.server` module. It serves files from the current directory and listens on localhost, which is a common practice for development purposes. There is no evidence of malicious behavior such as data exfiltration, remote code execution, or hidden payloads."
+        }
+    },
+    "95": {
+        "qwen3-14b": {
+            "output": "no  \nThe provided content consists of comments referencing a tutorial on creating PyPI packages and a note about filename conventions. There is no executable code, no suspicious behavior, and no indicators of malicious intent."
+        }
+    },
+    "96": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate module for fetching IP-related information (public and private) using standard libraries and public APIs (e.g., ipinfo.io). It does not contain any malicious behavior such as data exfiltration, backdoors, or unauthorized network activity. The `open_ports` method has a logical error (incorrectly determining open ports via binding), but this is a functional flaw, not a security threat."
+        }
+    },
+    "97": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a set of utility functions for configuring matplotlib plots, fonts, and display settings in IPython/Jupyter notebooks. It performs standard operations like setting fonts, enabling retina display support, and calculating subplot sizes. There is no evidence of malicious behavior such as data exfiltration, code execution, or hidden payloads. The functions are focused on visualization configuration and do not exhibit security risks."
+        }
+    },
+    "98": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation that serves files from the current directory using Python's built-in modules. It does not contain any malicious functionality, such as executing arbitrary code, stealing data, or opening reverse shells. The server is bound to localhost, limiting its accessibility to the local machine."
+        }
+    },
+    "99": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP on localhost, with no evidence of malicious behavior such as data exfiltration, remote code execution, or unauthorized system modifications. The use of threading and default port settings is typical for a development server."
+        }
+    },
+    "100": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve static files from the current directory. It uses threading for concurrent request handling but does not contain any malicious functionality such as payload delivery, remote code execution, or data exfiltration. Its purpose is legitimate (e.g., local file sharing/testing)."
+        }
+    },
+    "101": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It defines two AWS Lambda functions (`no_auth_handler` and `auth_handler`) that return simple HTTP responses with \"hello world\" messages. There is no evidence of harmful behavior, such as data exfiltration, command execution, or unauthorized access. The code appears to be a basic template for API Gateway Lambda proxy integrations."
+        }
+    },
+    "102": {
+        "qwen3-14b": {
+            "output": "yes  \nThe code is designed to decrypt data from a LevelDB database, likely targeting cryptocurrency wallet information (e.g., mnemonics). It uses cryptographic operations (PBKDF2, NaCl SecretBox) to extract sensitive data, which could be used to steal private keys or wallet recovery phrases if executed without authorization. The presence of custom modules and direct access to local file systems raises suspicion of malicious intent."
+        }
+    },
+    "103": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple local HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as data exfiltration, remote code execution, or unauthorized access. The server is bound to localhost, limiting its accessibility to the local machine."
+        }
+    },
+    "104": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard configuration class for a FastAPI application, defining PostgreSQL connection parameters with defaults and environment variable support. It uses Pydantic for validation and does not contain any malicious behavior such as data exfiltration, command execution, or hidden functionality. The code is focused on database configuration and validation."
+        }
+    },
+    "105": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple Telegram bot sender that sends messages to a predefined chat ID. It does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or unauthorized system access. The potential for misuse depends on how the `message` parameter is used, but the code itself is benign."
+        }
+    },
+    "106": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard Django AppConfig class that configures logging using a `get_logging_config()` function from a local module. There is no direct evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or tampering with system functions. The logging configuration is a typical practice in Django applications."
+        }
+    },
+    "107": {
+        "qwen3-14b": {
+            "output": "no  \nThe code reads a local file (`data.txt`) using `pkg_resources` and searches for a specific program entry based on the input number. It does not perform any malicious actions like executing arbitrary code, accessing sensitive data, or interacting with external systems. The logic is confined to reading and parsing a file, making it benign."
+        }
+    },
+    "108": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a simple `CarPark` class with encapsulated attributes and getter methods. It is a standard data container class with no malicious functionality, such as hidden operations, network communication, or security vulnerabilities. All methods are benign and focused on data representation."
+        }
+    },
+    "109": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a generic HTTP client utility that makes API requests with a Bearer token. While it disables SSL verification (`verify=False`), which is a security risk, the code itself does not contain malicious logic, payloads, or actions like data exfiltration, command execution, or injection attacks. It is a standard implementation for interacting with APIs, albeit with a potential vulnerability."
+        }
+    },
+    "110": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a test script that runs Jupyter notebooks using `jupyter nbconvert` with the `--execute` flag. It does not contain any inherently malicious logic. The script processes `.ipynb` files in a directory tree, skipping specific subdirectories. While it executes arbitrary notebook content (which could be dangerous if the notebooks themselves are malicious), the script itself is not malicious. Its purpose is to automate testing of notebooks, and there is no evidence of hidden payload delivery, command injection, or other malicious behavior in the code."
+        }
+    },
+    "111": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard Kafka producer/consumer implementation with no evidence of malicious behavior. It handles message serialization, async operations, and error handling typical in Kafka clients. There are no hidden payloads, data exfiltration mechanisms, or execution of arbitrary code. The use of `json.dumps` and Kafka message passing is consistent with legitimate data processing workflows."
+        }
+    },
+    "112": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code appears to be part of a legitimate system interface for a vision or robotic calibration system. It does not contain any obvious malicious patterns such as data exfiltration, execution of arbitrary code, or hidden payloads. The functions are named for calibration and modeling tasks, and the code does not perform harmful actions. The use of imported modules (e.g., `socketfunc`) is not inherently malicious without further context."
+        }
+    },
+    "113": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a collection of benign functions for sorting lists and modifying string cases. It performs standard operations like bubble sort, capitalization, and case conversion without any hidden malicious behavior, system interactions, or security risks."
+        }
+    },
+    "114": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test using Typer's CliRunner to verify the CLI application's version output. It checks that the `--version` flag produces the expected output without any malicious behavior."
+        }
+    },
+    "115": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard logging configuration using the loguru library. It sets up log formatting and output level based on environment variables but does not contain any malicious functionality, payloads, or suspicious behavior."
+        }
+    },
+    "116": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a settings loader using Pydantic's `BaseSettings`, designed to override environment variables with explicit keyword arguments. It does not contain any malicious operations such as arbitrary code execution, data exfiltration, or unsafe input handling. The filtering of `UseEnv` values is a feature for configuration management, not a security vulnerability."
+        }
+    },
+    "117": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard JSON schema validation implementation using the `jsonschema` library. It does not contain any malicious functionality, such as data exfiltration, execution of arbitrary code, or hidden vulnerabilities. Its purpose is to validate data against a predefined schema, which is a common and legitimate use case."
+        }
+    },
+    "118": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code sets up a FastAPI WebSocket endpoint but does not contain any malicious functionality. It defines a route that accepts WebSocket connections but lacks any logic for processing messages, sending data, or performing harmful actions. The `permissonChecker` function is a placeholder with no implementation, and the code does not include any suspicious operations like command execution, data exfiltration, or unauthorized access."
+        }
+    },
+    "119": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves static files from the current directory over localhost and does not contain any malicious logic, such as executing arbitrary code, exfiltrating data, or hiding harmful payloads."
+        }
+    },
+    "120": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate test script for evaluating watermarking algorithms in text generation. It loads a pre-trained model, applies various watermarking techniques, and tests detection capabilities. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or execution of harmful payloads."
+        }
+    },
+    "121": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate implementation for loading and using pre-trained models (e.g., Vocos, GPT, DVAE) for text-to-speech inference. It does not contain any malicious behavior such as unauthorized data access, execution of arbitrary code, or network-based attacks. The code focuses on model initialization, validation, and inference with proper input handling."
+        }
+    },
+    "122": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines an abstract base class with a placeholder method and includes a standard GPL license. There is no evidence of malicious behavior, such as unauthorized data access, execution of arbitrary code, or hidden functionality. The code appears to be a legitimate interface for a scraper provider."
+        }
+    },
+    "123": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized network communication. The server is bound to localhost, limiting its accessibility, and uses standard libraries for legitimate file-serving purposes."
+        }
+    },
+    "124": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard logging configuration module that uses the `rich` library for enhanced log formatting. It defines a custom logger and configuration functions, but there is no evidence of malicious behavior such as data exfiltration, command execution, or hidden payloads. The code is focused on logging setup and adheres to standard Python practices."
+        }
+    },
+    "125": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or unauthorized access. The server is intended for local file serving and uses standard libraries without hidden or dangerous operations."
+        }
+    },
+    "126": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a decorator class `tool` for creating tools with marshaling and compilation capabilities, but it does not contain any malicious functionality such as code execution, data exfiltration, or unauthorized access. It appears to be a legitimate utility for structuring and interacting with tools, likely for API or framework integration."
+        }
+    },
+    "127": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test using Typer's CliRunner to verify that the CLI application's version flag outputs the correct app name and version. There is no malicious behavior, such as unauthorized actions, data exfiltration, or hidden logic. It is a legitimate test case for a CLI tool."
+        }
+    },
+    "128": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test using Python's `unittest` framework to verify the output type of a function `get_length` from an external library. It does not contain any malicious behavior such as unauthorized data access, execution of harmful commands, or exploitation techniques. The purpose is purely to test software functionality."
+        }
+    },
+    "129": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It dynamically imports a module (`Constants.py`) from a repository path constructed using user input (`repo`). While this could pose a security risk if the `repo` parameter is untrusted (e.g., allowing arbitrary code execution), the code itself does not contain explicit malicious logic. Its purpose appears to be legitimate module loading, though improper input validation could introduce vulnerabilities."
+        }
+    },
+    "130": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation that serves files from the current directory. It does not contain any malicious functionality such as executing arbitrary code, stealing data, or creating backdoors. Its purpose is to host a local web server for file sharing."
+        }
+    },
+    "131": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. Its purpose is straightforward: to host a local web server for file sharing."
+        }
+    },
+    "132": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard logging utility that configures a logger with a specific format. It does not perform any malicious activities such as data exfiltration, code execution, or unauthorized system interactions. The function simply sets up logging for a given module, which is a common and safe practice."
+        }
+    },
+    "133": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate function to fetch historical stock data from Yahoo Finance using a public API. It constructs a URL with parameters for date ranges and downloads data via `pd.read_csv`, which is standard practice for financial data retrieval. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads."
+        }
+    },
+    "134": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate image thumbnail generator. It uses standard libraries (pathlib, PIL) to process images in a specified directory, creates thumbnails, and saves them to an output folder. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access."
+        }
+    },
+    "135": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate ArcGIS Pro script for validating and updating attributes of construction layers based on predefined rules. It performs data validation, enforces constraints (e.g., setting `act_altura` to 3, ensuring `pk_constru` follows a specific format), and uses standard ArcPy operations for geospatial data editing. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or execution of arbitrary code."
+        }
+    },
+    "136": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate implementation of a numerical linear algebra function (computing matrix norms) and a placeholder for a Householder reflection method. There is no evidence of malicious behavior, such as data exfiltration, system manipulation, or hidden payloads."
+        }
+    },
+    "137": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code implements a system for generating and managing \"smart links\" for purposes like email verification. It securely generates unique identifiers, logs operations, and uses a queue worker for task execution. While there are TODOs and placeholders (like `verify_mail`), there is no direct evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access. The code appears to be part of a legitimate workflow management system."
+        }
+    },
+    "138": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign function for pretty-printing JSON with syntax highlighting using the `pygments` library. It does not contain any malicious logic, data exfiltration, or execution of arbitrary code."
+        }
+    },
+    "139": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate utility for interacting with Azure DevOps to retrieve and process work items. It uses standard authentication practices (PAT token) and does not contain any malicious patterns such as data exfiltration, execution of arbitrary code, or hidden backdoors. The potential security risk lies in the storage of the PAT in plaintext, but this is a configuration issue, not inherent malicious intent in the code itself."
+        }
+    },
+    "140": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a nested class structure for parsing structured data (likely from an API response, such as email metadata). It uses standard Python constructs for data modeling and does not contain any suspicious behavior like network requests, command execution, or data exfiltration. The code appears to be a legitimate data parsing utility."
+        }
+    },
+    "141": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate weather application that retrieves weather data from OpenWeatherMap API and displays it with ASCII art. It uses environment variables for API keys (secure practice), handles user input, and performs standard HTTP requests. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or execution of harmful code."
+        }
+    },
+    "142": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate script that interacts with Google's Gemini AI model to generate responses based on user input. It uses standard libraries for input/output, text formatting, and API interaction. The regex patterns are for formatting output headers, not for malicious activities. No suspicious behavior like data exfiltration, command execution, or hidden payloads is present."
+        }
+    },
+    "143": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard implementation of a socket client for communication with a server. It establishes a TCP connection, sends/receives messages, and includes basic error handling. There is no evidence of malicious behavior such as code execution, data exfiltration, or exploitation. The functionality is limited to network communication and does not contain hidden or dangerous operations."
+        }
+    },
+    "144": {
+        "qwen3-14b": {
+            "output": "no  \nThe code content is not provided, so there is no basis for analysis. Without examining the actual code, it's impossible to determine if it's malicious."
+        }
+    },
+    "145": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign simulation tool that applies a shuffling function to a deck of cards multiple times and returns the results. It uses standard Python constructs (dataclasses, list comprehensions) and does not contain any malicious behavior such as unauthorized data access, execution of arbitrary code, or network communication. The potential for misuse depends on the implementation of the `Shuffle` function, which is not provided here."
+        }
+    },
+    "146": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP, but does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The potential risk (exposing local files via HTTP) stems from its usage context, not inherent malicious intent in the code itself."
+        }
+    },
+    "147": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines standard exception classes for an internationalization (i18n) library. It properly implements `__reduce__` methods for pickling/unpickling, which is a normal practice for serializable objects. There is no evidence of malicious behavior such as code execution, data exfiltration, or hidden functionality. The exceptions are meant for error handling within the library and do not pose a security risk."
+        }
+    },
+    "148": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines basic arithmetic functions (addition, subtraction, multiplication, division) with no hidden malicious behavior, unauthorized operations, or security vulnerabilities. It performs standard mathematical operations and contains no code that could be considered harmful or exploitable."
+        }
+    },
+    "149": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a unit test suite for a drug detection model, designed to validate its accuracy in identifying drug-related terms in medical text. It does not contain any malicious functionality such as data exfiltration, execution of harmful commands, or unauthorized access. The code is focused on testing the behavior of a `DrugDetector` class, which appears to be a legitimate natural language processing tool for analyzing text. No security risks are present in the provided code."
+        }
+    },
+    "150": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a standard Python class with basic getter and setter methods for attributes. There is no evidence of malicious behavior such as data exfiltration, code execution, or security vulnerabilities. The class simply manages and exposes its own state in a typical object-oriented manner."
+        }
+    },
+    "151": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's `http.server` module. It serves static files from the current directory and uses threading to handle multiple requests concurrently. There is no evidence of malicious behavior, such as data exfiltration, execution of arbitrary code, or network attacks. The server is bound to `localhost`, limiting its exposure. The code's purpose is benign (file serving), and it does not contain hidden or harmful functionality."
+        }
+    },
+    "152": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard local HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP on localhost, which is a common practice for development purposes. There is no evidence of malicious behavior, such as executing arbitrary code, downloading payloads, or exposing sensitive data. The use of threading and default request handling is benign."
+        }
+    },
+    "153": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test written using Python's `unittest` framework. It defines two simple test cases comparing string and boolean values, which are expected to pass. There is no malicious behavior, such as executing arbitrary commands, accessing sensitive data, or interacting with external systems. The code is benign and intended for testing purposes."
+        }
+    },
+    "154": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple test case using `pytest` to verify that a function `tsdlr.sum_as_string` returns the string \"2\" when adding 1 and 1. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or exploitation techniques. The use of an uncommon module (`tsdlr`) is not inherently malicious without further context, and the code itself does not contain harmful logic."
+        }
+    },
+    "155": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate command-line interface for managing Docker containers via the `dockrich` library. It maps user-provided command-line arguments to specific Docker-related operations (e.g., listing containers, stopping containers) and does not contain any malicious logic such as data exfiltration, arbitrary code execution, or hidden payloads. The functionality is confined to Docker management tasks."
+        }
+    },
+    "156": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard local HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost, which is a common development tool. There is no evidence of malicious behavior such as data exfiltration, payload execution, or network-based attacks. The server is confined to localhost and does not include any hidden or suspicious functionality."
+        }
+    },
+    "157": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines lists of HTML tags, classes, and words to ignore, likely for content filtering or parsing purposes (e.g., web scraping). It contains no executable logic, network activity, or security-sensitive operations. The patterns are static and appear to be part of a configuration for excluding non-content elements from HTML documents. No malicious behavior is present."
+        }
+    },
+    "158": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as payload delivery, command execution, or data exfiltration. Its purpose appears to be legitimate (e.g., local file sharing/testing)."
+        }
+    },
+    "159": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines package metadata and mappings for available language models and embeddings, which are standard practices in Python libraries. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden functionalities. The code appears to be a legitimate configuration module for integrating different AI models."
+        }
+    },
+    "160": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign utility that reads a JSON file and formats its contents into a table for display. It performs standard operations like file I/O, JSON parsing, and data formatting without any malicious intent, such as executing arbitrary code, exfiltrating data, or modifying system behavior."
+        }
+    },
+    "161": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost, which is a common practice for local development. There is no evidence of malicious behavior such as data exfiltration, command execution, or hidden payloads. The server is restricted to localhost by default, limiting its exposure."
+        }
+    },
+    "162": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines two simple, benign functions (`greet` and `add_numbers`) that perform basic operations (string formatting and arithmetic). There is no evidence of malicious behavior such as data exfiltration, code injection, or unauthorized system interactions."
+        }
+    },
+    "163": {
+        "qwen3-14b": {
+            "output": "no  \nThe code only contains metadata (SPDX license information and a version string) and does not include any executable logic, network operations, or security-sensitive actions that would indicate malicious intent."
+        }
+    },
+    "164": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate implementation of a CloudProvider abstract class with AWS-specific functionality using boto3 to interact with AWS SSM Parameter Store. It securely stores and retrieves refresh tokens as encrypted parameters, with no evidence of malicious behavior such as data exfiltration, unauthorized access, or hidden payloads. The Azure-related code is commented out and not active."
+        }
+    },
+    "165": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard implementation of a simple HTTP server using Python's built-in modules. It serves files from the current directory over localhost, which is typical for development purposes. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or unauthorized access. The server is confined to localhost, limiting its exposure."
+        }
+    },
+    "166": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines custom exception classes for error handling, which is a standard practice in software development. There is no malicious functionality, such as data exfiltration, execution of arbitrary code, or hidden vulnerabilities. The code is purely for structured error management."
+        }
+    },
+    "167": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a test script for a chat component that interacts with AWS services (e.g., SQS, SNS). It uses environment variables for configuration, which is standard practice, and performs assertions to validate the structure of a chat response. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access. The code appears to be legitimate test logic."
+        }
+    },
+    "168": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality, such as data exfiltration, command execution, or unauthorized access. The server is designed for local file serving and lacks any hidden or harmful behavior."
+        }
+    },
+    "169": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate script for uninstalling Python packages and their dependencies. It uses standard `pip` commands and does not contain any obvious malicious payloads, backdoors, or data-exfiltration logic. While there are potential security risks (e.g., unsanitized input in `os.system`), these are implementation flaws rather than malicious intent. The script's purpose is to manage package dependencies, not to harm the system."
+        }
+    },
+    "170": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a simple function that calculates the sum of durations from a list of courses. It does not contain any malicious patterns such as unauthorized data access, network communication, or execution of harmful operations. The function is benign and appears to be part of a legitimate data aggregation task."
+        }
+    },
+    "171": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is using the `schwabkit` library to interact with Schwab's API, which is a legitimate financial service. It loads environment variables for credentials and initializes an API client, which is standard practice for authenticating with external services. There is no evidence of malicious behavior such as data exfiltration, execution of harmful commands, or exploitation patterns. The code appears to be a benign setup for API integration."
+        }
+    },
+    "172": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory and listens on localhost, but does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The server is benign and intended for local file sharing."
+        }
+    },
+    "173": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard local HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost and does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized network communication. The use of threading and HTTP serving is benign in this context."
+        }
+    },
+    "174": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a Django middleware designed for logging request and response details, such as method, path, body, status code, and duration. It uses standard practices like UUIDs for request IDs and proper error handling. There is no evidence of malicious behavior, such as data exfiltration, injection attacks, or unauthorized operations. The potential risk lies in logging sensitive data, but this is a configuration concern, not inherent to the code itself."
+        }
+    },
+    "175": {
+        "qwen3-14b": {
+            "output": "no  \nThe code imports and calls functions named `saludar` (greet) and `despedir` (farewell), which are likely benign utility functions for displaying messages. There is no evidence of malicious behavior such as network requests, file operations, or execution of harmful commands in the provided code. The code appears to be non-malicious based on its structure and lack of suspicious operations."
+        }
+    },
+    "176": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines two custom exception classes (`NotHashableError` and `DuplicateItemError`) for error handling purposes. These are standard practices in Python and do not contain any malicious functionality, such as data exfiltration, execution of arbitrary code, or hidden vulnerabilities. The code is benign and likely intended for use in validating or managing data structures."
+        }
+    },
+    "177": {
+        "qwen3-14b": {
+            "output": "no\nThe code defines a simple function `add_one` that increments a number by 1. It contains no malicious logic, hidden operations, or security risks. The function performs a straightforward arithmetic operation with no side effects or dangerous capabilities."
+        }
+    },
+    "178": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory on localhost, which is a common development tool. There is no evidence of malicious behavior such as data exfiltration, command execution, or payload delivery. The code's purpose is benign (file sharing via HTTP)."
+        }
+    },
+    "179": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines two custom exception classes for error handling purposes. These classes are used to provide specific error messages when certain conditions occur (e.g., missing data or endpoints). There is no malicious functionality, hidden behavior, or security risk in the provided code."
+        }
+    },
+    "180": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate Python script using the `pycaw` library to control system audio settings (volume adjustment, muting, and aligning application volumes). It performs standard audio management tasks without any malicious behavior, data exfiltration, or hidden functionality."
+        }
+    },
+    "181": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It simply prints a warning message about an invalid package name, directs the user to a website, and exits. There is no harmful behavior, data exfiltration, or execution of malicious payloads."
+        }
+    },
+    "182": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a multithreaded HTTP server using Python's built-in modules. It serves static files from the current directory and does not contain any malicious functionality such as executing arbitrary code, downloading payloads, or exposing sensitive data. The server is bound to localhost, limiting its accessibility. The potential risk would depend on the files being served, not the code itself."
+        }
+    },
+    "183": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a test script for sending emails using AWS SES. It uses environment variables for configuration and standard testing practices, with no evidence of malicious behavior such as data exfiltration, unauthorized access, or harmful operations."
+        }
+    },
+    "184": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple subtraction function with a misleading docstring (claiming it's for multiplication). However, it performs no harmful actions, uses no dangerous operations, and contains no malicious payloads. The discrepancy in the docstring is a documentation error, not a security threat."
+        }
+    },
+    "185": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a threaded HTTP server using Python's built-in modules. It serves static files from the current directory and does not contain any malicious functionality such as remote code execution, data exfiltration, or unauthorized access. The server is bound to localhost, limiting its exposure."
+        }
+    },
+    "186": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate API client implementation using the `requests` library. It performs standard HTTP operations (GET, POST, PATCH) to interact with a RESTful API, with proper session management and error handling. There is no evidence of malicious behavior, such as data exfiltration, execution of arbitrary code, or hidden payloads. The code appears to be designed for interacting with a service (e.g., managing events, logs, images) rather than compromising security."
+        }
+    },
+    "187": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple function `add_one` that increments a number by 1. It performs a straightforward arithmetic operation with no hidden functionality, network interactions, or security risks. There is no evidence of malicious behavior."
+        }
+    },
+    "188": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve static files from the current directory. It does not contain any malicious functionality such as data exfiltration, command execution, or payload delivery. The server is designed for local file serving and lacks any hidden or suspicious behavior."
+        }
+    },
+    "189": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code appears to be a legitimate script for displaying patterns using a \"tgol\" (likely \"Tetris Game of Life\" or similar) library. It dynamically loads a view class based on command-line arguments but does not exhibit any malicious behavior such as executing arbitrary code, accessing sensitive data, or performing harmful operations. The use of `getattr` is standard for plugin/view systems and is not inherently dangerous if the source module (`tgol.views`) is trusted."
+        }
+    },
+    "190": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard database setup script that creates an ExceptionLog table to store error messages and stack traces. It uses legitimate libraries (mysql.connector) and performs no harmful actions. There is no evidence of malicious intent, such as data exfiltration, injection attacks, or unauthorized access."
+        }
+    },
+    "191": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a legitimate Dash component (MdxEditor) for a markdown editor, with standard initialization and property handling. There is no evidence of malicious behavior, such as code execution, data exfiltration, or security vulnerabilities. The code appears to be part of a web framework's auto-generated UI component."
+        }
+    },
+    "192": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard logging implementation used for recording application events. It creates log files, formats log messages, and writes them to disk. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or execution of harmful payloads. The code is focused on logging functionality."
+        }
+    },
+    "193": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple threaded HTTP server using Python's built-in `http.server` module to serve static files from the current directory. It does not contain any malicious functionality such as data exfiltration, remote code execution, or hidden payloads. Its purpose appears to be legitimate (e.g., local file sharing)."
+        }
+    },
+    "194": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a custom debugging utility that uses the `inspect` module to gather and display information about variables passed to the `dbg` function. It formats output with ANSI escape codes for color and includes details like variable type, value, and context. There is no evidence of malicious behavior such as data exfiltration, system modification, or execution of harmful code. The function is purely for debugging purposes."
+        }
+    },
+    "195": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's standard libraries to serve files from the current directory. It binds to localhost and uses standard handlers, with no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or network-based attacks. The server is limited to local access, reducing potential risks."
+        }
+    },
+    "196": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple function that prints a benign message. There are no malicious activities, such as data exfiltration, execution of harmful commands, or exploitation attempts. The code appears to be harmless and likely intended for demonstration or testing purposes."
+        }
+    },
+    "197": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard usage example of a text-coloring library (pyqcolour), which applies colors to terminal output. There is no evidence of malicious behavior such as data exfiltration, system manipulation, or hidden functionality. The code merely demonstrates legitimate use of color utilities."
+        }
+    },
+    "198": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard unit test suite for geodetic utility functions. It uses pytest and mocking to test functions like `check_model`, `degr_to_radians`, and parameter retrieval methods. There is no evidence of malicious behavior such as data exfiltration, system compromise, or hidden payloads. The code focuses on validating expected functionality and handling edge cases."
+        }
+    },
+    "199": {
+        "qwen3-14b": {
+            "output": "no  \nThe code performs a simple arithmetic operation (division by 3) without any hidden functionality, network interactions, or security risks. It is a benign mathematical function."
+        }
+    },
+    "200": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate evaluation framework for assessing the quality of generated text (e.g., BLEU, ROUGE, BERT scores, perplexity, diversity, and bias checks). It uses standard NLP libraries and models (e.g., GPT-2, BERT) for metric calculations. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads. The purpose is purely analytical/evaluative."
+        }
+    },
+    "201": {
+        "qwen3-14b": {
+            "output": "no  \nThe code implements standard Ethereum signature verification logic using web3.py and eth_abi. It distinguishes between smart contract (SC) and externally owned account (EOA) signatures, using well-known cryptographic methods. While it relies on external modules (e.g., `concat`, `hash_message`), the code itself does not contain malicious behavior like data exfiltration, unauthorized transactions, or hidden payloads. Its purpose is legitimate: verifying cryptographic signatures in a blockchain context."
+        }
+    },
+    "202": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP, which is a legitimate use case. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads. The server is configured to run on localhost, limiting its exposure."
+        }
+    },
+    "203": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a set of unit tests for a Python library implementing monad patterns (e.g., Maybe, List, Result). It uses pytest to verify expected behaviors like function chaining, error handling, and value unwrapping. There is no malicious logic, data exfiltration, or harmful operations present. The code is purely for testing purposes."
+        }
+    },
+    "204": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate data analysis script using Python libraries like pandas, numpy, and probabilistic modeling (Prophetoid, PyMC3, arviz). It generates synthetic time-series data with seasonal, weekday, and group effects, fits a statistical model, and evaluates it. There is no evidence of malicious behavior such as data exfiltration, code injection, or unauthorized system interactions."
+        }
+    },
+    "205": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines utility classes for creating and managing PyQt5 UI elements (like QLabel widgets) with specific styling and positioning. It does not contain any malicious functionality such as data exfiltration, command execution, or system compromise. The code is focused on GUI-related operations and lacks any indicators of harmful behavior."
+        }
+    },
+    "206": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple TCP client that connects to a specified IP and port, sends a predefined message, and receives a response. It does not contain any malicious behavior such as data exfiltration, command execution, or unauthorized system modifications. The functionality is benign and typical for network communication."
+        }
+    },
+    "207": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory without executing arbitrary code, handling user input unsafely, or connecting to external resources. While it could expose sensitive files if misconfigured, the code itself contains no malicious logic or hidden functionality."
+        }
+    },
+    "208": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign utility function for printing exceptions with formatted output using the `rich` library. It does not perform any malicious actions, such as data exfiltration, system manipulation, or hidden network activity. Its purpose is solely to aid in debugging by displaying exception details."
+        }
+    },
+    "209": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory and does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. Its purpose appears to be legitimate (e.g., local file sharing/testing)."
+        }
+    },
+    "210": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard SQLAlchemy-based database manager that handles connection setup and session creation. It does not contain any malicious functionality, backdoors, or unsafe operations. The `test_connection` method safely checks connectivity, and the URL construction uses parameterized inputs without executing arbitrary code. While input sanitization for user-supplied parameters is important for security, the code itself is not malicious."
+        }
+    },
+    "211": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a multithreaded HTTP server using Python's built-in modules. It serves files from the current directory over HTTP on a specified port (default 3000) and does not contain any malicious functionality, such as executing arbitrary code, transmitting data to external servers, or hiding payloads. Its purpose is purely to host static content locally."
+        }
+    },
+    "212": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious logic, such as data exfiltration, command execution, or hidden payloads. The server is designed for local file serving and does not exhibit behavior indicative of malware."
+        }
+    },
+    "213": {
+        "qwen3-14b": {
+            "output": "no  \nThe code establishes a connection to an Azure Data Explorer (ADX) cluster using environment variables for authentication credentials. While it handles sensitive information (client ID, secret, tenant ID), it does not perform any inherently malicious actions like data exfiltration, command execution, or unauthorized access beyond the scope of ADX client operations. The code is neutral and depends on external context for potential misuse."
+        }
+    },
+    "214": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server to serve files from the current directory using Python's built-in modules. It does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or network attacks. The server is bound to localhost, limiting its accessibility, and its purpose is benign (e.g., local file sharing/testing)."
+        }
+    },
+    "215": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple to-do list application that reads/writes data to a local JSON file. It performs basic operations (add, list, remove, mark as done) without any network communication, execution of arbitrary code, or security-sensitive operations. No malicious behavior is present."
+        }
+    },
+    "216": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost, with threading support for concurrent requests. There is no evidence of malicious behavior such as data exfiltration, command execution, or payload delivery."
+        }
+    },
+    "217": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a compatibility layer for Python 2 and 3, defining `string_types` and `iteritems` to handle differences between versions. It contains no malicious behavior, such as network requests, file operations, or hidden payloads. Its purpose is purely to ensure cross-version compatibility."
+        }
+    },
+    "218": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It contains only benign operations: printing diagnostic messages, exiting with a status code, and no harmful actions like data exfiltration, system manipulation, or execution of arbitrary code. The messages appear to be warnings about a potential hallucination by an LLM, not malicious intent."
+        }
+    },
+    "219": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a standard Python class for processing work item data, including date parsing and calculations. It does not contain any malicious functionality such as data exfiltration, unauthorized access, or execution of arbitrary code. All operations are focused on data manipulation and validation."
+        }
+    },
+    "220": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard Python HTTP server implementation that serves files from the current directory. It does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or unauthorized access. The server is configured to run on localhost, limiting its exposure to the local machine."
+        }
+    },
+    "221": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign text analysis tool that reads a file, extracts words, counts their occurrences, and prints the top N most common words. It uses standard libraries and does not perform any malicious actions like executing arbitrary code, accessing sensitive data, or interacting with external systems."
+        }
+    },
+    "222": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory and allows concurrent requests via threading, but contains no malicious functionality such as data exfiltration, payload execution, or unauthorized access. Its purpose appears to be legitimate file serving."
+        }
+    },
+    "223": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate Python script for generating custom colormaps and a Ricker wavelet, commonly used in scientific computing and data visualization. It uses standard libraries (matplotlib, numpy) and contains no malicious functionality such as network communication, file manipulation, or payload execution. The code is well-documented and appears to be part of a research or analysis tool."
+        }
+    },
+    "224": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a class `user_settings` that inherits from `common_settings` and includes a `set` method to update a dictionary (`_cached_settings`). There is no evidence of malicious behavior such as code execution, data exfiltration, or unauthorized access. The code appears to be a standard configuration or settings management implementation."
+        }
+    },
+    "225": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate tool for formatting triple-quoted strings in Python files by wrapping lines to a specified maximum length. It reads, processes, and writes files without executing arbitrary code, downloading external content, or performing harmful operations. The functionality is focused on text formatting and does not exhibit malicious behavior."
+        }
+    },
+    "226": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate implementation of an accuracy metric for classification tasks. It uses standard libraries (numpy, scikit-learn) and follows conventional ML evaluation patterns without any hidden malicious behavior, data exfiltration, or unauthorized operations."
+        }
+    },
+    "227": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple function `add_one` that increments a number by 1. It performs no harmful actions, does not interact with external systems, and contains no hidden or malicious logic."
+        }
+    },
+    "228": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It imports the `web3` library and converts a hexadecimal string (likely Ethereum contract bytecode) into bytes using `Web3.to_bytes()`. This is a common operation in blockchain development for handling contract data. The code itself does not execute or deploy the contract, nor does it perform any harmful actions. The potential risk would depend on the content of the hexadecimal data, but the code provided is merely parsing it, not acting on it maliciously."
+        }
+    },
+    "229": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines three custom exception classes (`InvalidTokenException`, `BotNotExistsException`, `BotNotFoundException`) with no implementation details. These are standard practice for error handling in Python and do not contain any malicious functionality, hidden logic, or security risks. The code is benign and purely structural."
+        }
+    },
+    "230": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in `http.server` module to serve files from the current directory. It does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The server is bound to `localhost`, limiting its exposure to the local machine."
+        }
+    },
+    "231": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a configuration script for a JupyterLab server used in integration tests. While the comment warns against using it in production (due to potential security risks like exposing internal objects), the code itself does not contain malicious functionality. It simply sets up a server configuration, and its maliciousness would depend on how it's deployed, not the code's content."
+        }
+    },
+    "232": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test template for a Python package (`OASIS`) and does not contain any malicious functionality. It includes typical test structure elements (setUp, tearDown, test method) but lacks actual test logic. However, there is no evidence of harmful behavior, exploitation, or security vulnerabilities in the provided code."
+        }
+    },
+    "233": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard implementation of a simple HTTP server using Python's built-in modules. It serves static files from the current directory and listens on localhost, which is a common use case for local development. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized network activity. The code itself is benign and does not contain hidden payloads or vulnerabilities."
+        }
+    },
+    "234": {
+        "qwen3-14b": {
+            "output": "no  \nThe code appears to be a legitimate settings management module that interacts with a server via HTTP requests. It performs standard operations like retrieving settings and initializing servers, with proper error handling and file validation. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or system compromise. The commented-out file deletion line is a potential red flag but is not active in the current code."
+        }
+    },
+    "235": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality such as payload delivery, command execution, or unauthorized data exfiltration. Its purpose is benign (e.g., local file serving for testing)."
+        }
+    },
+    "236": {
+        "qwen3-14b": {
+            "output": "no  \nThe code implements standard data preprocessing utilities (MinMaxScaler, ZScoreScaler, DataSplitter) commonly used in machine learning pipelines. There is no evidence of malicious behavior such as data exfiltration, arbitrary code execution, or hidden payloads. The use of `pickle` for serialization is standard and does not introduce security risks unless explicitly loading untrusted data, which is not part of this code."
+        }
+    },
+    "237": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple function that increments a number by 1. It performs a basic arithmetic operation with no hidden functionality, network interactions, file operations, or security risks."
+        }
+    },
+    "238": {
+        "qwen3-14b": {
+            "output": "no  \nThe provided code is merely a docstring describing three types of actions (insertion, deletion, modification) and contains no executable logic or malicious functionality. It is purely informational and poses no security risk."
+        }
+    },
+    "239": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a local HTTP server using Python's built-in modules to serve files from the current directory. It uses standard libraries and does not contain any malicious functionality such as data exfiltration, command execution, or network attacks. The server is bound to `localhost`, limiting its accessibility to the local machine."
+        }
+    },
+    "240": {
+        "qwen3-14b": {
+            "output": "yes  \nThe code implements a keylogger that captures and stores keyboard input in memory when enabled. While it does not transmit data or persist logs to disk, its core functionality is designed to secretly record keystrokes, which is a hallmark of malicious behavior. The presence of such a tool in code, regardless of immediate transmission, is inherently suspicious and aligns with malicious intent."
+        }
+    },
+    "241": {
+        "qwen3-14b": {
+            "output": "no  \nThe code implements a custom pseudorandom number generator (PRNG) using a Linear Feedback Shift Register (LFSR) combined with Python's `SystemRandom` for secure randomness. While the algorithm may have cryptographic weaknesses (e.g., LFSR predictability if taps are known), there is no evidence of malicious intent, data exfiltration, or harmful behavior. It generates random values for potential use in encryption or other purposes but does not perform any inherently malicious actions like network communication, file tampering, or execution of arbitrary code."
+        }
+    },
+    "242": {
+        "qwen3-14b": {
+            "output": "no  \nThe code consists of standard string manipulation functions for converting between different casing conventions (e.g., CamelCase to snake_case) and renaming dictionary keys. It uses only safe operations (regular expressions, string splitting/joining) and contains no suspicious behavior, hidden functionality, or security risks."
+        }
+    },
+    "243": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over HTTP on a specified port, but does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or unauthorized access mechanisms. Its purpose appears to be legitimate (e.g., local file serving for testing)."
+        }
+    },
+    "244": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple script that takes a command-line argument, passes it to a function `scan_prompt` from an external module (`last_layer`), and prints the result. There is no direct evidence of malicious behavior in the provided code itself (e.g., no network requests, file operations, or execution of arbitrary code). The potential for malicious activity would depend on the implementation of `scan_prompt` in the external module, which is not included here."
+        }
+    },
+    "245": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign configuration function that defines settings for a JSONiq Language Server, including supported languages and MIME types. It does not contain any malicious behavior, such as code execution, data exfiltration, or unauthorized operations."
+        }
+    },
+    "246": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate Kafka consumer implementation that processes messages and executes a user-provided function (`runner`). It does not contain any malicious logic, hidden payloads, or insecure practices like arbitrary code execution from untrusted inputs. The potential for misuse depends on the `runner` function provided by the user, but the code itself is benign."
+        }
+    },
+    "247": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple local HTTP server using Python's built-in `http.server` module to serve static files from the current directory. It uses threading for concurrent request handling but does not contain any malicious functionality such as data exfiltration, payload execution, or unauthorized access. The server is bound to `localhost`, limiting its accessibility to the local machine."
+        }
+    },
+    "248": {
+        "qwen3-14b": {
+            "output": "no  \nThe code performs data loading, processing, and visualization using standard libraries (numpy, matplotlib, scipy) and a custom module (Kseg_new). There is no evidence of malicious behavior such as unauthorized data access, network communication, execution of arbitrary code, or tampering with system resources. The script appears to be a legitimate data analysis task."
+        }
+    },
+    "249": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It is a Flask web application designed to securely log exceptions into a MySQL database. It uses parameterized queries to prevent SQL injection, enforces API key authentication, and includes proper error handling. While there are potential security improvements (e.g., disabling debug mode in production, validating input lengths), the code itself does not contain malicious intent or harmful functionality."
+        }
+    },
+    "250": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a custom exception handling framework with standardized error messages, logging, and trace IDs. It does not contain any malicious functionality such as data exfiltration, execution of arbitrary code, or hidden payloads. The purpose is purely to handle and log errors in a structured manner."
+        }
+    },
+    "251": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate data processing tool for outlier detection and handling using statistical and machine learning methods. It performs standard operations like z-score calculation, IQR, Isolation Forest, and LOF for outlier detection, along with options to remove, cap, or impute outliers. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or execution of arbitrary code."
+        }
+    },
+    "252": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard entry point for a command-line interface (CLI) application using the `cmd` module. It does not contain any overtly malicious operations such as unauthorized data access, execution of arbitrary code, or network activity. The potential for malicious behavior would depend on the implementation of `SubcommandsExample`, which is not provided here."
+        }
+    },
+    "253": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost without executing arbitrary code, connecting to external resources, or performing any malicious actions. The use of threading and default handler is benign."
+        }
+    },
+    "254": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a simple function `greeting()` that returns a harmless string. It contains no malicious behavior, such as data exfiltration, execution of harmful commands, or exploitation of vulnerabilities. The function is benign and does not interact with external systems or perform any unsafe operations."
+        }
+    },
+    "255": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines three custom exception classes (`InvalidAuthorization`, `DublicateRoute`, `RouteNotFound`) without any malicious functionality. These are standard practice for error handling in Python and do not contain harmful logic, payloads, or execution of dangerous operations."
+        }
+    },
+    "256": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a simple utility for converting a custom syntax (e.g., `$(tag)[content]`) into JavaScript function calls (e.g., `tag(content);`). It does not contain any malicious payloads, hidden backdoors, or logic to execute arbitrary code. Its purpose appears to be syntactic transformation, not exploitation. While it could be misused in contexts involving untrusted input (e.g., XSS vulnerabilities), the code itself is not inherently malicious."
+        }
+    },
+    "257": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is not malicious. It is a standard logging configuration using the `rich` library to enhance log output formatting. There is no evidence of harmful behavior, data exfiltration, or execution of unintended actions. The code simply sets up a logger with custom formatting for terminal output."
+        }
+    },
+    "258": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It simply defines a function that prints a formatted string with the input `name`. There is no use of dangerous operations like command execution, data exfiltration, or injection vulnerabilities. The function is benign and does not pose a security risk."
+        }
+    },
+    "259": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard test script using pytest to validate data processing functions. It performs assertions on data transformations but does not contain any malicious behavior such as unauthorized data access, execution of harmful commands, or covert network activity. The code is focused on testing data preparation steps."
+        }
+    },
+    "260": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple HTTP server implementation using Python's built-in modules. It serves files from the current directory on localhost without any malicious functionality such as remote code execution, data exfiltration, or unauthorized access. The server is confined to the local machine and does not exhibit harmful behavior."
+        }
+    },
+    "261": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code appears to be a standard utility class for reading and writing JSON data. It uses `json.load` and `json.dumps` for deserialization and serialization, respectively, and relies on a helper class `FileUtilsEx` for file operations. There is no evidence of malicious behavior such as code execution, data exfiltration, or system manipulation. The obfuscated variable names do not indicate malicious intent on their own."
+        }
+    },
+    "262": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious functionality, such as data exfiltration, payload execution, or unauthorized network interactions. The server is bound to `localhost` by default, limiting access to the local machine. While it could pose a security risk if misconfigured (e.g., exposing sensitive files), the code itself is benign and intended for local development/testing purposes."
+        }
+    },
+    "263": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines two HTML templates for embedding API documentation interfaces (ReDoc and Swagger UI). It uses standard CDN links for external libraries and does not contain any malicious logic, obfuscation, or suspicious behavior. The placeholders (`%s`) are for dynamic URL injection but are not inherently dangerous in this context. The code is benign and appears to be legitimate documentation interface setup."
+        }
+    },
+    "264": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate implementation for text embedding using the `sentence_transformers` library. It defines classes to handle text-to-vector transformations, loads pre-trained models, and encodes text inputs. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or hidden payloads. The code follows standard practices for machine learning model usage."
+        }
+    },
+    "265": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It simply prints a warning message about an invalid package name and exits with an error code. There is no harmful behavior such as data exfiltration, system compromise, or execution of dangerous operations. The message appears to be a security-awareness notice rather than an attack vector."
+        }
+    },
+    "266": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost without executing arbitrary code, exfiltrating data, or introducing hidden malicious behavior. The server is designed for local use and does not contain security vulnerabilities or malicious payloads."
+        }
+    },
+    "267": {
+        "qwen3-14b": {
+            "output": "no  \nThe code sets up a simple HTTP server using Python's built-in modules to serve files from the current directory. It does not contain any malicious logic, such as payload execution, data exfiltration, or backdoor creation. Its purpose is to host static content locally, which is a standard use case for `http.server`."
+        }
+    },
+    "268": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate implementation of a mathematical algorithm related to matrix decomposition and image compression. It uses standard libraries (numpy, scipy) for linear algebra operations and does not contain any malicious functionality such as network communication, file manipulation, or execution of harmful commands."
+        }
+    },
+    "269": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple assignment of a version string to a variable. It does not contain any malicious functionality, such as executing arbitrary code, accessing sensitive data, or performing harmful operations."
+        }
+    },
+    "270": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a simple, benign Python script that performs basic operations like greeting a user and checking if numbers are even or odd. It contains no malicious functionality, such as unauthorized data access, execution of harmful commands, or hidden network activity. The script is self-contained and uses standard programming constructs."
+        }
+    },
+    "271": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a utility module for creating structured message objects with headers, content, and metadata. It handles date formatting, UUID generation, and message protocol versioning. There is no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or security vulnerabilities. The functions appear to be part of a legitimate communication protocol implementation."
+        }
+    },
+    "272": {
+        "qwen3-14b": {
+            "output": "no  \nThe code appears to be a standard API client implementation. It initializes configuration, constructs API requests with authentication tokens, and processes responses. There is no evidence of malicious behavior such as data exfiltration, injection attacks, or unauthorized system interactions. The code's purpose is to interact with a predefined API, and no suspicious patterns are present."
+        }
+    },
+    "273": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory over localhost, which is a common practice for local development. There is no evidence of malicious behavior such as data exfiltration, command execution, or unauthorized access."
+        }
+    },
+    "274": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard entry point for a CLI tool (likely a Singer tap for JSONPlaceholder API), with no suspicious operations, network requests, or security risks evident in the provided snippet."
+        }
+    },
+    "275": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a benign test script that uses the `tqdm` and `rainbow_tqdm` libraries to display a colored progress bar. It performs no harmful actions, such as network requests, file manipulation, or execution of arbitrary commands. The purpose is purely to demonstrate a progress bar functionality."
+        }
+    },
+    "276": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate Python script for performing and visualizing vector operations (addition, scaling, reflections, shears) using libraries like NumPy and Matplotlib. It contains no malicious functionality, such as network communication, file manipulation, or execution of arbitrary commands. The purpose is purely mathematical visualization."
+        }
+    },
+    "277": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test written using Python's `unittest` framework. It tests a function `add_one` from a module `sample.simple` by verifying that it correctly adds 1 to an input value. There is no malicious behavior, such as unauthorized data access, execution of hidden commands, or exploitation logic. The purpose of the code is purely to validate the correctness of a function."
+        }
+    },
+    "278": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code sets up a local HTTP server with custom endpoints but does not exhibit clear malicious behavior. It handles GET and POST requests, returns a WebSocket URL, and echoes POST data. While the use of `funcnodes` and `asyncio` may be unusual, there is no direct evidence of payload delivery, command execution, or data exfiltration. The server appears to be part of a legitimate application framework rather than a security threat."
+        }
+    },
+    "279": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's `http.server` module. It serves files from the current directory on localhost, which is typical for local development or testing. There is no evidence of malicious behavior such as data exfiltration, payload execution, or security vulnerabilities like directory traversal exploitation in the provided code."
+        }
+    },
+    "280": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a logging utility that provides decorator-based function tracking with configurable logging behavior. It uses safe YAML parsing and does not contain any hidden malicious functionality, backdoors, or data exfiltration mechanisms. The potential for misuse depends on user-provided callbacks, but the code itself is benign."
+        }
+    },
+    "281": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate Google Drive uploader implementation that uses standard Google API authentication and file management operations. It does not contain any malicious functionality such as data exfiltration, unauthorized access, or destructive operations. The code's purpose is explicitly to upload files to Google Drive, and it follows typical patterns for interacting with cloud storage services."
+        }
+    },
+    "282": {
+        "qwen3-14b": {
+            "output": "no  \nThe code does not contain any overtly malicious actions. It simply imports modules and invokes `trustpy.main(sys.argv)`, which could be benign or depend on the external `trustpy` library. However, the code itself does not execute harmful operations like data exfiltration, system manipulation, or unauthorized access. The potential risk lies in the external dependency (`trustpy`), but the provided code alone is not malicious."
+        }
+    },
+    "283": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines a device configuration class for a Eurotherm Bisynch controller, setting up parameters like PID values and max output. It uses standard practices for device driver configuration in scientific instrumentation frameworks (e.g., ophyd). No malicious behavior is evident—no network communication, data exfiltration, or hidden execution logic. The code appears legitimate for hardware control purposes."
+        }
+    },
+    "284": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code is a legitimate image-scraping tool that uses Selenium to search Google Images, extract thumbnail and image URLs, and save them to an Excel file. It does not contain any malicious payloads, data exfiltration, or system-compromising behavior. The script's purpose is to automate image collection, which may raise ethical or legal concerns (e.g., violating Google's terms of service) but is not inherently malicious in terms of security."
+        }
+    },
+    "285": {
+        "qwen3-14b": {
+            "output": "no\nThe code defines a simple function `add_one` that increments a number by 1. It performs a basic arithmetic operation with no hidden behavior, network activity, or security risks. There is no evidence of malicious intent."
+        }
+    },
+    "286": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard unit test for a function `add_one` from the `sample.simple` module. It uses Python's `unittest` framework to verify that `add_one(5)` returns 6. There is no malicious behavior, such as unauthorized actions, data exfiltration, or hidden logic. The purpose is purely testing functionality."
+        }
+    },
+    "287": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard MQTT client implementation using the `robustmq` library. It connects to a local MQTT broker, publishes harmless test messages, and stops gracefully. There is no evidence of malicious behavior such as data exfiltration, system compromise, or unauthorized operations. The use of hardcoded credentials is a security weakness but not inherently malicious."
+        }
+    },
+    "288": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate Python class that fetches a public WAN IP address using a service like ifconfig.me. It uses standard libraries (requests) for HTTP requests and does not contain any malicious functionality, obfuscation, or hidden behavior. The purpose is clearly documented and benign."
+        }
+    },
+    "289": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory and does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. The use of threading is benign and intended for handling concurrent requests."
+        }
+    },
+    "290": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate implementation for handling Firebase Cloud Messaging (FCM) authentication using Google service account credentials. It uses standard libraries (`google.auth`, `google.oauth2`) to manage OAuth2 tokens, including auto-refreshing access tokens. There is no evidence of malicious behavior such as data exfiltration, unauthorized network requests, or credential misuse. The code follows secure practices for credential handling and token management."
+        }
+    },
+    "291": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard Python HTTP server implementation that serves static files from the current directory. It uses threading to handle multiple requests concurrently but does not contain any malicious functionality such as data exfiltration, command execution, or unauthorized access. Its purpose appears to be legitimate (e.g., local file serving for testing)."
+        }
+    },
+    "292": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a set of utility functions for removing specific character sets (e.g., punctuation, digits, whitespace) from a given text using `str.translate`. These functions are standard string manipulation tools with no hidden behavior, no network activity, no file operations, and no execution of arbitrary code. The code is benign and appears to be intended for text sanitization purposes."
+        }
+    },
+    "293": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code appears to be a set of utility functions for interacting with various API endpoints, likely for data submission and model generation. It includes standard error handling and uses HTTPS for most requests. There is no evidence of malicious behavior such as data exfiltration, command execution, or payload delivery. The functions are focused on API communication and do not contain suspicious patterns typically associated with malware."
+        }
+    },
+    "294": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is not malicious. It simply uses the `webbrowser` module to open a specific URL (`https://app.tea.xyz/`) in the default web browser. There is no evidence of hidden payloads, data exfiltration, or other malicious behavior in the provided code."
+        }
+    },
+    "295": {
+        "qwen3-14b": {
+            "output": "no  \nThe code defines two utility functions for reading and processing user input. It does not contain any malicious logic, such as executing arbitrary code, accessing sensitive data, or performing harmful actions. The functions are designed for input handling and are neutral in their implementation. Any potential misuse (e.g., passing a dangerous `func` argument like `eval`) would depend on how the code is used, not the code itself."
+        }
+    },
+    "296": {
+        "qwen3-14b": {
+            "output": "no\n\nThe code defines a configuration class for a PostgreSQL database connection using Pydantic. It securely assembles a connection URI from environment variables and does not contain any malicious logic, such as code execution, data exfiltration, or injection vulnerabilities. The purpose is purely to validate and construct a database connection string."
+        }
+    },
+    "297": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in libraries. It serves files from the current directory over HTTP on localhost, with threading support. There is no evidence of malicious behavior such as data exfiltration, payload execution, or hidden network activity. The code appears to be a benign development tool."
+        }
+    },
+    "298": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a standard HTTP server implementation using Python's built-in modules. It serves files from the current directory via localhost, which is a common practice for local development. There is no evidence of malicious behavior such as data exfiltration, remote code execution, or unauthorized access. The use of threading and default handlers does not introduce security risks in this context."
+        }
+    },
+    "299": {
+        "qwen3-14b": {
+            "output": "no  \nThe code is a legitimate HTTP server implementation using Python's standard libraries. It serves files from the current directory on localhost, with no evidence of malicious behavior such as data exfiltration, execution of arbitrary code, or network-based attacks."
+        }
+    }
+}

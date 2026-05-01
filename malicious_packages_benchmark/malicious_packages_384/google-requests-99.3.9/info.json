@@ -1,0 +1,7 @@
+{
+    "package_name": "google-requests",
+    "package_version": "99.3.9",
+    "package_path": "malicious_packages_20240112-20240408/google-requests",
+    "package_file": "malicious_packages_20240112-20240408/google-requests/99.3.9/google-requests-99.3.9.tar.gz",
+    "extract_dir": "malicious_packages_20240112-20240408_extract/google-requests-99.3.9"
+}

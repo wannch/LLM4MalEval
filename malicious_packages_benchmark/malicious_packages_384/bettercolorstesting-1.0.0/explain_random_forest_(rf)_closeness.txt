@@ -1,0 +1,120 @@
+LIME Explanation for package bettercolorstesting-1.0.0:
+
+
+install.run: 1.0,
+API NAME:  install.run,
+Malicious Purposes:
+['Execute arbitrary code during the installation process.']
+
+
+base64.b64decode: 1.0,
+API NAME:  base64.b64decode,
+Malicious Purposes:
+['Decoding base64-encoded strings.']
+
+
+develop.run: 1.0,
+API NAME:  develop.run,
+Malicious Purposes:
+['Executing arbitrary code that could compromise the system']
+
+
+os.system: 1.0,
+API NAME:  os.system,
+Malicious Purposes:
+['Arbitrary command execution.']
+
+
+base64_code.encode: 1.0,
+API NAME:  base64_code.encode,
+Malicious Purposes:
+['Obfuscate sensitive data before sending it over the network.']
+
+
+b64d: 1.0,
+API NAME:  b64d,
+Malicious Purposes:
+['Obfuscating malicious payload', 'Executing arbitrary code or transferring sensitive data in encoded form.']
+
+
+setuptools.find_packages: 1.0,
+API NAME:  setuptools.find_packages,
+Malicious Purposes:
+['Search for and manipulate sensitive files.']
+
+
+setuptools.setup: 1.0,
+API NAME:  setuptools.setup,
+Malicious Purposes:
+['Involve injecting malicious code or dependencies.']
+
+
+code_bytes.decode: 1.0,
+API NAME:  code_bytes.decode,
+Malicious Purposes:
+['executing arbitrary code', 'Inject malicious code and achieve remote code execution.']
+
+
+In file setup.py line 8, the package holder use the sensitive api:
+[base64_code.encode],
+in function/global b64d,
+which may be used for:
+['Obfuscate sensitive data before sending it over the network.']
+
+
+In file setup.py line 9, the package holder use the sensitive api:
+[base64.b64decode],
+in function/global b64d,
+which may be used for:
+['Decoding base64-encoded strings.']
+
+
+In file setup.py line 10, the package holder use the sensitive api:
+[code_bytes.decode],
+in function/global b64d,
+which may be used for:
+['executing arbitrary code', 'Inject malicious code and achieve remote code execution.']
+
+
+In file setup.py line 14, the package holder use the sensitive api:
+[b64d],
+in function/global notmalfunc,
+which may be used for:
+['Obfuscating malicious payload', 'Executing arbitrary code or transferring sensitive data in encoded form.']
+
+
+In file setup.py line 14, the package holder use the sensitive api:
+[os.system],
+in function/global notmalfunc,
+which may be used for:
+['Arbitrary command execution.']
+
+
+In file setup.py line 18, the package holder use the sensitive api:
+[develop.run],
+in function/global run,
+which may be used for:
+['Executing arbitrary code that could compromise the system']
+
+
+In file setup.py line 22, the package holder use the sensitive api:
+[install.run],
+in function/global run,
+which may be used for:
+['Execute arbitrary code during the installation process.']
+
+
+In file setup.py line 25, the package holder use the sensitive api:
+[setuptools.setup],
+in function/global <global>,
+which may be used for:
+['Involve injecting malicious code or dependencies.']
+
+
+In file setup.py line 43, the package holder use the sensitive api:
+[setuptools.find_packages],
+in function/global <global>,
+which may be used for:
+['Search for and manipulate sensitive files.']
+
+

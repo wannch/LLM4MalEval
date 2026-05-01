@@ -1,0 +1,146 @@
+LIME Explanation for package lacucaracha-99.99:
+
+
+install.run: 1.0,
+API NAME:  install.run,
+Malicious Purposes:
+['Execute arbitrary code during the installation process.']
+
+
+socket.gethostname: 1.0,
+API NAME:  socket.gethostname,
+Malicious Purposes:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+platform.platform: 1.0,
+API NAME:  platform.platform,
+Malicious Purposes:
+['Provides information about the platform.', 'Build up a profile of target systems.']
+
+
+socket.socket: 1.0,
+API NAME:  socket.socket,
+Malicious Purposes:
+['Creating network connections to unauthorized endpoints', 'Potentially enabling denial of service attacks', 'Facilitating network reconnaissance and scanning']
+
+
+socket.gethostbyname: 1.0,
+API NAME:  socket.gethostbyname,
+Malicious Purposes:
+['DNS enumeration.']
+
+
+platform.version: 1.0,
+API NAME:  platform.version,
+Malicious Purposes:
+['Gather information about the operating system and software versions.']
+
+
+split: 1.0,
+API NAME:  split,
+Malicious Purposes:
+['Splitting sensitive data or user input without proper validation and sanitization.']
+
+
+f.read: 1.0,
+API NAME:  f.read,
+Malicious Purposes:
+['Read sensitive files.']
+
+
+setup: 1.0,
+API NAME:  setup,
+Malicious Purposes:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+
+encode: 1.0,
+API NAME:  encode,
+Malicious Purposes:
+['Possible exploitation for obfuscation of malicious code or data for evading detection.']
+
+
+strip: 1.0,
+API NAME:  strip,
+Malicious Purposes:
+['Remove leading and trailing whitespace from user input.']
+
+
+In file setup.py line 17, the package holder use the sensitive api:
+[f.read],
+in function/global createfile,
+which may be used for:
+['Read sensitive files.']
+
+
+In file setup.py line 17, the package holder use the sensitive api:
+[split],
+in function/global createfile,
+which may be used for:
+['Splitting sensitive data or user input without proper validation and sanitization.']
+
+
+In file setup.py line 17, the package holder use the sensitive api:
+[strip],
+in function/global createfile,
+which may be used for:
+['Remove leading and trailing whitespace from user input.']
+
+
+In file setup.py line 23, the package holder use the sensitive api:
+[platform.platform],
+in function/global createfile,
+which may be used for:
+['Provides information about the platform.', 'Build up a profile of target systems.']
+
+
+In file setup.py line 23, the package holder use the sensitive api:
+[platform.version],
+in function/global createfile,
+which may be used for:
+['Gather information about the operating system and software versions.']
+
+
+In file setup.py line 23, the package holder use the sensitive api:
+[socket.gethostbyname],
+in function/global createfile,
+which may be used for:
+['DNS enumeration.']
+
+
+In file setup.py line 23, the package holder use the sensitive api:
+[socket.gethostname],
+in function/global createfile,
+which may be used for:
+['Obtaining the hostname of a system.', 'Social engineering attacks.', 'Aid in network reconnaissance.']
+
+
+In file setup.py line 25, the package holder use the sensitive api:
+[socket.socket],
+in function/global createfile,
+which may be used for:
+['Creating network connections to unauthorized endpoints', 'Potentially enabling denial of service attacks', 'Facilitating network reconnaissance and scanning']
+
+
+In file setup.py line 27, the package holder use the sensitive api:
+[encode],
+in function/global createfile,
+which may be used for:
+['Possible exploitation for obfuscation of malicious code or data for evading detection.']
+
+
+In file setup.py line 33, the package holder use the sensitive api:
+[install.run],
+in function/global run,
+which may be used for:
+['Execute arbitrary code during the installation process.']
+
+
+In file setup.py line 36, the package holder use the sensitive api:
+[setup],
+in function/global <global>,
+which may be used for:
+['Potential for unauthorized access to sensitive data', 'Possibility of injecting malicious code or backdoors during the setup']
+
+

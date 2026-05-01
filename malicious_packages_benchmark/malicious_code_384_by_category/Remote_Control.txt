@@ -1,0 +1,5 @@
+malicious_packages_5T_extract#numberpy-0.1.0#numberpy-0.1.0#reqwests#index.py
+malicious_packages_5T_extract#rock51-1.0.0#rock51-1.0.0#setup.py
+not_in_pypi_packages_20240112-20240408_extract#rev0001q1-1.0.0#rev0001q1-1.0.0#setup.py
+malicious_packages_5T_extract#artifact_lab_3_package_392c6acd-0.1.1#artifact_lab_3_package_392c6acd-0.1.1#artifact-lab-3-package-392c6acd#main.py
+not_in_pypi_packages_20240112-20240408_extract#revabd01q1-0.0.2#revabd01q1-0.0.2#setup.py

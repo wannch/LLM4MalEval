@@ -1,0 +1,8 @@
+setup.py
+discordpy_bypass/__init__.py
+discordpy_bypass/discordpy_bypass.py
+discordpy_bypass.egg-info/PKG-INFO
+discordpy_bypass.egg-info/SOURCES.txt
+discordpy_bypass.egg-info/dependency_links.txt
+discordpy_bypass.egg-info/requires.txt
+discordpy_bypass.egg-info/top_level.txt

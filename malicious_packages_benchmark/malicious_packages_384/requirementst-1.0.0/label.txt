@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/requirementst-1.0.0/requirementst-1.0.0/setup.py;10-18

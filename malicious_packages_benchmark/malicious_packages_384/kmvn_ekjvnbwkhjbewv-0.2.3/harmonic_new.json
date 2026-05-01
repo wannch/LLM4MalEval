@@ -1,0 +1,7 @@
+{
+    "requests.get": 1,
+    "socket.gethostname": 1,
+    "os.uname": 1,
+    "os.getcwd": 1,
+    "os.getlogin": 1
+}

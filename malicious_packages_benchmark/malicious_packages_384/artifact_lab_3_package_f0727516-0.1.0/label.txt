@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/artifact_lab_3_package_f0727516-0.1.0/artifact_lab_3_package_f0727516-0.1.0/artifact-lab-3-package-f0727516/main.py;1-24

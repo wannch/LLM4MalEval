@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/colorized-0.0.1/colorized-0.0.1/colored/__init__.py;20-44

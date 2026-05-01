@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyzelf.egg-info/PKG-INFO
+pyzelf.egg-info/SOURCES.txt
+pyzelf.egg-info/dependency_links.txt
+pyzelf.egg-info/top_level.txt

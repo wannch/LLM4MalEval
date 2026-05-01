@@ -1,0 +1,6 @@
+<setup.py 4 <global>> setuptools.setup
+<setup.py 11 <global>> os.system
+<other.py 2 test2> print
+<__init__.py 2 test1> print
+<__init__.py 4 <global>> print
+<__init__.py 7 <global>> print

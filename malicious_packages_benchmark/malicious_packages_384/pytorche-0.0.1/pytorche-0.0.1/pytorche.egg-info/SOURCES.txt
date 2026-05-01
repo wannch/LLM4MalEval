@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pytorche/__init__.py
+pytorche/other.py
+pytorche.egg-info/PKG-INFO
+pytorche.egg-info/SOURCES.txt
+pytorche.egg-info/dependency_links.txt
+pytorche.egg-info/top_level.txt

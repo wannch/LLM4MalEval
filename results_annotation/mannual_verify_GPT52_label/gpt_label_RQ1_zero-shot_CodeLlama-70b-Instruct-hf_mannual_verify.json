@@ -1,0 +1,101 @@
+{
+    "14": [
+        "LLM_REASON_CONSISTENT",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "33": [
+        "LLM_REASON_CONSISTENT",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "39": [
+        "LLM_REASON_CONSISTENT",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "42": "y",
+    "173": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "199": [
+        "LLM_REASON_CONSISTENT",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "204": [
+        "LLM_REASON_CONSISTENT",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "240": "y",
+    "244": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "272": "y",
+    "282": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "284": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "291": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "308": [
+        "LLM_REASON_CONSISTENT_WITH_CODE"
+    ],
+    "328": [
+        "LLM_REASON_CONSISTENT",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "329": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "362": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "364": [
+        "LLM_REASON_CONSISTENT",
+        "LLM_REASON_CONSISTENT_WITH_CODE",
+        "VALID_RESPONSE",
+        "EXPLICIT_RESPONSE",
+        "LLM_MALICIOUS_RESULT"
+    ],
+    "379": "y"
+}

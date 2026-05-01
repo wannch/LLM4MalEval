@@ -1,0 +1,2 @@
+[console_scripts]
+bo3to = bo3to.cli:cli

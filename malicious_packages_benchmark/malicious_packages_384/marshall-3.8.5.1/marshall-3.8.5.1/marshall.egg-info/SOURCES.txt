@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+marshall/__init__.py
+marshall/marshall.py
+marshall.egg-info/PKG-INFO
+marshall.egg-info/SOURCES.txt
+marshall.egg-info/dependency_links.txt
+marshall.egg-info/top_level.txt

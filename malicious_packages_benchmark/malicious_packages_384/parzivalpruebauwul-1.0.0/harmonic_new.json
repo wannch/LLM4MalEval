@@ -1,0 +1,12 @@
+{
+    "os.system": 1,
+    "base64.b64decode": 1,
+    "b64d": 1,
+    "code_bytes.decode": 1,
+    "install.run": 1,
+    "configuration": 1,
+    "setuptools.find_packages": 1,
+    "base64_code.encode": 1,
+    "setuptools.setup": 1,
+    "develop.run": 1
+}

@@ -1,0 +1,7 @@
+{
+    "package_name": "openseaz",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openseaz",
+    "package_file": "malicious_packages_5T/openseaz/1.0.0/openseaz-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openseaz-1.0.0"
+}

@@ -1,0 +1,7 @@
+{
+    "package_name": "openwsea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openwsea",
+    "package_file": "malicious_packages_5T/openwsea/1.0.0/openwsea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openwsea-1.0.0"
+}

@@ -1,0 +1,7 @@
+{
+    "package_name": "dirutils",
+    "package_version": "1.0",
+    "package_path": "malicious_packages_5T/dirutils",
+    "package_file": "malicious_packages_5T/dirutils/1.0/dirutils-1.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/dirutils-1.0"
+}

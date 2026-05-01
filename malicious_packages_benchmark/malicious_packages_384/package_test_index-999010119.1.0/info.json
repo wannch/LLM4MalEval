@@ -1,0 +1,7 @@
+{
+    "package_name": "package-test-index",
+    "package_version": "999010119.1.0",
+    "package_path": "malicious_packages_5T/package-test-index",
+    "package_file": "malicious_packages_5T/package-test-index/999010119.1.0/package_test_index-999010119.1.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/package_test_index-999010119.1.0"
+}

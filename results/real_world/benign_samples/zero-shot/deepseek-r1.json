@@ -1,0 +1,1502 @@
+{
+    "0": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost` (local access only) and does not contain any malicious payloads, remote exploits, data exfiltration, or other harmful behavior."
+        }
+    },
+    "1": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines a data class `Params` for handling API parameters (token, function, and format). While it imports all endpoints from `api.endpoints` (which could be risky if the module is untrusted), the provided snippet itself contains no explicit malicious logic (e.g., code execution, data exfiltration, or system manipulation). The maliciousness would depend on the implementation of `api.endpoints` and how `Params` is used elsewhere."
+        }
+    },
+    "2": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a local HTTP server using standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There's no malicious payload, data exfiltration, or harmful actions like remote code execution."
+        }
+    },
+    "3": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code primarily manages configuration settings for interacting with Xethub (e.g., authentication, project setup, and path management). It uses the `pyxet` library for legitimate repository operations (checking repo existence, creating repos, setting paths). There are no indicators of malicious behavior such as data exfiltration, system manipulation, or payload execution."
+        }
+    },
+    "4": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code creates a directory and writes 100 files with generated content using `main.scrng`. While the behavior depends on the implementation of `main.scrng`, the provided code itself does not exhibit overtly malicious actions (e.g., no file deletion, network calls, or suspicious payloads). Without evidence of harmful intent in `main.scrng`, the code appears benign, likely generating test data."
+        }
+    },
+    "5": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code is metadata for a Python package, specifying details like name, version, author, and URLs. It imports `urljoin` from the standard library to construct URLs but contains no executable logic or malicious behavior (e.g., unauthorized network calls, file manipulation, or obfuscated code)."
+        }
+    },
+    "6": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a local HTTP server using Python's standard libraries. It serves files from the script's directory on `localhost`, binding to a specified port (default 3000). There's no malicious payload, remote exploitation, file manipulation, or data exfiltration. The server is confined to the local machine and uses standard threading for handling requests."
+        }
+    },
+    "7": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries to serve files from the script's directory on `localhost`. It binds to a user-specified port (default 3000) and does not include malicious payloads, remote access, or data exfiltration. It is a legitimate, albeit basic, local file server."
+        }
+    },
+    "8": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code contains hardcoded Telegram bot tokens and chat IDs, which are used to send messages to specific Telegram chats. This is a common tactic for exfiltrating data from a compromised system to an external server controlled by an attacker. The presence of multiple such classes suggests an intent to ensure message delivery through redundant channels, further indicating malicious behavior."
+        }
+    },
+    "9": {
+        "deepseek-r1": {
+            "output": "The code is **not** malicious. \n\n**Reason:** It sets up a basic threaded HTTP server using Python's standard libraries (`http.server`, `socketserver`), serving files from the script's directory on `localhost` (not exposed to the network by default). There are no indicators of malicious behavior (e.g., payload execution, data exfiltration, or obfuscation). It is a simple file server for local use. \n\nAnswer: **no**"
+        }
+    },
+    "10": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a local HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the same machine, and does not include malicious payloads, remote exploitation, or data exfiltration. While it could expose local files unintentionally, the code itself is not inherently malicious."
+        }
+    },
+    "11": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code defines a class `common_settings` that manages a dictionary for storing and retrieving settings. There are no malicious operations (e.g., code execution, network calls, file manipulation, or obfuscated payloads) present. The class only handles in-memory data storage and access, making it benign."
+        }
+    },
+    "12": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code does not contain any malicious operations such as unauthorized data access, system commands, or harmful payloads. However, the function `add` incorrectly returns a fixed sum of 5 (from `np.sum([2,3])`) instead of using inputs `a` and `b`, which is a logical error but not malicious."
+        }
+    },
+    "13": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a threaded HTTP server using Python's standard libraries, bound to localhost, serving files from the script's directory. It does not exhibit malicious behaviors like data exfiltration, remote code execution, persistence mechanisms, or network exposure beyond the local machine. It is a basic file-serving utility."
+        }
+    },
+    "14": {
+        "deepseek-r1": {
+            "output": "**Decision**: no\n\n**Reason**: The code provides functionality for handling file editors within a GUI application, focusing on opening files and managing editor components. There are no indicators of malicious behavior such as unauthorized data access, network communication, system manipulation, or payload execution. The file operations are standard for an editor application."
+        }
+    },
+    "15": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code contains hardcoded Telegram bot credentials (token and chat ID) and sends messages to a specific Telegram chat via the API. This is a common exfiltration technique used by malware to transmit stolen data or receive remote commands. The typo in the class name (`user_agenr` instead of `user_agent`) also suggests an attempt to obfuscate the code's purpose."
+        }
+    },
+    "16": {
+        "deepseek-r1": {
+            "output": "The code is not malicious. \n\n**Reason:** The script sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost` (only accessible locally). It does not include malicious behaviors like remote exploitation, data exfiltration, persistence mechanisms, or obfuscated code. The server is explicitly bound to `localhost`, limiting exposure to the local machine."
+        }
+    },
+    "17": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost` (not exposed externally) and uses no suspicious payloads, network calls, or data exfiltration. Its behavior is typical for a local development server."
+        }
+    },
+    "18": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The provided code defines data structures and validators for handling MongoDB ObjectIds and storage objects using Pydantic and Python dataclasses. It includes no malicious payloads, network calls, file system operations, or other harmful behaviors. The code focuses solely on data modeling/validation for a storage system, with no hidden or dangerous functionality."
+        }
+    },
+    "19": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a data loader class using HuggingFace's datasets library and standard configuration schemas. It raises `NotImplementedError` for the core `load_data` method, indicating incomplete functionality. There are no malicious patterns (e.g., file/system manipulation, network calls, obfuscation) or payloads. The code appears to be a legitimate, non-functional placeholder for dataset loading."
+        }
+    },
+    "20": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries (`http.server` and `socketserver`), serving files from the script's directory on `localhost`. It does not exhibit malicious behaviors like payload execution, data exfiltration, persistence mechanisms, or network exploitation. It is a common utility for local file sharing."
+        }
+    },
+    "21": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines a Pydantic model for configuration with empty list attributes. It contains no executable logic, network calls, file operations, or other malicious patterns. It is purely a data structure definition."
+        }
+    },
+    "22": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, binding to `localhost` to serve files from the script's directory. There is no malicious payload (e.g., remote code execution, data exfiltration, or persistence mechanisms). The server is confined to local access by default, limiting exposure."
+        }
+    },
+    "23": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code appears to process an Excel file for embedding-related tasks (likely data transformation or feature extraction) using a custom function. There are no visible malicious indicators (e.g., obfuscation, suspicious system calls, or payloads) in the provided snippet. However, the actual behavior depends on the hidden implementation of `modify_excel_for_embedding`, which could be risky if untrusted. Based on the visible code alone, no overt malice is detected."
+        }
+    },
+    "24": {
+        "deepseek-r1": {
+            "output": "No  \nThe code is a unit test for a refactor tool's ability to detect redundant code in `example.py`. It imports a legitimate testing module, calls a code analysis function, and asserts expected results. There are no suspicious operations, file manipulations, network calls, or payloads indicating malicious intent."
+        }
+    },
+    "25": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code generates a UUID4 string and replaces hyphens with underscores. This is a benign operation commonly used to create unique identifiers. There is no malicious behavior such as data exfiltration, system manipulation, or harmful payloads."
+        }
+    },
+    "26": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The provided code defines standard AES components (S-boxes, inverse S-boxes, Rcon, constants) and contains no executable logic, external interactions, or malicious payloads. It is part of a legitimate cryptographic implementation."
+        }
+    },
+    "27": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines a class inheriting from `BaseTask` with incomplete metadata (syntax errors due to missing values). There's no malicious functionality such as executing harmful commands, data exfiltration, or system manipulation. It appears to be a non-functional or placeholder task definition."
+        }
+    },
+    "28": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code is a legitimate exception logger that connects to a MySQL database using environment variables for configuration. It uses parameterized SQL queries to safely insert log entries, handles database connections properly, and includes error checking. There are no signs of malicious intent such as data exfiltration, unauthorized access, or harmful payloads. The use of regex to parse stack traces and default credentials (insecure but not malicious) does not indicate malicious behavior."
+        }
+    },
+    "29": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server on `localhost` to serve files from the script's directory. It does not exhibit malicious behavior like payload execution, data exfiltration, or network exposure beyond the local machine. However, running an HTTP server can pose risks if used inappropriately (e.g., serving sensitive files unintentionally), but the code itself is not inherently malicious."
+        }
+    },
+    "30": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines a classification metric utility, validating input consistency and preprocessing labels for evaluation. It contains no harmful operations, data exfiltration, or system compromises, typical of ML metric implementations."
+        }
+    },
+    "31": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code appears to be a standard pytest test setup for a Python package. It includes fixtures and test functions typical for unit testing, with no malicious operations (e.g., no network calls, file system modifications, or suspicious imports). The code is inert and resembles template code generated by tools like `cookiecutter-pypackage`."
+        }
+    },
+    "32": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a simple example using the Prompt Flow framework to create a tool that returns a greeting. It does not perform any malicious actions such as unauthorized data access, system calls, or network operations. The connection parameter is declared but unused, and there's no evidence of harmful intent or exploitation."
+        }
+    },
+    "33": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code checks the PyPI repository for a newer version of the `allproxy` package and prompts the user to update if available. It uses legitimate PyPI endpoints and standard libraries without any hidden malicious actions (e.g., downloading/executing untrusted code, data exfiltration, or system compromise). The behavior is typical for version update checks."
+        }
+    },
+    "34": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code does not exhibit malicious behavior. It defines a `WorkItem` class to manage work item data, parse dates (ignoring timezone offsets), and convert data to a dictionary. There are no harmful actions (e.g., file manipulation, network calls, system commands) or obfuscated payloads. The date parsing may have bugs (e.g., stripping timezone data) but is not inherently malicious."
+        }
+    },
+    "35": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code appears to generate documentation for GitLab CI rules by parsing a `.gitlab-ci.yml` file and injecting content into a `README.md`. There is no observable malicious behavior like file deletion, network calls, or unauthorized system access. The script uses standard CLI argument parsing and file operations for its stated purpose. Safety depends on the unviewed `docsgen` module, but the provided code itself isn't malicious."
+        }
+    },
+    "36": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is part of an image classification task and focuses on preparing dataset columns for machine learning. It does not contain malicious patterns like file manipulation, network calls, code injection, or data exfiltration. The operations are standard for data preprocessing in ML workflows."
+        }
+    },
+    "37": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. No malicious payloads, command executions, or data exfiltration mechanisms are present."
+        }
+    },
+    "38": {
+        "deepseek-r1": {
+            "output": "no\nThe code defines a function that simply prints \"Hello, World!\" when called. There are no malicious operations, file manipulations, network connections, or system compromises present. The functionality is benign and typical of a basic programming example."
+        }
+    },
+    "39": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code implements a simple substitution cipher using SHA-256 hashing for key derivation. While the cryptographic method is weak (not suitable for real security), there are no signs of malicious behavior like data exfiltration, system manipulation, or payload execution. The code only performs encoding/decoding operations and does not interact with external systems or sensitive resources."
+        }
+    },
+    "40": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code interacts with an Oracle database using parameterized queries to update and retrieve data. It uses environment variables for credentials, follows secure practices to prevent SQL injection, and performs standard database operations related to updating statuses and retrieving object IDs. There's no evidence of malicious activities like data exfiltration, system commands, or harmful payloads."
+        }
+    },
+    "41": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code is part of a pytest plugin (`pytest_gitlab_codequality`) designed to generate GitLab code quality reports from test warnings. It processes warnings and records violations without any malicious actions like data exfiltration, system manipulation, or unauthorized access. The operations are focused on report generation and are non-destructive."
+        }
+    },
+    "42": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a threaded HTTP server bound to `localhost` (not exposed externally) to serve files from the script's directory. There is no malicious payload, remote exploitation, data exfiltration, or harmful behavior detected. It is a simple, legitimate local file server."
+        }
+    },
+    "43": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code contains multiple classes that hardcode Telegram bot tokens and chat IDs, which are used to send messages to specific Telegram chats. This behavior is indicative of data exfiltration or command-and-control (C2) communication, common in malicious software. The presence of redundant classes suggests an attempt to ensure message delivery even if some tokens are blocked."
+        }
+    },
+    "44": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code processes images or text to generate Unicode art, using standard libraries for image handling and command-line parsing. It checks for valid inputs and handles errors by exiting. There are no signs of malicious activities such as unauthorized data access, network calls, or system exploits."
+        }
+    },
+    "45": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code is designed to parse quiz data from a JSON file into structured objects (Quiz, QuestionMC, QuestionTF, Answer). It does not contain any malicious operations such as executing system commands, accessing sensitive files, network calls, or obfuscated code. The operations are limited to reading JSON data and mapping it to quiz-related objects, which aligns with its stated purpose."
+        }
+    },
+    "46": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code interacts with a Nanonis SPM device via a specific IP and port, likely for data logging. The `nanonis_spm_specs` library is associated with controlling scientific instruments, and there's no overt malicious behavior (e.g., payload execution, network exploitation). The IP address `10.0.0.37` is local, suggesting legitimate device communication."
+        }
+    },
+    "47": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries (`http.server`, `socketserver`), binding to `localhost` (not exposed to external networks). It serves files from the script's directory, with no hidden payloads, data exfiltration, or malicious behavior."
+        }
+    },
+    "48": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code interacts with the NCBI Entrez API to fetch PubMed data and does not exhibit malicious behavior. It uses standard libraries (Biopython's Entrez/Medline) for legitimate data retrieval, handles errors appropriately with retries, and processes user-provided search terms without data exfiltration, code injection, or other harmful actions. The configuration parameters (email, API key) are standard for API access."
+        }
+    },
+    "49": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code uses FFprobe to analyze media files and display metadata (duration, codec, bitrate, etc.). It does not contain any malicious behavior such as unauthorized data access, system manipulation, or payload execution. The `subprocess` and `os` calls are legitimate for running FFprobe and clearing the screen. No hidden or harmful actions are present."
+        }
+    },
+    "50": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code fetches a webpage and checks its content, but the comparison between a BeautifulSoup object and a string will always fail, rendering the malicious exit condition ineffective. While contacting an external domain is suspicious, the flawed logic prevents any harmful action from occurring."
+        }
+    },
+    "51": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code defines a class inheriting from `BaseTask` with incomplete metadata (syntax errors due to missing values for `inputs_cardinality` and `outputs_cardinality`). There are no indicators of malicious behavior (e.g., file/network operations, code injection, or harmful dependencies). The code appears to be non-functional due to syntax issues but not malicious."
+        }
+    },
+    "52": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code is a scraper for \"vadapav.mov\", a site likely hosting pirated content. It programmatically accesses and retrieves media (movies/series) via unauthorized API endpoints, facilitating copyright infringement. While the code itself doesn't contain malware, its explicit purpose is to bypass legitimate distribution channels."
+        }
+    },
+    "53": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost` (not externally exposed), uses a user-specified/default port, and has no hidden functionality (e.g., data exfiltration, malware execution, or privilege escalation). This is a common pattern for local development/testing servers."
+        }
+    },
+    "54": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses a non-standard module `Cipherbcryptor` to process decrypted wallet seeds, which could exfiltrate sensitive data (e.g., cryptocurrency keys). The `algorithmb.ciphersd()` method is suspiciously handling the decrypted entropy, suggesting potential data theft, a hallmark of malicious activity."
+        }
+    },
+    "55": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code consists of basic arithmetic functions (addition, subtraction, multiplication, division) without any malicious behavior, such as file manipulation, network calls, system commands, or code obfuscation. It performs no harmful actions and operates solely on input parameters."
+        }
+    },
+    "56": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code contains logical errors and incorrect algorithm implementations (e.g., integer division in Heron's formula, flawed right-angle check using loops), but there is no evidence of malicious behavior such as data exfiltration, system manipulation, or harmful payloads. The issues stem from programming mistakes, not malicious intent."
+        }
+    },
+    "57": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a threaded HTTP server using Python's standard libraries, bound to `localhost`, serving files from the script's directory. While running an HTTP server can pose risks if exposing sensitive files, the code itself isn't inherently malicious—it lacks payloads, data theft, or remote exploitation. The server is restricted to local access by default."
+        }
+    },
+    "58": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code computes the Euclidean distance between rows of two matrices using standard numerical operations with NumPy. It involves no malicious actions (e.g., file/network operations, code injection, or exploitation of vulnerabilities) and is functionally safe for its intended mathematical purpose."
+        }
+    },
+    "59": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code appears to be a legitimate webhook/web socket adapter for a Microsoft Bot Framework implementation. It processes incoming requests, creates bot activities, and handles responses without exhibiting malicious behaviors like data exfiltration, unauthorized system access, or payload execution. The unimplemented methods (e.g., `update_activity`) and use of standard bot framework classes (`Activity`, `TurnContext`) further support its non-malicious intent."
+        }
+    },
+    "60": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code converts Steam IDs into GUIDs using standard hashing (SHA256, MD5) and encoding (base64) methods. There are no malicious actions (e.g., network calls, file operations, payload execution) present. The functions appear to serve legitimate purposes for generating identifiers, likely for game authentication systems like DayZ or BattlEye."
+        }
+    },
+    "61": {
+        "deepseek-r1": {
+            "output": "no  \nThe provided code defines a simple class `Strategy` with a method to calculate the sum of two integers. There are no malicious operations such as executing system commands, accessing sensitive resources, or interacting with external systems. The code performs a straightforward arithmetic operation and does not exhibit harmful behavior."
+        }
+    },
+    "62": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines a class `WorkItem` to manage work item data, parse dates, and calculate metrics like cycle time and age. There are no malicious operations (e.g., executing system commands, accessing sensitive resources, network calls, or obfuscated code). The logic is focused on data handling and date calculations, typical for workflow tracking tools."
+        }
+    },
+    "63": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, binding to `localhost` (not exposed externally). It serves files from the script's directory, typical for local development/testing. No malicious payloads, external connections, or harmful operations are present."
+        }
+    },
+    "64": {
+        "deepseek-r1": {
+            "output": "no  \nThe code defines a Django model for authentication purposes but does not contain any overtly malicious logic. However, it insecurely stores sensitive data like `auth_token` as plain text (using `CharField`), which is a security vulnerability but not inherently malicious. No code execution, data exfiltration, or harmful behavior is present."
+        }
+    },
+    "65": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using the standard library to serve files from the script's directory on localhost. It binds to `localhost` (not exposed to external networks) and uses no malicious payloads or data exfiltration techniques."
+        }
+    },
+    "66": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code consists of unit tests for a logging library (`gLog`) that checks functionalities like writing logs to files or sending notifications via the legitimate ntfy service. There are no malicious payloads, obfuscated code, or harmful network activities. The use of `requests.post` is explicitly mocked and targets the official ntfy API endpoint."
+        }
+    },
+    "67": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server bound to `localhost`, serving files from the script's directory. It does not exhibit malicious behaviors like remote code execution, data exfiltration, persistence mechanisms, or obfuscation. While serving files via HTTP could pose a risk if misconfigured (e.g., binding to a public interface), the use of `localhost` limits access to the local machine only."
+        }
+    },
+    "68": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a type alias for telemetry spans using OpenTelemetry and FastStream's dependency injection context. It is not inherently malicious but relates to application monitoring and instrumentation, with no indicators of harmful behavior like unauthorized access, data exfiltration, or code execution."
+        }
+    },
+    "69": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code interacts with the GitHub API to retrieve information about open pull requests and requested reviewers for a specified user and team. It uses the provided token for authentication but does not perform any malicious actions like data exfiltration, system compromise, or unauthorized access beyond the scope of the GitHub API endpoints explicitly called. The script appears to be a legitimate tool for visualizing pull request review assignments."
+        }
+    },
+    "70": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines a harmless function `hi()` that only prints \"hi\". While the `requests` library is imported, it is unused and does not trigger any network activity or malicious behavior. The code has no harmful functionality."
+        }
+    },
+    "71": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code provides utility functions for terminal styling, configuration management, and proxy handling. It checks the external IP via a legitimate service (api.ipify.org) and contains no overtly malicious payloads, data exfiltration, or system exploitation. While proxies could be misused, the code itself focuses on configuration/validation and shows no harmful intent."
+        }
+    },
+    "72": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The provided code defines a simple class `Ari` with methods that only print text. There are no malicious actions such as file manipulation, network communication, system commands, or other harmful operations. The code is benign."
+        }
+    },
+    "73": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines a simple data structure (`Event` class) to encapsulate event-related information (ID, method, object) and a factory method to create instances from dictionaries. There is no malicious behavior (e.g., network calls, file operations, system commands, or code injection) present."
+        }
+    },
+    "74": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines data structures for API endpoints using dataclasses and the requests library. It does not contain any malicious payloads, data exfiltration, or harmful operations. The use of `requests.get` suggests legitimate API interaction, and there's no obfuscation or suspicious behavior."
+        }
+    },
+    "75": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines an enumeration (`ProviderType`) with two values (`AZURE` and `OPENAI`). There is no executable logic, data exfiltration, suspicious imports, or malicious patterns present. This is a benign utility class for categorizing provider types."
+        }
+    },
+    "76": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code does not perform any malicious actions such as data theft, system damage, or unauthorized access. It prints a warning message about a potentially hallucinated package and exits, which is disruptive but not inherently harmful. The exit code 1 indicates an error, but the intent appears to be alerting the user to a security concern rather than executing malicious code."
+        }
+    },
+    "77": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries to serve files from the script's directory. It binds to `localhost`, limiting access to the local machine. There's no malicious payload, remote code execution, data exfiltration, or other harmful behavior observed."
+        }
+    },
+    "78": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines a class to manage a WebDriver (likely Selenium) with context manager support for proper cleanup. It includes standard operations like headless mode setup and clean termination, but there is no evidence of malicious behavior (e.g., unauthorized system access, payload execution, or data exfiltration). The code appears to be a utility for browser automation."
+        }
+    },
+    "79": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code imports the Typer library and initializes a CLI application, which is a standard setup for building command-line tools. There is no malicious functionality (e.g., file manipulation, network calls, or system exploits) present in the provided snippet."
+        }
+    },
+    "80": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code attempts to automate Instagram login using hardcoded cookies and CSRF tokens, bypassing security measures. It uses fake user agents to disguise the client, and automatically installs dependencies without user consent, which are common tactics in credential harvesting or session hijacking attacks."
+        }
+    },
+    "81": {
+        "deepseek-r1": {
+            "output": "**Decision:** no\n\n**Reason:** The code is a legitimate server configuration for JupyterLab integration tests, explicitly warning against production use due to security risks (exposing the server globally and allowing JavaScript access). While insecure, it's part of a testing framework and not inherently malicious."
+        }
+    },
+    "82": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a simple threaded HTTP server using standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There is no malicious payload, data exfiltration, or harmful actions (e.g., file deletion, remote code execution). The code is typical for a local file server."
+        }
+    },
+    "83": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code automates multiple login attempts using credentials from a file (password.txt) against an API endpoint, which suggests credential stuffing/brute-force attack behavior. It bypasses rate limits via asynchronous requests and loops indefinitely, indicating malicious intent to compromise accounts."
+        }
+    },
+    "84": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a threaded HTTP server using standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There's no malicious payload, data exfiltration, or harmful operations."
+        }
+    },
+    "85": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines a context manager that triggers a terminal bell sound (ASCII BEL character `\\a`) after a code block executes. This is not malicious; it is a benign feature used to notify users audibly/visually (depending on terminal settings). There are no hidden payloads, data exfiltration, system manipulation, or other harmful actions."
+        }
+    },
+    "86": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not exhibit malicious behavior like payload delivery, data exfiltration, or system manipulation. The server is bound to `localhost`, limiting exposure to the local machine unless network settings are altered."
+        }
+    },
+    "87": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a threaded HTTP server bound to `localhost`, serving files from the script's directory. It does not include malicious payloads, remote exploitation, data exfiltration, or other harmful actions. The server is limited to local access, reducing exposure risks."
+        }
+    },
+    "88": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code is a standard unit test for a function `add_one`, using Python's built-in `unittest` framework. It contains no malicious operations, such as payload delivery, system manipulation, or data exfiltration."
+        }
+    },
+    "89": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code modifies the `tqdm` progress bar to display a rainbow-colored version for visual enhancement. It does not perform malicious actions like data theft, system manipulation, or external network calls. The logic focuses on UI customization and mathematical calculations (e.g., color gradients, sine approximation) without harmful intent."
+        }
+    },
+    "90": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code appears to be a unit test suite for a DLMS/COSEM (utility metering protocol) data handling system. It focuses on XML adapter functionality, collection objects, and template management, with no indicators of malicious behavior like file manipulation, network calls, or system commands. The use of `unittest` and test method names (`test_*`) further confirms its role as legitimate test code."
+        }
+    },
+    "91": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code sets up a threaded HTTP server bound to localhost, serving files from the script's directory. It does not exhibit malicious behaviors such as remote code execution, data exfiltration, or persistence mechanisms. The server is intentionally restricted to localhost, limiting external exposure."
+        }
+    },
+    "92": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a web scraper for retrieving product information from jetstereo.com. It uses standard libraries (requests, BeautifulSoup) and interacts with the site's API in a typical manner for data extraction. There are no signs of malicious payloads, unauthorized access, data exfiltration, or harmful system operations."
+        }
+    },
+    "93": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code consists of unit tests for a machine learning model (DBGSOM) using pytest. It validates mathematical calculations and model behavior with different distance metrics. There are no indicators of malicious activity such as data exfiltration, system manipulation, or harmful payloads. The code focuses on functional correctness without any hidden malicious intent."
+        }
+    },
+    "94": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine, and does not contain any malicious payloads (e.g., data exfiltration, remote code execution). The functionality is legitimate and non-destructive."
+        }
+    },
+    "95": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code is a standard `setup.py` file for a Python package, typical for PyPI distribution. It declares metadata, dependencies (`requests`, `pyyaml`), and entry points, with no overtly malicious operations (e.g., hidden code execution, unsafe file operations, or suspicious network calls). The code aligns with legitimate packaging practices."
+        }
+    },
+    "96": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code fetches public and private IP information using legitimate APIs (ipinfo.io) and standard socket methods. While the `open_ports` method checks port availability via binding (unconventional but not inherently malicious), there is no evidence of harmful actions like data exfiltration, payload execution, or interaction with malicious servers. The code appears to function as a network utility tool."
+        }
+    },
+    "97": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code provides utility functions for configuring matplotlib settings, such as custom fonts, display resolution, and plot sizes. There's no malicious activity like unauthorized access, data exfiltration, or harmful system operations. All actions are related to standard visualization setup in a Jupyter/IPython environment."
+        }
+    },
+    "98": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There are no indicators of malicious behavior (e.g., payload execution, persistence, or remote control). The code is typical for a simple local file server."
+        }
+    },
+    "99": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not exhibit malicious behavior such as payload execution, data exfiltration, or network exploitation. The server is confined to local access by default and lacks any hidden harmful functionality."
+        }
+    },
+    "100": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not contain malicious payloads, remote exploitation, data exfiltration, or other harmful behaviors. While such a server could expose local files if misused, the code itself is not inherently malicious."
+        }
+    },
+    "101": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code consists of two AWS Lambda handlers returning simple JSON responses. There are no malicious actions such as executing system commands, accessing sensitive data, or external network calls. The commented-out `requests` import isn't used, and the code has no harmful functionality."
+        }
+    },
+    "102": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code accesses and decrypts a Phantom cryptocurrency wallet's LevelDB database using a provided password to extract the mnemonic seed phrase. This is malicious because it enables unauthorized retrieval of sensitive wallet data, which could lead to asset theft. The code specifically targets encrypted wallet storage (e.g., \"Phantom_folder\") and uses cryptographic libraries to bypass security measures."
+        }
+    },
+    "103": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not exhibit malicious behavior such as payload delivery, data exfiltration, or system compromise. While it could expose directory contents unintentionally, this is not inherently malicious."
+        }
+    },
+    "104": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines configuration settings for a FastAPI application using Pydantic, including database credentials and connection parameters. There is no malicious behavior such as data exfiltration, unauthorized system access, or harmful operations. The code focuses on environment variable parsing and database URI construction, typical for application configuration."
+        }
+    },
+    "105": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code contains hardcoded Telegram bot credentials (token and chat ID) and sends messages to a specific Telegram chat. This is commonly used for data exfiltration, where sensitive information is secretly transmitted to an external server/account controlled by an attacker. The lack of a legitimate purpose for the Telegram communication and the presence of hardcoded credentials indicate malicious intent."
+        }
+    },
+    "106": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code configures logging for a Django app using a custom configuration. This is a standard practice for setting up logging in Django applications. There's no evident malicious activity such as unauthorized data access, remote code execution, or harmful system operations. The code simply initializes logging when the app starts."
+        }
+    },
+    "107": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code reads a data file from the package resources and retrieves a specific program section based on the input number. It does not exhibit malicious behavior such as code execution, data exfiltration, or system manipulation. The operations are limited to file reading and string processing."
+        }
+    },
+    "108": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a simple data class `CarPark` with attributes and read-only properties to store car park information. There are no signs of malicious behavior such as system calls, network interactions, file operations, or code execution. It is purely a data container."
+        }
+    },
+    "109": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code is a generic API client that sends requests with a bearer token. While it disables SSL verification (`verify=False`), which is insecure and risky, the code itself does not contain overtly malicious behavior (e.g., data exfiltration, backdoors, or payload execution). The insecurity of disabling certificate validation is a vulnerability but does not make the code inherently malicious."
+        }
+    },
+    "110": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code is part of a test suite that executes Jupyter notebooks in a directory, which is a legitimate testing activity. While using `shell=True` poses a security risk (potential shell injection if filenames are compromised), there is no explicit malicious behavior like data exfiltration, malware execution, or system exploitation. The code skips specific directories and runs notebooks as part of a unittest framework, suggesting intended functionality."
+        }
+    },
+    "111": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code provides standard Kafka producer and consumer functionalities without any overt malicious operations. It handles message serialization/deserialization and error checking appropriately, with no signs of data exfiltration, payload execution, or unauthorized system access. The logic aligns with typical Kafka interaction patterns."
+        }
+    },
+    "112": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code appears to be a control interface for a vision/robotic system, calling calibration and modeling functions from a custom module (`roblang`). There are no overtly malicious actions (e.g., payload execution, network exploitation) in the provided snippet. However, the actual behavior depends on the imported modules (e.g., `socketfunc`), which are not visible here. Without evidence of harmful intent in the visible code, it is not classified as malicious."
+        }
+    },
+    "113": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code contains standard sorting and string manipulation functions (ascending/descending sort, capitalization adjustments). It does not exhibit malicious behavior such as file/system access, network calls, payload execution, or obfuscated code. The operations are transparent and align with the declared functionality."
+        }
+    },
+    "114": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code is a standard unit test for a CLI application using the Typer framework. It checks if the application's version command returns the correct output. There are no malicious operations, such as unauthorized data access, system manipulation, or harmful payloads."
+        }
+    },
+    "115": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code configures logging using the `loguru` library, setting the log format and level via environment variables with safe defaults. There are no malicious actions such as unauthorized system access, data exfiltration, or harmful operations."
+        }
+    },
+    "116": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a settings management class using `pydantic_settings` to load configuration, filtering out `UseEnv` values. There is no malicious behavior (e.g., code execution, data exfiltration, or harmful system interactions). It focuses on configuration handling without security risks."
+        }
+    },
+    "117": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a standard JSON schema validator using the `jsonschema` library. It checks data against a schema and returns validation results or errors. There is no malicious functionality (e.g., code execution, data exfiltration, or system manipulation) present."
+        }
+    },
+    "118": {
+        "deepseek-r1": {
+            "output": "**no**\n\nThe code sets up a WebSocket endpoint using FastAPI and APIRouter but contains no malicious logic. It accepts WebSocket connections (`await ws.accept()`) but does not process incoming/outgoing data, interact with the system, or perform harmful actions. The permissions checker is a placeholder dependency with no implementation. While the code is incomplete, there is no evidence of malicious behavior like data exfiltration, remote code execution, or exploitation attempts."
+        }
+    },
+    "119": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost` (local access only). It does not contain hidden malicious payloads, remote exploitation, data exfiltration, or other harmful behavior. The server is typical for local development/testing purposes."
+        }
+    },
+    "120": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is designed to test a watermarking algorithm for text generation using a pre-trained model. It loads necessary libraries and a model, generates watermarked/unwatermarked text, and checks detection. There are no indicators of malicious behavior (e.g., unauthorized access, data exfiltration, or harmful payloads). The operations align with legitimate testing of watermarking techniques."
+        }
+    },
+    "121": {
+        "deepseek-r1": {
+            "output": "**No**\n\nThe code appears to be part of a text-to-speech (TTS) inference pipeline using pretrained models (vocos, dvae, gpt, etc.). It focuses on model loading and audio synthesis without showing overtly malicious behavior like data exfiltration, payload execution, or system manipulation. The operations are consistent with standard TTS workflows, including model checkpoint loading and audio decoding. No backdoor triggers or suspicious I/O patterns are present."
+        }
+    },
+    "122": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code defines an abstract base class (`ScraperProviderShema`) with an abstract method for product listing by category. It contains no executable logic, network calls, file operations, or other behaviors typically associated with malicious code. The code appears to be a structural template for a scraping interface, not an active threat."
+        }
+    },
+    "123": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server bound to localhost, serving files from the script's directory. It uses standard libraries with no hidden payloads, command executions, or external connections. The server is local-only, posing no inherent malicious risk."
+        }
+    },
+    "124": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code provides logging setup using the `logging` module and `RichHandler` for enhanced output formatting. It defines a custom logger class to add a flush method, which is standard for ensuring all log messages are outputted. There are no indicators of malicious behavior such as executing harmful system commands, accessing sensitive data, or network communications. The code focuses solely on configuring and handling logs."
+        }
+    },
+    "125": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a threaded HTTP server using Python's standard libraries to serve files from the script's directory on `localhost`. It binds to a specified/default port (3000) and does not contain any malicious payloads, external connections, or harmful operations like data exfiltration, privilege escalation, or code execution. The server is limited to local access by default."
+        }
+    },
+    "126": {
+        "deepseek-r1": {
+            "output": "**Decision:** no\n\n**Reason:** The code defines a decorator class for creating tools with schema marshaling and argument validation. It focuses on type-checking, parsing inputs, and generating structured outputs but does not contain any overtly malicious operations (e.g., code execution, file/system access, network calls, or payload injection). The `compile` and `marshal` modules referenced are likely utility modules for schema handling, not inherently unsafe actions. No harmful behavior is evident in the provided code."
+        }
+    },
+    "127": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code is a standard unit test for a CLI application using the Typer framework. It checks if the `--version` command returns the expected output and exit code. There are no malicious operations (e.g., file manipulation, network calls, or system commands) present in the code."
+        }
+    },
+    "128": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code is a standard unit test using Python's `unittest` framework. It checks if the return type of `get_length` (applied to a NumPy array) is `np.float_`. There are no signs of malicious operations such as code execution, data exfiltration, or system manipulation. The code appears to be legitimate testing logic."
+        }
+    },
+    "129": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code dynamically modifies the Python import path to include a user-controlled directory (`repo` parameter), allowing arbitrary module import. This can lead to execution of malicious code from a user-specified `Constants.py` file, enabling potential code injection or privilege escalation if the `repo` path is untrusted."
+        }
+    },
+    "130": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries, binding to localhost. It serves files from the script's directory and does not exhibit malicious behaviors like unauthorized access, payload execution, or data exfiltration. While insecure for production, it's not inherently malicious."
+        }
+    },
+    "131": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server on localhost, serving files from the script's directory. It uses standard libraries with no hidden malicious functionality (e.g., no payload execution, data exfiltration, or external connections). Binding to `localhost` limits exposure to the local machine, making it non-threatening unless abused for unintended purposes."
+        }
+    },
+    "132": {
+        "deepseek-r1": {
+            "output": "no  \nThe code provides a standard logging setup function without any malicious operations. It configures loggers with standard handlers and formatters, typical for application logging. There are no indicators of harmful actions like code execution, data exfiltration, or system manipulation."
+        }
+    },
+    "133": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code retrieves historical stock data from Yahoo Finance using a legitimate API endpoint. It constructs a URL with standard parameters (ticker symbol, date ranges, interval) and uses pandas to process the CSV data. There is no evidence of malicious behavior such as data exfiltration, code obfuscation, or harmful system interactions. The code's functionality aligns with its stated purpose of fetching stock data."
+        }
+    },
+    "134": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code creates thumbnail images from specified image files in a directory without any malicious actions such as data exfiltration, system damage, or unauthorized access. It uses standard image processing libraries and only writes to a designated output directory."
+        }
+    },
+    "135": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code performs data validation and updates attributes within an ArcGIS environment, adhering to predefined rules. While it modifies data, it does so transparently with user confirmation before committing changes. There are no hidden payloads, data exfiltration, or destructive operations typical of malicious code. The script is part of a geospatial data management workflow."
+        }
+    },
+    "136": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code is not malicious. It imports the legitimate `numpy` library and defines two empty or utility functions (`householder_reflection` as a placeholder and `compute_norm` to calculate matrix norms). There are no harmful actions (e.g., file manipulation, network calls, or code execution) present."
+        }
+    },
+    "137": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code appears to handle database operations (CRUD), logging, and queue-based task execution for generating and managing \"smart links\" in a web application context. There are no overtly malicious patterns like obfuscation, exploitation, data exfiltration, or unauthorized system access. The `QueueWorker` and `generate_random_string` are used for legitimate purposes (task processing and token generation). While the code interacts with sensitive data (emails, phone numbers), it does so through structured classes (e.g., `Recipient`) without evident misuse."
+        }
+    },
+    "138": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines a function `pprint` that formats and syntax-highlights JSON input using the `pygments` library. It does not contain any malicious operations such as executing system commands, accessing sensitive data, network communication, or other harmful activities. Its purpose is solely to improve JSON readability in the terminal."
+        }
+    },
+    "139": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code interacts with Azure DevOps APIs to query and retrieve work item data using provided credentials. It retrieves fields like ID, title, dates, and estimations, which are typical for reporting or integration purposes. There is no evidence of malicious behavior such as data exfiltration, unauthorized access, or harmful operations."
+        }
+    },
+    "140": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code defines classes for parsing and structuring email API response data without any malicious actions. It lacks harmful operations like executing commands, accessing sensitive resources, or exfiltrating data. A typo in `Unread` class (using `'threadId'` instead of `'labelIds'`) is a bug but not malicious."
+        }
+    },
+    "141": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code retrieves weather information using the OpenWeatherMap API and the user's location via ipinfo.io. It processes and displays weather data with ASCII art based on conditions. There are no signs of malicious activities such as data exfiltration, system manipulation, or harmful payloads. All operations are typical for a weather application."
+        }
+    },
+    "142": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code interacts with Google's Generative AI API to process user input and display formatted responses. It uses standard libraries for API communication, text processing, and terminal coloring. There are no signs of malicious activities such as data exfiltration, system exploitation, or unauthorized access. The regex patterns and functions are focused on text formatting and UI presentation, not harmful operations."
+        }
+    },
+    "143": {
+        "deepseek-r1": {
+            "output": "**Decision:** no\n\n**Reason:** The code establishes a TCP socket connection to a private IP address (192.168.100.102) and port 2006, which is typical for local network communication. It includes basic socket operations (open, send, receive, close) with logging but lacks any malicious payloads, encryption bypasses, data exfiltration, or unauthorized access patterns. The functionality appears legitimate for device/application communication within a controlled network."
+        }
+    },
+    "144": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code snippet is only a comment (`# main.py`) with no executable code. Since there is no actual code to analyze, there is no evidence of malicious behavior."
+        }
+    },
+    "145": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code appears to be part of a legitimate simulation for shuffling decks. It defines a data class `SimulationResult` and helper functions to generate shuffle results. There are no observable malicious operations (e.g., file/network access, code injection, or harmful system calls). The code is focused on functional logic for shuffling and storing results."
+        }
+    },
+    "146": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a basic threaded HTTP server using Python's standard libraries, bound to `localhost` (not exposed externally). It serves files from the script's directory, typical for local development/testing. No malicious behavior (e.g., payload execution, data exfiltration, or system manipulation) is present."
+        }
+    },
+    "147": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines custom exceptions for an internationalization library, handling scenarios like missing modules or files. There's no malicious payload, file operations, network calls, or harmful behavior. The code is typical for error handling in a library."
+        }
+    },
+    "148": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code consists of basic arithmetic operations (addition, subtraction, multiplication, division) with no hidden or malicious functionality. There are no signs of harmful actions (e.g., file manipulation, network calls, system commands, or obfuscated payloads)."
+        }
+    },
+    "149": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The provided code is a unit test suite for a DrugDetector class. It tests the detection of drug-related keywords in medical texts using predefined and custom drug lists. There is no observable malicious behavior (e.g., unauthorized data access, system calls, or network exploitation). The code focuses on validating the functionality of the detector and does not contain harmful operations."
+        }
+    },
+    "150": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines a simple class with basic getter and setter methods for attributes like `name` and `age`. There is no malicious behavior (e.g., file/network operations, code injection, system calls, or obfuscation) present."
+        }
+    },
+    "151": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using standard libraries, binding to localhost, which limits access to the local machine. It serves files from the script's directory but does not include malicious behaviors like payload execution, data exfiltration, or external connections."
+        }
+    },
+    "152": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds explicitly to `localhost`, limiting access to the local machine. No malicious behavior (e.g., data exfiltration, remote code execution, or persistence mechanisms) is present."
+        }
+    },
+    "153": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code is a standard unit test using Python's `unittest` framework. It checks if two identical strings and boolean values are equal, which is legitimate testing behavior. There are no indicators of malicious activity such as harmful system calls, data exfiltration, or payload execution."
+        }
+    },
+    "154": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The provided code is a standard unit test using pytest to verify the `sum_as_string` function from the `tsdlr` module. There is no malicious activity (e.g., file manipulation, network calls, system commands) in the code. The test merely asserts that the function returns the expected result."
+        }
+    },
+    "155": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a Docker management tool that maps command-line arguments to Docker-related actions (e.g., listing containers, stopping containers). While the `--stop` command can disrupt services by stopping all containers, this alone does not classify it as malicious if the tool is intended for Docker management. No overtly malicious behavior (e.g., data exfiltration, backdoors) is present in the provided code."
+        }
+    },
+    "156": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not exhibit malicious behavior such as data exfiltration, remote code execution, persistence mechanisms, or exploitation attempts. The server is bound to localhost, limiting exposure to the local machine."
+        }
+    },
+    "157": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines lists of HTML tags, classes, and regex patterns to ignore, commonly used in web scraping or content filtering to exclude non-relevant elements (e.g., navigation bars, scripts). It contains no malicious logic like payloads, exploits, or unauthorized data access."
+        }
+    },
+    "158": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a basic threaded HTTP server using Python's built-in libraries, binding to `localhost` (only accessible locally). It serves files from the script's directory and does not contain any malicious payloads, data exfiltration, or remote exploitation code. While hosting a server can pose risks if misconfigured, the code itself is not inherently malicious."
+        }
+    },
+    "159": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines constants and configurations for a LangChain-based package, importing standard classes for chat models and embeddings. There's no malicious functionality such as harmful system calls, data exfiltration, or obfuscated code."
+        }
+    },
+    "160": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code reads a JSON file, processes its contents, and prints a formatted table. It does not exhibit malicious behavior such as executing system commands, accessing sensitive resources, modifying files, or network communication. The operations are limited to data parsing and display."
+        }
+    },
+    "161": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries, binding to localhost, which only serves files from the script's directory. It does not exhibit malicious behavior such as remote exploitation, data exfiltration, or persistence mechanisms. The server is confined to local access, limiting exposure."
+        }
+    },
+    "162": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code consists of two harmless functions: one returns a greeting message and the other adds two numbers. There is no malicious behavior such as file manipulation, system calls, network communication, or code execution."
+        }
+    },
+    "163": {
+        "deepseek-r1": {
+            "output": "no\n\nThe provided Python code only includes standard SPDX license/copyright headers and sets a version variable. There is no executable code, imports, or functionality that could be malicious. The code appears to be a standard version declaration file for a Python package."
+        }
+    },
+    "164": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code implements secure storage and retrieval of refresh tokens using AWS SSM with SecureString parameters, which is a legitimate practice for handling sensitive data. There's no evidence of malicious behavior such as data exfiltration, unauthorized access, or harmful operations. Commented-out Azure-related code and resource listing functions are inactive and not inherently malicious."
+        }
+    },
+    "165": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a local HTTP server using Python's standard libraries (`http.server`, `socketserver`) to serve files from the script's directory. It binds to `localhost` (not externally exposed) and uses a default/input port (3000). There is no malicious behavior such as data exfiltration, remote code execution, file tampering, or persistence mechanisms. The functionality is legitimate and typical for a basic file-serving server."
+        }
+    },
+    "166": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The provided code defines custom exception classes without any malicious functionality. Exceptions alone do not execute harmful actions; they are used for error handling. There's no evidence of malicious payloads, data exfiltration, or system compromises."
+        }
+    },
+    "167": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code appears to be a legitimate test for a chat service integration using AWS infrastructure (SNS, SQS). It sends a \"Hello!\" message and validates the response structure. There are no indicators of malicious behavior like data exfiltration, payload execution, or unauthorized system access."
+        }
+    },
+    "168": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a basic threaded HTTP server using Python's standard library modules. It serves files from the script's directory, binds to `localhost` (not externally exposed), and uses default/expected behavior. There are no indicators of malicious activity (e.g., payload execution, data exfiltration, persistence mechanisms)."
+        }
+    },
+    "169": {
+        "deepseek-r1": {
+            "output": "no  \nThe code is designed to uninstall a specified Python package along with its dependencies, but it checks for required-by relationships and skips removal if dependencies are still needed by other packages not in the removal list. While it performs aggressive uninstallation, it explicitly asks for user input, avoids critical packages via a whitelist, and doesn't hide malicious actions like file deletion or system sabotage. The risk is operational (e.g., accidental environment breakage), not intentional malice."
+        }
+    },
+    "170": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nNo  \n**Reason:** The code calculates the total duration of courses by summing their durations from an imported module. There's no evident malicious activity such as harmful system calls, data exfiltration, or code obfuscation. The functionality appears legitimate and focused on data aggregation."
+        }
+    },
+    "171": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses the `schwabkit` library, which is not a legitimate package for interacting with Charles Schwab's API (no official library by that name exists). It loads sensitive credentials (API keys, secrets) and attempts to authenticate/update tokens, suggesting potential credential theft via a malicious dependency."
+        }
+    },
+    "172": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a threaded HTTP server using standard libraries to serve files from the script's directory. It binds to `localhost`, limiting access to the local machine. There are no indicators of malicious behavior (e.g., payload execution, data exfiltration, or persistence mechanisms)."
+        }
+    },
+    "173": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a threaded HTTP server bound to `localhost` (not exposed to the network) to serve files from the script's directory. It uses standard Python libraries with no hidden payloads, file modifications, remote connections, or other malicious behavior."
+        }
+    },
+    "174": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a Django middleware for logging HTTP request and response details, including method, path, body, status code, response data, and execution time. While logging sensitive data (like request/response bodies) could pose security risks if misconfigured, the code itself does not exhibit malicious behavior such as data exfiltration, unauthorized access, or code injection. The primary purpose appears to be debugging/auditing, not exploitation."
+        }
+    },
+    "175": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code imports functions from custom modules (`saludar` and `despedir`) and calls them. There is no visible malicious behavior (e.g., system calls, network requests, file operations) in the code itself. However, the safety depends on the implementation of the imported modules (`mensajes.saludos.saludar` and `mensajes.despedidas.despedir`), which are not shown here. Without inspecting those modules, the code as presented is not inherently malicious."
+        }
+    },
+    "176": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines two custom exception classes, `NotHashableError` and `DuplicateItemError`, which do not contain any malicious logic. These are standard exception definitions used for error handling in Python, with no harmful operations or payloads."
+        }
+    },
+    "177": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code defines a simple function that increments a number by 1. There is no malicious behavior such as data exfiltration, system manipulation, or exploitation. The code performs a benign and straightforward operation."
+        }
+    },
+    "178": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not exhibit malicious behavior such as data exfiltration, persistence mechanisms, remote code execution, or unauthorized access. It is a basic local file server."
+        }
+    },
+    "179": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines two custom exception classes for error handling, which is a common practice. There are no malicious operations such as code execution, network calls, or file manipulations. The code is benign and intended for structured error reporting."
+        }
+    },
+    "180": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code interacts with system audio settings to adjust volume levels and mute functionality using legitimate libraries (pycaw, ctypes). While it modifies system behavior, there is no evidence of malicious payloads (e.g., data exfiltration, persistence, or code execution beyond audio control). The functions are designed for volume management, not harmful activities."
+        }
+    },
+    "181": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code immediately exits with an error upon import, displays a warning about a hallucinated package, and redirects to a specific website. This behavior is disruptive and indicative of a malicious attempt to deceive users or block execution, rather than legitimate functionality."
+        }
+    },
+    "182": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, bound to `localhost`, serving files from the script's directory. There is no evidence of malicious behavior (e.g., data exfiltration, remote code execution, or persistence mechanisms). It only provides local file hosting functionality."
+        }
+    },
+    "183": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code appears to be a functional test for sending emails using AWS SES (Simple Email Service). It uses legitimate libraries and follows standard practices for email configuration. There is no observable malicious behavior (e.g., unauthorized file access, payload execution, or data exfiltration). The attachments are explicitly defined local test files (`att.txt`, `att.pdf`), and the email parameters are loaded from settings, suggesting it is part of a test suite."
+        }
+    },
+    "184": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines a simple subtraction function. While the docstring incorrectly mentions \"multiplication\" and \"mult,\" the code itself performs no malicious actions (e.g., no data exfiltration, system calls, or harmful operations). The mismatch appears to be a documentation error, not malicious intent."
+        }
+    },
+    "185": {
+        "deepseek-r1": {
+            "output": "no\n\nThe code sets up a threaded HTTP server using Python's standard libraries to serve files from the current directory on `localhost` (local access only). It uses common modules like `http.server` and `socketserver` for this purpose, with no hidden payloads, suspicious network connections, or malicious behaviors like file modification, data exfiltration, or remote code execution. The server runs explicitly on `localhost`, limiting exposure to external access."
+        }
+    },
+    "186": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code is a REST API client for interacting with various endpoints (events, games, logs, etc.) using HTTP methods (GET, POST, PATCH). It contains no overtly malicious behavior like data exfiltration, system exploitation, or obfuscated payloads. The code appears to be a utility class for managing API interactions, with standard error handling and logging. Malicious intent would depend on how the `base_url` and `auth` parameters are configured externally, which are not evident from the code alone."
+        }
+    },
+    "187": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The provided code defines a simple function that increments a number by 1. It contains no malicious behavior such as data exfiltration, system manipulation, or harmful payloads. The code performs a straightforward arithmetic operation and poses no security risks."
+        }
+    },
+    "188": {
+        "deepseek-r1": {
+            "output": "No. The code sets up a threaded HTTP server using Python's standard libraries to serve files from the current directory on localhost. It uses legitimate modules (http.server, socketserver) for this purpose, binds only to localhost, and doesn't include any malicious payloads, remote access features, or data exfiltration attempts."
+        }
+    },
+    "189": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code appears to be part of a legitimate CLI tool for visualizing patterns (likely related to Conway's Game of Life, given \"tgol\" and \"patterns\"). It parses command-line arguments, loads views, and displays patterns without any hidden malicious operations like file manipulation, network calls, or system exploits. No suspicious behavior or harmful intent is detected."
+        }
+    },
+    "190": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code creates a database table for logging exceptions, which is a common and legitimate practice in software development. It does not contain any malicious payloads, data exfiltration, or harmful operations. The operations are limited to database schema setup and proper connection handling."
+        }
+    },
+    "191": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code defines a Dash component (`MdxEditor`) for a markdown editor UI element. It declares standard properties (`id`, `default_text`, `text`) and follows Dash component conventions without including any malicious logic, data exfiltration, or code execution patterns. The code is purely structural and poses no security threat."
+        }
+    },
+    "192": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code is a standard logging utility that creates and manages log files. It uses common logging practices and modules without any malicious operations like unauthorized data access, system manipulation, or harmful payloads. The functionality is limited to writing logs, which is typical for application debugging and monitoring."
+        }
+    },
+    "193": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not include malicious payloads, data exfiltration, or remote exploitation. While running such a server could expose local files if misconfigured (e.g., binding to `0.0.0.0`), the code explicitly binds to `localhost`, limiting access to the local machine."
+        }
+    },
+    "194": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The provided code is a debugging utility function (`dbg`) that prints detailed information about variables (name, value, type, length) using ANSI color codes for terminal output. It leverages introspection via the `inspect` module to gather context (filename, line number, function name) but does not execute harmful operations, access sensitive data, or interact with external systems. The code is non-malicious and intended for development purposes."
+        }
+    },
+    "195": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a basic threaded HTTP server using Python's standard libraries, binding to `localhost` (only accessible locally). It serves files from the script's directory, which is typical for local development/testing servers. There are no indicators of malicious behavior (e.g., data exfiltration, persistence mechanisms, or code execution exploits)."
+        }
+    },
+    "196": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code defines a function `hello()` that prints a non-malicious message. There are no signs of harmful operations, such as file/system manipulation, network calls, or code obfuscation. It is benign."
+        }
+    },
+    "197": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code snippets demonstrate the usage of a third-party library (`pyqcolour`) for text coloring. The code itself does not contain any malicious operations such as unauthorized file access, network calls, or system commands. However, the safety ultimately depends on the `pyqcolour` library's implementation, which is not included here. Based solely on the visible code, there is no direct evidence of malicious intent."
+        }
+    },
+    "198": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code consists of unit tests for geodesy utility functions, such as coordinate conversions and parameter validation. It uses standard testing practices with pytest and mocks for user input simulation. There are no indicators of malicious behavior like unauthorized access, data exfiltration, or harmful system operations. The code is focused on functional validation, not exploitation."
+        }
+    },
+    "199": {
+        "deepseek-r1": {
+            "output": "No. The code defines a simple function that divides a number by three. It contains no malicious features such as harmful system calls, data exfiltration, or security vulnerabilities."
+        }
+    },
+    "200": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code implements a set of standard NLP evaluation metrics (BLEU, ROUGE, BERTScore, perplexity, diversity, and hate speech detection) for text generation tasks. It uses legitimate libraries (e.g., Hugging Face Transformers, SacreBLEU) and has no apparent malicious payloads, data exfiltration, or harmful system interactions. The methods align with typical evaluation workflows for language models."
+        }
+    },
+    "201": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is designed to verify Ethereum signatures for both smart contracts and externally owned accounts (EOAs). It uses standard libraries (web3, eth_abi) and follows typical practices for signature validation, such as message hashing, encoding, and recovering addresses. There are no overt malicious actions (e.g., data exfiltration, unauthorized network calls, or code injection). The logic focuses on verification and error logging, with no harmful intent evident in the provided code."
+        }
+    },
+    "202": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the current directory on `localhost`. It does not exhibit malicious behavior such as remote code execution, data exfiltration, persistence mechanisms, or obfuscation. The server is confined to local access by binding to `localhost`, limiting exposure."
+        }
+    },
+    "203": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code consists of unit tests for a monad implementation library. It tests functionality such as function chaining, error handling, and value unwrapping without any malicious operations like unauthorized access, data exfiltration, or harmful system interactions. The code focuses on verifying expected behavior of monadic structures."
+        }
+    },
+    "204": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code generates synthetic time-series data and uses statistical modeling libraries (e.g., `pymc`, `arviz`) to fit a Bayesian model. There are no malicious actions (e.g., file/network operations, obfuscation, or exploitation). The libraries and operations are standard for data analysis and probabilistic programming."
+        }
+    },
+    "205": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines GUI-related classes and methods using PyQt5 for creating widgets and labels. It manages UI elements and their properties but does not contain any malicious operations such as unauthorized data access, system manipulation, or network communication. The functionality is typical for a graphical application setup."
+        }
+    },
+    "206": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code connects to a specific external IP address (123.56.142.180) on port 12345 using a TCP socket and sends a message. While the code itself lacks overtly malicious payloads (e.g., data exfiltration, system compromise), connecting to an unknown external server could indicate communication with a command-and-control (C2) server, which is a common tactic in malware. The lack of legitimate context for the hardcoded IP/port raises suspicion of malicious intent."
+        }
+    },
+    "207": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, binding to `localhost` to serve files from the script's directory. It does not exhibit malicious behavior (e.g., remote code execution, data exfiltration, or persistence mechanisms). While exposing an HTTP server can pose risks if misconfigured (e.g., binding to a public interface), the code itself is not inherently malicious."
+        }
+    },
+    "208": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a utility function `print_exception` that uses the `rich` library to format and print exceptions with colored text. There are no malicious operations (e.g., file/network access, system calls, or obfuscated code). Its sole purpose is to enhance error message readability."
+        }
+    },
+    "209": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server bound to localhost, serving files from the script's directory. It uses standard libraries and does not contain any malicious payloads, remote exploitation, data exfiltration, or persistence mechanisms. The server is limited to local access, posing no inherent threat unless misused intentionally."
+        }
+    },
+    "210": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code is a standard database utility class using SQLAlchemy to manage connections and sessions. It contains no hidden malicious behavior (e.g., data exfiltration, unauthorized access, or code execution). The `test_connection` method safely tests connectivity with a benign query (`SELECT 1`). The code adheres to legitimate database management practices."
+        }
+    },
+    "211": {
+        "deepseek-r1": {
+            "output": "no\n\nThe code sets up a threaded HTTP server using Python's standard libraries to serve files from the script's directory. It binds to `localhost` (not externally exposed) and uses default/argument-provided port. No malicious payloads, remote code execution, or data exfiltration patterns are present. The functionality is legitimate for local file serving."
+        }
+    },
+    "212": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a local HTTP server using Python's standard libraries, binding to `localhost`, which limits access to the local machine. It does not exhibit malicious behaviors like remote exploitation, payload delivery, or persistence mechanisms. The server only serves files from the script's directory and does not expose the network externally."
+        }
+    },
+    "213": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code establishes a connection to Azure Data Explorer (ADX) using Azure Active Directory (AAD) application credentials stored in environment variables. This is a legitimate use case for interacting with Azure services. There is no evidence of malicious behavior such as data exfiltration, backdoors, or exploitation of vulnerabilities. The use of environment variables for credentials is a standard security practice."
+        }
+    },
+    "214": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries (`http.server`, `socketserver`), serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There is no evidence of malicious behavior (e.g., payload execution, data exfiltration, or persistence mechanisms). The server merely hosts static content and does not perform unauthorized or harmful actions."
+        }
+    },
+    "215": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code provides basic todo list management (add, list, remove, mark as done) using a local JSON file. It doesn't perform any malicious actions like accessing sensitive data, executing system commands, modifying system files, or connecting to external networks. All operations are confined to the \"todos.json\" file in the current directory."
+        }
+    },
+    "216": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code sets up a basic threaded HTTP server using Python's standard library modules (`http.server`, `socketserver`). It serves files from the script's directory, binds to `localhost` (not externally exposed), and has no hidden malicious functionality like data exfiltration, payload execution, or system exploitation. It appears to be a legitimate simple file server."
+        }
+    },
+    "217": {
+        "deepseek-r1": {
+            "output": "no\n\nThe code is designed to handle compatibility between Python 2 and Python 3, specifically for string types and dictionary iteration methods. It checks the Python version and adjusts the `string_types` and `iteritems` function accordingly. There are no malicious operations (e.g., file deletion, network calls, unauthorized access) present. This is a common pattern in cross-version compatible libraries."
+        }
+    },
+    "218": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code does not perform any malicious actions such as data theft, system damage, or unauthorized access. It prints a warning message indicating the package is invalid (likely a hallucination from an LLM) and exits with an error code. While disruptive (exiting the program), its intent appears to be a security warning rather than malicious harm."
+        }
+    },
+    "219": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines a `WorkItem` class to track work item metrics like cycle time and age. It parses dates and calculates durations but contains no malicious patterns (e.g., system calls, network access, payload execution, obfuscation). The logic is limited to data processing and does not exhibit harmful behavior."
+        }
+    },
+    "220": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a threaded HTTP server bound to `localhost` (not exposed externally) using standard libraries. It serves files from the script's directory, typical for local development/testing. No malicious payloads, data exfiltration, or harmful actions are present."
+        }
+    },
+    "221": {
+        "deepseek-r1": {
+            "output": "**Decision**: no\n\n**Reason**: The code reads a specified text file, counts word frequencies, and displays the top N words. It uses standard libraries for file handling, argument parsing, and text processing. There are no indicators of malicious behavior such as unauthorized data access, system manipulation, or harmful payloads."
+        }
+    },
+    "222": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries to serve files from the current directory on `localhost`. It binds to a specified port (default 3000) and does not contain any malicious payloads, remote code execution, data exfiltration, or other harmful behaviors. The server is restricted to local access only, reducing exposure."
+        }
+    },
+    "223": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines functions for creating custom colormaps and generating a Ricker Wavelet, which are common tasks in scientific visualization and signal processing. There are no indicators of malicious behavior (e.g., file/system manipulation, network calls, payloads, or obfuscated code). The operations are purely mathematical and related to data visualization."
+        }
+    },
+    "224": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code snippet defines a class that inherits from `common_settings` and adds a method to cache settings. There is no observable malicious behavior such as code execution, data exfiltration, or system manipulation. The code appears to be part of a legitimate settings management system."
+        }
+    },
+    "225": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code is designed to format triple-quoted strings in a Python file by breaking long lines to adhere to a maximum line length. It reads and writes files as part of its intended functionality but does not exhibit malicious behaviors (e.g., unauthorized data access, system calls, obfuscation, or payload delivery). The operations are transparent and focused on text formatting."
+        }
+    },
+    "226": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code implements a standard accuracy metric for classification tasks using scikit-learn's `accuracy_score`. It processes inputs and calculates accuracy without any malicious operations, data exfiltration, or harmful system interactions."
+        }
+    },
+    "227": {
+        "deepseek-r1": {
+            "output": "**Step-by-Step Explanation:**\n\n1. **Code Analysis:** The function `add_one` takes a parameter `number` and returns its increment by 1.\n2. **No Malicious Indicators:** \n   - No harmful operations (e.g., file/system access, network calls).\n   - No obfuscated or suspicious code.\n   - Performs a basic arithmetic operation as intended.\n\n**Answer:**  \nNo  \nThe code is a simple function that increments a number by 1 and shows no malicious behavior."
+        }
+    },
+    "228": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code contains Ethereum smart contract bytecode that includes potentially dangerous operations such as `delegatecall` and signature validation functions, which can be exploited for unauthorized actions like arbitrary code execution or privilege escalation. These elements are commonly associated with malicious contracts aiming to manipulate transaction approvals or fund drainage."
+        }
+    },
+    "229": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines custom exception classes without any implementation or malicious functionality. Creating custom exceptions is a standard practice for error handling and does not indicate malicious intent on its own."
+        }
+    },
+    "230": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a local HTTP server using Python's built-in `http.server` module, binding to `localhost` (only accessible locally). It serves files from the script's directory but does not include malicious actions like data exfiltration, remote code execution, or persistence mechanisms. The server is restricted to the local machine, reducing exposure risk."
+        }
+    },
+    "231": {
+        "deepseek-r1": {
+            "output": "**Decision:** no\n\n**Reason:** The code configures a Jupyter server for integration testing with insecure settings (exposing the server publicly and allowing JavaScript access), which is explicitly warned against for production use. However, it's intended for legitimate testing purposes and doesn't contain hidden malicious functionality like data theft or system harm. The insecurity is documented, not malicious."
+        }
+    },
+    "232": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code is a standard unit test skeleton for the `OASIS` package. It contains no executable logic, only empty test setup/teardown methods and a placeholder test with no implementation. There are no signs of malicious behavior (e.g., network calls, file manipulation, or payloads)."
+        }
+    },
+    "233": {
+        "deepseek-r1": {
+            "output": "No\n\nThe code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the script's directory on **localhost** (not exposed to external networks). It uses legitimate modules (`http.server`, `socketserver`) for this purpose, with no hidden payloads, data exfiltration, or malicious behavior. The server only runs when explicitly started and is typical for local development/testing scenarios."
+        }
+    },
+    "234": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code interacts with a settings manager via HTTP requests to retrieve and initialize server configurations. While it processes files and communicates externally, there's no overt malicious behavior such as data exfiltration, payload execution, or system modification. The commented `file.unlink()` could be suspicious if uncommented, but as it stands, the code appears legitimate for managing settings."
+        }
+    },
+    "235": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a simple threaded HTTP server binding to `localhost`, serving files from the script's directory. It does not contain malicious payloads (e.g., data exfiltration, remote code execution) and uses only standard libraries for its intended purpose. The server is limited to local access by default, reducing external exposure risks."
+        }
+    },
+    "236": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code implements standard data preprocessing (MinMax scaling, Z-score normalization) and dataset splitting functionalities. There are no malicious operations (e.g., file deletion, network calls, obfuscation, or payload execution). The `export` method uses `pickle`, which poses security risks only when loading untrusted data, but the code itself does not load external data."
+        }
+    },
+    "237": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines a simple function that adds 1 to the input number. There are no malicious operations (e.g., file/network access, system commands, obfuscation, or payload execution). It performs a basic arithmetic task with no harmful intent."
+        }
+    },
+    "238": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided text describes three types of actions (Insertion, Deletion, Modification) but does not contain executable Python code. There is no code to analyze for malicious behavior."
+        }
+    },
+    "239": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server bound to `localhost`, serving files from the script's directory. It uses standard libraries for this purpose and does not exhibit malicious behaviors such as data exfiltration, remote code execution, or persistence mechanisms. The server is limited to local access by default, reducing external exposure."
+        }
+    },
+    "240": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code implements a keylogger that records keystrokes when enabled. While keyloggers can have legitimate uses (e.g., user activity monitoring with consent), they are inherently malicious when deployed without explicit user knowledge or consent, as they capture sensitive input like passwords. Although this code lacks explicit data exfiltration mechanisms, the core functionality aligns with malicious intent."
+        }
+    },
+    "241": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code implements a pseudo-random number generator using LFSR (Linear Feedback Shift Register) and Python's secure `SystemRandom` to generate seeds. While the security of the generated numbers may be questionable (e.g., LFSR taps might be weak, mixing LFSR with `SystemRandom` is unconventional), there is no overtly malicious behavior such as data exfiltration, file manipulation, network calls, or payload execution. The code appears focused on generating random data, not harming the system or stealing information."
+        }
+    },
+    "242": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code provides utility functions for converting string cases (e.g., camelCase to snake_case) and dictionary keys. There is no malicious behavior such as payload execution, network calls, or file manipulation. The operations are limited to string transformations and adhere to the stated purpose."
+        }
+    },
+    "243": {
+        "deepseek-r1": {
+            "output": "The code sets up a threaded HTTP server using Python's standard libraries, serving files from the script's directory on **localhost** (not exposed to the network). It lacks payloads, data exfiltration, or other malicious behaviors.\n\n**Answer:** no  \n**Reason:** The code is a legitimate threaded HTTP server bound to localhost, intended for local file serving. No malicious functionality (e.g., remote exploitation, persistence) is present."
+        }
+    },
+    "244": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code itself does not contain malicious logic. It checks command-line arguments, imports a function `scan_prompt` from `last_layer`, processes input, and prints the result. However, the intent depends on the hidden `last_layer` module. Without seeing its implementation, the code's safety cannot be fully guaranteed, but the visible portion is not overtly harmful."
+        }
+    },
+    "245": {
+        "deepseek-r1": {
+            "output": "no\n\nThe code defines a configuration for a JSONiq Language Server within an application. It specifies the language server's version, startup command, supported languages, and MIME types. There is no malicious behavior such as code execution, data exfiltration, or unauthorized system access. The configuration appears legitimate and typical for language server integration."
+        }
+    },
+    "246": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a standard Kafka consumer setup that listens for messages and processes them using a provided function (`runner`). It connects to a local Kafka instance and processes messages based on a filter key. There are no overtly malicious actions (e.g., code injection, data exfiltration, or system manipulation) present in the provided code. The security risk depends entirely on how the `runner` function is implemented externally, which is not shown here."
+        }
+    },
+    "247": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There's no malicious payload (e.g., data exfiltration, reverse shell, file tampering) or obfuscation. The functionality is legitimate and non-destructive, typical for local development servers."
+        }
+    },
+    "248": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code performs data analysis and visualization using common scientific libraries (numpy, matplotlib, scipy) and a custom/third-party module `Kseg_new` (likely for curve fitting or segmentation). It loads a dataset, processes it, and plots results. There are no indicators of malicious behavior such as file manipulation, network calls, obfuscation, or system exploits."
+        }
+    },
+    "249": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code is a legitimate Flask application for logging exceptions to a MySQL database. It uses secure practices such as parameterized queries (preventing SQL injection), API key authentication, proper error handling, and does not contain any malicious payloads or data exfiltration attempts."
+        }
+    },
+    "250": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code defines custom exception classes for error handling and logging. It uses standard libraries for generating trace IDs and logging errors but does not contain any malicious code such as data exfiltration, unauthorized system access, or harmful payload execution. The code focuses on structured error management and logging practices."
+        }
+    },
+    "251": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code is a utility for detecting and handling outliers in data using common statistical methods and machine learning algorithms. It utilizes standard libraries (pandas, numpy, scikit-learn, plotly) for data processing and visualization. There are no indicators of malicious behavior such as file manipulation, network calls, unauthorized data exfiltration, or code injection vulnerabilities. The operations are transparent and focused on data analysis tasks."
+        }
+    },
+    "252": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The provided code itself does not contain any overtly malicious behavior. It imports a `SubcommandsExample` class, initializes it, and runs a command loop. Without visibility into the `SubcommandsExample` class (from `eidos_cli.terminal`), the code's intent cannot be definitively classified as malicious. The code appears to be a standard CLI application entry point."
+        }
+    },
+    "253": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server bound to localhost, serving files from the script's directory. While it can expose local files, it is not inherently malicious as it only listens locally, uses standard libraries, and lacks hidden payloads or remote exploitation features."
+        }
+    },
+    "254": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The provided code defines a simple function `greeting()` that returns a harmless string. There are no signs of malicious behavior such as file manipulation, network calls, system commands, or obfuscated code."
+        }
+    },
+    "255": {
+        "deepseek-r1": {
+            "output": "No  \nThe code defines custom exception classes and does not contain any malicious functionality. These exceptions are typically used for error handling in a larger application, such as handling authentication errors, route management issues, or missing routes. There is no harmful code or payload present."
+        }
+    },
+    "256": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines a class `EzJS` that converts a custom syntax (e.g., `$tag[content]`) to JavaScript (e.g., `tag(content);`). It performs a benign regex-based substitution and does not execute malicious actions (e.g., code injection, file operations, network calls). The tool itself is neutral; its potential harm depends on how the converted JavaScript is used, which is not determined by this code alone."
+        }
+    },
+    "257": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code configures logging using the `rich` library for enhanced terminal output. It sets up handlers and formatters but does not contain any malicious operations such as unauthorized data access, network calls, or system compromises. The functionality is legitimate and focused on improving log presentation."
+        }
+    },
+    "258": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a function that prints a rude message but does not perform any malicious actions (e.g., data theft, system harm, or unauthorized access). It lacks harmful behavior beyond offensive output."
+        }
+    },
+    "259": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code consists of unit tests using pytest to validate data processing steps. It checks statistical properties and data integrity but does not contain any malicious operations such as unauthorized data exfiltration, system manipulation, or harmful payloads. The operations are typical for data validation in a testing environment."
+        }
+    },
+    "260": {
+        "deepseek-r1": {
+            "output": "The code is not malicious. \n\n**Reason:** The script starts a threaded HTTP server using Python's standard libraries, serving files from the current directory. It binds to `localhost`, restricting access to the local machine, and uses default/expected behavior without hidden payloads, remote exploits, or data exfiltration. This is a common legitimate way to host a local development server."
+        }
+    },
+    "261": {
+        "deepseek-r1": {
+            "output": "**Step-by-Step Explanation:**\n\n1. **Imports and Dependencies:** The code imports `json` and `FileUtilsEx` from a module `basic`. The behavior of `FileUtilsEx` is critical but not visible here.\n2. **Class and Methods:** The `JsonUtilsEx` class has two static methods:\n   - `toPythonObjFromFile`: Reads a JSON file and returns its parsed content (standard operation).\n   - `toStrByFile`: Converts data to a JSON string and writes it to a file using `FileUtilsEx.writeFile`.\n3. **File Operations:** The code performs file reading/writing but does not show:\n   - Path traversal (e.g., accessing sensitive system files).\n   - Execution of arbitrary code.\n   - Obfuscated or suspicious logic.\n4. **No Overt Malicious Indicators:** Without evidence of dangerous file paths, code execution, or exploitation attempts in the visible code, the operations appear legitimate.\n\n**Conclusion:** No  \n**Reason:** The provided code performs standard JSON file read/write operations and shows no direct malicious behavior (e.g., code execution, network calls, or file system abuse). Maliciousness would depend on the hidden `FileUtilsEx` implementation, which is not provided here."
+        }
+    },
+    "262": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the current directory on `localhost`. It does not exhibit malicious behavior such as data exfiltration, remote code execution, or persistence mechanisms. It is a common utility for local development, though care should be taken to avoid exposing sensitive files unintentionally."
+        }
+    },
+    "263": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code defines HTML templates for embedding ReDoc and Swagger UI documentation tools. It references trusted CDNs (jsdelivr.net) for loading required CSS/JS resources, which is standard practice for these tools. There is no malicious payload, obfuscation, or suspicious behavior (e.g., data exfiltration, phishing). The code is legitimate for rendering API documentation."
+        }
+    },
+    "264": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a text embedding utility using the legitimate `sentence-transformers` library. It loads a public Hugging Face model (BAAI/bge models) and performs standard embedding operations without any hidden malicious behavior (e.g., no file/network operations, code injection, or obfuscation)."
+        }
+    },
+    "265": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code disrupts execution by calling `exit(1)` upon import, intentionally crashing the program. While not directly harmful (e.g., stealing data), it masquerades as a legitimate package and redirects users to a specific URL under the guise of security advice, which could indicate phishing, social engineering, or a denial-of-service attack."
+        }
+    },
+    "266": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries to serve files from the script's directory on `localhost`. It does not contain any malicious payloads, data exfiltration, remote code execution, or other harmful behaviors. The server is bound to localhost by default, limiting exposure to the local machine unless manually configured otherwise."
+        }
+    },
+    "267": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not contain hidden malicious payloads, data exfiltration, remote code execution, or other harmful behavior. The server is restricted to local access by default unless manually reconfigured."
+        }
+    },
+    "268": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code implements a numerical algorithm involving Schur decomposition and Sylvester equation solving, typical in matrix computations for tasks like image compression or model reduction. There are no signs of malicious behavior such as file manipulation, network calls, or harmful system interactions."
+        }
+    },
+    "269": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code snippet simply assigns a version number to a variable. It contains no executable logic, external dependencies, or operations that could compromise security (e.g., file/network access, code injection, etc.). Declaring a version string alone is not indicative of malicious behavior."
+        }
+    },
+    "270": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code is a benign script demonstrating basic Python functions. It greets a user and checks if numbers are even or odd. There are no malicious operations, such as file manipulation, network calls, or system commands."
+        }
+    },
+    "271": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code focuses on generating message headers and messages with metadata (timestamps, UUIDs, protocol version). It handles date serialization/deserialization and constructs message dictionaries. There are no overtly malicious actions (e.g., code execution, network calls, file operations, or unsafe deserialization). The use of `uuid4` and standard libraries suggests normal utility functions for message handling."
+        }
+    },
+    "272": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code appears to be a standard API client implementation. It retrieves configuration values (URL, API token) from a settings module, constructs API requests using the `Params` dataclass, and handles responses. There is no overtly malicious behavior (e.g., obfuscation, payload execution, network exploitation, or file system manipulation) in the provided code snippet. The use of an API token and URL is typical for API integration and does not inherently indicate malice."
+        }
+    },
+    "273": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code sets up a threaded HTTP server using standard Python libraries, serving files from the local directory. It binds to `localhost`, limiting access to the local machine, and does not include malicious payloads, data exfiltration, or remote exploitation features. The functionality is typical for a basic local file server."
+        }
+    },
+    "274": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code is a standard entry point for a CLI application using the `tap-jsonplaceholder` package, which is typically used for interacting with the JSONPlaceholder API (a fake REST API for testing). It imports and runs a CLI class without any malicious functions like unauthorized access, data exfiltration, or system manipulation."
+        }
+    },
+    "275": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code uses the `tqdm` library to create a progress bar with a rainbow theme for visual purposes. It does not perform any malicious actions such as file manipulation, network requests, system commands, or data theft. The script simply demonstrates a custom progress bar and sleeps to simulate work."
+        }
+    },
+    "276": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code appears to be a legitimate vector visualization tool using standard libraries (Tkinter, NumPy, Matplotlib). It processes vector operations (addition, scaling, reflection, shear) and generates plots. There are no indicators of malicious behavior such as file manipulation, network calls, privilege escalation, or payload injection."
+        }
+    },
+    "277": {
+        "deepseek-r1": {
+            "output": "No  \nThe code provided is a standard unit test for a function `add_one` using Python's `unittest` framework. It checks if adding 1 to 5 results in 6, which is legitimate testing behavior. There are no malicious operations (e.g., file manipulation, network calls, system commands) or obfuscated code."
+        }
+    },
+    "278": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a local HTTP server for worker management and handles specific GET/POST endpoints. While it opens a browser and uses WebSocket URLs, there is no evidence of malicious payloads, data exfiltration, unauthorized access, or harmful actions. The functionality appears focused on managing workers via the `funcnodes` library, typical of a legitimate tool or service."
+        }
+    },
+    "279": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There are no indicators of malicious behavior (e.g., payload execution, data exfiltration, or remote code execution)."
+        }
+    },
+    "280": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines a logging utility class `Sawyer` that uses safe YAML loading and standard logging practices. It does not contain any hidden malicious operations like code execution, data exfiltration, or system manipulation. The decorator tracks function execution for logging purposes, with user-defined callbacks, but does not inherently introduce vulnerabilities."
+        }
+    },
+    "281": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code provides functionality for authenticating and uploading files to Google Drive using their API. It uses standard OAuth credentials and interacts with Google Drive services as intended. There's no evidence of malicious behavior such as data exfiltration, unauthorized access, or payload execution. The operations are consistent with legitimate file upload tasks."
+        }
+    },
+    "282": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code imports and executes the `trustpy` module, which is not a standard Python library. If `trustpy` contains malicious code (e.g., hidden payloads, data exfiltration, or system manipulation), this script acts as a conduit to run it. The script itself lacks legitimate functionality beyond invoking `trustpy.main`, making its safety entirely dependent on the external module's intent, which is unknown but potentially harmful."
+        }
+    },
+    "283": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code defines a device control class for a Eurotherm temperature controller using the ophyd library (common in scientific instrumentation). It configures PID parameters and connection settings, with no evidence of malicious behavior like payloads, data exfiltration, or system exploitation."
+        }
+    },
+    "284": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code is a web scraping script using Selenium to collect Google Image search results and save URLs to an Excel file. While it automates interactions with Google Images (which may violate Google's terms of service), there is no overtly malicious behavior such as data theft, system exploitation, or unauthorized access. The script focuses on data extraction and does not contain harmful payloads or obfuscated code."
+        }
+    },
+    "285": {
+        "deepseek-r1": {
+            "output": "No  \nThe code defines a simple function that increments a given number by 1. There are no malicious operations, external dependencies, or suspicious patterns like file/system interactions, obfuscation, or network calls."
+        }
+    },
+    "286": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The provided code is a standard unit test using Python's `unittest` framework. It tests the `add_one` function from the `sample.simple` module and contains no malicious operations like system calls, file manipulations, network interactions, or obfuscated code."
+        }
+    },
+    "287": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code establishes a connection to an MQTT broker (localhost) using a library (`RobustClient`), publishes test messages to a topic, and stops. While it uses hardcoded credentials (security risk), there is no observable malicious behavior (e.g., data exfiltration, system exploitation, or payload execution). The code appears to be a legitimate (albeit insecure) MQTT client test script."
+        }
+    },
+    "288": {
+        "deepseek-r1": {
+            "output": "**Decision:** no\n\n**Reason:** The code is designed to fetch the WAN (public) IP address using legitimate IP-checking services like `ifconfig.me`. It uses the `requests` library for HTTP calls but does not exhibit malicious behavior such as data exfiltration, system compromise, or obfuscated payloads. The URLs mentioned are known, non-malicious services. The code performs no unauthorized actions and serves its documented purpose."
+        }
+    },
+    "289": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a basic threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost`, limiting access to the local machine. There's no malicious payload, data exfiltration, or harmful operations. The functionality is legitimate and non-destructive."
+        }
+    },
+    "290": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code appears to handle Firebase Cloud Messaging (FCM) authentication using Google's official libraries (`google.auth`). It focuses on securely initializing and refreshing OAuth2 credentials for authorized API access. There is no evidence of data exfiltration, malicious payloads, or unauthorized system interactions. The operations are consistent with legitimate FCM token management."
+        }
+    },
+    "291": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a simple threaded HTTP server using Python's standard libraries, serving files from the script's directory on `localhost`. It does not contain any malicious payloads, data exfiltration, persistence mechanisms, or external connections. The server is explicitly bound to `localhost`, limiting exposure to the local machine."
+        }
+    },
+    "292": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code provides utility functions for removing specific character sets from strings (e.g., punctuation, digits). There is no malicious behavior such as data exfiltration, system manipulation, or hidden payloads. It appears to be a legitimate text-processing utility."
+        }
+    },
+    "293": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code communicates with external servers using an IP address (35.246.163.71) and a non-standard App Engine domain, which are red flags for potential command-and-control infrastructure. It sends and retrieves data to/from these endpoints, suggesting possible data exfiltration or unauthorized remote control. The use of raw IPs (instead of domains) and non-descriptive URLs increases suspicion of malicious intent."
+        }
+    },
+    "294": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code simply opens a URL (`https://app.tea.xyz/`) in the default web browser using the standard `webbrowser` library. There is no hidden payload, data exfiltration, or malicious behavior (e.g., executing system commands, accessing sensitive files, or persistence mechanisms). The URL appears to belong to a legitimate service (\"tea.xyz\"), and the action of opening a webpage is not inherently malicious."
+        }
+    },
+    "295": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code defines two functions for reading and processing user input. There are no malicious operations such as executing system commands, accessing sensitive files, or network interactions. The functions are simple utilities for input handling, and the default lambda functions do not introduce harmful behavior."
+        }
+    },
+    "296": {
+        "deepseek-r1": {
+            "output": "**Decision:** no  \n**Reason:** The code defines a Pydantic settings class for configuring a PostgreSQL database connection, using environment variables and default values. It focuses on assembling a database URI and lacks any malicious behaviors (e.g., data exfiltration, unauthorized access, or payload execution). The operations are standard for application configuration management."
+        }
+    },
+    "297": {
+        "deepseek-r1": {
+            "output": "**Decision**: no  \n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries, binding to `localhost` (not exposed externally). It serves files from the script's directory, which is typical behavior for a local development server. There are no indicators of malicious activities (e.g., payload execution, data exfiltration, or system manipulation)."
+        }
+    },
+    "298": {
+        "deepseek-r1": {
+            "output": "no\n\nThe code sets up a simple threaded HTTP server using Python's standard libraries, but it explicitly binds to **localhost** (not exposed externally) and serves files from the script's directory. While `http.server` can be risky if misconfigured (e.g., exposing sensitive files to the network), this implementation limits access to the local machine and lacks overtly malicious behavior like payload execution, data exfiltration, or persistence mechanisms."
+        }
+    },
+    "299": {
+        "deepseek-r1": {
+            "output": "**Decision**: No\n\n**Reason**: The code sets up a threaded HTTP server using Python's standard libraries, serving files from the script's directory. It binds to `localhost` (not externally exposed) and uses default/expected behavior. No malicious activities like payload execution, data exfiltration, or persistence mechanisms are present."
+        }
+    }
+}

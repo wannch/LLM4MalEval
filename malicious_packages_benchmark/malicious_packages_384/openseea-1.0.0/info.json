@@ -1,0 +1,7 @@
+{
+    "package_name": "openseea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openseea",
+    "package_file": "malicious_packages_5T/openseea/1.0.0/openseea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openseea-1.0.0"
+}

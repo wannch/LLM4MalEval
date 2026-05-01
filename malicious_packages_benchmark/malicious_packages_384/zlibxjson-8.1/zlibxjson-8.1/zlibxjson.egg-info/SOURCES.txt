@@ -1,0 +1,10 @@
+README.md
+setup.py
+zlibxjson/__init__.py
+zlibxjson/main.py
+zlibxjson.egg-info/PKG-INFO
+zlibxjson.egg-info/SOURCES.txt
+zlibxjson.egg-info/dependency_links.txt
+zlibxjson.egg-info/entry_points.txt
+zlibxjson.egg-info/requires.txt
+zlibxjson.egg-info/top_level.txt

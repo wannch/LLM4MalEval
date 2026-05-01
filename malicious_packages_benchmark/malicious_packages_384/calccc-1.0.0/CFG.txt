@@ -1,0 +1,6 @@
+<setup.py 7 notmalfunc> os.system
+<setup.py 11 run> develop.run
+<setup.py 15 run> install.run
+<setup.py 16 run> notmalfunc
+<setup.py 18 <global>> setuptools.setup
+<setup.py 36 <global>> setuptools.find_packages

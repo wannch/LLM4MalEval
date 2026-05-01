@@ -1,0 +1,7 @@
+{
+    "package_name": "openxsea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openxsea",
+    "package_file": "malicious_packages_5T/openxsea/1.0.0/openxsea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openxsea-1.0.0"
+}

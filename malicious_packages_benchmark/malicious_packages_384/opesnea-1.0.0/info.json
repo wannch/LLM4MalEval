@@ -1,0 +1,7 @@
+{
+    "package_name": "opesnea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/opesnea",
+    "package_file": "malicious_packages_5T/opesnea/1.0.0/opesnea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/opesnea-1.0.0"
+}

@@ -1,0 +1,9 @@
+{
+    "requests.get": 1,
+    "setup": 1,
+    "install.run": 1,
+    "find_packages": 1,
+    "getpass.getuser": 1,
+    "socket.gethostname": 1,
+    "os.getcwd": 1
+}

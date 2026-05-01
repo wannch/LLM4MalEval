@@ -1,0 +1,7 @@
+{
+    "package_name": "zlibxjson",
+    "package_version": "8.1",
+    "package_path": "malicious_packages_5T/zlibxjson",
+    "package_file": "malicious_packages_5T/zlibxjson/8.1/zlibxjson-8.1.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/zlibxjson-8.1"
+}

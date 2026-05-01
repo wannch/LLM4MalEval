@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/pycoloramade-1.4.2/pycoloramade-1.4.2/modules/others/sender.py;1-27

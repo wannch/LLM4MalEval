@@ -1,0 +1,2 @@
+malicious_packages_20240112-20240408_extract/codeui-0.0.1/codeui-0.0.1/codeui/__init__.py;20-44
+malicious_packages_20240112-20240408_extract/codeui-0.0.1/codeui-0.0.1/directui/__init__.py;20-44

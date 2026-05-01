@@ -1,0 +1,7 @@
+{
+    "package_name": "opwnsea",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/opwnsea",
+    "package_file": "malicious_packages_5T/opwnsea/1.0.0/opwnsea-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/opwnsea-1.0.0"
+}

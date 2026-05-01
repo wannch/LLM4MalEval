@@ -1,0 +1,1 @@
+malicious_packages_5T_extract/strongkong-0.0.1/strongkong-0.0.1/strongkong/color.py;1-19

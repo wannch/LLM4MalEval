@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/discordpy_bypass-1.0/discordpy_bypass-1.0/discordpy_bypass/discordpy_bypass.py;1-5

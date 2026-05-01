@@ -1,0 +1,7 @@
+{
+    "package_name": "netfetcher",
+    "package_version": "1.7.5",
+    "package_path": "malicious_packages_5T/netfetcher",
+    "package_file": "malicious_packages_5T/netfetcher/1.7.5/netfetcher-1.7.5.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/netfetcher-1.7.5"
+}

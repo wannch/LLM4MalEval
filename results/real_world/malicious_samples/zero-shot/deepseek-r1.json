@@ -1,0 +1,1922 @@
+{
+    "0": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code defines a custom installation class that collects system information (hostname, current directory, username) and exfiltrates it to a remote server via HTTP GET request during installation. The destination domain (oast.fun) is associated with security testing tools like Burp Collaborator, commonly used for malicious data exfiltration testing. This behavior constitutes unauthorized data collection and transmission, indicating malicious intent."
+        }
+    },
+    "1": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects system and environment information (OS, uptime, hostname, import context/stack) and sends it to an external webhook URL (`webhook.site`). Exfiltrating such data to an unauthorized third-party server without user consent is indicative of malicious behavior, especially since the destination is not a legitimate analytics endpoint for a known service."
+        }
+    },
+    "2": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code collects system information (hostname, current directory, username) and exfiltrates it to a suspicious external domain (`oast.fun`, often linked to testing tools for detecting data leaks). This behavior is not part of legitimate software functionality and indicates malicious data harvesting."
+        }
+    },
+    "3": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects environment variables and sends them to an external URL (`oastify.com`, associated with Burp Collaborator, commonly used in penetration testing). Exfiltrating sensitive system/env data to a remote server is malicious behavior."
+        }
+    },
+    "4": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code collects environment variables and sends them to an external domain (`oastify.com`), which is associated with Burp Collaborator—a tool used to detect out-of-band vulnerabilities. This constitutes data exfiltration, potentially leaking sensitive information (e.g., credentials, API keys) to a malicious actor."
+        }
+    },
+    "5": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects environment variables and sends them to an external domain (ngrok.app) without user consent. This is a common exfiltration technique to steal sensitive data (e.g., API keys, credentials) from the system, making it malicious."
+        }
+    },
+    "6": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code decodes and executes a base64-encoded curl command that sends environment variables to a remote server (`ngrok-free.app`), indicating potential data exfiltration."
+        }
+    },
+    "7": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code creates a reverse shell by connecting to a remote host (\"0.tcp.eu.ngrok.io\" on port 18315), redirects standard I/O to the socket, and launches an interactive Bash shell. This is a clear indicator of malicious intent to establish unauthorized remote control over a system."
+        }
+    },
+    "8": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code establishes a reverse shell by connecting to a remote server (\"8.tcp.ngrok.io\" on port 14060), redirects standard I/O to the socket, and spawns an interactive shell (`/bin/sh -i`). This allows an attacker to remotely control the compromised system, making it malicious."
+        }
+    },
+    "9": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code establishes a reverse shell by connecting to a remote server (\"6.tcp.ngrok.io\" on port 14283), redirects standard I/O to the socket, and launches an interactive shell (`/bin/sh -i`). This allows an attacker to remotely control the compromised system, making it malicious."
+        }
+    },
+    "10": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects all environment variables and sends them to a remote server (via an ngrok URL, often used for data exfiltration). Environment variables may contain sensitive data (e.g., API keys, credentials), and unauthorized transmission to an external server is malicious."
+        }
+    },
+    "11": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code establishes a reverse shell by connecting to a specified host and port (\"6.tcp.eu.ngrok.io\", 13090), redirects standard I/O to the socket, and launches an interactive shell (`/bin/sh -i`). This allows remote command execution, a hallmark of malicious behavior aimed at unauthorized system control."
+        }
+    },
+    "12": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code retrieves a Google Cloud service account token from the metadata server and sends it to an external URL (`ngrok-free.app` domain), which is a common technique for exfiltrating sensitive credentials to an attacker-controlled server. This poses a significant security risk by exposing cloud credentials."
+        }
+    },
+    "13": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code sends the user's home directory path and current timestamp to a Discord webhook URL without user consent. This unauthorized data exfiltration, especially embedded in a post-install script, constitutes malicious behavior."
+        }
+    },
+    "14": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code attempts to modify user `.profile` files by appending a decoded string, which could execute malicious commands on login. It accesses `/etc/passwd` to target users with UID 1000, typical of regular users, and uses stealthy error handling to avoid detection."
+        }
+    },
+    "15": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code collects sensitive system and network information (IP details, device model, OS info) and exfiltrates it to a remote Telegram bot using hardcoded credentials. This unauthorized data harvesting and transmission to a third party without user consent classify it as malicious."
+        }
+    },
+    "16": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code attempts to modify the `.profile` file of the user with UID 1000 by appending a decoded payload (hidden via character manipulation). This payload could execute arbitrary commands on user login. Accessing `/etc/passwd` and stealthily altering user profiles are hallmarks of malicious persistence mechanisms."
+        }
+    },
+    "17": {
+        "deepseek-r1": {
+            "output": "Query LLM Error"
+        }
+    },
+    "18": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an encrypted payload using a hardcoded key, which is a common technique to hide malicious behavior. It checks if the OS is Windows (`nt`) and uses libraries like `requests` and `Fernet` for potential network communication or data exfiltration. The obfuscated class name and encrypted payload suggest intentional evasion of detection."
+        }
+    },
+    "19": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to obfuscate a payload decrypted at runtime (`exec(Fernet(...).decrypt(...))`), which executes arbitrary hidden code. This is a common tactic to evade detection. The payload is fetched only on Windows (`os.name == \"nt\"`), suggesting targeted malicious behavior. Legitimate code rarely employs such obfuscation."
+        }
+    },
+    "20": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code establishes a reverse shell by connecting to a remote IP (`85.159.212.47:61985`), redirects standard I/O to the socket, and spawns an interactive shell (`/bin/sh`). This behavior is characteristic of malicious payloads aimed at granting unauthorized remote access."
+        }
+    },
+    "21": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads and executes a JAR file from a GitHub URL and a JRE from a Dropbox link, then runs them with hidden windows. The use of base64 obfuscation, external resource retrieval, and stealthy execution flags it as malicious."
+        }
+    },
+    "22": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a payload, targeting Windows systems. This obfuscation technique is commonly used to hide malicious behavior, such as downloading or running unauthorized code."
+        }
+    },
+    "23": {
+        "deepseek-r1": {
+            "output": "Yes\n\nThe code is deemed malicious due to several indicators:\n1. **Obfuscation**: The class name is intentionally obfuscated with a random string.\n2. **Encrypted Payload**: It decrypts and executes an encrypted payload using a hard-coded Fernet key, a common tactic to hide malicious code.\n3. **Dynamic Execution**: The `exec` function is used to run the decrypted payload, which could perform arbitrary malicious actions (e.g., downloading malware, system compromise).\n4. **OS Check**: Targets Windows (`os.name == \"nt\"`), suggesting platform-specific malicious behavior.\n5. **Bundling with Legitimate Code**: Calls `install.run(self)` to mask malicious activity within a seemingly legitimate installation process."
+        }
+    },
+    "24": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code checks for Windows OS, uses Fernet encryption to hide a payload, and executes decrypted code via `exec()`, which is typical of malicious behavior (e.g., downloading/running hidden commands). The obfuscated class name and embedded encrypted payload further indicate intent to evade detection."
+        }
+    },
+    "25": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, which is a common technique to obfuscate malicious behavior. The hardcoded key and encrypted data suggest an attempt to evade detection by security tools. Targeting Windows systems (`os.name == \"nt\"`) further raises suspicion of malicious intent."
+        }
+    },
+    "26": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code dynamically decrypts and executes an encrypted payload using a hardcoded Fernet key, a common tactic to hide malicious behavior (e.g., downloading/running malware). It also checks for the Windows OS (os.name == \"nt\") and uses suspicious imports (requests, Fernet), suggesting potential remote code execution or data exfiltration."
+        }
+    },
+    "27": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a payload dynamically. It checks for Windows OS (os.name == \"nt\") and employs obfuscation (random class name), which are common tactics in malware to evade detection and deliver malicious code. The encrypted payload is executed via `exec()`, indicating hidden malicious behavior."
+        }
+    },
+    "28": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a payload, which is a common tactic to obfuscate malicious behavior. The use of `exec` on a decrypted byte string suggests hidden code execution, potentially downloading or running harmful commands. Targeting Windows (`os.name == \"nt\"`) further indicates platform-specific malicious intent."
+        }
+    },
+    "29": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to dynamically decrypt and execute hidden payloads, checks for a Windows OS (os.name == \"nt\"), and obfuscates malicious behavior (e.g., potential remote code execution). This pattern is typical of malware designed to evade detection."
+        }
+    },
+    "30": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, which is typical of malicious scripts aiming to conceal harmful activities. The combination of OS-checking (specifically for Windows), dynamic code execution via `exec()`, and overriding installation processes indicates an intent to deploy potentially malicious code stealthily."
+        }
+    },
+    "31": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet module. This is a common technique to hide malicious behavior, such as downloading and running unauthorized code. The payload is fetched during installation, which could compromise systems without detection. Obfuscated class names further suggest intent to evade analysis."
+        }
+    },
+    "32": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code is likely malicious because it uses Fernet encryption to decrypt and execute a payload, checks if the operating system is Windows (os.name == \"nt\"), and dynamically executes obfuscated code during installation. The hardcoded encryption key and encrypted payload suggest an attempt to hide malicious behavior, such as downloading or running unauthorized code."
+        }
+    },
+    "33": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a payload, which is a common technique to hide malicious behavior. The hard-coded key and encrypted payload suggest obfuscation of harmful actions, such as downloading/running unauthorized code. Additionally, it specifically targets Windows systems (`os.name == \"nt\"`), further indicating potential malware intent."
+        }
+    },
+    "34": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`. This is a common tactic to obfuscate malicious behavior. Additionally, it checks for the Windows OS (`nt`) and imports `requests`, suggesting potential network-based malicious activity (e.g., downloading/executing remote code). The structure mimics a legitimate installer but injects hidden code."
+        }
+    },
+    "35": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, which is a common tactic to obfuscate malicious behavior. It checks for a Windows OS (`nt`) and imports `requests`, suggesting potential network communication (e.g., downloading malware or exfiltrating data). The encrypted payload and hardcoded key indicate an attempt to evade detection."
+        }
+    },
+    "36": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code contains encrypted payloads decrypted and executed at runtime using Fernet symmetric encryption (hardcoded key). This is a common malware technique to hide malicious behavior. The code checks if the OS is Windows (os.name == \"nt\") and uses exec() to run obfuscated code, which strongly suggests intentional evasion of static analysis. The combination of runtime decryption, exec(), and OS-specific behavior indicates malicious intent."
+        }
+    },
+    "37": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code uses Fernet encryption to hide a payload, executes it via `exec()`, and checks for Windows OS. This obfuscation and execution of hidden code is typical of malicious behavior."
+        }
+    },
+    "38": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an obfuscated payload using the Fernet library, a common tactic to hide malicious behavior. Targeting Windows (`os.name == \"nt\"`), it dynamically runs hidden code, which could involve unauthorized activities like downloading malware or establishing persistence. The override of `install.run` further suggests malicious intent to embed itself during installation."
+        }
+    },
+    "39": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code executes an external executable (`kitty.exe`) from the package's resources and opens a URL (Rickroll video) without user consent. Running an unknown `.exe` file poses a significant security risk, as it could perform malicious actions undetected. The use of threading to launch these actions suggests an attempt to obscure their execution."
+        }
+    },
+    "40": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable (`helper.exe`) from a remote URL and executes it without validation. It also fetches a secondary URL dynamically to retrieve a download link, which could allow arbitrary code execution. Silent error handling (ignoring exceptions) and executing downloaded files are common malware tactics."
+        }
+    },
+    "41": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a suspicious URL, saves it to a temporary directory with a random UUID name, and executes it silently (`CREATE_NO_WINDOW` flag). This behavior is characteristic of malware attempting to download and run malicious payloads stealthily."
+        }
+    },
+    "42": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects the hostname and OS username, then sends this information to a potentially malicious domain (`oastify.com`, commonly associated with security testing tools like Burp Collaborator). This exfiltration of sensitive data to an external URL without consent indicates malicious intent."
+        }
+    },
+    "43": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects files from the system, compresses them, and exfiltrates the data to a Telegram bot using hardcoded API tokens. It also sends system information (hostname, IP) and uses offensive language in messages, indicating malicious intent for data theft."
+        }
+    },
+    "44": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code exfiltrates sensitive data (environment variables, .env files, SSH keys) to a remote server (3.95.136.197) using base64 encoding and curl commands. It runs during package installation/development, indicating malicious intent to steal credentials."
+        }
+    },
+    "45": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code decodes and executes a base64-encoded command that downloads and runs a script from a Discord CDN URL. This behavior is characteristic of malware, as it fetches and executes arbitrary external code during installation. The use of setup tools hooks (`AfterInstall`) ensures the malicious code runs automatically when the package is installed."
+        }
+    },
+    "46": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a suspicious IP address (194.163.191.205) on a non-standard port (6963) and saves it to the user's Documents folder. It then executes the downloaded file (`os.startfile`), which is typical of malware behavior. The combination of downloading an unknown executable and immediately launching it strongly suggests malicious intent."
+        }
+    },
+    "47": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decodes and executes a base64-encoded command that downloads and runs a batch file from an external Discord URL. This occurs during installation via overridden `install` class methods, indicating stealthy execution of potentially malicious external code."
+        }
+    },
+    "48": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code decodes and executes a base64-encoded command that downloads a batch file from a Discord URL and runs it. This behavior is characteristic of malware, as it retrieves and executes remote code without user consent, often to deploy malicious payloads. The use of base64 obfuscation and execution during installation further indicates malicious intent."
+        }
+    },
+    "49": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code decodes and executes a base64-encoded command that downloads a batch file from a Discord URL and runs it. This is a common tactic for deploying malware. The malicious function is triggered during installation via the overridden `AfterInstall` class, which is stealthy and unauthorized behavior."
+        }
+    },
+    "50": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code establishes a reverse shell by connecting to an external domain (\"oastify.com\", associated with testing out-of-band attacks), redirects I/O streams to the socket, and spawns an interactive shell (`/bin/sh -i`). This behavior is characteristic of malicious payloads designed to grant remote control of a system."
+        }
+    },
+    "51": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS, and employs obfuscated code—common indicators of malicious behavior aimed at hiding harmful actions."
+        }
+    },
+    "52": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, which is highly suspicious and typical of malicious scripts. The combination of `exec` with encrypted code obfuscates the true intent, often used to bypass detection. Additionally, the class and method structure suggests it aims to hijack a legitimate installation process (e.g., via `install.run(self)`), indicating a potential supply-chain attack."
+        }
+    },
+    "53": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects all environment variables, encodes them in base64, and sends them to a remote domain (burpcollaborator.net, often used in security testing for data exfiltration). This is a clear attempt to steal sensitive system/application data, making it malicious."
+        }
+    },
+    "54": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects system information (OS, uptime, hostname) and import context details, then sends this data to an external URL (`https://webhook.site/...`). Unauthorized data exfiltration to a remote server without user consent indicates malicious behavior, even if no overtly harmful payloads are present."
+        }
+    },
+    "55": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code downloads and executes external executables (marshal.exe or trezznor) from GitHub, stores them in the TEMP directory, and runs them. This behavior, combined with obfuscation (renamed modules, base64 encoding), indicates malicious intent to execute untrusted code."
+        }
+    },
+    "56": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using Fernet with a hardcoded key. This behavior is characteristic of malware attempting to hide malicious actions (e.g., downloading/executing additional payloads) while evading static analysis. The use of `exec` on obfuscated code and dependencies like `requests` further raises suspicion."
+        }
+    },
+    "57": {
+        "deepseek-r1": {
+            "output": "Yes\n\nThe code is malicious because it attempts to decrypt and execute an encrypted payload using the Fernet module. Specifically, it checks if the OS is Windows (os.name == \"nt\"), imports external libraries (requests, Fernet), and runs obfuscated code via exec(Fernet(...).decrypt(...)), which is a common tactic to hide malicious behavior. The decrypted payload could perform harmful actions like downloading malware or stealing data. The use of hardcoded encryption keys and exec() to run hidden code strongly indicates malicious intent."
+        }
+    },
+    "58": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, which is a common tactic to obfuscate malicious behavior. The `exec` call on decrypted data and the check for Windows (`os.name == \"nt\"`) suggest potential targeted malicious activity, such as downloading or running harmful code."
+        }
+    },
+    "59": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code decodes and executes a base64 payload that creates VBScript and BAT files in the system's startup directories. These scripts download an executable (`Runtime.exe`) from a Discord CDN URL and execute it, which is typical malware behavior (e.g., downloading and running a remote payload). The use of `subprocess.run` with elevated privileges and attempts to hide errors further indicate malicious intent."
+        }
+    },
+    "60": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code reads system files like `/etc/passwd`, targets user profiles (`.profile`), and appends obfuscated content (likely malicious payload) to them. This behavior indicates intentional system compromise."
+        }
+    },
+    "61": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a Discord URL, saves it as \"explorer.exe\" in the user's AppData directory (a common tactic to disguise malware), and executes it. This behavior is characteristic of malware attempting to retrieve and run a malicious payload stealthily."
+        }
+    },
+    "62": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code executes an external binary (`client.exe`) located in the same directory as the script. Since the behavior of `client.exe` is unknown and the script suppresses all errors, it could launch malicious payloads without user consent. This pattern is typical of malware droppers."
+        }
+    },
+    "63": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads an executable from a Discord URL, saves it as \"explorer.exe\" in the user's AppData directory (a common tactic to disguise malware), and executes it with elevated privileges (`shell=True`). This behavior is consistent with malicious payload delivery."
+        }
+    },
+    "64": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code exhibits multiple malicious behaviors:\n1. **Data Theft:** Extracts sensitive browser data (passwords, cookies, credit cards, history) and Discord/authentication tokens.\n2. **Persistence:** Copies itself to the startup folder (`Startup` class) to survive reboots.\n3. **Keylogging:** Logs keystrokes (`KeyLogger` class) to capture user input.\n4. **System Reconnaissance:** Collects system/hardware info (IP, username, OS, HWID) and takes screenshots/webcam photos.\n5. **Remote Control:** Connects to a C2 server (`sio.connect(api_url)`) and executes commands (e.g., file encryption, downloading/uploading files).\n6. **Ransomware-like Features:** Uses `Fernet` encryption to encrypt/decrypt files, a common ransomware tactic.\n7. **Exfiltration:** Sends stolen data to a hardcoded API endpoint (`yeezy-api.onrender.com`).\n\nThese actions align with malware designed for credential harvesting, surveillance, and remote exploitation."
+        }
+    },
+    "65": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code collects the system's public IP address using an external API and sends it to a hardcoded Discord webhook URL. This constitutes unauthorized data exfiltration, as the IP address is transmitted to a third-party service without user consent or legitimate purpose."
+        }
+    },
+    "66": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code downloads an executable (`howl.exe`) from a GitHub repository and executes it under a misleading name (`RealtekHDAudioManager.exe`), which mimics a legitimate audio driver. This behavior is characteristic of malware delivery: fetching an external payload and launching it without user consent. The use of `curl` to retrieve the file and immediate execution (`start`) strongly suggest malicious intent."
+        }
+    },
+    "67": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code performs multiple malicious activities including evasion techniques, data collection (clipboard, screenshots, cookies), process execution, data exfiltration via Discord/TextStorage, and persistence mechanisms (autostart, profile modification). These actions align with typical malware behavior."
+        }
+    },
+    "68": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decodes and executes a base64-encoded payload that searches for Telegram executables, collects session data, and exfiltrates it to a remote Telegram bot. This constitutes unauthorized data theft and exfiltration, confirming malicious intent."
+        }
+    },
+    "69": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects system information (OS, hostname, uptime) and the import call stack, then sends it to an external URL (`webhook.site`). This behavior resembles data exfiltration to a third-party server, which is typical of spyware or malicious tracking. The use of a non-transparent webhook URL further indicates unauthorized data transmission."
+        }
+    },
+    "70": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code is malicious because it establishes persistence via the Windows Registry, monitors the clipboard for changes, and exfiltrates captured data to a remote Discord webhook (decoded from a base64 string). This behavior aligns with information-stealing malware, aiming to collect sensitive data like copied credentials or cryptocurrency wallet addresses."
+        }
+    },
+    "71": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code downloads a script from a Discord CDN URL, saves it to a system directory, creates a batch file to run it silently, and adds a registry entry to execute on startup. These actions (remote code execution, persistence via registry, hidden execution) are characteristic of malicious behavior."
+        }
+    },
+    "72": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code downloads and executes external JAR/ZIP files from unverified URLs (GitHub and Dropbox), hides process windows, and uses base64 obfuscation to conceal its behavior—common tactics in malicious software to evade detection."
+        }
+    },
+    "73": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code defines a custom installation class that collects system information (hostname, current directory, username) and exfiltrates it to a suspicious external domain (\"oast.fun\", associated with out-of-band attack tools). This behavior is characteristic of data-stealing malware."
+        }
+    },
+    "74": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code contains a function (`damage_system`) that attempts to delete all files in `C:\\Windows\\System32`, which would severely damage a Windows system. Additionally, it executes an external executable (`kitty.exe`) from the package resources and opens a URL, both of which are suspicious and potentially harmful actions."
+        }
+    },
+    "75": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects sensitive system information (hostname, user details, directory contents, /etc/passwd, bash history) and exfiltrates it via a POST request to an external IP address (43.139.166.32). Accessing files like `/etc/passwd` and user history is a hallmark of malicious data harvesting."
+        }
+    },
+    "76": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide and execute a malicious payload. It dynamically decrypts and runs hidden code, a common malware technique to evade detection. The random class name and OS check further suggest intent to deploy malicious activity on Windows systems."
+        }
+    },
+    "77": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, which can run arbitrary malicious code. It specifically targets Windows systems (`os.name == \"nt\"`) and appears to hijack an installation process, typical of malware behavior. The encrypted payload and dynamic execution evade detection, strongly indicating malicious intent."
+        }
+    },
+    "78": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to obfuscate and execute a hidden payload, dynamically decrypting and running it via `exec()`. This behavior is typical of malware attempting to conceal malicious activities (e.g., downloading/running external code). The payload's origin and purpose are unclear, posing a security risk."
+        }
+    },
+    "79": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code dynamically decrypts and executes a payload using Fernet encryption, which is a common technique to hide malicious behavior. It specifically targets Windows systems (os.name == \"nt\"), and the decrypted payload likely contains undisclosed code (e.g., malware, data exfiltration). The use of `exec` on obfuscated code strongly indicates malicious intent."
+        }
+    },
+    "80": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code uses obfuscation (random class name), dynamically decrypts and executes an encrypted payload via the `Fernet` module, and imports `requests` (often used for malicious network activity). This behavior is typical of malware attempting to hide its true intent."
+        }
+    },
+    "81": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code uses Fernet encryption to hide and execute a payload specifically on Windows systems. The `exec` function runs decrypted code, which can perform arbitrary malicious actions not visible in the analyzed code. Obfuscation (random class name, encrypted payload) and execution of hidden code are strong indicators of malicious intent."
+        }
+    },
+    "82": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to dynamically decrypt and execute a payload, which is a common tactic to hide malicious behavior. The combination of obfuscated class names, hardcoded encryption keys, and the use of `exec()` on decrypted code strongly indicates malicious intent, such as downloading or running unauthorized commands."
+        }
+    },
+    "83": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS (os.name == \"nt\"), and employs obfuscated class/method names. This behavior is typical of malware designed to evade detection while running malicious code."
+        }
+    },
+    "84": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code attempts to decrypt and execute an encrypted payload using the Fernet library, specifically targeting Windows systems (os.name == \"nt\"). The hardcoded encryption key and hidden payload are strong indicators of malicious intent, as this technique is commonly used to obfuscate harmful code execution. The override of the `install.run` method suggests it aims to run during installation, further signaling a potential supply-chain attack."
+        }
+    },
+    "85": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload with `exec`, which is a common tactic to obfuscate malicious behavior. The combination of downloading/executing arbitrary code (via `requests` and `Fernet`) and OS checks for Windows (`nt`) strongly suggests malicious intent, such as running a hidden malware payload during installation."
+        }
+    },
+    "86": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code is malicious because it attempts to execute an encrypted payload using the Fernet cryptographic library. The payload is decrypted and executed via `exec()`, which is a common tactic to hide malicious behavior. Additionally, the code checks if the OS is Windows (`os.name == \"nt\"`) before executing the payload, suggesting platform-specific harmful intent. The use of a hardcoded encryption key and the obfuscated class name further indicate malicious intent."
+        }
+    },
+    "87": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload decrypted and executed via `exec()`, which is a common tactic to obfuscate malicious behavior. The payload is OS-specific (targeting Windows) and dynamically executed, making its intent unclear but highly suspicious. The combination of encryption, dynamic execution, and OS checks strongly suggests malicious intent."
+        }
+    },
+    "88": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to hide a malicious payload, executes it via exec() specifically on Windows systems (os.name == \"nt\"), and employs obfuscation techniques like a random class name. The decrypted payload would run arbitrary code fetched via requests (not shown, but implied by the encryption), making it highly suspicious and likely malicious."
+        }
+    },
+    "89": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload decrypted and executed via `exec()`, a common tactic to conceal malicious activity. It checks for Windows OS (os.name == \"nt\") and dynamically runs encrypted code, which is highly suspicious and indicative of malware."
+        }
+    },
+    "90": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet library. This behavior is typical of malware attempting to hide malicious activities, such as downloading/executing unauthorized code. The combination of obfuscation, encryption, and direct execution (`exec()`) strongly suggests malicious intent."
+        }
+    },
+    "91": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS, and has obfuscated class/method names. This behavior is typical of malware attempting to conceal malicious activity."
+        }
+    },
+    "92": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide a payload, which is decrypted and executed via `exec()`. This obfuscation technique is commonly employed to conceal malicious behavior, such as downloading or running unauthorized code. The check for Windows (`os.name == \"nt\"`) suggests targeted execution on Windows systems."
+        }
+    },
+    "93": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an encrypted payload using the Fernet module. This obfuscated behavior is highly indicative of malicious intent, as it hides the true purpose of the code (e.g., downloading/running unauthorized commands or malware). The use of `exec()` on dynamically decrypted data is a common evasion tactic."
+        }
+    },
+    "94": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide and execute a payload, which is decrypted at runtime. The use of `exec` on decrypted content suggests an attempt to obfuscate malicious behavior, such as downloading or running unauthorized code, especially targeting Windows systems. This pattern aligns with malware tactics to evade detection."
+        }
+    },
+    "95": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decodes and executes a base64 payload that writes malicious scripts to startup directories, downloads an external executable via `bitsadmin` from a Discord CDN URL, and executes it. This behavior indicates persistence mechanisms and potential malware deployment."
+        }
+    },
+    "96": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code decodes a base64 URL, downloads and executes another base64-encoded script from it during package installation (via a setuptools hook). This behavior is characteristic of malware that fetches and runs remote payloads. The use of GitHub Gist for hosting the script and double base64 encoding indicates intentional obfuscation to hide malicious intent."
+        }
+    },
+    "97": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code downloads an executable (`zwerve.exe`) from an external GitHub repository and executes it without user interaction. This behavior is typical of malware, as it stealthily retrieves and runs potentially harmful code."
+        }
+    },
+    "98": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code decodes and executes a base64 payload that downloads and runs a remote executable (`Runtime.exe`) from a Discord URL. It creates persistence by writing files to the Windows Startup directory and uses obfuscation (base64) to hide malicious behavior. The payload also employs `bitsadmin` for stealthy download and execution, typical of malware."
+        }
+    },
+    "99": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code decodes and executes a base64 payload that performs malicious actions. The payload checks for a specific directory, creates it if missing, writes VBScript and batch files to download an executable (`Runtime.exe`) from a suspicious IP address (`51.77.140.144:8086`), and executes it. This behavior indicates unauthorized file downloads and execution, characteristic of malware."
+        }
+    },
+    "100": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses obfuscation techniques (base64, zlib, reversed strings) to hide a payload that is dynamically decoded and executed via `exec()`. This payload runs during package installation (via a custom `install` class), a common tactic in supply-chain attacks. The presence of modules like `os`, `subprocess`, and network/zip utilities suggests potential for malicious actions (e.g., downloading/executing remote code, file manipulation), though the exact payload behavior is obscured. Such obfuscation is strongly indicative of malicious intent."
+        }
+    },
+    "101": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decodes and executes a base64 payload that downloads an executable (`Runtime.exe`) from a suspicious Discord CDN URL and places it in the Windows Startup folder for persistence. It uses `bitsadmin` to download the file and attempts to execute it via a hidden VBScript, indicating malicious intent to deploy malware or establish persistence."
+        }
+    },
+    "102": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code contains functionality to exfiltrate the `keypair.json` file (which typically holds cryptographic private keys) to a remote Telegram bot without user consent. Specifically, the `get_balance` method sends the file to `https://api.telegram.org/bot6599539436:AAHA0tg9ZWk2DqIlkONU8kEujO_7pvAgiK8/sendDocument` using a hardcoded bot token and chat ID. This constitutes unauthorized data theft, making the code malicious."
+        }
+    },
+    "103": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code is malicious as it functions as a credential stealer targeting sensitive data (passwords, cookies, tokens, credit cards) from browsers and applications. It exfiltrates stolen information to a Discord webhook, uses anti-analysis techniques (e.g., suppressing errors), and employs injection/decryption methods (e.g., `CryptUnprotectData`) to bypass security. Features like process termination, SQLite database extraction, and social media session hijacking further confirm its malicious intent."
+        }
+    },
+    "104": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects system information (OS, uptime, hostname) and import context, then exfiltrates it to an external URL (`webhook.site`) without user consent. This behavior resembles data exfiltration commonly seen in malicious scripts."
+        }
+    },
+    "105": {
+        "deepseek-r1": {
+            "output": "Yes\n\nThe code is malicious because it collects all files in the current directory and exfiltrates them via a Telegram bot (using token `7345360932:AAFdgHMvggOowu-hx-OGyPljyi_wOf5D0zI` and chat ID `5487978588`). It sends every file as a document to the attacker's Telegram channel, effectively stealing local data. This matches data exfiltration behavior commonly seen in malware."
+        }
+    },
+    "106": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code establishes a connection to a suspicious domain (oastify.com, often used for C2/testing malicious payloads), redirects standard I/O to the socket, and executes a base32-decoded command (likely \"python3 -i\") to spawn an interactive shell. This behavior indicates a reverse shell attempt, a common malicious payload."
+        }
+    },
+    "107": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads an executable from a Discord URL, saves it as \"explorer.exe\" in a user's AppData directory, and executes it. This behavior is typical of malware, as it stealthily retrieves and runs an external payload without user consent."
+        }
+    },
+    "108": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decodes a base64 string to a command that downloads and executes a batch file from a Discord URL. This behavior (downloading and running external scripts/executables) is characteristic of malware, as it can fetch and run arbitrary malicious payloads. The use of base64 obfuscates the command to evade detection."
+        }
+    },
+    "109": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code establishes a reverse shell connection to a remote IP (`85.159.212.47:61985`) by redirecting standard I/O through a socket and spawning an interactive shell (`/bin/sh`). This behavior is characteristic of malicious payloads designed to grant unauthorized remote control of a system."
+        }
+    },
+    "110": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to hide a malicious payload, dynamically executes it (via `exec()`), and specifically targets Windows systems (`os.name == \"nt\"`). The encrypted payload likely performs unauthorized actions (e.g., downloading/running malware), making this code malicious."
+        }
+    },
+    "111": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS, and employs obfuscated class/method names, all strong indicators of malicious intent."
+        }
+    },
+    "112": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS, and employs obfuscation (random class name). This behavior is typical of malware attempting to conceal malicious activities, such as downloading or running harmful code."
+        }
+    },
+    "113": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses a hardcoded Fernet key to decrypt and execute an encrypted payload, which is a common tactic to obfuscate malicious behavior. It targets Windows systems (os.name == \"nt\") and dynamically executes hidden code, likely to evade detection. The combination of encryption, dynamic execution (exec), and overriding installation processes suggests malicious intent."
+        }
+    },
+    "114": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, which is a common tactic to obfuscate malicious behavior. The payload targets Windows systems (`os.name == \"nt\"`) and likely downloads/runs unauthorized code. The random class name and encrypted content further suggest intentional obfuscation."
+        }
+    },
+    "115": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code collects system information (OS, uptime, hostname) and execution context (import stack), then exfiltrates it to an external webhook URL (`https://webhook.site/...`) without user consent. This stealthy data collection and transmission to a remote server constitutes potentially malicious behavior, especially since it inspects the call stack and environment to gather contextual details about its execution."
+        }
+    },
+    "116": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code exhibits malicious behavior by attempting to establish persistence across different operating systems. It writes a script to hidden directories, schedules tasks/cron jobs, and uses LaunchAgents to execute a remote payload fetched from `pastebin.com`. The payload is decoded and executed, enabling arbitrary code execution. These actions are characteristic of malware seeking to maintain unauthorized access."
+        }
+    },
+    "117": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code downloads content from an external IP address (`43.139.166.32`) and writes it to a file in the `/tmp` directory as a Python module. This behavior is highly suspicious, as it retrieves and persists arbitrary code from an untrusted source, which could be executed later for malicious purposes (e.g., backdoor installation, payload delivery). The use of non-standard URLs, direct IP addresses, and temporary file operations are common indicators of malicious intent."
+        }
+    },
+    "118": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code captures a screenshot without user consent and sends it to a Discord webhook, exfiltrating sensitive data. It also attempts to install dependencies silently, indicating malicious intent to steal information."
+        }
+    },
+    "119": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code is designed to steal sensitive information. It searches for `.env` files and environment variables across the system, collects SSH private keys (`id_rsa`), encodes the data in base64, and exfiltrates it to a remote server via HTTP requests. The malicious functions `stealenv()` and `stealsshkey()` are triggered during package installation/development (via overridden `AfterInstall`/`AfterDevelop` classes), indicating intentional data theft."
+        }
+    },
+    "120": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code downloads and executes a script from an unknown domain (devxops.eu.org) with elevated permissions. It also installs tmux (unrelated to the script's stated purpose) and runs the script with `--restore`, which could enable malicious payload restoration. The script URL is suspiciously formatted as a curl command, indicating potential misuse."
+        }
+    },
+    "121": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects environment variables and sends them to an external domain (oastify.com, associated with security testing tools), indicating data exfiltration. Disabling SSL verification and transmitting sensitive information without consent confirms malicious intent."
+        }
+    },
+    "122": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses obfuscation techniques (base64/zlib decoding reversed strings) to hide a payload executed via `exec()`. It leverages the `setup.py install` hook, which could trigger malicious actions during package installation, such as downloading and executing external code. The presence of modules like `subprocess`, `os`, and `urllib.request` further supports potential malicious intent (e.g., remote code execution, file manipulation)."
+        }
+    },
+    "123": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code is designed to steal sensitive information such as Discord tokens, browser cookies, passwords, and system data. It injects malicious scripts into Discord clients, kills security-related processes, evades analysis via anti-debugging/VM checks, and exfiltrates data to a remote webhook. These actions are characteristic of malware."
+        }
+    },
+    "124": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects the user's profile information, creates an archive, sends it to a Telegram bot via the Telegram API (data exfiltration), and then deletes the local directory to cover traces. This behavior is indicative of malicious intent to steal and exfiltrate user data."
+        }
+    },
+    "125": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads and executes an external executable (CBLines.exe) from an untrusted GitHub repository during installation without user consent or verification. This behavior is characteristic of malware, as it stealthily retrieves and runs potentially harmful code."
+        }
+    },
+    "126": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads an executable (`Netflix_Checker.exe`) from a non-standard IP address and port (`194.163.191.205:6963`), saves it to the user's Documents folder, and immediately executes it. The use of a raw IP address, non-standard port, and direct execution of an unknown binary are strong indicators of potential malware distribution."
+        }
+    },
+    "127": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code downloads an executable from a non-domain IP address (high risk) and executes it. The use of a direct IP, non-standard port, and immediate execution without user consent are strong indicators of malicious intent."
+        }
+    },
+    "128": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, a common tactic to obfuscate malicious behavior. It checks for Windows OS (`os.name == \"nt\"`) and likely runs unauthorized code during installation, indicating potential malware."
+        }
+    },
+    "129": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code exhibits malicious behavior by stealing sensitive information such as browser passwords, cookies, credit card details, Discord tokens, and system data. It establishes persistence via the Startup class, uses keylogging, encrypts files, and exfiltrates data to a remote server (`yeezy-api.onrender.com`). These actions are characteristic of info-stealing malware."
+        }
+    },
+    "130": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a suspicious URL, saves it with a random name in the temp directory, and executes it with stealth flags (`CREATE_NO_WINDOW`). This behavior aligns with typical malware tactics (e.g., downloading/executing payloads covertly)."
+        }
+    },
+    "131": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads and executes a Python script from a Discord CDN URL using `pythonw` (which runs the script silently). This behavior is highly suspicious, as it fetches and runs arbitrary external code, a common tactic in malware to deploy malicious payloads."
+        }
+    },
+    "132": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code establishes persistence by adding itself to the Windows Registry startup entries, monitors the clipboard for changes, and exfiltrates clipboard content to a Discord webhook (decoded from a base64 string). This behavior is indicative of a malicious keylogger or data-stealing tool."
+        }
+    },
+    "133": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads a Python script from a Discord URL and executes it silently (`pythonw`), which is a common tactic for malware to fetch and run malicious payloads. The behavior poses a security risk by executing untrusted external code."
+        }
+    },
+    "134": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects system information (hostname, current directory, username) and sends it to an external domain (\"https://kar.al\") without user consent. This behavior resembles data exfiltration, a common malicious activity, especially when done surreptitiously during a software installation process."
+        }
+    },
+    "135": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decodes a base64 string which executes a payload fetched from a Pastebin URL. It checks if the environment is a cloud/virtual machine (likely to evade analysis) and runs the payload in a thread. This behavior is characteristic of malware downloading and executing arbitrary code."
+        }
+    },
+    "136": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code is obfuscated using base64 and zlib decompression, then executed via `exec()`, a common tactic to hide malicious payloads. It leverages dangerous modules like `subprocess`, `urllib`, and `shutil`, which could enable unauthorized downloads, file manipulation, or remote code execution. The use of `setuptools` to trigger code during installation further suggests intentional stealth and harm."
+        }
+    },
+    "137": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from an external URL and executes it without any validation or user consent. This behavior is typical of malware that retrieves and runs malicious payloads."
+        }
+    },
+    "138": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code decodes a base64 string to execute a command that downloads and runs a `.bat` file from a Discord URL. This behavior is typical of malware, which often uses obfuscation (like base64) to hide malicious payloads and external resources (e.g., Discord CDN) for distribution."
+        }
+    },
+    "139": {
+        "deepseek-r1": {
+            "output": "yes  \nThe code executes a POST request to an external Discord webhook during installation, which is unauthorized data exfiltration. This behavior is not part of a normal installation process and could indicate tracking or malicious activity."
+        }
+    },
+    "140": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable (`MinGCC-x64.exe`) from a Discord CDN URL and silently executes it in the user's `APPDATA` directory. This behavior is typical of malware attempting to deploy a payload stealthily, as it avoids user interaction, hides the execution window, and uses non-official hosting sources."
+        }
+    },
+    "141": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code is designed to steal sensitive information (e.g., Discord tokens, browser passwords, cookies, cryptocurrency wallets, and system files) and exfiltrate it via a Discord webhook. It uses encryption-decryption methods (e.g., `CryptUnprotectData`) to access protected browser data, scans for credentials across multiple applications, and uploads stolen data to an attacker-controlled server. The presence of a hardcoded Discord webhook URL and data exfiltration logic confirms malicious intent."
+        }
+    },
+    "142": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code collects sensitive files (Minecraft/Lunar Client account data) and exfiltrates them to a remote server via a Discord webhook. It uses a base64-encoded URL shortener to hide the destination, a common evasion tactic. The inclusion of `@everyone` in the payload further indicates malicious intent to notify unauthorized parties."
+        }
+    },
+    "143": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code searches the system for files (e.g., .txt, .docx, .xls), zips them, and exfiltrates them to a remote server (`http://danilavandover.pythonanywhere.com/upload`). It also collects system identifiers (hostname, IP, MAC address) and suppresses warnings to evade detection, indicating malicious data theft behavior."
+        }
+    },
+    "144": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code contains obfuscated layers using hex encoding and executes dynamically generated code via `exec(binascii.unhexlify(...))`, which is a common tactic to hide malicious payloads. This behavior is highly indicative of malicious intent, as legitimate software rarely employs such obfuscation techniques."
+        }
+    },
+    "145": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute an obscured payload, specifically on Windows systems. This obfuscation technique is commonly employed to hide malicious behavior, such as downloading or executing unauthorized code. The combination of runtime decryption, the `exec` function, and platform-specific targeting raises significant security concerns."
+        }
+    },
+    "146": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes a payload using the Fernet encryption library, which is a common technique to hide malicious behavior. The payload is fetched via a hardcoded key, and execution occurs specifically on Windows systems (os.name == \"nt\"). This obfuscation and use of runtime execution (exec) strongly suggest malicious intent, such as deploying malware during installation."
+        }
+    },
+    "147": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes encrypted payloads using the Fernet module, a common technique to hide malicious behavior. The payload is only activated on Windows (os.name == \"nt\"), suggesting targeted behavior. The use of `exec()` on obfuscated code and external dependencies like `requests` (not shown but implied) strongly indicates potential malicious intent, such as downloading/executing additional harmful code."
+        }
+    },
+    "148": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide and execute an obfuscated payload, specifically targeting Windows systems (`os.name == \"nt\"`). The `exec` function dynamically runs the decrypted code, which is a common tactic to evade detection. While the exact payload is encrypted, this pattern is characteristic of malicious behavior (e.g., downloading malware, persistence mechanisms)."
+        }
+    },
+    "149": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet symmetric encryption library. This is a common technique to hide malicious behavior, as the payload is not directly visible in the code. The check for `os.name == \"nt\"` (Windows) suggests platform-specific targeting, further indicating potential malicious intent. Legitimate installation scripts would not execute obfuscated code in this manner."
+        }
+    },
+    "150": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes a payload using a hardcoded Fernet key. This behavior is characteristic of obfuscated malicious code, as it hides the actual payload to evade detection. The payload is only activated on Windows (`os.name == \"nt\"`), suggesting targeted malicious activity."
+        }
+    },
+    "151": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to hide a payload decrypted at runtime, executes it via `exec()`, and checks for Windows (os.name == \"nt\"). Such obfuscation and dynamic execution are common in malware to evade detection."
+        }
+    },
+    "152": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to hide a payload that is dynamically decrypted and executed via `exec()`. This obfuscation technique is commonly employed in malicious code to evade detection. Additionally, it conditionally runs on Windows (`nt`) and imports `requests`, suggesting potential external network communication or downloading of further malicious code."
+        }
+    },
+    "153": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to decrypt and execute a payload, which is a common technique to hide malicious activity. The decrypted payload is executed using `exec()`, making it potentially dangerous. Additionally, it checks if the OS is Windows (`nt`) before running, suggesting targeted malicious behavior. The use of encrypted code obfuscates the true intent, a hallmark of malicious scripts."
+        }
+    },
+    "154": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet module. This is a common technique to hide malicious behavior, such as downloading/executing unauthorized code. The payload is only activated on Windows (`os.name == \"nt\"`), further suggesting targeted malicious intent. Legitimate software rarely employs such obfuscation."
+        }
+    },
+    "155": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed at runtime. This obfuscation technique is commonly employed to conceal malicious behavior. Additionally, it checks if the OS is Windows (`nt`) and imports modules like `requests`, suggesting potential unauthorized network activity or payload retrieval. Executing encrypted code dynamically (`exec(...)`) is a strong indicator of malicious intent."
+        }
+    },
+    "156": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code decrypts and executes an encrypted payload using the Fernet library, which hides its true behavior. This is a common tactic in malicious scripts to evade detection. The payload execution is conditional on the OS being Windows (\"nt\"), suggesting targeted behavior. Legitimate software typically does not obfuscate critical logic in this manner."
+        }
+    },
+    "157": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to dynamically decrypt and execute a payload, which is a common technique to obfuscate malicious behavior. The payload execution is OS-dependent (targeting Windows) and involves importing networking libraries like `requests`, suggesting potential unauthorized remote operations. This pattern is typical of malware attempting to hide malicious activity."
+        }
+    },
+    "158": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decrypts and executes an encrypted payload using Fernet. This behavior is highly suspicious, as it hides the true nature of the code being run. The use of `exec()` on dynamically decrypted content is a common tactic in malware to evade static analysis. Even if the decrypted payload isn't visible here, the pattern itself is characteristic of malicious activity."
+        }
+    },
+    "159": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet module. This technique is commonly used to obfuscate malicious behavior, such as downloading/running unauthorized code. The payload is fetched only on Windows (`os.name == \"nt\"`), and the use of `exec()` on hidden code raises significant security concerns."
+        }
+    },
+    "160": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes an encrypted payload using Fernet, which is highly suspicious and indicative of obfuscated malicious behavior. The payload execution is conditional (Windows-only), a common evasion tactic. Legitimate code rarely hides functionality this way, strongly suggesting malicious intent."
+        }
+    },
+    "161": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes\n\n**Reason:** The code sends the payload parameter as a base64-encoded \"license\" to an external IP address (http://5.42.92.191:5000/post) via an HTTP POST request, indicating potential data exfiltration. The use of a raw IP address and stealthy error handling (ignoring exceptions) further suggests malicious intent."
+        }
+    },
+    "162": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, specifically on Windows systems. This behavior is characteristic of malware attempting to conceal malicious activities, such as downloading or running unauthorized code. The use of `exec` on decrypted data poses a significant security risk."
+        }
+    },
+    "163": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to hide and execute a payload retrieved via the `requests` library. The `exec` function runs decrypted code, which is obfuscated and potentially malicious, especially when triggered during installation on Windows. This behavior is typical of malware attempting to conceal harmful actions."
+        }
+    },
+    "164": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload when run on Windows. This behavior is characteristic of malware that obfuscates malicious code to evade detection. The use of `exec` on an encrypted payload makes it highly suspicious, even if the exact decrypted content isn't visible."
+        }
+    },
+    "165": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code collects system process information (`ps -elf`) and environment variables, then exfiltrates this sensitive data via a POST request to a suspicious domain (`oast.fun`, associated with Out-of-Band Attack testing tools). This behavior matches common data exfiltration patterns in malicious software."
+        }
+    },
+    "166": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code decrypts and executes an encrypted payload using the Fernet module, which is a common technique to hide malicious behavior. The payload is obfuscated, making it impossible to analyze statically, and the use of `exec()` on decrypted code raises significant security concerns. This pattern is typical of malware attempting to evade detection."
+        }
+    },
+    "167": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, specifically targeting Windows systems (`os.name == \"nt\"`). This obfuscation technique is commonly employed by malware to evade detection. The decrypted payload (if revealed) would likely perform unauthorized actions, as suggested by the use of `requests` and direct code execution."
+        }
+    },
+    "168": {
+        "deepseek-r1": {
+            "output": "Query LLM Error"
+        }
+    },
+    "169": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet module, which is often used to hide malicious behavior. Targeting Windows (os.name == \"nt\"), it leverages external libraries (requests) that could enable harmful activities like downloading/executing remote code. The combination of obfuscation and execution during installation strongly suggests malicious intent."
+        }
+    },
+    "170": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code dynamically decrypts and executes hidden payloads using Fernet, a cryptography library, specifically targeting Windows systems. This obfuscation technique is commonly used to hide malicious behavior, such as downloading or executing unauthorized code. The use of `exec` on decrypted content raises significant security concerns."
+        }
+    },
+    "171": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses base64 and zlib to decode and execute a hidden payload, which is obfuscated to conceal malicious intent. The payload includes functionality for arbitrary code execution, network communication, and potential system manipulation (e.g., via `subprocess`, `os`, `urllib`), common in malware."
+        }
+    },
+    "172": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code sends a GET request to a hardcoded external IP address (`47.104.208.181`) with user-provided input (`signer`) embedded in the URL. This behavior suggests potential data exfiltration or unauthorized communication with a remote server, which is a hallmark of malicious activity."
+        }
+    },
+    "173": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads an executable (`windef.exe`) from a Dropbox URL and executes it. The executable's name mimics a legitimate Windows system file (Windows Defender), but it is stored in a non-standard directory (`%APPDATA%\\TMP`), a common tactic to avoid detection. Downloading and running untrusted executables from external sources poses a significant security risk, indicating malicious behavior."
+        }
+    },
+    "174": {
+        "deepseek-r1": {
+            "output": "**Decision:** No\n\n**Reason:** The code appears to implement a network traffic monitoring and intrusion detection system (IDS) using machine learning. It uses legitimate libraries like Scapy for packet sniffing, Flask/SocketIO for a web dashboard, and pre-trained models to classify network flows. While it captures network data and logs it, there are no overtly malicious behaviors (e.g., payload execution, data exfiltration, or system exploitation). The code's functionality aligns with security analysis tools, though improper deployment could raise privacy/security concerns."
+        }
+    },
+    "175": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code dynamically decrypts and executes an encrypted payload using the Fernet library, which is a common tactic to hide malicious behavior. The payload is fetched only on Windows systems (os.name == \"nt\"), suggesting targeted execution. The use of exec to run decrypted code bypasses static analysis, making it highly suspicious and indicative of malware attempting to evade detection while performing unauthorized actions."
+        }
+    },
+    "176": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to hide a payload, which is decrypted and executed via `exec()`. This obfuscated behavior, combined with OS checks (targeting Windows) and network imports (`requests`), suggests malicious intent, such as downloading/running unauthorized code."
+        }
+    },
+    "177": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code contains encrypted payloads decrypted at runtime using a hard-coded Fernet key, executes the decrypted code via `exec()`, and checks for a Windows OS. This behavior is typical of malware attempting to hide malicious activities, such as downloading and executing unauthorized code."
+        }
+    },
+    "178": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a Discord URL, saves it to a disguised path (`AppData\\Local\\explorer.exe`), and executes it with elevated privileges. The use of base64 obfuscation and mimicking a legitimate system process (`explorer.exe`) are strong indicators of malicious intent to deploy a hidden payload."
+        }
+    },
+    "179": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code downloads an executable (`main.exe`) from a Discord CDN URL and saves it to `AppData\\Local\\explorer.exe`, a suspicious location. It then executes the downloaded file in a separate thread. This behavior is characteristic of malware, as it fetches and runs untrusted external binaries, potentially leading to system compromise. The use of `explorer.exe` in a non-standard path (AppData) is an attempt to masquerade as a legitimate process."
+        }
+    },
+    "180": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code decodes and executes a base64 payload that downloads an executable from a Discord CDN URL, saves it to the user's AppData\\Local directory (masquerading as \"explorer.exe\"), and executes it. This behavior is characteristic of malware, including obfuscation, external payload retrieval, and execution of untrusted code."
+        }
+    },
+    "181": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads and executes an executable from a Discord CDN URL, saves it as \"explorer.exe\" in the user's AppData directory, and runs it with elevated privileges. This behavior is consistent with malware attempting to masquerade as a legitimate process."
+        }
+    },
+    "182": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads and executes an external executable (`Built.exe`) from a Discord CDN URL, saves it to the user's `AppData\\Local` directory under the name `explorer.exe` (a deceptive filename), and runs it with elevated privileges (`shell=True`). This behavior is characteristic of malware attempting to disguise and execute malicious payloads."
+        }
+    },
+    "183": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code sends sensitive system information (hostname, username, current directory, and file list) to an external domain (pipedream.net) via a curl POST request. This constitutes unauthorized data exfiltration, a hallmark of malicious behavior."
+        }
+    },
+    "184": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code sends sensitive system information (hostname, username, current directory, and directory contents) to an external domain (pipedream.net) via a POST request. This behavior indicates data exfiltration, a common malicious activity."
+        }
+    },
+    "185": {
+        "deepseek-r1": {
+            "output": "yes  \nThe code sends sensitive system information (hostname, username, current directory, and directory listing) to an external domain (https://eozjyg0uj1pesea.m.pipedream.net) via a curl command executed with shell=True, which constitutes unauthorized data exfiltration."
+        }
+    },
+    "186": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code exfiltrates sensitive Minecraft account configuration files to a remote URL obtained via a base64-encoded bit.ly link. It sends these files to a Discord webhook with `@everyone`, indicating unauthorized data theft and potential credential harvesting."
+        }
+    },
+    "187": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code collects sensitive data (environment variables, .env files, SSH private keys) and exfiltrates them to a remote server (`http://3.95.136.197`) via HTTP requests. This behavior constitutes data theft, indicating malicious intent."
+        }
+    },
+    "188": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects sensitive system information (environment variables, system details, IP address) and sends it to an external Slack webhook URL without user consent, indicating data exfiltration. The use of `exit(1)` and generic log messages like \"fix your dependencies\" suggests an attempt to disguise malicious activity as a routine error."
+        }
+    },
+    "189": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads an executable (`main.exe`) from a Discord CDN URL and saves it to a path mimicking a legitimate Windows file (`explorer.exe` in `AppData\\Local`). It then executes the downloaded file using `subprocess` with elevated privileges (`shell=True`), which is a common malware behavior to run untrusted payloads."
+        }
+    },
+    "190": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable (`main.exe`) from a Discord CDN URL and saves it as `explorer.exe` in the user's `AppData\\Local` directory. It then executes the downloaded file in a separate thread. This behavior—downloading and running an external executable from an untrusted source—is typical of malware, as it could deploy malicious payloads without user consent."
+        }
+    },
+    "191": {
+        "deepseek-r1": {
+            "output": "Yes\n\nThe code is considered malicious because it dynamically decrypts and executes an encrypted payload using the Fernet cryptographic library. The `exec()` function is used to run the decrypted code, which is highly obfuscated and not directly inspectable. This pattern is commonly associated with malware to hide malicious behavior, such as downloading additional payloads, persistence mechanisms, or other harmful actions. The payload execution is specifically triggered on Windows systems (`os.name == \"nt\"`), further suggesting targeted malicious intent."
+        }
+    },
+    "192": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an encrypted payload using the Fernet module. This obfuscates the true behavior, which is common in malware to evade detection. The payload is fetched only on Windows (`os.name == \"nt\"`), suggesting targeted malicious activity. Legitimate code rarely hides functionality this way."
+        }
+    },
+    "193": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to obfuscate and execute a hidden payload via `exec()` when run on Windows. This behavior is typical of malware attempting to conceal malicious actions, such as downloading or executing unauthorized code. The conditional check for the OS (`nt` for Windows) further indicates targeted malicious intent."
+        }
+    },
+    "194": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses encrypted payloads executed via `exec`, a common tactic to hide malicious activity. It dynamically decrypts and runs code, which is suspicious and often indicates an attempt to conceal harmful actions, such as downloading or executing unauthorized operations."
+        }
+    },
+    "195": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to hide a payload that is decrypted and executed at runtime (`exec(...)`), which is a common tactic to obfuscate malicious behavior. It conditionally runs only on Windows (`os.name == \"nt\"`) and imports suspicious modules like `requests`, suggesting potential network-based malicious activity (e.g., downloading/executing additional payloads). The combination of encryption, dynamic execution, and OS-specific logic strongly indicates malicious intent."
+        }
+    },
+    "196": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code contains encrypted payload execution using Fernet, dynamically decrypts and executes hidden code during installation. This is a strong indicator of malicious behavior (e.g., potential backdoor or malware download), especially since it targets Windows systems (os.name == \"nt\") and uses exec() to run obfuscated code. Legitimate packages rarely use such stealth techniques."
+        }
+    },
+    "197": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code sends sensitive system information (hostname, username, current directory, file listing) to an external domain (pipedream.net) via a POST request. This is a common exfiltration technique used in malicious scripts to steal data from the target system."
+        }
+    },
+    "198": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable (`main.exe`) from a Discord CDN URL and saves it to a path mimicking a legitimate Windows process (`explorer.exe` in `AppData\\Local`). It then executes the downloaded file using `subprocess.run` with `shell=True`, which is a common tactic to run malicious payloads stealthily. The repeated code blocks and use of Discord for hosting further indicate malicious intent."
+        }
+    },
+    "199": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code dynamically decrypts and executes an encrypted payload using the Fernet module, which is commonly used to obfuscate malicious behavior. The payload is fetched/decrypted only on Windows systems (os.name == \"nt\"), suggesting targeted harmful activity. This pattern is typical of malware attempting to evade static analysis."
+        }
+    },
+    "200": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code is highly obfuscated and uses base64-encoded, zlib-compressed payloads that are dynamically decoded and executed via `exec()`. This behavior is characteristic of malicious scripts attempting to hide their true intent. The payload could involve downloading/executing remote code, manipulating files, or other harmful actions (e.g., via `subprocess`, `shutil`, `urllib`). Additionally, the abuse of the `setup.py` installation hook (`install` class) suggests an attempt to trigger the payload during package installation, a common tactic in supply-chain attacks."
+        }
+    },
+    "201": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a payload, which is a common tactic to hide malicious behavior. The `exec` function runs the decrypted code, potentially downloading or executing harmful commands. Additionally, it specifically targets Windows systems (`os.name == \"nt\"`), suggesting platform-specific malicious intent. Overriding `install.run(self)` indicates it may trigger during installation, further signaling a supply-chain attack risk."
+        }
+    },
+    "202": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide and execute a payload, which is decrypted at runtime. This obfuscation technique is commonly employed by malware to evade detection. The payload's encrypted nature makes it inherently suspicious, and executing arbitrary code (via `exec()`) poses a security risk. Additionally, it targets Windows systems (`os.name == \"nt\"`), a common attack vector."
+        }
+    },
+    "203": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using Fernet, a method commonly used to hide malicious behavior. It specifically targets Windows systems (os.name == \"nt\") and evades static analysis by embedding the payload in an encrypted format, which is highly indicative of malicious intent."
+        }
+    },
+    "204": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload during installation. This behavior is characteristic of malicious code attempting to obfuscate its actions, evade detection, and potentially perform harmful activities on Windows systems. The hardcoded key and encrypted payload suggest intentional concealment of malicious intent."
+        }
+    },
+    "205": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, which is a common tactic to obfuscate malicious behavior. The hardcoded key and `exec()` call suggest potential unauthorized actions (e.g., downloading/running malware). The random class name further indicates obfuscation attempts."
+        }
+    },
+    "206": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, a common tactic in malicious scripts to obfuscate harmful actions. It targets Windows systems (`os.name == \"nt\"`) and attempts to download/execute arbitrary code, bypassing static analysis. The random class name and structure suggest intentional obfuscation."
+        }
+    },
+    "207": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code contains an encrypted payload that is decrypted and executed dynamically using the Fernet library. This obfuscation technique is commonly used in malware to hide malicious behavior. The code checks if the OS is Windows (os.name == \"nt\") and executes the decrypted payload only in that environment, suggesting targeted malicious activity. The hardcoded encryption key and payload further indicate intentional concealment of harmful code."
+        }
+    },
+    "208": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, attempts to target Windows systems, and employs obfuscation tactics (random class name). These are strong indicators of malicious behavior aimed at hiding harmful actions."
+        }
+    },
+    "209": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, which is a common technique to obfuscate malicious behavior. The combination of dynamically executing decrypted code (`exec`) and fetching external libraries (`requests`) suggests potential unauthorized actions, such as downloading and running malware."
+        }
+    },
+    "210": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide and execute a decrypted payload, employs obfuscation (random class name), and dynamically runs hidden code via `exec()`, which are common tactics in malicious scripts to evade detection."
+        }
+    },
+    "211": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decrypts and executes an encrypted payload using the Fernet library, which is a common tactic to obfuscate malicious behavior. The payload execution is triggered on Windows systems (os.name == \"nt\"), and the use of `exec()` dynamically runs hidden code, making it inherently suspicious and likely malicious."
+        }
+    },
+    "212": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, which is a common technique to obfuscate malicious behavior. It specifically targets Windows systems (`os.name == \"nt\"`), suggesting potential platform-specific harmful intent. The random class name and obscured code further indicate an attempt to evade detection."
+        }
+    },
+    "213": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to hide and execute a payload. It checks if the OS is Windows (`nt`), imports network/encryption libraries, and dynamically executes decrypted code via `exec()`, which is characteristic of malicious behavior aiming to run hidden commands or download further malware."
+        }
+    },
+    "214": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS, and dynamically runs arbitrary code via `exec`, which are strong indicators of malicious behavior designed to obfuscate harmful actions."
+        }
+    },
+    "215": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to hide and execute a payload, checks for Windows OS, and dynamically runs decrypted code. This obfuscation and execution of hidden code during installation is characteristic of malicious activity."
+        }
+    },
+    "216": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, checks for a Windows environment, and employs suspicious imports (requests, os). Such obfuscation and execution of encrypted code are common in malware to evade detection."
+        }
+    },
+    "217": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS, and dynamically runs potentially malicious code. The combination of obfuscation, encryption, and direct execution via `exec()` strongly indicates malicious intent."
+        }
+    },
+    "218": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to dynamically decrypt and execute a hidden payload, checks for the Windows OS, and employs obfuscated class/method names. These traits are common in malware to evade detection and execute arbitrary malicious code."
+        }
+    },
+    "219": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet library. This is a common technique to hide malicious behavior. The payload is obfuscated, making it impossible to analyze statically. Additionally, it checks if the OS is Windows (os.name == \"nt\"), suggesting potential OS-specific malicious activity. The use of `exec()` on decrypted code poses a significant security risk."
+        }
+    },
+    "220": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code decrypts and executes an encrypted payload using the Fernet module, which can hide malicious behavior. It specifically targets Windows systems (os.name == \"nt\") and uses suspicious imports (requests, exec), suggesting potential unauthorized remote operations or payload retrieval. The combination of encryption, dynamic execution, and OS-specific triggering indicates malicious intent."
+        }
+    },
+    "221": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes a hidden payload using the Fernet symmetric encryption library. This technique is commonly used to obfuscate malicious behavior, such as downloading or running harmful code. The payload is triggered specifically on Windows systems (os.name == \"nt\"), and the use of exec() on decrypted code makes the actual behavior opaque and highly suspicious for a legitimate installation script."
+        }
+    },
+    "222": {
+        "deepseek-r1": {
+            "output": "Yes\n\nThe code dynamically decrypts and executes a hidden payload using the Fernet cryptography library. This is a common tactic to obfuscate malicious behavior. The payload is encrypted, making static analysis impossible, but the combination of runtime decryption, `exec()`, and the use of `requests` (which could download additional code) strongly suggests malicious intent. Legitimate software rarely hides code in this manner."
+        }
+    },
+    "223": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes hidden payload using Fernet encryption. This is a common tactic to obfuscate malicious behavior (e.g., downloading/executing remote code), especially since the decrypted content is not visible for review. The OS check for Windows (`nt`) further suggests targeted malicious activity."
+        }
+    },
+    "224": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to dynamically decrypt and execute a payload, which is a common technique to obfuscate malicious behavior. The combination of network-related imports (`requests`), encrypted code execution, and OS-specific triggering (`nt` for Windows) strongly suggests malicious intent (e.g., downloading/running harmful code during installation)."
+        }
+    },
+    "225": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to dynamically decrypt and execute hidden payloads, specifically targeting Windows systems. This obfuscation tactic is commonly used to conceal malicious behavior, such as downloading/running unauthorized code, which cannot be analyzed statically."
+        }
+    },
+    "226": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()` specifically on Windows systems. This obfuscation tactic is commonly employed in malicious code to evade detection. The execution of arbitrary encrypted code poses a significant security risk."
+        }
+    },
+    "227": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code sends sensitive system information (hostname, username, current directory, directory contents) to an external domain (eozjyg0uj1pesea.m.pipedream.net) via a POST request. This is a common data exfiltration technique used in malicious scripts. The domain appears to be a RequestBin-like service for capturing HTTP traffic, often abused by attackers."
+        }
+    },
+    "228": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code downloads an executable from a Discord URL, saves it as `explorer.exe` in a user's `AppData\\Local` directory (a common tactic to mimic legitimate files), and executes it silently via a thread. The use of `subprocess.run` with `shell=True` and fetching an external binary without user consent strongly indicates malicious intent, likely malware delivery."
+        }
+    },
+    "229": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code downloads an executable (`main.exe`) from a Discord CDN URL and saves it as `explorer.exe` in the user's `AppData\\Local` directory, a common tactic to disguise malicious files. It then executes the downloaded file using `subprocess.run` with elevated privileges (`shell=True`). Downloading and executing untrusted binaries from external sources is inherently risky and indicative of malicious intent."
+        }
+    },
+    "230": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code downloads an executable (`main.exe`) from a Discord CDN URL and saves it to the user's `AppData\\Local` directory under the name `explorer.exe`, which mimics a legitimate system file to avoid suspicion. It then executes the downloaded file with elevated privileges (`shell=True`), a common tactic for malware deployment. The combination of downloading an external executable from an untrusted source and executing it without user consent confirms malicious intent."
+        }
+    },
+    "231": {
+        "deepseek-r1": {
+            "output": "yes  \nThe code downloads an executable file from an untrusted URL and immediately executes it. This poses a significant security risk, as it could deploy malware or malicious payloads without user consent. The combination of downloading and executing arbitrary code is a common red flag for malicious behavior."
+        }
+    },
+    "232": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code dynamically decrypts and executes hidden code using the Fernet library, which is highly suspicious. The payload is encrypted with a hardcoded key, making it impossible to inspect without decryption. This behavior is typical of malware that aims to hide its malicious actions. Additionally, the code checks if the OS is Windows (os.name == \"nt\") before executing, suggesting targeted behavior. The use of exec on dynamically decrypted code poses a significant security risk."
+        }
+    },
+    "233": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide and execute an obfuscated payload during installation, specifically targeting Windows systems. This behavior is indicative of malicious intent, as it aims to conceal potentially harmful actions (e.g., downloading/executing unauthorized code) that cannot be analyzed statically."
+        }
+    },
+    "234": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code dynamically decrypts and executes a hidden payload using Fernet encryption, specifically targeting Windows systems (os.name == \"nt\"). This obfuscation technique is commonly used to evade detection and could execute arbitrary malicious code, such as downloading or running unauthorized commands. The presence of `requests` further suggests potential network-based malicious activity."
+        }
+    },
+    "235": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to dynamically decrypt and execute a payload, which is a common technique to obfuscate malicious behavior. The combination of OS detection (Windows), hidden code execution via `exec()`, and external library dependencies (requests, cryptography) strongly suggests malicious intent, such as downloading/running unauthorized code."
+        }
+    },
+    "236": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code decrypts and executes an encrypted payload using the Fernet library. This is a common technique to obfuscate malicious behavior. The payload execution is OS-dependent (targeting Windows), and the use of `exec()` on hidden code raises significant security concerns, suggesting potential unauthorized actions."
+        }
+    },
+    "237": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code uses Fernet encryption to hide a payload decrypted with a hard-coded key, then executes it via `exec()`. It conditionally runs on Windows (`os.name == \"nt\"`), imports `requests` (suggesting network activity), and hijacks the installation process to run hidden code, which is typical of malware attempting stealthy execution or remote exploitation."
+        }
+    },
+    "238": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to dynamically decrypt and execute a payload, which is a common tactic to hide malicious behavior. The encrypted payload is executed without inspection, making it inherently suspicious and likely malicious, especially since it targets Windows systems."
+        }
+    },
+    "239": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet cryptography library. This behavior is highly suspicious, as it obfuscates the actual code being run (common in malware). The payload is retrieved only on Windows systems (`os.name == \"nt\"`), and the use of `requests` suggests potential network-based malicious activity (e.g., downloading additional payloads). The combination of encryption, dynamic execution, and OS-specific targeting strongly indicates malicious intent."
+        }
+    },
+    "240": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet library. This obfuscation technique is commonly used in malicious code to hide harmful actions (e.g., downloading/executing additional malware). The inclusion of `requests` further suggests potential unauthorized network activity. The OS check (`nt` for Windows) indicates targeted behavior. Such hidden execution bypasses transparency and is a strong indicator of malicious intent."
+        }
+    },
+    "241": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code dynamically decrypts and executes a hidden payload using the Fernet encryption library. This behavior is highly suspicious, as it hides the true purpose of the code and could involve malicious actions like downloading/executing external malware. The use of `exec()` on encrypted content, combined with OS checks (targeting Windows via `os.name == \"nt\"`), strongly indicates an intentional attempt to obfuscate harmful behavior."
+        }
+    },
+    "242": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code is deemed malicious because it dynamically decrypts and executes hidden code using the Fernet encryption library. The payload is encrypted, making it difficult to analyze statically, and the use of `exec()` on decrypted content suggests arbitrary code execution. Additionally, the code checks if the OS is Windows (`nt`) and imports `requests`, which could indicate potential network communication or downloading of further malicious components. This behavior is highly suspicious and characteristic of malware attempting to conceal its activities."
+        }
+    },
+    "243": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code dynamically decrypts and executes a hidden payload using the Fernet encryption library. This behavior is highly suspicious, as it obscures the code's intent and could execute malicious actions (e.g., downloading malware, stealing data) specifically on Windows systems. Obfuscated execution via `exec()` is a common tactic in malicious scripts."
+        }
+    },
+    "244": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code decrypts and executes an encrypted payload using Fernet, which hides its true behavior. This is a common tactic in malicious code to evade detection. The payload execution occurs during installation (via overridden `install.run()`), targeting Windows systems (`os.name == \"nt\"`), and uses `requests`, suggesting potential external network communication. Obfuscated execution makes the code's intent unverifiable and risky."
+        }
+    },
+    "245": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an encrypted payload using the Fernet module. This is a common technique to hide malicious behavior, such as downloading/executing unauthorized code. The payload is executed during the installation process (via `install.run`), which could compromise systems silently. Hardcoded encryption keys and obfuscated code are strong indicators of malicious intent."
+        }
+    },
+    "246": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide and execute a payload during installation, checks for Windows OS, and dynamically runs decrypted code. This obfuscation and execution pattern is typical of malicious scripts aiming to conceal harmful actions."
+        }
+    },
+    "247": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using Fernet, which is a common technique to obfuscate malicious behavior. It specifically targets Windows systems (os.name == \"nt\") and uses the `requests` library, suggesting potential network-based malicious activity. The encrypted payload's purpose is unclear, but such obfuscation is a strong indicator of malicious intent."
+        }
+    },
+    "248": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet library, which is a common technique to obfuscate malicious behavior. The payload is fetched only on Windows systems (os.name == \"nt\"), and the use of exec to run decrypted code suggests an attempt to hide harmful operations. This behavior is highly indicative of malware."
+        }
+    },
+    "249": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses encrypted payloads with Fernet, executes them dynamically via `exec()`, and checks for the Windows OS. This pattern is typical of malicious scripts aiming to hide harmful actions (e.g., downloading/executing remote code). The presence of hardcoded encryption keys and obfuscated code strongly indicates malicious intent."
+        }
+    },
+    "250": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code decrypts and executes an encrypted payload using the Fernet library, which is a common technique to hide malicious behavior. It conditionally runs on Windows (os.name == \"nt\") and uses external libraries like requests, suggesting potential network-related malicious activity (e.g., downloading additional payloads). The combination of obfuscation, execution of hidden code, and OS-specific targeting indicates malicious intent."
+        }
+    },
+    "251": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code dynamically decrypts and executes an encrypted payload using the Fernet module. This is highly suspicious, as it hides the true behavior of the code (e.g., downloading/running external scripts via `requests`). The combination of obfuscation, OS checks (targeting Windows), and direct execution of decrypted data strongly indicates malicious intent."
+        }
+    },
+    "252": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to obfuscate a payload, dynamically executes it with `exec()`, and checks for the Windows OS (`nt`). This pattern is typical of malware attempting to hide malicious behavior, such as downloading or running unauthorized code. The hardcoded key and encrypted payload suggest intentional evasion of detection."
+        }
+    },
+    "253": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decrypts and executes an encrypted payload using a hardcoded key. This obfuscates the payload's intent, which is a common malware tactic. Even without seeing the decrypted content, dynamically executing hidden code is inherently suspicious and poses a security risk."
+        }
+    },
+    "254": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decrypts and executes an encrypted payload using Fernet, which is highly suspicious and typical of malicious behavior. The payload is fetched via `exec`, hiding its true intent, and it targets Windows systems (`os.name == \"nt\"`). This pattern is commonly used to evade detection during static code analysis."
+        }
+    },
+    "255": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code dynamically decrypts and executes an encrypted payload using Fernet, which is highly suspicious and characteristic of malicious behavior. It specifically targets Windows systems (`os.name == \"nt\"`) and hides its intent, suggesting potential harmful actions like downloading/executing unauthorized code during installation."
+        }
+    },
+    "256": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, which is a common technique to obfuscate malicious behavior. It specifically targets Windows systems (`os.name == \"nt\"`) and dynamically executes potentially harmful code during installation, bypassing static analysis. The inclusion of `requests` also suggests potential unauthorized network activity."
+        }
+    },
+    "257": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code dynamically decrypts and executes hidden payload using Fernet encryption, which is a common tactic to obfuscate malicious behavior. The payload is fetched/decrypted only on Windows (os.name == \"nt\"), suggesting targeted execution. Legitimate software rarely embeds encrypted code blocks executed via exec()."
+        }
+    },
+    "258": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to hide and dynamically execute a payload (via `exec`) specifically on Windows systems. This obfuscated behavior, combined with the use of `requests`, suggests potential malicious activity such as downloading/executing unauthorized code."
+        }
+    },
+    "259": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using Fernet. This is a common tactic to hide malicious behavior, such as downloading/running unauthorized code. The use of `requests` and OS-specific targeting (Windows) further suggests potential malicious intent."
+        }
+    },
+    "260": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decrypts and executes an encrypted payload using Fernet, a method commonly used to hide malicious behavior. The payload is only activated on Windows (`os.name == \"nt\"`), and the use of `exec` on obfuscated code suggests an attempt to evade detection. This behavior is typical of malware."
+        }
+    },
+    "261": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to dynamically decrypt and execute hidden payloads when run on Windows (os.name == \"nt\"). This obfuscation technique is commonly used in malware to conceal malicious behavior, such as downloading additional payloads via the `requests` library. Legitimate software rarely executes encrypted code during installation."
+        }
+    },
+    "262": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to hide and execute a payload during installation, specifically targeting Windows systems. The `exec` function runs decrypted code, which could perform malicious activities undetected. Obfuscating code this way is a common tactic to evade analysis."
+        }
+    },
+    "263": {
+        "deepseek-r1": {
+            "output": "Yes.  \nThe code uses Fernet to decrypt and execute an obfuscated payload, which is a common tactic to hide malicious behavior. It also conditionally runs only on Windows (os.name == \"nt\"), suggesting targeted behavior, and imports the `requests` library, which could indicate potential network-based malicious activity (e.g., downloading/executing remote code)."
+        }
+    },
+    "264": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, which is a common technique to obfuscate malicious behavior. The combination of OS checks, encrypted code execution, and the use of `requests` suggests potential malicious intent, such as downloading and running harmful code on Windows systems."
+        }
+    },
+    "265": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to dynamically decrypt and execute hidden payloads during installation, a common malware obfuscation technique. It specifically targets Windows systems (os.name == \"nt\") and imports the `requests` library, suggesting potential network-based malicious activity (e.g., downloading additional payloads or data exfiltration). The combination of runtime decryption, hidden code execution, and OS-specific targeting strongly indicates malicious intent."
+        }
+    },
+    "266": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes encrypted payloads using the Fernet encryption library. This is a common tactic to hide malicious behavior, such as downloading malware or running unauthorized code. The payload execution is conditional on the OS being Windows (os.name == \"nt\"), further indicating targeted malicious intent. The use of `exec()` on obfuscated code strongly suggests an attempt to evade detection."
+        }
+    },
+    "267": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet library, which is often used to hide malicious behavior. The payload is fetched only on Windows systems (os.name == \"nt\"), and the use of `exec()` with obfuscated code strongly suggests an attempt to evade detection. This pattern is typical of malware or backdoor installations."
+        }
+    },
+    "268": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code sends HTTP requests to a domain (oastify.com) associated with Burp Collaborator, a tool used to detect out-of-band vulnerabilities and often leveraged in malicious payload testing. This behavior suggests potential data exfiltration or command-and-control communication. The intentional delays (sleep) and endpoint paths (\"/init\", \"/sleep\") further indicate malicious intent."
+        }
+    },
+    "269": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, attempts to check for Windows OS, and employs obfuscation (random class name). This behavior is typical of malware hiding malicious activities."
+        }
+    },
+    "270": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an encrypted payload using a hardcoded Fernet key. This behavior is highly suspicious, as it can hide malicious actions (e.g., downloading/executing external code) during runtime. The combination of dynamic code execution (`exec`) with encrypted payloads is a common tactic in malware to evade detection."
+        }
+    },
+    "271": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code contains several red flags:  \n1. **Obfuscated Class Name**: The class uses a long, random name, which is a common tactic to evade detection.  \n2. **Encrypted Payload Execution**: It decrypts and executes a hidden payload using the `Fernet` encryption library, making the code's intent non-transparent.  \n3. **OS Check**: Targets Windows (`os.name == \"nt\"`), suggesting platform-specific malicious behavior.  \n4. **Dynamic Code Execution**: Uses `exec()` to run decrypted code, a hallmark of obfuscated malware attempting to hide malicious actions.  \n5. **Injection into Installation Process**: Overrides an `install.run()` method, potentially hijacking a legitimate software installation flow.  \n\nThese traits strongly indicate malicious intent."
+        }
+    },
+    "272": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decrypts and executes an encrypted payload using the Fernet module, which is highly suspicious and indicative of obfuscated malicious behavior. The payload could execute arbitrary code (e.g., downloading malware, exfiltrating data). Additionally, the class and method names are nonsensical, likely to evade detection. Targeting Windows systems (`os.name == \"nt\"`) further suggests intent to exploit a specific environment."
+        }
+    },
+    "273": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, checks for Windows OS, and employs obfuscated class/method names—common tactics in malicious scripts to evade detection and deploy harmful actions."
+        }
+    },
+    "274": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to decrypt and execute a hidden payload, checks if the OS is Windows (targeting specific environments), and dynamically executes obscured code, which are common tactics in malicious scripts to evade detection."
+        }
+    },
+    "275": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to hide a payload that's decrypted and executed with `exec`, a common tactic to obfuscate malicious behavior. It specifically targets Windows systems (`os.name == \"nt\"`) and overrides an installation process to run the hidden code, indicating an intent to deploy malware during installation."
+        }
+    },
+    "276": {
+        "deepseek-r1": {
+            "output": "Yes\n\nThe code is deemed malicious because it employs several red flags: it checks for the Windows OS, dynamically decrypts and executes a payload using Fernet encryption, and uses the `exec` function to run hidden code. The encrypted payload's purpose is obscured, a common tactic in malware to evade detection. The invocation of `install.run(self)` suggests it may also tamper with legitimate installation processes."
+        }
+    },
+    "277": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute a hidden payload, checks for the Windows OS (os.name == \"nt\"), and dynamically runs obfuscated code via exec(). These behaviors are typical of malware attempting to evade detection by hiding malicious actions. The hardcoded encryption key and encrypted payload suggest intentional obfuscation of harmful activity."
+        }
+    },
+    "278": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code is designed to steal sensitive information, including Discord tokens, browser passwords, cookies, and system files, then exfiltrate the data via a Discord webhook. It uses encryption/decryption to access credentials and targets cryptocurrency wallets, indicating malicious intent."
+        }
+    },
+    "279": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses PyArmor to obfuscate the script with an embedded byte stream, a common technique to hide malicious payloads. Obfuscation prevents code review, making it impossible to determine the script's true intent without reverse-engineering, which is a hallmark of suspicious or malicious code."
+        }
+    },
+    "280": {
+        "deepseek-r1": {
+            "output": "yes  \nThe code sends HTTP requests to \"dependabot.org/log/[path]\" during package installation/development (via setuptools command hooks) and initialization. While Dependabot is a legitimate service, \"dependabot.org\" is not the official domain (the correct one is dependabot.com), making this likely an attempt to exfiltrate installation telemetry to a suspicious endpoint. The base64 import also suggests potential data encoding, though not explicitly used here."
+        }
+    },
+    "281": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads an executable (`main.exe`) from a Discord URL and saves it to a suspicious location (`AppData\\Local\\explorer.exe`), then executes it. This mimics common malware behavior of downloading and running untrusted binaries, potentially for malicious purposes like persistence or payload delivery."
+        }
+    },
+    "282": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code downloads and executes a remote script from a GitHub repository with a suspicious, non-descriptive path. The script is run without verification, and the immediate deletion post-execution suggests an attempt to hide malicious activity."
+        }
+    },
+    "283": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code downloads an executable from a Discord CDN URL, saves it to the user's AppData\\Local directory under the name \"explorer.exe\" (a deceptive name to mimic a legitimate Windows process), and executes it with elevated privileges (shell=True). This behavior matches common malware delivery patterns involving payload retrieval, persistence mechanisms, and execution obfuscation via base64 encoding."
+        }
+    },
+    "284": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a Discord URL, saves it to a system directory disguised as a legitimate file (explorer.exe), and executes it. This behavior is characteristic of malware attempting to download and run malicious payloads."
+        }
+    },
+    "285": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable (`main.exe`) from a Discord CDN URL and saves it as `explorer.exe` in the user's `AppData\\Local` directory, a common tactic to disguise malicious payloads. It then executes the downloaded file using `subprocess.run` with elevated privileges (`shell=True`), which is typical of malware behavior. The combination of remote code retrieval, masquerading as a legitimate process, and silent execution confirms malicious intent."
+        }
+    },
+    "286": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable (`main.exe`) from a Discord CDN URL and saves it as `explorer.exe` in the user's `AppData\\Local` directory, a common tactic to disguise malicious files. It then executes the downloaded file using `subprocess.run()` with elevated privileges (`shell=True`), which is typical malware behavior. The combination of remote code retrieval, masquerading as a system process, and execution confirms malicious intent."
+        }
+    },
+    "287": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nyes  \nThe code is obfuscated and uses base64 decoding to dynamically execute hidden payloads, which is characteristic of malicious behavior."
+        }
+    },
+    "288": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code is heavily obfuscated, uses Base64 decoding to dynamically load and execute hidden payloads, employs `eval` for arbitrary code execution, and includes a large compressed binary payload (likely malicious code). These characteristics are strong indicators of malicious intent, such as executing unauthorized actions or deploying further malware."
+        }
+    },
+    "289": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code is heavily obfuscated and dynamically decodes/executes a payload using Base64 and reflection. It contains a large compressed binary blob (likely malicious) and uses evasion tactics like `eval` and `getattr` to hide its intent, which are strong indicators of malicious behavior."
+        }
+    },
+    "290": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code uses Fernet encryption to hide a payload that is decrypted and executed dynamically. This obfuscation technique is commonly used to conceal malicious behavior. Additionally, the code imports the `requests` library (often used for unauthorized network communication) and executes arbitrary decrypted code, which poses a significant security risk. The invocation of `install.run(self)` after executing the payload suggests it aims to blend malicious activity with legitimate installation steps."
+        }
+    },
+    "291": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code dynamically decrypts and executes a payload using a hard-coded encryption key. This is a common technique to obfuscate malicious behavior, such as downloading/executing unauthorized code. The use of `Fernet` for decryption and `exec` to run the decrypted content strongly indicates intentional evasion of detection."
+        }
+    },
+    "292": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide and execute a payload, checks for Windows OS (os.name == \"nt\"), and dynamically runs decrypted code via exec(), which is a common tactic for obfuscating malicious behavior. The hardcoded key and encrypted payload suggest intentional evasion of detection."
+        }
+    },
+    "293": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a hidden payload, which is a common tactic to obfuscate malicious behavior. It checks for the Windows OS (os.name == \"nt\") and dynamically executes potentially harmful code retrieved via the decrypted payload. This behavior is indicative of malware attempting to evade detection."
+        }
+    },
+    "294": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to decrypt and execute an encrypted payload, which is a common technique to obfuscate malicious behavior. The payload is fetched and executed only on Windows systems (os.name == \"nt\"), and the use of exec to run decrypted code strongly indicates an attempt to hide harmful actions."
+        }
+    },
+    "295": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to hide and execute a payload, which is decrypted at runtime. The `exec` function runs the decrypted code, making it opaque and suspicious. This behavior is typical of malware that obfuscates malicious actions. Additionally, it checks for a Windows OS (`os.name == \"nt\"`), suggesting targeted execution."
+        }
+    },
+    "296": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code uses Fernet encryption to decrypt and execute an obfuscated payload specifically on Windows systems (`os.name == \"nt\"`). The `exec` function runs the decrypted code, which is hidden from static analysis, a common malware tactic. This behavior, combined with overriding an installation process (`install.run(self)`), indicates malicious intent to stealthily execute harmful operations."
+        }
+    },
+    "297": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code contains several red flags: it checks if the OS is Windows (`nt`), decrypts and executes an encrypted payload using a hardcoded Fernet key, and imports `requests` (commonly used for network calls). This behavior suggests potential malicious activity, such as downloading/running hidden payloads or evading detection."
+        }
+    },
+    "298": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to hide a payload that is decrypted and executed via `exec()`, which can indicate malicious behavior. It checks if the OS is Windows (`nt`) and imports `requests`, suggesting potential network activity. The obfuscated class/method names and hidden code execution are red flags."
+        }
+    },
+    "299": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code uses Fernet encryption to decrypt and execute a payload, which is a common technique to hide malicious activity. It checks if the OS is Windows (nt) and then executes obfuscated code, suggesting potential malicious behavior like downloading/executing unauthorized commands. Overriding the `install.run()` method further indicates an attempt to infiltrate a software installation process."
+        }
+    },
+    "300": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to hide a payload decrypted at runtime, executes it via `exec()`, targets Windows systems (`os.name == \"nt\"`), and obfuscates its behavior. These are strong indicators of malicious intent, such as executing hidden commands or malware."
+        }
+    },
+    "301": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses Fernet encryption to decrypt and execute an arbitrary payload, checks for the Windows OS (os.name == \"nt\"), and imports the `requests` library, which could indicate malicious network activity. This behavior is characteristic of malware attempting to hide malicious code execution."
+        }
+    },
+    "302": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses Fernet encryption to obfuscate a payload decrypted at runtime, executes it via `exec()`, and checks for the Windows OS (`os.name == \"nt\"`). This pattern is typical of malicious scripts aiming to hide harmful behavior, such as downloading/executing unauthorized code. The encrypted payload could perform arbitrary malicious actions undetectable by static analysis."
+        }
+    },
+    "303": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code contains suspicious elements such as a randomly named class, dynamic execution of encrypted payloads using Fernet, and checks for the Windows OS. The use of `exec()` on decrypted code (hidden via cryptography) suggests an attempt to conceal malicious behavior, such as downloading or executing unauthorized commands."
+        }
+    },
+    "304": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code contains several red flags: it checks for the Windows OS, uses Fernet encryption to decrypt and execute a hidden payload via `exec()`, and is structured to run during installation (likely in a malicious package's `setup.py`). The encrypted payload and dynamic execution suggest obfuscated malicious behavior."
+        }
+    },
+    "305": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code uses Fernet encryption to hide a payload, executes it via `exec()`, and checks for Windows OS. This obfuscation and dynamic execution of encrypted code are strong indicators of malicious intent, such as downloading or running harmful scripts."
+        }
+    },
+    "306": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes\n\n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet cryptography library. This is a common evasion technique to hide malicious behavior. The payload is fetched via hardcoded keys and ciphertext, which could download additional malware, run arbitrary commands, or compromise the system, especially targeting Windows (`os.name == \"nt\"`). The use of `exec` on hidden code raises significant security concerns."
+        }
+    },
+    "307": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses a hardcoded Fernet key to decrypt and execute an encrypted payload, which is a common technique to obfuscate malicious behavior. The `exec` function runs the decrypted code, potentially downloading or executing harmful instructions. Additionally, the class and method names are obfuscated, further indicating malicious intent."
+        }
+    },
+    "308": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code is deemed malicious because it dynamically decrypts and executes an encrypted payload using the Fernet library. This behavior is characteristic of malware attempting to obfuscate its activities. The payload is retrieved only on Windows systems (os.name == \"nt\"), and the use of exec to run decrypted code suggests potential unauthorized actions, such as downloading or executing further malicious code. The hardcoded encryption key and suspicious class name further indicate intentional obfuscation."
+        }
+    },
+    "309": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code decrypts and executes an encrypted payload using a hardcoded Fernet key, which is a common tactic to hide malicious behavior. It specifically targets Windows systems (os.name == \"nt\") and uses libraries like requests to potentially download additional payloads. The obfuscated class name and overriding of an install method further suggest malicious intent."
+        }
+    },
+    "310": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses obfuscation (random class name) and attempts to decrypt/execute a hidden payload using the Fernet library. The payload is encrypted, making it impossible to analyze statically, but executing arbitrary code during installation is highly suspicious and typical of malicious behavior."
+        }
+    },
+    "311": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes a hidden payload using Fernet encryption. This is a common evasion technique to conceal malicious behavior (e.g., downloading/executing malware). The payload is obfuscated, targets Windows systems, and leverages `exec()` for arbitrary code execution, which strongly indicates malicious intent."
+        }
+    },
+    "312": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code is heavily obfuscated, uses dynamic execution (`exec`, `eval`, `compile`), and decompresses/executes hidden payloads (via zlib). It modifies the `globals()` environment and includes suspicious exception handling to evade detection, all indicative of malicious intent."
+        }
+    },
+    "313": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code is heavily obfuscated with non-standard naming, dynamic execution via `exec`, and embedded compressed/encoded payloads (likely malicious code). It uses techniques like importing `zlib` for decompression and `eval`/`exec` to execute hidden code, common in malware to evade detection."
+        }
+    },
+    "314": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code executes a Base64-encoded PowerShell command that downloads an executable (`windef.exe`) from a Dropbox link and runs it. This behavior is typical of malware, as it uses obfuscation (encoded commands), retrieves external binaries, and executes them stealthily (`CREATE_NO_WINDOW`). The use of Dropbox to host the file and mimicking a system tool name (`windef.exe`) further suggests malicious intent."
+        }
+    },
+    "315": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code downloads and executes an external script from Pastebin, a platform often used to distribute malicious code. This behavior is inherently risky as it allows arbitrary code execution from an unverified source, a common tactic in malware."
+        }
+    },
+    "316": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses PyArmor to obfuscate and execute a binary payload, which is a common technique to hide malicious behavior. The imported `eth_account_api` suggests potential cryptocurrency-related exploitation, and the obfuscation itself is a strong indicator of intent to conceal harmful actions."
+        }
+    },
+    "317": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code downloads an executable (`main.exe`) from a Discord CDN URL and saves it to a user's `AppData\\Local` directory under the deceptive name `explorer.exe` (mimicking a legitimate Windows process). It then executes the downloaded file in a separate thread. This behavior is characteristic of malware, which often retrieves and runs malicious payloads from external sources without user consent."
+        }
+    },
+    "318": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code downloads an executable (`main.exe`) from a Discord CDN URL and saves it as `explorer.exe` in the user's `AppData\\Local` directory, a common tactic for hiding malicious payloads. It then executes the downloaded file using `subprocess.run` with elevated privileges (`shell=True`), which could lead to arbitrary code execution. The use of a non-standard location for `explorer.exe` (a legitimate system file name) and fetching an untrusted external binary strongly indicates malicious intent."
+        }
+    },
+    "319": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code collects sensitive system information (environment variables, system details, IP address) and sends it to an external Slack webhook URL without user consent. This constitutes data exfiltration, a malicious behavior. The use of `exit(1)` after execution further suggests an attempt to mask the activity as a program crash."
+        }
+    },
+    "320": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code sends sensitive system information (hostname, user, directory listing, security groups) to an external domain (pipedream.net), commonly used for data exfiltration. This unauthorized data collection and transmission indicate malicious intent."
+        }
+    },
+    "321": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code reads AWS credentials from the user's `~/.aws/credentials` file and exfiltrates them to an external webhook URL (`https://connect.pabbly.com/...`) without user consent. This constitutes unauthorized data exfiltration of sensitive credentials, a hallmark of malicious behavior."
+        }
+    },
+    "322": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code automatically installs a package from an external GitHub repository without verification. This poses a security risk as it executes arbitrary code from an untrusted source, which could contain malicious payloads. The repository URL (`https://github.com/Maxheruko/hypixelmcapigithub.git`) is not a known or trusted source, and the script does not validate the integrity of the code before installation."
+        }
+    },
+    "323": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code installs a package from an external GitHub repository without user interaction or validation. This poses a security risk as the package could execute arbitrary malicious code during installation or import. Even if the visible code isn't malicious, relying on external, unverified code introduces significant vulnerabilities."
+        }
+    },
+    "324": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code downloads and installs a package from an external GitHub repository without verification, executing arbitrary code during installation. This behavior poses a security risk, as the repository could contain malicious code. Additionally, it hardcodes an API key, which could be exploited if unauthorized."
+        }
+    },
+    "325": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code is highly obfuscated and uses base64/zlib to decode and execute a hidden payload. It leverages the `setuptools` install hook to run malicious code during package installation, which could include downloading/executing external binaries or performing unauthorized system operations. The combination of obfuscation, dynamic code execution (`exec`), and suspicious imports (e.g., `subprocess`, `urllib`) strongly indicates malicious intent."
+        }
+    },
+    "326": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet library. This is a common tactic to hide malicious behavior, such as downloading/executing unauthorized code. The use of hardcoded encryption keys and external libraries like `requests` further suggests potential malicious intent (e.g., downloading malware or establishing remote connections). Legitimate installation scripts do not typically include such obfuscated code."
+        }
+    },
+    "327": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code sends the current working directory to a Discord webhook and contacts a domain associated with OAST (Out-of-band Application Security Testing) services, which are often used maliciously for data exfiltration or command-and-control. This behavior indicates potential data theft or unauthorized communication."
+        }
+    },
+    "328": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code uses Fernet encryption to hide and execute a payload during installation, specifically targeting Windows systems. The combination of dynamic code execution (exec) with encrypted content, along with importing the requests library (often used for external communication), suggests malicious intent to conceal harmful activities."
+        }
+    },
+    "329": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code dynamically decrypts and executes an encrypted payload using the Fernet module. This is a common technique to hide malicious behavior, such as downloading/running unauthorized code, especially since it conditionally targets Windows systems (`os.name == \"nt\"`). The use of hardcoded encryption keys and `exec()` on obfuscated content strongly indicates malicious intent."
+        }
+    },
+    "330": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code is malicious because it uses obfuscated techniques to execute hidden payloads. It decodes and decompresses a base64-encoded string (reversed to evade simple detection) and executes it via `exec()`, which is a common tactic to hide malicious behavior. The payload could perform harmful actions like downloading/executing external code, compromising the system. Additionally, it abuses the `setuptools` installation process to trigger the payload during package installation, a hallmark of supply-chain attacks."
+        }
+    },
+    "331": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code sends sensitive system information (hostname, username, current directory, directory contents) to an external domain (`pipedream.net`), which is commonly used for data exfiltration. This behavior is characteristic of malicious data harvesting."
+        }
+    },
+    "332": {
+        "deepseek-r1": {
+            "output": "**Decision:** No  \n**Reason:** The code decodes the base64 string \"bm90ZXBhZA==\" to \"notepad\" and runs it via `os.system()`, which merely launches the Notepad application. This action is benign and does not perform harmful operations."
+        }
+    },
+    "333": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code downloads an executable from an untrusted URL (`diskcitylink.com`), disables SSL verification (ignoring security risks), saves it to a temporary file, and executes it. This behavior is typical of malware that retrieves and runs malicious payloads. The use of `subprocess.run` with `shell=True` further escalates the risk by executing arbitrary code."
+        }
+    },
+    "334": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code decodes a base64 string to execute a command that downloads a batch file from a Discord URL and runs it. This behavior is characteristic of malware, which often retrieves and executes payloads from external sources. The use of base64 obfuscation and indirect execution via cmd makes it highly suspicious."
+        }
+    },
+    "335": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code decodes a base64 string (`\"CODE_REPLACE\"`) and executes it via `os.system()`, which is a common tactic to hide malicious payloads. The use of base64 obfuscation and direct system command execution poses a security risk, as the decoded content could be any harmful command."
+        }
+    },
+    "336": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decodes a base64-encoded string and executes it as a system command via `os.system()`. While the exact payload (replaced by \"CODE_REPLACE\") is hidden, this pattern is commonly used to obfuscate and execute malicious commands, making the code inherently suspicious and potentially harmful."
+        }
+    },
+    "337": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decodes a base64 string that translates to a command using `curl` to fetch a script from a potentially suspicious domain (`000webhostapp.com`) and executes it via `bash`. This behavior is characteristic of malware that downloads and runs remote payloads, posing a security risk."
+        }
+    },
+    "338": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code connects to an external IP address (64.23.142.76) on port 9090 and sends system information (uptime, OS details, IP address) over a raw socket. This behavior is characteristic of data exfiltration or establishing a reverse shell, indicating malicious intent."
+        }
+    },
+    "339": {
+        "deepseek-r1": {
+            "output": "yes  \nThe code collects system information (OS name, release version, current working directory, hostname) and sends it via an HTTP GET request to a suspicious domain (\"zkecscnceogkcofvfnoqhyc1gg3hf6aqe.22.ax\"). The domain's random-looking structure and the exfiltration of sensitive system data indicate potential malicious intent, likely data harvesting for unauthorized purposes."
+        }
+    },
+    "340": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code collects sensitive system information (hostname, current directory, username) and exfiltrates it to a suspicious domain (`oast.fun`, commonly used for testing malicious payloads). This behavior is indicative of data harvesting malware."
+        }
+    },
+    "341": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code executes a base64-encoded command (`Y2FsYw==`, which decodes to \"calc\") using `os.system`. While launching the calculator (calc) is not inherently malicious, the use of base64 encoding to obfuscate the command is a common tactic to evade detection in malicious scripts. This intentional obfuscation suggests potentially harmful intent."
+        }
+    },
+    "342": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code uses base64 to obfuscate the command `calc && notepad`, which launches Calculator and Notepad on Windows. While not inherently harmful, the deliberate obfuscation suggests an attempt to hide malicious intent, a common tactic in malicious scripts."
+        }
+    },
+    "343": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code executes a base64-encoded command (`Y2FsYw==`, which decodes to `calc`), launching the calculator app. While not inherently harmful, the use of base64 obfuscation to hide the command is a common tactic in malicious code to evade detection. The misleading function name (`notmalfunc`) further suggests intent to deceive."
+        }
+    },
+    "344": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code decodes the base64 string \"bm90ZXBhZA==\" to \"notepad\" and executes `os.system(\"notepad\")`, which merely opens the Notepad application on Windows. While the use of base64 encoding might suggest obfuscation, the decoded command itself is harmless and not indicative of malicious behavior."
+        }
+    },
+    "345": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code defines a custom installation class that collects the system's hostname, current working directory, and username, then sends this information to an external domain \"oastify.com\" via an HTTP GET request. The domain appears to be a randomly generated subdomain, commonly associated with malicious data exfiltration or command-and-control servers. This behavior constitutes unauthorized data collection and transmission, indicating malicious intent."
+        }
+    },
+    "346": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code attempts to retrieve a Google Cloud service account access token from the metadata server (targeting cloud environments) and writes suspicious data to logs. Accessing cloud metadata for credentials is a hallmark of malicious activity aimed at stealing cloud permissions, even if the token is not directly exfiltrated in this snippet."
+        }
+    },
+    "347": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code decodes a base64 string (placeholder \"CODE_REPLACE\") and executes it via `os.system()`, which allows arbitrary command execution. Obfuscating commands via base64 is a common tactic to hide malicious behavior, making this code inherently risky and likely malicious."
+        }
+    },
+    "348": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code employs obfuscation techniques (e.g., aliased imports, encoded strings, complex operations) to hide its intent. It dynamically constructs a file path, creates directories, and writes external binary data (`b` from `.am`) to a file. This behavior is typical of malware attempting to deploy a payload discreetly."
+        }
+    },
+    "349": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:**  \nThe code establishes a network connection to a specific IP (`172.16.0.103`) and port (`12345`) during installation, which is a common indicator of malicious behavior (e.g., callback to a command-and-control server). While it only sends a \"Hello, Server!\" message in this snippet, such connections are typically unauthorized and suspicious in installation scripts."
+        }
+    },
+    "350": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code exfiltrates data by searching for and reading all `.txt` files (including sensitive paths like `/home` and `/`), then sends their contents to an external IP address (`140.238.202.225`) via HTTP. This unauthorized data collection and transmission to a remote server is malicious."
+        }
+    },
+    "351": {
+        "deepseek-r1": {
+            "output": "no\n\nThe code uses `os.system` to execute a base64-encoded string which decodes to \"notepad\". While the use of base64 encoding might be an attempt to obscure the command, launching Notepad is not inherently malicious. The code does not exhibit harmful behavior like data theft, system damage, or unauthorized access."
+        }
+    },
+    "352": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code decodes \"bm90ZXBhZA==\" to \"notepad\" and executes it via `os.system()`, which merely opens the Notepad application on Windows. While base64 encoding is used, the action itself is harmless and not malicious."
+        }
+    },
+    "353": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The `notmalfunc` function decodes and executes the Base64 string `\"bm90ZXBhZCAmJiBjYWxj\"`, which translates to `notepad && calc`. This command launches Notepad and Calculator on Windows. While these actions are not directly harmful, executing unexpected GUI applications without user consent is suspicious and indicative of disguised behavior, commonly seen in malicious scripts to test code execution or distract users."
+        }
+    },
+    "354": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code collects system information (OS name, current directory, hostname, and username) and sends it to a suspicious domain via an HTTP GET request. The domain name appears randomly generated (zkecscnceogkcofvfnoqf068bapiwbnp2.22.ax), which is a common tactic used by attackers to obscure malicious command-and-control servers. This behavior constitutes unauthorized data exfiltration, a hallmark of malware or reconnaissance activity."
+        }
+    },
+    "355": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decodes and decompresses a hidden payload using base64 and zlib, then executes it. This obfuscation technique is commonly used to hide malicious behavior. The use of `exec` on dynamically decoded content strongly suggests intentional evasion of analysis, which is a hallmark of malicious scripts."
+        }
+    },
+    "356": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code uses `wget` to send an HTTP request to a webhook URL (`webhook.site`), which is commonly used to test data exfiltration or command-and-control (C2) callbacks. This behavior is indicative of malicious activity attempting to establish unauthorized communication with an external server."
+        }
+    },
+    "357": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects system information (hostname, current directory, username) and sends it to an external domain (pipedream.net) without user consent. This is a common indicator of data exfiltration, a malicious behavior."
+        }
+    },
+    "358": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects system information (hostname, current directory, username) and sends it to an external domain (pipedream.net) via an HTTP request without user consent. This behavior constitutes unauthorized data exfiltration, a hallmark of malicious activity."
+        }
+    },
+    "359": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code collects system information (hostname, current directory, username) and exfiltrates it to an external domain (pipedream.net) via an HTTP GET request. This behavior is characteristic of data harvesting or beaconing, commonly seen in malicious scripts."
+        }
+    },
+    "360": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects system information (hostname, current directory, username) and sends it to an external domain (pipedream.net) during installation, indicating data exfiltration behavior. This is unauthorized and potentially malicious."
+        }
+    },
+    "361": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code collects system information (hostname, current directory, username) and sends it to a remote server (9.30.214.68:9090) via HTTP without user consent. This is a common exfiltration technique used in malicious software to gather sensitive data. The use of a custom installation class suggests it's intended to execute during package installation, further indicating stealthy malicious behavior."
+        }
+    },
+    "362": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code decodes a base64 string into a command that downloads a batch file from a Discord CDN URL and executes it. This behavior (downloading and running external scripts/files) is typical of malware, as it allows arbitrary code execution from an untrusted source."
+        }
+    },
+    "363": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code exfiltrates environment variables by sending them encoded in base64 to an external domain (`diddlydingusdu.de`) via a `curl` command during installation. This is a malicious data exfiltration technique. Additionally, it creates unexpected directories (`/var/task/icanhavewrite`) and writes environment data to a `LICENSE` file, which are atypical behaviors for a legitimate installation script."
+        }
+    },
+    "364": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code collects system information (OS details, current directory, hostname) and sends it via an HTTP GET request to a suspicious domain. This unauthorized data exfiltration to a remote server indicates malicious intent."
+        }
+    },
+    "365": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code decodes a base64 string and executes it as a system command via `os.system()`. The use of base64 decoding to hide the actual command (indicated by the placeholder \"CODE_REPLACE\") is a common obfuscation technique in malicious code to conceal harmful payloads. This behavior is inherently suspicious and poses a security risk if the decoded command is malicious."
+        }
+    },
+    "366": {
+        "deepseek-r1": {
+            "output": "**Decision**: No  \n**Reason**: The code calls `os.system` with a base64-encoded string \"bm90ZXBhZA==\", which decodes to \"notepad\". However, the code does not decode the string before execution, so it attempts to run a command named \"bm90ZXBhZA==\" (the literal base64 text), which is invalid and non-malicious. If it had decoded and executed \"notepad\", it would still be harmless."
+        }
+    },
+    "367": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code collects sensitive system and user information (including IP, location, directory listings) and exfiltrates it to a Discord webhook without user consent, which constitutes malicious data exfiltration."
+        }
+    },
+    "368": {
+        "deepseek-r1": {
+            "output": "Yes  \nThe code searches the entire C drive for files with specific extensions (.opk, .loli, etc.), copies them to a temporary directory, compresses them into a ZIP file, and exfiltrates the data to a Telegram bot using hardcoded credentials. This behavior constitutes unauthorized data collection and exfiltration, which is malicious."
+        }
+    },
+    "369": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code extracts Chrome-stored passwords, decrypts them using the system's encryption key, collects the hostname and public IP, then exfiltrates this sensitive data to a Discord webhook. This constitutes unauthorized credential theft and data exfiltration, characteristic of malicious activity."
+        }
+    },
+    "370": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code creates a reverse shell by connecting to a remote IP (`3.228.3.164:80`), redirects standard I/O to the socket, spawns an interactive bash shell via `pty`, and disables command history. This behavior is characteristic of malicious payloads designed to grant unauthorized remote access."
+        }
+    },
+    "371": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code executes a system command (`calc`) and attempts to contact a URL associated with IP logging (`iplogger.com`), which are indicators of malicious behavior such as unauthorized system access and potential data exfiltration."
+        }
+    },
+    "372": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads an executable from a remote URL (`https://filego.app/api/dl/file/taa91xnm/0`), saves it to the system's Temp directory, and executes it while hiding the process window. This behavior is characteristic of malware, as it stealthily retrieves and runs potentially harmful code without user consent."
+        }
+    },
+    "373": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code collects system information (hostname, current directory, username) and sends it to a suspicious domain using a GET request. The domain \"oast.fun\" is associated with out-of-band testing tools often used in attacks, indicating potential data exfiltration."
+        }
+    },
+    "374": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code writes and executes a script (\"remote-access.py\") that runs an external executable (\"main.exe\") with stealthy flags (`creationflags=0x08000000` hides the window on Windows). It persistently overwrites the script in the user's Documents/home directory and attempts to execute it silently, indicating malicious intent to deploy hidden payloads."
+        }
+    },
+    "375": {
+        "deepseek-r1": {
+            "output": "yes\n\nThe code downloads and executes an external executable from a Discord URL, saving it as \"explorer.exe\" in the user's AppData directory. The use of base64 obfuscation, hidden execution via threading, and launching untrusted binaries with shell privileges are strong indicators of malicious behavior aimed at deploying malware."
+        }
+    },
+    "376": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code establishes a reverse shell by connecting to a remote IP (`3.228.3.164` on port `80`), redirects standard I/O streams to the socket, and spawns an interactive bash shell. This allows remote command execution, a hallmark of malicious activity."
+        }
+    },
+    "377": {
+        "deepseek-r1": {
+            "output": "**Decision:** Yes  \n**Reason:** The code contains functions designed to send unsolicited messages (spam) via email (`EmailSpam`), phone calls (`SpamCall`), and Telegram (`SpamTele`). It exploits third-party APIs (e.g., Truecaller, Telegram) to send unauthorized OTPs or authentication requests, potentially harassing targets or bypassing user consent. The use of spoofed headers, fake device details, and the term \"Spam\" in function names confirms malicious intent."
+        }
+    },
+    "378": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n**Reason:** The code is designed to steal sensitive information such as Discord tokens, browser passwords, cookies, and other credentials. It exfiltrates this data to a Discord webhook, uses encryption decryption methods for credential extraction, and targets multiple applications/browsers, which are clear indicators of malicious intent."
+        }
+    },
+    "379": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code downloads an executable from a suspicious IP address (45.88.180.54) and saves it to the `%APPDATA%` directory, a common tactic for malware persistence. It then executes the downloaded file without user interaction, which is typical of malicious payload delivery."
+        }
+    },
+    "380": {
+        "deepseek-r1": {
+            "output": "**Decision**: Yes  \n**Reason**: The code establishes a reverse shell by connecting to an external IP address (`3.228.3.164:80`), redirects standard I/O to the socket, and spawns an interactive bash shell using `pty`. Additionally, it disables command history logging (`HISTFILE=/dev/null`) and gathers system process information, which are hallmarks of malicious payloads aimed at remote control and data exfiltration."
+        }
+    },
+    "381": {
+        "deepseek-r1": {
+            "output": "**Decision**: yes  \n**Reason**: The code downloads and executes a remote script from an external URL using obfuscated variables and attempts to run it stealthily (via `pythonw.exe` on Windows). This behavior is characteristic of malware designed to fetch and execute arbitrary payloads."
+        }
+    },
+    "382": {
+        "deepseek-r1": {
+            "output": "**Answer:**  \nYes  \n\n**Reason:**  \nThe code contains functions (`EmailSpam`, `SpamCall`, `SpamTele`) designed to send unsolicited requests to third-party services (email, phone numbers, Telegram) for potentially harassing purposes. It mimics legitimate traffic (e.g., spoofed headers, fake device IDs) to bypass security checks, indicating malicious intent to spam or disrupt services without user consent."
+        }
+    },
+    "383": {
+        "deepseek-r1": {
+            "output": "**Decision:** yes  \n**Reason:** The code downloads and executes external content from Pastebin, which can run arbitrary commands. It imports modules associated with credential theft (e.g., `win32crypt`, `AES`, `sqlite3`) and uses `exec` to run fetched code, a common malware tactic. This behavior is highly suspicious and indicative of malicious intent."
+        }
+    }
+}

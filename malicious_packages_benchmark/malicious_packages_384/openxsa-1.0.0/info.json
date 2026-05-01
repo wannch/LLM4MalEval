@@ -1,0 +1,7 @@
+{
+    "package_name": "openxsa",
+    "package_version": "1.0.0",
+    "package_path": "malicious_packages_5T/openxsa",
+    "package_file": "malicious_packages_5T/openxsa/1.0.0/openxsa-1.0.0.tar.gz",
+    "extract_dir": "malicious_packages_5T_extract/openxsa-1.0.0"
+}

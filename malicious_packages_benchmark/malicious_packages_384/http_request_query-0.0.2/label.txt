@@ -1,0 +1,1 @@
+malicious_packages_20240112-20240408_extract/http_request_query-0.0.2/http_request_query-0.0.2/http_query/http_query.py;1-44
